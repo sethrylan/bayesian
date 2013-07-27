@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="factbook">
+        <xs:annotation>
+        	<xs:documentation>The root element of the CIA World Factbook.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+      <xs:sequence>
+      	<xs:element name="news" maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                    	<xs:documentation>News entries from the factbook news page.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+      			<xs:simpleContent>
+      				<xs:extension base="xs:string">
+      					<xs:attribute name="date" type="xs:date"
+      						use="optional">
+                                    <xs:annotation>
+                                    	<xs:documentation>Date of the news entry.</xs:documentation>
+                                    </xs:annotation>
+      					</xs:attribute>
+      				</xs:extension>
+      			</xs:simpleContent>
+      		</xs:complexType>
+      	</xs:element>
+      	<xs:element name="faqCategory" maxOccurs="unbounded"
+      		minOccurs="1" type="faqCategoryType">
+                    <xs:annotation>
+                    	<xs:documentation>FAQ categories with questions and answers in them.</xs:documentation>
+                    </xs:annotation>
+      	</xs:element>
+      	<xs:element name="definition" maxOccurs="unbounded"
+      		minOccurs="0" type="definitionType">
+                    <xs:annotation>
+                    	<xs:documentation>Definitions that are not (like field definitions) referenced elsewhere in the factbook.</xs:documentation>
+                    </xs:annotation>
+      	</xs:element>
+      	<xs:element maxOccurs="unbounded" name="category"
+      		minOccurs="1">
+                    <xs:annotation>
+                    	<xs:documentation>Categories of fields used in the factbook. Contains field information.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+      			<xs:sequence>
+      				<xs:element minOccurs="1" maxOccurs="1"
+      					name="description" type="hypertextType">
+      				</xs:element>
+      				<xs:element maxOccurs="unbounded" name="field">
+      					<xs:complexType>
+      						<xs:sequence>
+      							<xs:element minOccurs="1"
+      								maxOccurs="1" name="description" type="hypertextType">
+      							</xs:element>
+      							<xs:element minOccurs="0"
+      								maxOccurs="unbounded" name="rank">
+      								<xs:complexType>
+      									<xs:attribute use="required"
+      										name="country" type="xs:string">
+      									</xs:attribute>
+      									<xs:attribute name="dateText"
+      										type="xs:string" use="required">
+      									</xs:attribute>
+      									<xs:attribute use="optional"
+      										name="dateEarliest" type="xs:date">
+      									</xs:attribute>
+      									<xs:attribute
+      										name="dateLatest" type="xs:date" use="optional">
+      									</xs:attribute>
+      									<xs:attribute
+      										name="dateEstimated" type="xs:boolean" use="required">
+      									</xs:attribute>
+      									<xs:attribute use="required"
+      										name="number" type="xs:decimal">
+      									</xs:attribute>
+
+      								</xs:complexType>
+      							</xs:element>
+      						</xs:sequence>
+      						<xs:attribute use="required" name="id"
+      							type="xs:ID">
+      						</xs:attribute>
+      						<xs:attribute use="required" name="name"
+      							type="xs:string">
+      						</xs:attribute>
+      						<xs:attribute use="optional"
+      							name="rankorder" type="rankorderFlagType">
+      						</xs:attribute>
+      						<xs:attribute use="optional" name="unit"
+      							type="xs:string">
+      						</xs:attribute>
+      						<xs:attribute name="dollars"
+      							type="xs:boolean" use="required">
+      						</xs:attribute>
+      					</xs:complexType>
+      				</xs:element>
+      			</xs:sequence>
+      			<xs:attribute use="required" name="name"
+      				type="xs:string">
+                            <xs:annotation>
+                            	<xs:documentation>Name of the category.</xs:documentation>
+                            </xs:annotation>
+      			</xs:attribute>
+      		</xs:complexType>
+      	</xs:element>
+      	<xs:element name="region" maxOccurs="unbounded"
+      		minOccurs="1">
+                    <xs:annotation>
+                    	<xs:documentation>regions in the factbook. Contains all country information.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+      			<xs:sequence>
+      				<xs:element name="country" maxOccurs="unbounded"
+      					minOccurs="1">
+      					<xs:complexType>
+      						<xs:sequence>
+      							<xs:element name="alias"
+      								type="xs:string" maxOccurs="unbounded" minOccurs="1">
+      							</xs:element>
+      							<xs:element maxOccurs="unbounded"
+      								name="field" type="fieldContentType">
+
+      							</xs:element>
+
+      						</xs:sequence>
+      						<xs:attribute name="flag"
+      							type="MarkerType" use="optional" />
+      						<xs:attribute name="id" type="xs:ID"
+      							use="required" />
+      						<xs:attribute name="name" type="xs:string"
+      							use="required" />
+      						<xs:attribute name="photocount"
+      							type="xs:int" use="required" />
+
+
+      						<xs:attribute name="lastupdate"
+      							type="xs:date" use="required">
+      						</xs:attribute>
+      						<xs:attribute name="affiliation"
+      							type="xs:string" use="optional">
+      						</xs:attribute>
+      						<xs:attribute name="locator"
+      							type="MarkerType">
+      						</xs:attribute>
+      						<xs:attribute name="anthem"
+      							type="MarkerType">
+      						</xs:attribute>
+      					</xs:complexType>
+      				</xs:element>
+      			</xs:sequence>
+      			<xs:attribute name="id" type="xs:string"
+      				use="required">
+      			</xs:attribute>
+      			<xs:attribute name="name" type="xs:string"
+      				use="required">
+      			</xs:attribute>
+      			<xs:attribute name="shortId" type="xs:string"
+      				use="required">
+      			</xs:attribute>
+      		</xs:complexType>
+      	</xs:element>
+
+      	<xs:element name="appendix" maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                    	<xs:documentation>Appendices of the factbook.</xs:documentation>
+                    </xs:annotation>
+                    <xs:complexType>
+      			<xs:sequence>
+      				<xs:element name="list" type="appendixList"
+      					maxOccurs="1" minOccurs="1">
+      				</xs:element>
+      				<xs:element name="table" type="appendixTable"
+      					maxOccurs="unbounded" minOccurs="0">
+      				</xs:element>
+      			</xs:sequence>
+      			<xs:attribute name="letter" use="required">
+      				<xs:simpleType>
+      					<xs:restriction base="xs:string">
+
+      						<xs:length value="1"></xs:length>
+      					</xs:restriction>
+      				</xs:simpleType>
+      			</xs:attribute>
+      			<xs:attribute name="name" type="xs:string"
+      				use="required">
+      			</xs:attribute>
+      		</xs:complexType>
+      	</xs:element>
+      </xs:sequence>
+      <xs:attribute name="lastupdate" type="xs:date" use="required" >
+      	<xs:annotation>
+      		<xs:documentation>Date when the factbook was last updated.</xs:documentation>
+      	</xs:annotation></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="fieldContentType" mixed="true">
+        <xs:annotation>
+        	<xs:documentation>The contents of a field used in the country profiles. This can contain a reference to a reference map and one or more (named or unnamed) subfields.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence minOccurs="0">
+  		<xs:choice maxOccurs="unbounded">
+  			<xs:element name="refmap">
+  				<xs:complexType>
+  					<xs:attribute use="required" name="file"
+  						type="xs:string">
+  					</xs:attribute>
+  					<xs:attribute use="required" name="name"
+  						type="xs:string">
+  					</xs:attribute>
+  				</xs:complexType>
+  			</xs:element>
+  			<xs:element name="subfield">
+  				<xs:complexType>
+  					<xs:attribute use="required" name="name"
+  						type="xs:string">
+  					</xs:attribute>
+  					<xs:attribute use="optional" name="emph"
+  						type="xs:unsignedByte">
+  					</xs:attribute>
+  				</xs:complexType>
+  			</xs:element>
+  			<xs:element name="unnamedsubfield"
+  				type="emptyType">
+  			</xs:element>
+  		</xs:choice>
+  	</xs:sequence>
+  	<xs:attribute use="required" name="ref" type="xs:string"></xs:attribute>
+  </xs:complexType>
+
+  <xs:simpleType name="MarkerType">
+        <xs:annotation>
+        	<xs:documentation>A marker attribute that can be either present or not. When present, it must have the value 1.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+  		<xs:enumeration value="1"></xs:enumeration>
+
+  	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="rankorderFlagType">
+        <xs:annotation>
+        	<xs:documentation>The ordering used for rankorder tables, ascending or descending.</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:int">
+  		<xs:enumeration value="-1"></xs:enumeration>
+  		<xs:enumeration value="1"></xs:enumeration>
+  	</xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="hypertextType" mixed="true">
+        <xs:annotation>
+        	<xs:documentation>Simple formatted text. can be bold and italic and include newlines.</xs:documentation>
+        </xs:annotation>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+  		<xs:element name="bold" type="hypertextType"></xs:element>
+  		<xs:element name="italic" type="hypertextType"></xs:element>
+  		<xs:element name="newLine" type="emptyType"></xs:element>
+  	</xs:choice>
+  </xs:complexType>
+
+    <xs:complexType name="emptyType">
+    	<xs:annotation>
+    		<xs:documentation>The empty type that does not have any attributes or content.</xs:documentation>
+    	</xs:annotation></xs:complexType>
+    <xs:complexType name="definitionType" mixed="true">
+        <xs:annotation>
+        	<xs:documentation>A definition from the "Notes and definitions" page, which can be formatted in bold and italic, contain newline markers and contain
+references to an appendix.</xs:documentation>
+        </xs:annotation>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="appendixReference">
+				<xs:complexType>
+					<xs:attribute use="required"
+						name="letter">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:length value="1"></xs:length>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:attribute>
+					<xs:attribute use="required" name="title"
+						type="xs:string">
+					</xs:attribute>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="bold" type="hypertextType"></xs:element>
+			<xs:element name="italic" type="hypertextType"></xs:element>
+			<xs:element name="newLine" type="emptyType"></xs:element>
+		</xs:choice>
+		<xs:attribute name="name" type="xs:string" use="required">
+			<xs:annotation>
+				<xs:documentation>Name of the definition</xs:documentation>
+			</xs:annotation></xs:attribute>
+    </xs:complexType>
+
+
+
+    <xs:complexType name="faqCategoryType">
+        <xs:annotation>
+        	<xs:documentation>A category in the faq listing. It has a title and one or more questions with answers.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+    		<xs:element name="faq" maxOccurs="unbounded"
+    			minOccurs="1">
+                <xs:annotation>
+                	<xs:documentation>faqs in that category.</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+    				<xs:sequence>
+                        <xs:element name="question" type="hypertextType" maxOccurs="1" minOccurs="1">
+    					</xs:element>
+                        <xs:element name="answer"
+    						type="hypertextType" maxOccurs="1" minOccurs="1">
+    					</xs:element>
+    				</xs:sequence>
+    			</xs:complexType>
+    		</xs:element>
+    		
+    	</xs:sequence>
+    	<xs:attribute name="title" type="xs:string" use="required">
+    		<xs:annotation>
+    			<xs:documentation>category title.</xs:documentation>
+    		</xs:annotation></xs:attribute>
+    </xs:complexType>
+
+
+    <xs:complexType name="appendixList">
+        <xs:annotation>
+        	<xs:documentation>A list in an appendix. Lists contain names and values. Entries may be grouped by the initial letter of the name.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+    		<xs:element name="entry" maxOccurs="unbounded" minOccurs="1">
+    			<xs:complexType>
+    				<xs:sequence>
+    					<xs:element name="value" maxOccurs="1"
+    						minOccurs="1">
+    						  <xs:complexType mixed="true">
+							  	<xs:sequence minOccurs="0">
+							  		<xs:choice maxOccurs="unbounded">
+							  			<xs:element name="subfield">
+							  				<xs:complexType>
+							  					<xs:attribute use="required" name="name"
+							  						type="xs:string">
+							  					</xs:attribute>
+							  				</xs:complexType>
+							  			</xs:element>
+							  			<xs:element name="unnamedsubfield"
+							  				type="emptyType">
+							  			</xs:element>
+							  		</xs:choice>
+							  	</xs:sequence>
+							  </xs:complexType>
+    					</xs:element>
+    				</xs:sequence>
+    				<xs:attribute name="name" type="xs:string"
+    					use="required">
+    				</xs:attribute>
+    			</xs:complexType>
+    		</xs:element>
+    	</xs:sequence>
+    	<xs:attribute name="lettergrouped" type="MarkerType" use="optional"></xs:attribute>
+    </xs:complexType>
+
+    <xs:complexType name="appendixTable">
+        <xs:annotation>
+        	<xs:documentation>A table in an appendix. Tables look like spreadheets (rows and cells), have a header row, and may have a title or be grouped
+by the first letter in the first column. At the end of the table, there may be footnotes.</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+    		<xs:element name="columnHeader" maxOccurs="unbounded"
+    			minOccurs="1">
+    			<xs:complexType>
+    				<xs:attribute name="title" type="xs:string"
+    					use="required">
+    				</xs:attribute>
+    				<xs:attribute name="colspan" type="xs:int"
+    					use="required">
+    				</xs:attribute>
+    			</xs:complexType>
+    		</xs:element>
+    		<xs:element name="row" maxOccurs="unbounded"
+    			minOccurs="1">
+    			<xs:complexType>
+    				<xs:sequence>
+    					<xs:element name="cell" maxOccurs="unbounded"
+    						minOccurs="1">
+    						<xs:complexType>
+
+    							<xs:attribute name="content"
+    								type="xs:string" use="required">
+    							</xs:attribute>
+    							<xs:attribute name="country"
+    								type="xs:string" use="optional">
+    							</xs:attribute>
+    							<xs:attribute name="center"
+    								type="MarkerType" use="optional">
+    							</xs:attribute>
+    						</xs:complexType>
+    					</xs:element>
+    				</xs:sequence>
+    			</xs:complexType>
+    		</xs:element>
+            <xs:element name="footnote" type="xs:string" maxOccurs="unbounded" minOccurs="0"></xs:element>
+        </xs:sequence>
+    	<xs:attribute name="lettergrouped" type="MarkerType"
+    		use="optional">
+    	</xs:attribute>
+    	<xs:attribute name="title" type="xs:string" use="required"></xs:attribute>
+    </xs:complexType>
+</xs:schema>

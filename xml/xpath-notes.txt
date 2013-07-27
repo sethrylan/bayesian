@@ -1,0 +1,40 @@
+
+http://pic.dhe.ibm.com/infocenter/wci/v6r0m0/index.jsp?topic=%2Fcom.ibm.websphere.cast_iron.doc%2Fref_Basic_XPath_Expressions.html
+
+Country by Id
+/factbook/region/country[@id="ja"]/
+
+Countries that are actual countries
+/factbook/region[@id!='wrl' and @id!='ant' and @id!='oc']/country
+
+Countries with a specific field
+/factbook/region/country[field[@ref='f2001']]
+
+Countries with two fields
+/factbook/region/country[field[@ref='f2001'] and field[@ref='f2002']]
+
+Name of field reference
+/factbook/category/field[@id='f2001']/@name
+
+Ids of all field references
+/factbook/category/*/@id
+
+
+f2028  -  brief and interesting history
+f2032  -  more interesting stuff
+f2048 (subfields: agriculture:,industry:,services: ) -  Labor force - by sector
+f2023  -  area comparative
+f2226  -  physicans per 1000
+
+
+With ranks: /factbook/category/field[rank]/@*[name()='id' or name()='name']
+f2119  -  population
+f2002  -  population growth rate
+f2147  -  area
+f2066  -  death rate
+f2112  -  net migration rate
+f2172  -  Gini index
+f2001  -  GDP PPP (2012 US dollars)
+f2004  -  GDP PPP per capita
+f2225  -  health expenditure
+

@@ -1,0 +1,73 @@
+ext {
+    githubProjectName = 'bayesian'
+    versions = [
+            jersey: '1.12',
+            javasimon: '3.3.0',
+            slf4j: '1.7.1'
+    ]
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    apply from: file('gradle/buildscript.gradle'), to: buildscript
+
+    dependencies {
+        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
+    }
+}
+
+apply from: file('gradle/convention.gradle')
+apply from: file('gradle/check.gradle')
+apply from: file('gradle/license.gradle')
+
+subprojects {
+    group = "org.lenition.$githubProjectName"
+}
+
+
+//project(':client') {
+//    apply plugin: 'java'
+//    dependencies {
+//        compile 'org.slf4j:slf4j-api:1.6.3'
+//        compile 'com.sun.jersey:jersey-client:1.11'
+//    }
+//}
+
+project(':server') {
+    apply plugin: 'gae'
+
+    dependencies {
+        gaeSdk 'com.google.appengine:appengine-java-sdk:1.8.2'
+
+        compile "com.sun.jersey:jersey-server:$versions.jersey"
+        compile "com.sun.jersey:jersey-servlet:$versions.jersey"
+        compile "com.sun.jersey:jersey-json:$versions.jersey"
+        compile "com.sun.jersey:jersey-grizzly2:$versions.jersey"
+        compile "com.sun.jersey:jersey-core:$versions.jersey"
+
+        providedCompile 'javax.servlet:servlet-api:2.5'
+    }
+
+    gae {
+        optimizeWar = true     // see https://github.com/musketyr/gradle-fatjar-plugin/
+        downloadSdk = true
+        appcfg {
+            email = 'seth.rylan@gmail.com'
+            passIn = true
+
+            logs {
+                severity = 1
+                outputFile = file('logs.txt')
+            }
+
+            app {
+                id = 'bayesian'
+            }
+        }
+    }
+
+}
+
