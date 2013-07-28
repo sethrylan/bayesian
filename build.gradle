@@ -49,6 +49,10 @@ task factbookCountries(dependsOn: factbookDownload) {
                 style:"$rootDir/xml/factbook-countries.xsl",
                 out:"$rootDir/xml/factbook-countries.xml"
         )
+        ant.xslt(in: "$rootDir/xml/factbook-countries.xml",
+                style:"$rootDir/xml/xml2json.xslt",
+                out:"$rootDir/xml/factbook-countries.json"
+        )
     }
 }
 
