@@ -4,6 +4,7 @@
 	<xsl:output method="xml" indent="yes"/>
 
 	<xsl:template match="/">
+	<countries>
 		<xsl:for-each select="/factbook/region[@id!='wrl' and @id!='ant' and @id!='oc']/country">
 			<country>
 
@@ -16,6 +17,7 @@
 			</country>
 
 		</xsl:for-each>
+		</countries>
 	</xsl:template>
 
 	<xsl:template name="country" >
