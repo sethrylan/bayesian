@@ -19,6 +19,7 @@ buildscript {
     }
 }
 
+apply from: file('gradle/data-prep.gradle')
 apply from: file('gradle/convention.gradle')
 apply from: file('gradle/check.gradle')
 apply from: file('gradle/license.gradle')
@@ -35,26 +36,6 @@ subprojects {
 //        compile 'com.sun.jersey:jersey-client:1.11'
 //    }
 //}
-
-task factbookDownload << {
-    ant.get(src: 'http://jmatchparser.sourceforge.net/factbook/data/factbook.xml.gz', dest: "$rootDir/xml", verbose:true)
-    ant.get(src: 'http://jmatchparser.sourceforge.net/factbook/data/factbook.xsd', dest: "$rootDir/xml", verbose:true)
-    ant.gunzip(src: "$rootDir/xml/factbook.xml.gz", dest: "$rootDir/xml")
-}
-
-task factbookCountries(dependsOn: factbookDownload) {
-    description = 'Applies factbook-countries.xsl and xml2json stylesheet to factbook-countries.xml file.'
-    if (file("$rootDir/xml/factbook.xml").exists()) {
-        ant.xslt(in: "$rootDir/xml/factbook.xml",
-                style:"$rootDir/xml/factbook-countries.xsl",
-                out:"$rootDir/xml/factbook-countries.xml"
-        )
-        ant.xslt(in: "$rootDir/xml/factbook-countries.xml",
-                style:"$rootDir/xml/xml2json.xslt",
-                out:"$rootDir/xml/factbook-countries.json"
-        )
-    }
-}
 
 project(':server') {
     apply plugin: 'gae'

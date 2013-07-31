@@ -1,0 +1,68 @@
+ext.dataDir = "$rootDir/data"
+
+task factbookDownload(type: DownloadFactbookTask) {
+    destinationDir file("$dataDir")
+    url    'http://jmatchparser.sourceforge.net/factbook/data/factbook.xml.gz'
+    xsdUrl 'http://jmatchparser.sourceforge.net/factbook/data/factbook.xsd'
+}
+
+task factbookCountriesXml(type: XsltTask, dependsOn: factbookDownload) {
+    description = 'Applies factbook-countries.xsl.'
+    inputXml "$dataDir/factbook.xml"
+    xslt     "$dataDir/factbook-countries.xsl"
+    output   "$dataDir/factbook-countries.xml"
+}
+
+task factbookCountriesJson(type: XsltTask, dependsOn: factbookCountriesXml) {
+    description = 'Applies xml2json stylesheet.'
+    inputXml "$dataDir/factbook-countries.xml"
+    xslt     "$dataDir/xml2json.xslt"
+    output   "$dataDir/factbook-countries.json"
+}
+
+///////////////////////////////////////////////
+////////////// Groovy Task Class //////////////
+///////////////////////////////////////////////
+class DownloadFactbookTask extends DefaultTask {
+    @Input File destinationDir
+    @Input String url
+    @Input @Optional String xsdUrl
+
+    @TaskAction
+    download() {
+        destinationFile.bytes = new URL(url).bytes
+//        def antBuilder = services.get(IsolatedAntBuilder)
+        ant.gunzip(src: destinationFile, dest: destinationDir)
+    }
+
+    String getDownloadFileName() {
+        url.substring(url.lastIndexOf('/'))
+    }
+
+    @OutputFile
+    File getDestinationFile() {
+        new File(destinationDir, downloadFileName)
+    }
+}
+
+
+class XsltTask extends DefaultTask {
+    @Input String inputXml
+    @Input String xslt
+    @Input String output
+
+    @TaskAction
+    format() {
+        if (new File(inputXml).exists()) {
+            ant.xslt(in: inputXml,
+                style:xslt,
+                out:output
+            )
+        }
+    }
+
+    @OutputFile
+    File getDestinationFile() {
+        new File(output)
+    }
+}
