@@ -33,7 +33,6 @@ class DownloadFactbookTask extends DefaultTask {
     @TaskAction
     download() {
         destinationFile.bytes = new URL(url).bytes
-//        def antBuilder = services.get(IsolatedAntBuilder)
         ant.gunzip(src: destinationFile, dest: destinationDir)
     }
 
