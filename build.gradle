@@ -13,10 +13,6 @@ buildscript {
     }
 
     apply from: file('gradle/buildscript.gradle'), to: buildscript
-
-    dependencies {
-        classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
-    }
 }
 
 apply from: file('gradle/data-prep.gradle')
