@@ -5,6 +5,7 @@
 /build/
 */build/
 *.lock
+*/_site/*
 
 .DS_Store
 .DS_Store?

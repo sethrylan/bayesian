@@ -87,6 +87,10 @@ githubPages {
                 into "docs/${shortName}"
             }
         }
+
+        from(findProject(':client').files('/')) {
+            include '**/*'
+        }
     }
 }
 

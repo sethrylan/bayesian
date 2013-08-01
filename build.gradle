@@ -25,13 +25,13 @@ subprojects {
 }
 
 
-//project(':client') {
+project(':client') {
 //    apply plugin: 'java'
 //    dependencies {
 //        compile 'org.slf4j:slf4j-api:1.6.3'
 //        compile 'com.sun.jersey:jersey-client:1.11'
 //    }
-//}
+}
 
 project(':server') {
     apply plugin: 'gae'
