@@ -13,7 +13,6 @@ task factbookCountriesXml(dependsOn: factbookDownload) << {
     ant.xslt style: "$dataDir/factbook-countries.xsl", out: "$dataDir/factbook-countries.xml", in: "$dataDir/factbook.xml"
 }
 
-
 task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml) {
     inputs.file  "$dataDir/factbook.xml"
     outputs.file "$dataDir/factbook-countries.json"
@@ -58,32 +57,5 @@ class Download extends DefaultTask {
     @OutputFile
     File getDestinationFile() {
         new File(destinationDir, downloadFileName)
-    }
-}
-
-
-class XsltTask extends DefaultTask {
-    @Input String inputXml
-    @Input String xslt
-    @Input String output
-
-    @TaskAction
-    format() {
-        if (new File(inputXml).exists()) {
-            ant.xslt(in: inputXml,
-                    style:xslt,
-                    out:output
-            )
-        }
-    }
-
-    @InputFile
-    File getInputXmlFile() {
-        new File(inputXml)
-    }
-
-    @OutputFile
-    File getDestinationFile() {
-        new File(output)
     }
 }
