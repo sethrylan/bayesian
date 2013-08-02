@@ -3,7 +3,9 @@
 <head>
 <title>An Educated Guess | Calibrate</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<link rel="stylesheet" media="screen" href="stylesheets/bayesian.css"/>
+<link rel="stylesheet" media="screen" href="css/bayesian.css"/>
+<link rel="stylesheet" type="text/css" href="css/iThing.css" />
+
 </head>
 
 <body>
@@ -34,11 +36,13 @@ question 1:
 question 2: 
 </div>
 
+<div class="slider"></div>
 
 </td>
 
 
 <td width="50%" valign="top">
+
 
 
 </td>
@@ -48,6 +52,18 @@ question 2:
 
 </div>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="js/jQAllRangeSliders-min.js"></script>
+<script>
+//<!--
+
+  $(".slider").rangeSlider(
+	  {range: {min: 1}},
+	  {defaultValues:{min: 10, max: 90}}
+  );
+//-->
+</script>
 </body>
 
 </html>
