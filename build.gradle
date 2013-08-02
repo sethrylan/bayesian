@@ -1,5 +1,7 @@
 ext {
     githubProjectName = 'bayesian'
+    dataDir = "$rootDir/data"
+
     versions = [
             jersey: '1.12',
             javasimon: '3.3.0',
@@ -7,11 +9,8 @@ ext {
     ]
 }
 
-buildscript {
-    repositories {
-        mavenCentral()
-    }
 
+buildscript {
     apply from: file('gradle/buildscript.gradle'), to: buildscript
 }
 
@@ -67,4 +66,3 @@ project(':server') {
     }
 
 }
-

@@ -1,31 +1,47 @@
 ext.dataDir = "$rootDir/data"
 
-task factbookDownload(type: DownloadFactbookTask) {
+task factbookDownload(type: Download) {
     destinationDir file("$dataDir")
     url    'http://jmatchparser.sourceforge.net/factbook/data/factbook.xml.gz'
-    xsdUrl 'http://jmatchparser.sourceforge.net/factbook/data/factbook.xsd'
+//   'http://jmatchparser.sourceforge.net/factbook/data/factbook.xsd'
+    doLast {
+        ant.gunzip src: destinationFile, dest: destinationDir
+    }
 }
 
-task factbookCountriesXml(type: XsltTask, dependsOn: factbookDownload) {
-    description 'Applies factbook-countries.xsl.'
-    inputXml "$dataDir/factbook.xml"
-    xslt     "$dataDir/factbook-countries.xsl"
-    output   "$dataDir/factbook-countries.xml"
+task factbookCountriesXml(dependsOn: factbookDownload) << {
+    ant.xslt style: "$dataDir/factbook-countries.xsl", out: "$dataDir/factbook-countries.xml", in: "$dataDir/factbook.xml"
 }
 
-task factbookCountriesJson(type: XsltTask, dependsOn: factbookCountriesXml) {
-    description 'Applies xml2json stylesheet.'
-    inputXml "$dataDir/factbook-countries.xml"
-    xslt     "$dataDir/xml-to-jsonml.xsl"
-    output   "$dataDir/factbook-countries.json"
+
+task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml) {
+    inputs.file  "$dataDir/factbook.xml"
+    outputs.file "$dataDir/factbook-countries.json"
+    workingDir dataDir
+    standardOutput = new ByteArrayOutputStream()
+
+    if (System.properties['os.name'].toLowerCase().contains('windows')) {
+        commandLine 'cmd', '/c', 'java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries.xml xml-to-json.xsl > factbook-countries.json'
+    } else {
+        commandLine 'sh', '-c', 'java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries.xml xml-to-json.xsl > factbook-countries.json'
+    }
+
+    doLast {
+        outputs.files.each {
+            if (it.name.substring(it.name.lastIndexOf(".")) == ".json") {
+                it.setText(groovy.json.JsonOutput.prettyPrint(it.text))
+            }
+        }
+    }
 }
 
 task factbookCountries(dependsOn: factbookCountriesJson)
 
+
 ///////////////////////////////////////////////
 ////////////// Groovy Task Class //////////////
 ///////////////////////////////////////////////
-class DownloadFactbookTask extends DefaultTask {
+class Download extends DefaultTask {
     @Input File destinationDir
     @Input String url
     @Input @Optional String xsdUrl
@@ -33,7 +49,6 @@ class DownloadFactbookTask extends DefaultTask {
     @TaskAction
     download() {
         destinationFile.bytes = new URL(url).bytes
-        ant.gunzip(src: destinationFile, dest: destinationDir)
     }
 
     String getDownloadFileName() {
@@ -59,10 +74,6 @@ class XsltTask extends DefaultTask {
                     style:xslt,
                     out:output
             )
-        }
-
-        if (output.substring(output.lastIndexOf(".")) == ".json") {
-            getDestinationFile().setText(groovy.json.JsonOutput.prettyPrint(getDestinationFile().text))
         }
     }
 
