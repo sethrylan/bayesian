@@ -12,11 +12,12 @@ $("input").keypress(function (e) {
 });
 
 /*
- *  Main quiz function. Parameters progressPixels and answers must be defined.
+ *  Main quiz function. The variable 'answers' must be defined.
  */
 $(function(){
 	var totalQuestions = $('.questionContainer').size();
 	var currentQuestion = 0;
+	var progressPixels = $('#progressContainer').width()/totalQuestions;
 	$questions = $('.questionContainer');
 	$questions.hide();
 	$($questions.get(currentQuestion)).fadeIn();
@@ -68,7 +69,6 @@ $(function(){
 			resultSet += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
 			$('#resultContainer').html(resultSet).show();
 			$('.buttonContainer').hide();
-
 		},
 		checkAnswers: function() {					
 			var resultArr = [];
@@ -76,7 +76,6 @@ $(function(){
 				var userAnswer = this.userAnswers[key];
 				var correctAnswer = answers['q' + userAnswer.n];
 				var result = false;
-				//alert("answer is " + correctAnswer + "; low is " + userAnswer.low + "; high is " + userAnswer.high);
 				if (userAnswer.low <= correctAnswer && correctAnswer <= userAnswer.high) {
 					result = true;
 				}
