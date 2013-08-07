@@ -14,7 +14,7 @@
     cursor: pointer;
 }
 .buttonContainer {
-    width: 96%;
+    width: 45%;
     margin: 10px 0px 10px 2%;
 }
 #progressContainer {
@@ -24,12 +24,8 @@
     margin: 0px 10px;
     padding: 3px;
 }
-.statusBar {
-    margin: 5px 10px;
-    font-weight: bold;
-}
 #progress {
-    background: green;
+    background: #007BA7; /* Cerulean */
     width: 0;
     height: 25px;
 }
