@@ -1,4 +1,6 @@
-
+.answers input {
+	width: 70px;
+}
 .questionContainer {
     width: 600px;
     border: 3px double #CFCFCF;
@@ -59,3 +61,6 @@ input {
 .next, .finish { float: right; }
 .clear { clear: both; }
 .hide { display: none; }
+.disabled {
+  color: grey;
+}

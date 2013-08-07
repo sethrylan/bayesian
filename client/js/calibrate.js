@@ -31,13 +31,15 @@ $(function(){
 			return resultArr;
 		},
 		init: function(){
-			$('.next').click(function(){			
-				if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0) {
-					// if all inputs are not provided, do not proceed
+			$('.next').click(function(){		
+				if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0 || $(this).hasClass('disabled')) {
+					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
-				$(this).parents('.questionContainer').fadeOut(500, function(){
+				$(this).addClass('disabled')			
+				$(this).parents('.questionContainer').fadeOut(500, function() {
 					$(this).next().fadeIn(500);
+					$(this).removeClass('disabled')
 				});
 				var el = $('#progress');
 				el.width(el.width() + progressPixels + 'px');
