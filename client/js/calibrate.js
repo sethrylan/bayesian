@@ -4,7 +4,7 @@
  */
 $("input").keypress(function (e) {
 	if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-		$('.btnContainer > .next > a:visible').click();
+		$('.buttonContainer > a:visible').click();
 		return false;
 	} else {
 		return true;
@@ -31,7 +31,7 @@ $(function(){
 			return resultArr;
 		},
 		init: function(){
-			$('.btnNext').click(function(){			
+			$('.next').click(function(){			
 				if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0) {
 					// if all inputs are not provided, do not proceed
 					return false;
@@ -42,12 +42,7 @@ $(function(){
 				var el = $('#progress');
 				el.width(el.width() + progressPixels + 'px');
 			});
-			$('.btnShowResult').click(function(){
-				if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0) {
-					// if all inputs are not provided, do not proceed
-					return false;
-				}
-				
+			$('.finish').click(function(){				
 				jQuiz.userAnswers = [];						
 				
 				var lows = $('input[name$="low"]').map(function() { return $(this).val() }).get();
@@ -67,8 +62,8 @@ $(function(){
 					jQuiz.userAnswers.push(userAnswer);
 				}						
 				
-				$('#progress').width(300);
-				$('#progressKeeper').hide();
+				//$('#progress').width(300);
+				//$('#progressContainer').hide();
 				var results = jQuiz.checkAnswers();
 				var resultSet = '';
 				var trueCount = 0;
@@ -77,7 +72,7 @@ $(function(){
 					resultSet += '<div> Question ' + (i + 1) + ' is ' + results[i] + '</div>'
 				}
 				resultSet += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/numQuestions), 10) + ' / 100</div>'
-				$('#resultKeeper').html(resultSet).show();
+				$('#resultContainer').html(resultSet).show();
 			})
 		}
 	};

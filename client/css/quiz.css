@@ -5,7 +5,7 @@
     padding: 3px;
     margin: 10px;
 }
-.btnContainer a {
+.buttonContainer a {
     border: 1px solid #000;
     padding: 2px 5px;
     font-weight: bold;
@@ -13,20 +13,18 @@
     background: #FFF;
     cursor: pointer;
 }
-
-.btnContainer {
+.buttonContainer {
     width: 96%;
     margin: 10px 0px 10px 2%;
 }
-
-#progressKeeper {
+#progressContainer {
     width: 600px;
     height: 25px;
     border: 3px double #CFCFCF;
     margin: 0px 10px;
     padding: 3px;
 }
-.txtStatusBar {
+.statusBar {
     margin: 5px 10px;
     font-weight: bold;
 }
@@ -41,13 +39,13 @@
     -webkit-border-radius: 6px;
     -o-border-radius: 6px;
 }
-#resultKeeper {
+#resultContainer {
     width: 600px;
     margin: 10px;
     padding: 3px;
     border: 3px double #CFCFCF;
 }
-#resultKeeper div {
+#resultContainer div {
     line-height: 20px;
 }
 .totalScore {
@@ -58,6 +56,6 @@ input {
     top: 2px;
 }
 .prev { float: left; }
-.next, .btnShowResult { float: right; }
+.next, .finish { float: right; }
 .clear { clear: both; }
 .hide { display: none; }
