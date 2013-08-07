@@ -3,8 +3,9 @@
 	<head>
 		<title>An Educated Guess | Calibrate</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-		<link rel="stylesheet" media="screen" href="css/bayesian.css"/>
-		<link rel="stylesheet" media="screen" href="css/quiz.css"/>
+		<link rel="stylesheet" href="css/bayesian.css"/>
+		<link rel="stylesheet" href="css/quiz.css"/>
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
 	</head>
 	<body>
 		<div id="info">
@@ -21,19 +22,19 @@
 			</h1>
 
 			<div class="questionContainer radius">
-			
-				<div class="question"><b>Question 1:</b> Area of Algeria (km2)?</div>
+				<div class="question"><b>Question 1:</b> Area of Algeria (km<sup>2</sup>)?</div>
 				<div class="answers">
-					Low/High: <input type="text" name="q1-low">/<input type="text" name="q1-high"><br>
-					Confidence: <input type="text" name="q1-confidence">
+					Low/High: <input type="text" name="q2-low">/<input type="text" name="q2-high"><br>
+					Confidence: <input type="text" name="q2-confidence">
 				</div>
 				<div class="buttonContainer">
 					<a class="next">Next &gt;&gt;</a>
 					<div class="clear"></div>
 				</div>
 			</div>
+			
 			<div class="questionContainer hide radius">
-				<div class="question"><b>Question 2:</b> Area of Germany (km2)?</div>
+				<div class="question"><b>Question 2:</b> Area of Germany (km<sup>2</sup>)?</div>
 				<div class="answers">
 					Low/High: <input type="text" name="q2-low">/<input type="text" name="q2-high"><br>
 					Confidence: <input type="text" name="q2-confidence">
@@ -45,7 +46,7 @@
 			</div>
 			
 			<div class="questionContainer radius hide">
-				<div class="question"><b>Question 3:</b> Area of Malaysia (km2)?</div>
+				<div class="question"><b>Question 3:</b> Area of Malaysia (km<sup>2</sup>)?</div>
 				<div class="answers">
 					Low/High: <input type="text" name="q3-low">/<input type="text" name="q3-high"><br>
 					Confidence: <input type="text" name="q3-confidence">
@@ -61,18 +62,15 @@
 				<div id="progress"></div>
 			</div>
 			<div id="resultContainer" class="radius hide"></div>
-
 		</div>
-
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script src="js/calibrate.js"></script>
-		<script src="js/utils.js"></script>
 		<script>
 		//<!--
+
 		var numQuestions = 3;
 		var progressPixels = 600/numQuestions;
 		var answers = { q1: 2381741, q2: 357022, q3: 329847 };
+		
+
 
 		/*
 		$(".area-slider").rangeSlider(
@@ -88,5 +86,12 @@
 		*/
 		//-->
 		</script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<!--script src="js/json2html.js"></script>
+		<script src="js/jquery.json2html.js"></script-->
+		<script src="js/calibrate.js"></script>
+		<script src="js/utils.js"></script>
 	</body>
 </html>

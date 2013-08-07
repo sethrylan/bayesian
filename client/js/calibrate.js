@@ -15,6 +15,19 @@ $("input").keypress(function (e) {
  *  Main quiz function. Parameters numQuestions, progressPixels and answers must be defined.
  */
 $(function(){
+	/*
+	$( "#area-slider" ).slider({
+		range: true,
+		min: 0,
+		max: 7000000,
+		values: [ 2000000, 5000000 ],
+		slide: function( event, ui ) {
+			var values = ui.values;
+			$("span").text(values[0] + " - " + values[1] );
+		}
+	});
+	*/
+
 	var jQuiz = {
 		checkAnswers: function() {					
 			var resultArr = [];
@@ -36,7 +49,7 @@ $(function(){
 					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
-				$(this).addClass('disabled')			
+				$(this).addClass('disabled');		
 				$(this).parents('.questionContainer').fadeOut(500, function() {
 					$(this).next().fadeIn(500);
 					$(this).removeClass('disabled')
@@ -44,7 +57,7 @@ $(function(){
 				var el = $('#progress');
 				el.width(el.width() + progressPixels + 'px');
 			});
-			$('.finish').click(function(){				
+			$('.finish').click(function(){					
 				jQuiz.userAnswers = [];						
 				
 				var lows = $('input[name$="low"]').map(function() { return $(this).val() }).get();
