@@ -1,69 +1,224 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-<head>
-<title>An Educated Guess | Calibrate</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-<link rel="stylesheet" media="screen" href="css/bayesian.css"/>
-<link rel="stylesheet" type="text/css" href="css/iThing.css" />
+	<head>
+		<title>An Educated Guess | Calibrate</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+		<link rel="stylesheet" media="screen" href="css/bayesian.css"/>
+		<link rel="stylesheet" media="screen" href="css/quiz.css"/>
+		<link rel="stylesheet" type="text/css" href="css/iThing.css" />
+	</head>
+	<body>
+		<div id="info">
+			<h1 id="name">an educated guess</h1>
+			<p>
+				A tool for calibrated probability estimation
+			</p>
+		</div>
 
-</head>
+		<div id="main">
+			<h1>
+				<a class="nav" href="index.html">about</a> &#160;&#160;&#160;
+				calibrate &#160;&#160;&#160;
+			</h1>
 
-<body>
+			<div class="questionContainer radius">
+			
+				<div class="question"><b>Question 1:</b> Area of Algeria (km2)?</div>
+				<div class="answers">
+					<div class="area-slider" name="q1-range"></div>
+					Confidence: <input class="confidence" type="text" name="q1-confidence">
 
-<div id="info">
-<h1 id="name">an educated guess</h1>
-<p>
-A tool for calibrated probability estimation
-</p>
-</div>
+					<!--ul>
+						<li>
+							<label><input type="radio" name="q1" id="q1-a" />&lt;js&gt;</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q1" id="q1-b" />&lt;script&gt;</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q1" id="q1-c" />&lt;scripting&gt;</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q1" id="q1-d" />&lt;javascript&gt;</label>
+						</li>
+					</ul-->
+				</div>
+				<div class="btnContainer">
+					<div class="prev"></div>
+					<div class="next">
+						<a class="btnNext">Next &gt;&gt;</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			<div class="questionContainer hide radius">
+				<div class="question"><b>Question 2:</b> What is the correct JavaScript syntax to write "Hello World"?</div>
+				<div class="answers">
+					<ul>
+						<li>
+							<label><input type="radio" name="q2" id="q2-a" />response.write("Hello World")</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q2" id="q2-b" />("Hello World")</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q2" id="q2-c" />"Hello World"</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q2" id="q2-d" />document.write("Hello World")</label>
+						</li>
+					</ul>
+				</div>
+				<div class="btnContainer">
+					<div class="prev">
+						<a class="btnPrev">&lt;&lt; Prev</a>
+					</div>
+					<div class="next">
+						<a class="btnNext">Next &gt;&gt;</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			<div class="questionContainer radius hide">
+				<div class="question"><b>Question 3:</b> The external JavaScript file must contain the &lt;script&gt; tag?</div>
+				<div class="answers">
+					<ul>
+						<li>
+							<label><input type="radio" name="q5" id="q5-a" />True</label>
+						</li>
+						<li>
+							<label><input type="radio" name="q5" id="q5-b" />False</label>
+						</li>
+					</ul>
+				</div>
+				<div class="btnContainer">
+					<div class="prev">
+						<a class="btnPrev">&lt;&lt; Prev</a>
+					</div>
+					<div class="next">
+						<a class="btnShowResult">Finish!</a>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+			
+			
+			<div class="txtStatusBar">Status Bar</div>
+			<div id="progressKeeper" class="radius">
+				<div id="progress"></div>
+			</div>
+			<div id="resultKeeper" class="radius hide"></div>
 
-<div id="main">
+			<!--div class="question">
+				<td width="50%" valign="top">
+					<p>
+					Area of Algeria (km2):
+					</p>
+				</td>
+				<td width="50%" valign="top">
+					<div class="area-slider" name="question1-range"></div>
+					<form class="confidence">
+						<select name="confidence"  name="question1-confidence" >
+							<option value="10">10</option>
+							<option value="20">20</option>
+							<option value="30">30</option>
+							<option value="40">40</option>
+							<option value="50" selected>50</option>
+							<option value="60">60</option>
+							<option value="70">70</option>
+							<option value="80">80</option>
+							<option value="90">90</option>
+							<option value="100">100</option>
+						</select>
+					</form>
+				</td>
 
-<h1>
-<a class="nav" href="index.html">about</a> &nbsp;&nbsp;&nbsp;
-calibrate &nbsp;&nbsp;&nbsp;
-</h1>
+			</div-->
 
-<table width="100%" cellpadding="0" cellspacing="0">
-<tr>
-<td width="50%" valign="top">
+		</div>
 
-<div class="question">
-question 1: 
-</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script src="js/jQAllRangeSliders-min.js"></script>
+		<script>
+		//<!--
 
-<div class="question">
-question 2: 
-</div>
+		$(function(){
+			var jQuiz = {
+				answers: { q1: 'd', q2: 'd', q3: 'a', q4: 'c', q5: 'a' },
+				questionLenght: 5,
+				checkAnswers: function() {
+					var arr = this.answers;
+					var ans = this.userAnswers;
+					var resultArr = []
+					for (var p in ans) {
+						var x = parseInt(p) + 1;
+						var key = 'q' + x;
+						var flag = false;
+						if (ans[p] == 'q' + x + '-' + arr[key]) {
+							flag = true;
+						}
+						else {
+							flag = false;
+						}
+						resultArr.push(flag);
+					}
+					return resultArr;
+				},
+				init: function(){
+					$('.btnNext').click(function(){
+						if ($('input[type=text]').val() == '') {
+							return false;
+						}
+						$(this).parents('.questionContainer').fadeOut(500, function(){
+							$(this).next().fadeIn(500);
+						});
+						var el = $('#progress');
+						el.width(el.width() + 120 + 'px');
+					});
+					$('.btnPrev').click(function(){
+						$(this).parents('.questionContainer').fadeOut(500, function(){
+							$(this).prev().fadeIn(500)
+						});
+						var el = $('#progress');
+						el.width(el.width() - 120 + 'px');
+					})
+					$('.btnShowResult').click(function(){
+						var arr = $('input[type=radio]:checked');
+						var ans = jQuiz.userAnswers = [];
+						for (var i = 0, ii = arr.length; i < ii; i++) {
+							ans.push(arr[i].getAttribute('id'))
+						}
+					})
+					$('.btnShowResult').click(function(){
+						$('#progress').width(300);
+						$('#progressKeeper').hide();
+						var results = jQuiz.checkAnswers();
+						var resultSet = '';
+						var trueCount = 0;
+						for (var i = 0, ii = results.length; i < ii; i++){
+							if (results[i] == true) trueCount++;
+							resultSet += '<div> Question ' + (i + 1) + ' is ' + results[i] + '</div>'
+						}
+						resultSet += '<div class="totalScore">Your total score is ' + trueCount * 20 + ' / 100</div>'
+						$('#resultKeeper').html(resultSet).show();
+					})
+				}
+			};
+			jQuiz.init();
+		})
 
-<div class="slider"></div>
-
-</td>
-
-
-<td width="50%" valign="top">
-
-
-
-</td>
-
-</tr>
-</table>
-
-</div>
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-<script src="js/jQAllRangeSliders-min.js"></script>
-<script>
-//<!--
-
-  $(".slider").rangeSlider(
-	  {range: {min: 1}},
-	  {defaultValues:{min: 10, max: 90}}
-  );
-//-->
-</script>
-</body>
-
+		$(".area-slider").rangeSlider(
+			{bounds: {min: 0, max: 7000000}},
+			{range: {min: 1}},
+			{defaultValues:{min: 0, max: 7000000}},
+			{step: 1},
+			{formatter: function(val) {
+				return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+			}}
+		);
+		//-->
+		</script>
+	</body>
 </html>
