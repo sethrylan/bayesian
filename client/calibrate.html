@@ -5,7 +5,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
 		<link rel="stylesheet" media="screen" href="css/bayesian.css"/>
 		<link rel="stylesheet" media="screen" href="css/quiz.css"/>
-		<link rel="stylesheet" type="text/css" href="css/iThing.css" />
 	</head>
 	<body>
 		<div id="info">
@@ -25,23 +24,8 @@
 			
 				<div class="question"><b>Question 1:</b> Area of Algeria (km2)?</div>
 				<div class="answers">
-					<div class="area-slider" name="q1-range"></div>
-					Confidence: <input class="confidence" type="text" name="q1-confidence">
-
-					<!--ul>
-						<li>
-							<label><input type="radio" name="q1" id="q1-a" />&lt;js&gt;</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q1" id="q1-b" />&lt;script&gt;</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q1" id="q1-c" />&lt;scripting&gt;</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q1" id="q1-d" />&lt;javascript&gt;</label>
-						</li>
-					</ul-->
+					Low/High: <input type="text" name="q1-low">/<input type="text" name="q1-high"><br>
+					Confidence: <input type="text" name="q1-confidence">
 				</div>
 				<div class="btnContainer">
 					<div class="prev"></div>
@@ -52,27 +36,12 @@
 				</div>
 			</div>
 			<div class="questionContainer hide radius">
-				<div class="question"><b>Question 2:</b> What is the correct JavaScript syntax to write "Hello World"?</div>
+				<div class="question"><b>Question 2:</b> Area of Germany (km2)?</div>
 				<div class="answers">
-					<ul>
-						<li>
-							<label><input type="radio" name="q2" id="q2-a" />response.write("Hello World")</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q2" id="q2-b" />("Hello World")</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q2" id="q2-c" />"Hello World"</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q2" id="q2-d" />document.write("Hello World")</label>
-						</li>
-					</ul>
+					Low/High: <input type="text" name="q2-low">/<input type="text" name="q2-high"><br>
+					Confidence: <input type="text" name="q2-confidence">
 				</div>
 				<div class="btnContainer">
-					<div class="prev">
-						<a class="btnPrev">&lt;&lt; Prev</a>
-					</div>
 					<div class="next">
 						<a class="btnNext">Next &gt;&gt;</a>
 					</div>
@@ -81,21 +50,12 @@
 			</div>
 			
 			<div class="questionContainer radius hide">
-				<div class="question"><b>Question 3:</b> The external JavaScript file must contain the &lt;script&gt; tag?</div>
+				<div class="question"><b>Question 3:</b> Area of Malaysia (km2)?</div>
 				<div class="answers">
-					<ul>
-						<li>
-							<label><input type="radio" name="q5" id="q5-a" />True</label>
-						</li>
-						<li>
-							<label><input type="radio" name="q5" id="q5-b" />False</label>
-						</li>
-					</ul>
+					Low/High: <input type="text" name="q3-low">/<input type="text" name="q3-high"><br>
+					Confidence: <input type="text" name="q3-confidence">
 				</div>
 				<div class="btnContainer">
-					<div class="prev">
-						<a class="btnPrev">&lt;&lt; Prev</a>
-					</div>
 					<div class="next">
 						<a class="btnShowResult">Finish!</a>
 					</div>
@@ -110,88 +70,103 @@
 			</div>
 			<div id="resultKeeper" class="radius hide"></div>
 
-			<!--div class="question">
-				<td width="50%" valign="top">
-					<p>
-					Area of Algeria (km2):
-					</p>
-				</td>
-				<td width="50%" valign="top">
-					<div class="area-slider" name="question1-range"></div>
-					<form class="confidence">
-						<select name="confidence"  name="question1-confidence" >
-							<option value="10">10</option>
-							<option value="20">20</option>
-							<option value="30">30</option>
-							<option value="40">40</option>
-							<option value="50" selected>50</option>
-							<option value="60">60</option>
-							<option value="70">70</option>
-							<option value="80">80</option>
-							<option value="90">90</option>
-							<option value="100">100</option>
-						</select>
-					</form>
-				</td>
-
-			</div-->
-
 		</div>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script src="js/jQAllRangeSliders-min.js"></script>
 		<script>
 		//<!--
+		function assert(condition, message) {
+			if (!condition) {
+				throw message || "Assertion failed";
+			}
+		}
+
+		JSON.stringify = JSON.stringify || function (obj) {
+			var t = typeof (obj);
+			if (t != "object" || obj === null) {
+				// simple data type
+				if (t == "string") obj = '"'+obj+'"';
+				return String(obj);
+			}
+			else {
+				// recurse array or object
+				var n, v, json = [], arr = (obj && obj.constructor == Array);
+				for (n in obj) {
+					v = obj[n]; t = typeof(v);
+					if (t == "string") v = '"'+v+'"';
+					else if (t == "object" && v !== null) v = JSON.stringify(v);
+					json.push((arr ? "" : '"' + n + '":') + String(v));
+				}
+				return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+			}
+		};
+		
+		$("input").keypress(function (e) {
+			if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+				$('.btnContainer > .next > a:visible').click();
+				return false;
+			} else {
+				return true;
+			}
+		});
 
 		$(function(){
+			var numQuestions = 3;
+			var progressPixels = 600/numQuestions;
+			var answers = { q1: 2381741, q2: 357022, q3: 329847 };
 			var jQuiz = {
-				answers: { q1: 'd', q2: 'd', q3: 'a', q4: 'c', q5: 'a' },
-				questionLenght: 5,
-				checkAnswers: function() {
-					var arr = this.answers;
-					var ans = this.userAnswers;
-					var resultArr = []
-					for (var p in ans) {
-						var x = parseInt(p) + 1;
-						var key = 'q' + x;
-						var flag = false;
-						if (ans[p] == 'q' + x + '-' + arr[key]) {
-							flag = true;
+				checkAnswers: function() {					
+					var resultArr = [];
+					for (var key in this.userAnswers) {		
+						var userAnswer = this.userAnswers[key];
+						var correctAnswer = answers['q' + userAnswer.n];
+						var result = false;
+						//alert("answer is " + correctAnswer + "; low is " + userAnswer.low + "; high is " + userAnswer.high);
+						if (userAnswer.low <= correctAnswer && correctAnswer <= userAnswer.high) {
+							result = true;
 						}
-						else {
-							flag = false;
-						}
-						resultArr.push(flag);
+						resultArr.push(result);
 					}
 					return resultArr;
 				},
 				init: function(){
-					$('.btnNext').click(function(){
-						if ($('input[type=text]').val() == '') {
+					$('.btnNext').click(function(){			
+						if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0) {
+							// if all inputs are not provided, do not proceed
 							return false;
 						}
 						$(this).parents('.questionContainer').fadeOut(500, function(){
 							$(this).next().fadeIn(500);
 						});
 						var el = $('#progress');
-						el.width(el.width() + 120 + 'px');
+						el.width(el.width() + progressPixels + 'px');
 					});
-					$('.btnPrev').click(function(){
-						$(this).parents('.questionContainer').fadeOut(500, function(){
-							$(this).prev().fadeIn(500)
-						});
-						var el = $('#progress');
-						el.width(el.width() - 120 + 'px');
-					})
 					$('.btnShowResult').click(function(){
-						var arr = $('input[type=radio]:checked');
-						var ans = jQuiz.userAnswers = [];
-						for (var i = 0, ii = arr.length; i < ii; i++) {
-							ans.push(arr[i].getAttribute('id'))
+						if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0) {
+							// if all inputs are not provided, do not proceed
+							return false;
 						}
-					})
-					$('.btnShowResult').click(function(){
+						
+						jQuiz.userAnswers = [];						
+						
+						var lows = $('input[name$="low"]').map(function() { return $(this).val() }).get();
+						var highs = $('input[name$="high"]').map(function() { return $(this).val() }).get();
+						var confidences = $('input[name$="confidence"]').map(function() { return $(this).val() }).get();
+						
+						assert((highs.length === lows.length) && (lows.length === confidences.length), "Answer sizes must match.");
+						
+						for (var i = 0; i < highs.length; i++) {
+						    var userAnswer = { 
+								n: i + 1,
+								low: lows[i],
+								high: highs[i],
+								confidence: confidences[i]
+							};
+
+							jQuiz.userAnswers.push(userAnswer);
+						}						
+						
 						$('#progress').width(300);
 						$('#progressKeeper').hide();
 						var results = jQuiz.checkAnswers();
@@ -201,7 +176,7 @@
 							if (results[i] == true) trueCount++;
 							resultSet += '<div> Question ' + (i + 1) + ' is ' + results[i] + '</div>'
 						}
-						resultSet += '<div class="totalScore">Your total score is ' + trueCount * 20 + ' / 100</div>'
+						resultSet += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/numQuestions), 10) + ' / 100</div>'
 						$('#resultKeeper').html(resultSet).show();
 					})
 				}
@@ -209,7 +184,9 @@
 			jQuiz.init();
 		})
 
+		/*
 		$(".area-slider").rangeSlider(
+			{arrows:false},
 			{bounds: {min: 0, max: 7000000}},
 			{range: {min: 1}},
 			{defaultValues:{min: 0, max: 7000000}},
@@ -218,6 +195,7 @@
 				return val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 			}}
 		);
+		*/
 		//-->
 		</script>
 	</body>
