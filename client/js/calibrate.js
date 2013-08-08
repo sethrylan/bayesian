@@ -15,19 +15,11 @@ function formatNumber(number) {
 	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-function areaSliderUpdate( event, ui ) {
-	if( ui ) {
-		$('.area-slider').prev('div').html(formatNumber(ui.values[0]) + "km<sup>2</sup> - " + formatNumber(ui.values[1]) + "km<sup>2</sup>");
-	} else {
-		$('.area-slider').prev('div').html(formatNumber($( '.area-slider:visible' ).slider( 'values', 0 )) + "km<sup>2</sup> - "  + $( '.area-slider:visible' ).slider( 'values', 1 ) + "km<sup>2</sup>");
-	}
-}
-
 function confidenceSliderUpdate(event, ui) {
 	if( ui ) {
-		$('.confidence-slider').prev('div').html(ui.value + "%");
+		$('.confidence-slider').prev('div').html("Confidence: " + ui.value + "%");
 	} else {
-		$('.confidence-slider').prev('div').html($( '.confidence-slider:visible' ).slider('value') + "%");
+		$('.confidence-slider').prev('div').html("Confidence: " + $( '.confidence-slider:visible' ).slider('value') + "%");
 	}
 }
 
@@ -36,23 +28,23 @@ function confidenceSliderUpdate(event, ui) {
  */
 $(function(){
 
-	$( document ).tooltip();
+	$( document ).tooltip({
+		content: function() {
+			return $(this).attr('title');
+		}
+	});
 
-	$( ".area-slider" ).slider({
-		range : true,
-		min : 0,
-		max : 7000000,
-		values : [ 2000000, 5000000 ],
-		step : 100,
-		slide : areaSliderUpdate
+	$( ".boolean > a" )
+		.button()
+		.click(function( event ) {
+			event.preventDefault();
+			$(this).addClass('selected');
+			$(this).siblings('.selected').removeClass('selected');
+			$(this).siblings('input[type=text]').val($(this).text());
 	});
-	$('.area-slider').slider().bind({
-		update : areaSliderUpdate
-	});
-	$('.area-slider').trigger('update');
 	
 	$( ".confidence-slider" ).slider({
-		min : 0,
+		min : 50,
 		max : 100,
 		value : 50,
 		step : 10,
@@ -73,35 +65,31 @@ $(function(){
 	
 	var jQuiz = {
 		finish: function() {
-			jQuiz.userAnswers = [];						
+			jQuiz.responses = [];						
 			
-			var facts = $('div.fact').map(function() { return parseInt($(this).text()) }).get();
-			var lows = $('.range-slider').map(function() { return $(this).slider( 'values', 0 ) }).get();
-			var highs = $('.range-slider').map(function() { return $(this).slider( 'values', 1 ) }).get();
+			var facts = $('div.fact').map(function() { return ($(this).text() == "true" ? true : false) }).get();
+			var booleanResponses = $('.boolean > input[type=text]').map(function() { return ($(this).text() == "true" ? true : false) }).get();
 			var confidences = $('.confidence-slider').map(function() { return $(this).slider( 'value' ) }).get();
+
+			assert((facts.length === booleanResponses.length) && (booleanResponses.length === confidences.length), "Answer sizes must match.");
 			
-			assert((highs.length === lows.length) && (lows.length === confidences.length), "Answer sizes must match.");
-			
-			for (var i = 0; i < highs.length; i++) {
-				var userAnswer = { 
-					low: lows[i],
-					high: highs[i],
+			for (var i = 0; i < facts.length; i++) {
+				var response = {
+					response: booleanResponses[i],
 					confidence: confidences[i],
 					fact: facts[i]
 				};
 
-				jQuiz.userAnswers.push(userAnswer);
+				jQuiz.responses.push(response);
 			}				
-			//alert(JSON.stringify(jQuiz.userAnswers));
+			//alert(JSON.stringify(jQuiz.responses));
 			
-			//$('#progress').width(300);
-			//$('#progressContainer').hide();
 			var results = jQuiz.checkAnswers();
 			var resultSet = '';
 			var trueCount = 0;
 			for (var i = 0, ii = results.length; i < ii; i++){
 				if (results[i] == true) trueCount++;
-				resultSet += '<div> Question ' + (i + 1) + ' is ' + results[i] + '</div>'
+				resultSet += '<div> Question ' + (i + 1) + ' is ' + (results[i] ? "correct" : "incorrect") + '</div>'
 			}
 			resultSet += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
 			$('#resultContainer').html(resultSet).show();
@@ -109,20 +97,27 @@ $(function(){
 		},
 		checkAnswers: function() {					
 			var resultArr = [];
-			for (var key in this.userAnswers) {		
-				var userAnswer = this.userAnswers[key];
+			for (var key in this.responses) {		
+				var response = this.responses[key];
 				var result = false;
-				//alert(userAnswer.low + " <= " + userAnswer.fact + " : " + (userAnswer.low <= userAnswer.fact));
-				if (userAnswer.low <= userAnswer.fact && userAnswer.fact <= userAnswer.high) {
+				if (response.fact == response.response) {
 					result = true;
 				}
+				/* for range responses:
+				alert(response.low + " <= " + response.fact + " : " + (response.low <= response.fact));
+				if (response.low <= response.fact && response.fact <= response.high) {
+					result = true;
+				}
+				*/
 				resultArr.push(result);
 			}
 			return resultArr;
 		},
 		init: function(){
 			$('.next').click(function(){		
-				if ($('.answers > input:visible').filter(function() { return !this.value;}).length > 0 || $(this).hasClass('disabled')) {
+				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
+					||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
+					|| $(this).hasClass('disabled')) {
 					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
@@ -133,7 +128,6 @@ $(function(){
 						jQuiz.finish();
 					} else {
 						$($questions.get(currentQuestion)).fadeIn(500);
-						$('.area-slider').trigger('update');
 						$('.confidence-slider').trigger('update');
 						$('.next').removeClass('disabled')
 						if( currentQuestion == totalQuestions-1 ) {
