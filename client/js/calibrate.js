@@ -12,7 +12,7 @@ $("input").keypress(function (e) {
 });
 
 /*
- *  Main quiz function. The variable 'answers' must be defined.
+ *  Main quiz function.
  */
 $(function(){
 	var totalQuestions = $('.questionContainer').size();
@@ -40,9 +40,10 @@ $(function(){
 		finish: function() {
 			jQuiz.userAnswers = [];						
 			
-			var lows = $('input[name$="low"]').map(function() { return $(this).val() }).get();
-			var highs = $('input[name$="high"]').map(function() { return $(this).val() }).get();
-			var confidences = $('input[name$="confidence"]').map(function() { return $(this).val() }).get();
+			var facts = $('div.fact').map(function() { return $(this).text() }).get();
+			var lows = $('input[name="low"]').map(function() { return $(this).val() }).get();
+			var highs = $('input[name="high"]').map(function() { return $(this).val() }).get();
+			var confidences = $('input[name="confidence"]').map(function() { return $(this).val() }).get();
 			
 			assert((highs.length === lows.length) && (lows.length === confidences.length), "Answer sizes must match.");
 			
@@ -51,11 +52,13 @@ $(function(){
 					n: i + 1,
 					low: lows[i],
 					high: highs[i],
-					confidence: confidences[i]
+					confidence: confidences[i],
+					fact: facts[i]
 				};
 
 				jQuiz.userAnswers.push(userAnswer);
-			}						
+			}				
+			alert(JSON.stringify(jQuiz.userAnswers));
 			
 			//$('#progress').width(300);
 			//$('#progressContainer').hide();
@@ -74,9 +77,8 @@ $(function(){
 			var resultArr = [];
 			for (var key in this.userAnswers) {		
 				var userAnswer = this.userAnswers[key];
-				var correctAnswer = answers['q' + userAnswer.n];
 				var result = false;
-				if (userAnswer.low <= correctAnswer && correctAnswer <= userAnswer.high) {
+				if (userAnswer.low <= userAnswer.fact && userAnswer.fact <= userAnswer.high) {
 					result = true;
 				}
 				resultArr.push(result);
