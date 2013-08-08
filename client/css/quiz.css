@@ -7,6 +7,9 @@
     padding: 3px;
     margin: 10px;
 }
+.questionContainer a {
+	float:right;
+}
 .buttonContainer a {
     border: 1px solid #000;
     padding: 2px 5px;
