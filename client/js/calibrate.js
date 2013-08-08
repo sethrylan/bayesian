@@ -11,10 +11,39 @@ $("input").keypress(function (e) {
 	}
 });
 
+function formatNumber(number) {
+	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function areaSliderUpdate( event, ui ) {
+	//$('span').html(formatNumber(ui.values[0]) + "km<sup>2</sup> - " + formatNumber(ui.values[1]) + "km<sup>2</sup>");
+	//$('input[name="low"]:visible').val(ui.values[0]);
+	//$('input[name="high"]:visible').val(ui.values[1]);
+
+    $('span').html( formatNumber($( '.area-slider:visible' ).slider( 'values', 0 )) + "km<sup>2</sup> - "  + $( '.area-slider:visible' ).slider( 'values', 1 ) + "km<sup>2</sup>");
+	//$('input[name="low"]:visible').val($( ".area-slider:visible" ).slider( "values", 0 ));
+	//$('input[name="high"]:visible').val($( ".area-slider:visible" ).slider( "values", 1 ));
+}
+
 /*
  *  Main quiz function.
  */
 $(function(){
+
+	$( ".area-slider" ).slider({
+		range : true,
+		min : 0,
+		max : 7000000,
+		values : [ 2000000, 5000000 ],
+		step : 100,
+		slide : areaSliderUpdate
+	});
+	
+	$('.area-slider').slider().bind({
+		update : areaSliderUpdate
+	});
+	$('.area-slider').trigger('update');
+	
 	var totalQuestions = $('.questionContainer').size();
 	var currentQuestion = 0;
 	var progressPixels = $('#progressContainer').width()/totalQuestions;
@@ -22,34 +51,19 @@ $(function(){
 	$questions.hide();
 	$($questions.get(currentQuestion)).fadeIn();
 	
-
-	/*
-	$( "#area-slider" ).slider({
-		range: true,
-		min: 0,
-		max: 7000000,
-		values: [ 2000000, 5000000 ],
-		slide: function( event, ui ) {
-			var values = ui.values;
-			$("span").text(values[0] + " - " + values[1] );
-		}
-	});
-	*/
-
 	var jQuiz = {
 		finish: function() {
 			jQuiz.userAnswers = [];						
 			
 			var facts = $('div.fact').map(function() { return parseInt($(this).text()) }).get();
-			var lows = $('input[name="low"]').map(function() { return $(this).val() }).get();
-			var highs = $('input[name="high"]').map(function() { return $(this).val() }).get();
+			var lows = $('.range-slider').map(function() { return $(this).slider( 'values', 0 ) }).get();
+			var highs = $('.range-slider').map(function() { return $(this).slider( 'values', 1 ) }).get();
 			var confidences = $('input[name="confidence"]').map(function() { return $(this).val() }).get();
 			
 			assert((highs.length === lows.length) && (lows.length === confidences.length), "Answer sizes must match.");
 			
 			for (var i = 0; i < highs.length; i++) {
 				var userAnswer = { 
-					n: i + 1,
 					low: lows[i],
 					high: highs[i],
 					confidence: confidences[i],
@@ -78,6 +92,7 @@ $(function(){
 			for (var key in this.userAnswers) {		
 				var userAnswer = this.userAnswers[key];
 				var result = false;
+				//alert(userAnswer.low + " <= " + userAnswer.fact + " : " + (userAnswer.low <= userAnswer.fact));
 				if (userAnswer.low <= userAnswer.fact && userAnswer.fact <= userAnswer.high) {
 					result = true;
 				}
@@ -91,13 +106,14 @@ $(function(){
 					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
-				$(this).addClass('disabled');		
+				$(this).addClass('disabled');
 				$($questions.get(currentQuestion)).fadeOut(500, function() {
 					currentQuestion = currentQuestion + 1;
 					if( currentQuestion == totalQuestions ){
 						jQuiz.finish();
 					} else {
 						$($questions.get(currentQuestion)).fadeIn(500);
+						$('.area-slider').trigger('update');
 						$('.next').removeClass('disabled')
 						if( currentQuestion == totalQuestions-1 ) {
 							$('.next').text('| Finish |');
