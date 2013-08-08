@@ -36,6 +36,8 @@ function confidenceSliderUpdate(event, ui) {
  */
 $(function(){
 
+	$( document ).tooltip();
+
 	$( ".area-slider" ).slider({
 		range : true,
 		min : 0,
