@@ -23,7 +23,6 @@ function areaSliderUpdate( event, ui ) {
 	}
 }
 
-
 function confidenceSliderUpdate(event, ui) {
 	if( ui ) {
 		$('.confidence-slider').prev('div').html(ui.value + "%");
@@ -49,7 +48,6 @@ $(function(){
 		update : areaSliderUpdate
 	});
 	$('.area-slider').trigger('update');
-
 	
 	$( ".confidence-slider" ).slider({
 		min : 0,
@@ -134,6 +132,7 @@ $(function(){
 					} else {
 						$($questions.get(currentQuestion)).fadeIn(500);
 						$('.area-slider').trigger('update');
+						$('.confidence-slider').trigger('update');
 						$('.next').removeClass('disabled')
 						if( currentQuestion == totalQuestions-1 ) {
 							$('.next').text('| Finish |');
