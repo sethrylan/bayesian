@@ -16,13 +16,11 @@ function formatNumber(number) {
 }
 
 function areaSliderUpdate( event, ui ) {
-	//$('span').html(formatNumber(ui.values[0]) + "km<sup>2</sup> - " + formatNumber(ui.values[1]) + "km<sup>2</sup>");
-	//$('input[name="low"]:visible').val(ui.values[0]);
-	//$('input[name="high"]:visible').val(ui.values[1]);
-
-    $('span').html( formatNumber($( '.area-slider:visible' ).slider( 'values', 0 )) + "km<sup>2</sup> - "  + $( '.area-slider:visible' ).slider( 'values', 1 ) + "km<sup>2</sup>");
-	//$('input[name="low"]:visible').val($( ".area-slider:visible" ).slider( "values", 0 ));
-	//$('input[name="high"]:visible').val($( ".area-slider:visible" ).slider( "values", 1 ));
+	if( ui ) {
+		$('.area-slider').prev('div').html(formatNumber(ui.values[0]) + "km<sup>2</sup> - " + formatNumber(ui.values[1]) + "km<sup>2</sup>");
+	} else {
+		$('.area-slider').prev('div').html(formatNumber($( '.area-slider:visible' ).slider( 'values', 0 )) + "km<sup>2</sup> - "  + $( '.area-slider:visible' ).slider( 'values', 1 ) + "km<sup>2</sup>");
+	}
 }
 
 /*

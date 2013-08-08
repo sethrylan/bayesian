@@ -1,4 +1,6 @@
-
+.answers div {
+	text-align:center;
+}
 .questionContainer {
     width: 600px;
     border: 3px double #CFCFCF;
