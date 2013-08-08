@@ -23,6 +23,15 @@ function areaSliderUpdate( event, ui ) {
 	}
 }
 
+
+function confidenceSliderUpdate(event, ui) {
+	if( ui ) {
+		$('.confidence-slider').prev('div').html(ui.value + "%");
+	} else {
+		$('.confidence-slider').prev('div').html($( '.confidence-slider:visible' ).slider('value') + "%");
+	}
+}
+
 /*
  *  Main quiz function.
  */
@@ -36,11 +45,24 @@ $(function(){
 		step : 100,
 		slide : areaSliderUpdate
 	});
-	
 	$('.area-slider').slider().bind({
 		update : areaSliderUpdate
 	});
 	$('.area-slider').trigger('update');
+
+	
+	$( ".confidence-slider" ).slider({
+		min : 0,
+		max : 100,
+		value : 50,
+		step : 10,
+		slide : confidenceSliderUpdate
+	});
+	
+	$('.confidence-slider').slider().bind({
+		update : confidenceSliderUpdate
+	});
+	$('.confidence-slider').trigger('update');
 	
 	var totalQuestions = $('.questionContainer').size();
 	var currentQuestion = 0;
@@ -56,7 +78,7 @@ $(function(){
 			var facts = $('div.fact').map(function() { return parseInt($(this).text()) }).get();
 			var lows = $('.range-slider').map(function() { return $(this).slider( 'values', 0 ) }).get();
 			var highs = $('.range-slider').map(function() { return $(this).slider( 'values', 1 ) }).get();
-			var confidences = $('input[name="confidence"]').map(function() { return $(this).val() }).get();
+			var confidences = $('.confidence-slider').map(function() { return $(this).slider( 'value' ) }).get();
 			
 			assert((highs.length === lows.length) && (lows.length === confidences.length), "Answer sizes must match.");
 			
