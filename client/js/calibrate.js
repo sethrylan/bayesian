@@ -40,7 +40,7 @@ $(function(){
 		finish: function() {
 			jQuiz.userAnswers = [];						
 			
-			var facts = $('div.fact').map(function() { return $(this).text() }).get();
+			var facts = $('div.fact').map(function() { return parseInt($(this).text()) }).get();
 			var lows = $('input[name="low"]').map(function() { return $(this).val() }).get();
 			var highs = $('input[name="high"]').map(function() { return $(this).val() }).get();
 			var confidences = $('input[name="confidence"]').map(function() { return $(this).val() }).get();
@@ -58,7 +58,7 @@ $(function(){
 
 				jQuiz.userAnswers.push(userAnswer);
 			}				
-			alert(JSON.stringify(jQuiz.userAnswers));
+			//alert(JSON.stringify(jQuiz.userAnswers));
 			
 			//$('#progress').width(300);
 			//$('#progressContainer').hide();
