@@ -43,6 +43,16 @@
     width: 45%;
     margin: 10px 0px 10px 2%;
 }
+#feedbackContainer {
+    width: 600px;
+    height: 200px;
+    border: 3px double #CFCFCF;
+    margin: 0px 10px;
+    padding: 3px;
+}
+#feedbackCanvas {
+}
+
 #progressContainer {
     width: 600px;
     height: 25px;

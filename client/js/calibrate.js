@@ -125,6 +125,7 @@ $(function(){
 				$($questions.get(currentQuestion)).fadeOut(500, function() {
 					currentQuestion = currentQuestion + 1;
 					if( currentQuestion == totalQuestions ){
+						$('#feedbackContainer').hide();
 						jQuiz.finish();
 					} else {
 						$($questions.get(currentQuestion)).fadeIn(500);
@@ -133,6 +134,39 @@ $(function(){
 						if( currentQuestion == totalQuestions-1 ) {
 							$('.next').text('| Finish |');
 						}
+						
+						$('#feedbackContainer').show();
+						var canvas = document.getElementById('feedbackCanvas');			
+						canvas.width = $('#feedbackContainer').width();
+						var context = canvas.getContext('2d');
+						clearCanvas(canvas, context);
+						
+						var scale = 500;
+						var str = $($questions.get(currentQuestion-1)).children('.feedback').text();
+						var json = $.parseJSON(str);
+
+						for( i = 0; i < 2; i++ ) {
+							var name = json[i].name;
+							var area = json[i].area;
+							var scaledArea = area / scale;
+							var centerX = (canvas.width / 3) * (i + 1);
+							var centerY = canvas.height / 2;
+							var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
+
+							context.beginPath();
+							context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+							context.fillStyle = '#2F4F4F';
+							context.fill();
+							context.lineWidth = 5;
+							context.strokeStyle = '#2F4F4F';
+							context.stroke();
+							
+							context.fillStyle = '#C0D9D9';
+							context.font="10px Verdana";
+							context.fillText(name, centerX - 20, centerY);
+							context.fillText(area + "km2", centerX - 20, centerY + 20);
+						}
+						
 					}
 				});
 

@@ -26,7 +26,7 @@
 					<a href="#" title="Algeria: slightly less than 3.5 times the size of Texas<br>Germany: slightly smaller than Montana">[ hint ]</a>
 				</div>
 				<div class="fact hide">false</div>
-				<div class="feedback hide">Algeria is 2381741km2 and Germany is 357022km2</div>
+				<div class="feedback hide">[{"name": "Algeria","area": 2381741},{"name": "Germany","area": 357022}]</div>
 				<div class="answers">
 					<div class="boolean">
 						<a href="#">true</a>
@@ -43,7 +43,7 @@
 					<a href="#" title="Germany: slightly smaller than Montana<br>Malaysia: slightly larger than New Mexico">[ hint ]</a>
 				</div>
 				<div class="fact hide">false</div>
-				<div class="feedback hide">Germany is 357022km2 and Malaysia is 329847km2</div>
+				<div class="feedback hide">[{"name": "Germany","area": 357022},{"name": "Malaysia","area": 329847}]</div>
 				<div class="answers">
 					<div class="boolean">
 						<a href="#">true</a>
@@ -60,7 +60,7 @@
 					<a href="#" title="Malaysia: slightly larger than New Mexico<br>Algeria: slightly less than 3.5 times the size of Texas">[ hint ]</a>
 				</div>
 				<div class="fact hide">true</div>
-				<div class="feedback hide">Malaysia is 329847km2 and Algeria is 2381741km2</div>
+				<div class="feedback hide">[{"name": "Malaysia","area": 329847},{"name": "Algeria","area": 2381741}]</div>
 				<div class="answers">
 					<div class="boolean">
 						<a href="#">true</a>
@@ -80,11 +80,19 @@
 			<div id="progressContainer" class="radius">
 				<div id="progress"></div>
 			</div>
+			
 			<div id="resultContainer" class="radius hide"></div>
+			
+			<div id="feedbackContainer" class="radius hide">
+				<canvas id="feedbackCanvas"></div>
+			</div>
+			
 		</div>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<script>
 		//<!--
 		
+
 
 		//-->
 		</script>
@@ -92,6 +100,7 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="js/jquery.ui.touch-punch.min.js"></script>
+
 		<!--script src="js/json2html.js"></script>
 		<script src="js/jquery.json2html.js"></script-->
 		<script src="js/calibrate.js"></script>
