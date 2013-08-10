@@ -35,3 +35,18 @@ function clearCanvas(canvas, context) {
 	// Restore the transform
 	context.restore();
 }
+
+function formatNumber(number) {
+	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function drawCircle(context, x, y, radius, color) {
+	context.beginPath();
+	context.arc(x, y, radius, 0, 2 * Math.PI, false);
+	context.fillStyle = color;
+	context.fill();
+	context.lineWidth = 5;
+	context.strokeStyle = color;
+	context.stroke();
+}
+

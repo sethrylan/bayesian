@@ -11,9 +11,6 @@ $("input").keypress(function (e) {
 	}
 });
 
-function formatNumber(number) {
-	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
 
 function confidenceSliderUpdate(event, ui) {
 	if( ui ) {
@@ -71,47 +68,34 @@ $(function(){
 			var booleanResponses = $('.boolean > input[type=text]').map(function() { return ($(this).text() == "true" ? true : false) }).get();
 			var confidences = $('.confidence-slider').map(function() { return $(this).slider( 'value' ) }).get();
 
-			assert((facts.length === booleanResponses.length) && (booleanResponses.length === confidences.length), "Answer sizes must match.");
+			//assert((facts.length === booleanResponses.length) && (booleanResponses.length === confidences.length), "Answer sizes must match.");
 			
 			for (var i = 0; i < facts.length; i++) {
 				var response = {
+					index: i,
 					response: booleanResponses[i],
 					confidence: confidences[i],
-					fact: facts[i]
+					fact: facts[i],
+					correct: (facts[i] == booleanResponses[i])
 				};
 
 				jQuiz.responses.push(response);
 			}				
 			//alert(JSON.stringify(jQuiz.responses));
 			
-			var results = jQuiz.checkAnswers();
-			var resultSet = '';
+			//var results = jQuiz.checkAnswers();
+			var resultDiv = '';
 			var trueCount = 0;
-			for (var i = 0, ii = results.length; i < ii; i++){
-				if (results[i] == true) trueCount++;
-				resultSet += '<div> Question ' + (i + 1) + ' is ' + (results[i] ? "correct" : "incorrect") + '</div>'
-			}
-			resultSet += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
-			$('#resultContainer').html(resultSet).show();
-			$('.buttonContainer').hide();
-		},
-		checkAnswers: function() {					
-			var resultArr = [];
 			for (var key in this.responses) {		
 				var response = this.responses[key];
-				var result = false;
-				if (response.fact == response.response) {
-					result = true;
+				if (response.correct) {
+					trueCount++;
 				}
-				/* for range responses:
-				alert(response.low + " <= " + response.fact + " : " + (response.low <= response.fact));
-				if (response.low <= response.fact && response.fact <= response.high) {
-					result = true;
-				}
-				*/
-				resultArr.push(result);
+				resultDiv += '<div> Question ' + (response.index + 1) + ' is ' + (response.correct ? "correct" : "incorrect") + '</div>'
 			}
-			return resultArr;
+			resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
+			$('#resultContainer').html(resultDiv).show();
+			$('.buttonContainer').hide();
 		},
 		init: function(){
 			$('.next').click(function(){		
@@ -141,30 +125,24 @@ $(function(){
 						var context = canvas.getContext('2d');
 						clearCanvas(canvas, context);
 						
-						var scale = 500;
+						var scale = canvas.width;
 						var str = $($questions.get(currentQuestion-1)).children('.feedback').text();
 						var json = $.parseJSON(str);
-
+						
 						for( i = 0; i < 2; i++ ) {
 							var name = json[i].name;
 							var area = json[i].area;
 							var scaledArea = area / scale;
 							var centerX = (canvas.width / 3) * (i + 1);
-							var centerY = canvas.height / 2;
+							var centerY = .66 * canvas.height;
 							var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
 
-							context.beginPath();
-							context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
-							context.fillStyle = '#2F4F4F';
-							context.fill();
-							context.lineWidth = 5;
-							context.strokeStyle = '#2F4F4F';
-							context.stroke();
+							drawCircle(context, centerX, centerY, radius, '#2F4F4F');
 							
 							context.fillStyle = '#C0D9D9';
 							context.font="10px Verdana";
 							context.fillText(name, centerX - 20, centerY);
-							context.fillText(area + "km2", centerX - 20, centerY + 20);
+							context.fillText(formatNumber(area) + "km2", centerX - 20, centerY + 20);
 						}
 						
 					}
