@@ -137,7 +137,7 @@ $(function(){
 			var context = canvas.getContext('2d');			
 			canvas.width = $('#feedbackContainer').width();
 			canvas.height = $('#feedbackContainer').height();
-			clearCanvas(canvas, context);
+			context.clear();
 			
 			var scale = canvas.width;
 			var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
@@ -150,11 +150,17 @@ $(function(){
 				var centerX = (canvas.width / 4) * (2*i + 1);
 				var centerY = .50 * canvas.height;
 				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
-				drawCircle(context, centerX, centerY, radius, '#2F4F4F');
+				
+				context.fillStyle = '#2F4F4F';
+				context.fillCircle(centerX, centerY, radius);
+				
 				context.font = '10px Verdana';
 				context.fillStyle = '#000000';
 				context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
-				drawText(context, centerX - (26 + 2 * area.toString().length), centerY + radius + 20, '10px Verdana', '#2F4F4F', formatNumber(area) + "km²");
+				
+				context.fillStyle = '#2F4F4F';
+				context.font = '12px Verdana';
+				context.fillText(formatNumber(area) + "km²", centerX - (26 + 2 * area.toString().length), centerY + radius + 20);
 			}
 
 		}
