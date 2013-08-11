@@ -62,31 +62,10 @@ $(function(){
 	
 	var jQuiz = {
 		finish: function() {
-			jQuiz.responses = [];						
-			
-			var facts = $('div.fact').map(function() { return ($(this).text() == "true" ? true : false) }).get();
-			var booleanResponses = $('.boolean > input[type=text]').map(function() { return ($(this).text() == "true" ? true : false) }).get();
-			var confidences = $('.confidence-slider').map(function() { return $(this).slider( 'value' ) }).get();
-
-			//assert((facts.length === booleanResponses.length) && (booleanResponses.length === confidences.length), "Answer sizes must match.");
-			
-			for (var i = 0; i < facts.length; i++) {
-				var response = {
-					index: i,
-					response: booleanResponses[i],
-					confidence: confidences[i],
-					fact: facts[i],
-					correct: (facts[i] == booleanResponses[i])
-				};
-
-				jQuiz.responses.push(response);
-			}				
-			//alert(JSON.stringify(jQuiz.responses));
-			
-			//var results = jQuiz.checkAnswers();
+			//alert(JSON.stringify(jQuiz.responses));			
 			var resultDiv = '';
 			var trueCount = 0;
-			for (var key in this.responses) {		
+			for (var key in this.responses) {
 				var response = this.responses[key];
 				if (response.correct) {
 					trueCount++;
@@ -97,7 +76,10 @@ $(function(){
 			$('#resultContainer').html(resultDiv).show();
 			$('.buttonContainer').hide();
 		},
-		init: function(){
+		init: function() {
+			// create empty array for responses
+			jQuiz.responses = [];
+			// define next button behaviour
 			$('.next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
 					||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
@@ -105,10 +87,18 @@ $(function(){
 					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
+				
+				// disable next button to prevent double-clicking
 				$(this).addClass('disabled');
+				
+				jQuiz.addResponse();
+				
 				$($questions.get(currentQuestion)).fadeOut(500, function() {
+					// advance question index
 					currentQuestion = currentQuestion + 1;
-					if( currentQuestion == totalQuestions ){
+					
+					if( currentQuestion == totalQuestions ) {
+						// if on last question, finish quiz
 						$('#feedbackContainer').hide();
 						jQuiz.finish();
 					} else {
@@ -118,39 +108,56 @@ $(function(){
 						if( currentQuestion == totalQuestions-1 ) {
 							$('.next').text('| Finish |');
 						}
-						
-						$('#feedbackContainer').show();
-						var canvas = document.getElementById('feedbackCanvas');			
-						canvas.width = $('#feedbackContainer').width();
-						var context = canvas.getContext('2d');
-						clearCanvas(canvas, context);
-						
-						var scale = canvas.width;
-						var str = $($questions.get(currentQuestion-1)).children('.feedback').text();
-						var json = $.parseJSON(str);
-						
-						for( i = 0; i < 2; i++ ) {
-							var name = json[i].name;
-							var area = json[i].area;
-							var scaledArea = area / scale;
-							var centerX = (canvas.width / 3) * (i + 1);
-							var centerY = .66 * canvas.height;
-							var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
-
-							drawCircle(context, centerX, centerY, radius, '#2F4F4F');
-							
-							context.fillStyle = '#C0D9D9';
-							context.font="10px Verdana";
-							context.fillText(name, centerX - 20, centerY);
-							context.fillText(formatNumber(area) + "km2", centerX - 20, centerY + 20);
-						}
-						
+						jQuiz.showFeedback();
 					}
 				});
 
 				var el = $('#progress');
 				el.width(el.width() + progressPixels + 'px');
 			});			
+		},
+		addResponse: function() {
+			var fact = $('.questionContainer:visible > .fact').text();
+			var booleanResponse = $('.boolean:visible > input[type=text]').val();
+			var confidence = $('.questionContainer:visible > .confidence-slider').slider( 'value' );
+			
+			var response = {
+				index: currentQuestion,
+				response: booleanResponse,
+				confidence: confidence,
+				fact: fact,
+				correct: (fact == booleanResponse)
+			};
+			jQuiz.responses.push(response);
+
+		},
+		showFeedback: function() {
+			$('#feedbackContainer').show();
+			var canvas = document.getElementById('feedbackCanvas');			
+			canvas.width = $('#feedbackContainer').width();
+			var context = canvas.getContext('2d');
+			clearCanvas(canvas, context);
+			
+			var scale = canvas.width;
+			var str = $($questions.get(currentQuestion-1)).children('.feedback').text();
+			var json = $.parseJSON(str);
+			
+			for( i = 0; i < 2; i++ ) {
+				var name = json[i].name;
+				var area = json[i].area;
+				var scaledArea = area / scale;
+				var centerX = (canvas.width / 3) * (i + 1);
+				var centerY = .66 * canvas.height;
+				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
+
+				drawCircle(context, centerX, centerY, radius, '#2F4F4F');
+				
+				context.fillStyle = '#C0D9D9';
+				context.font="10px Verdana";
+				context.fillText(name, centerX - 20, centerY);
+				context.fillText(formatNumber(area) + "km2", centerX - 20, centerY + 20);
+			}
+
 		}
 	};
 	jQuiz.init();
