@@ -143,22 +143,18 @@ $(function(){
 			var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
 			var feedback = $.parseJSON(feedbackString);
 			
-			if (jQuiz.responses[jQuiz.responses.length - 1].correct) {
-				drawText(context, .45 * canvas.width, 15, '16px Verdana', '#32CD32', "Correct");
-			} else {
-				drawText(context, .45 * canvas.width, 15, '16px Verdana', '#8E2323', "Incorrect");
-			}
-
 			for( i = 0; i < feedback.length; i++ ) {
 				var name = feedback[i].name;
 				var area = feedback[i].area;
 				var scaledArea = area / scale;
-				var centerX = (canvas.width / 3) * (i + 1);
-				var centerY = .60 * canvas.height;
+				var centerX = (canvas.width / 4) * (2*i + 1);
+				var centerY = .50 * canvas.height;
 				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
 				drawCircle(context, centerX, centerY, radius, '#2F4F4F');
-				drawText(context, centerX - 20, centerY, '10px Verdana', '#C0D9D9', name);
-				drawText(context, centerX - (20 + 2 * area.toString().length), centerY + 20, '10px Verdana', '#C0D9D9', formatNumber(area) + "km2");
+				context.font = '10px Verdana';
+				context.fillStyle = '#000000';
+				context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
+				drawText(context, centerX - (26 + 2 * area.toString().length), centerY + radius + 20, '10px Verdana', '#2F4F4F', formatNumber(area) + "km²");
 			}
 
 		}

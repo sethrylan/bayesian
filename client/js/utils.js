@@ -50,3 +50,28 @@ function drawCircle(context, x, y, radius, color) {
 	context.stroke();
 }
 
+function drawText(context, x, y, font, color, text) {
+	context.fillStyle = color;
+	context.font=font;
+	context.fillText(text, x, y);
+}
+
+CanvasRenderingContext2D.prototype.fillTextArc = function(text, x, y, radius, startRotation, degreesPerLetter){
+	// To fill entire circlular arc:
+	// var degreesPerLetter = 2*Math.PI / text.length;
+	this.save();
+	this.translate(x,y);
+	this.rotate(startRotation);
+
+	for(var i=0;i<text.length;i++){
+		this.save();
+		this.translate(radius, 0);
+		this.translate(10, -10);
+		this.rotate(1.4)
+		this.translate(-10, 10);          
+		this.fillText(text[i],0,0);
+		this.restore();
+		this.rotate(degreesPerLetter);
+	}
+	this.restore();
+}
