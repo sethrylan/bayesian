@@ -133,29 +133,32 @@ $(function(){
 		},
 		showFeedback: function() {
 			$('#feedbackContainer').show();
-			var canvas = document.getElementById('feedbackCanvas');			
+			var canvas = document.getElementById('feedbackCanvas');
+			var context = canvas.getContext('2d');			
 			canvas.width = $('#feedbackContainer').width();
-			var context = canvas.getContext('2d');
+			canvas.height = $('#feedbackContainer').height();
 			clearCanvas(canvas, context);
 			
 			var scale = canvas.width;
-			var str = $($questions.get(currentQuestion-1)).children('.feedback').text();
-			var json = $.parseJSON(str);
+			var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
+			var feedback = $.parseJSON(feedbackString);
 			
-			for( i = 0; i < 2; i++ ) {
-				var name = json[i].name;
-				var area = json[i].area;
+			if (jQuiz.responses[jQuiz.responses.length - 1].correct) {
+				drawText(context, .45 * canvas.width, 15, '16px Verdana', '#32CD32', "Correct");
+			} else {
+				drawText(context, .45 * canvas.width, 15, '16px Verdana', '#8E2323', "Incorrect");
+			}
+
+			for( i = 0; i < feedback.length; i++ ) {
+				var name = feedback[i].name;
+				var area = feedback[i].area;
 				var scaledArea = area / scale;
 				var centerX = (canvas.width / 3) * (i + 1);
-				var centerY = .66 * canvas.height;
+				var centerY = .60 * canvas.height;
 				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
-
 				drawCircle(context, centerX, centerY, radius, '#2F4F4F');
-				
-				context.fillStyle = '#C0D9D9';
-				context.font="10px Verdana";
-				context.fillText(name, centerX - 20, centerY);
-				context.fillText(formatNumber(area) + "km2", centerX - 20, centerY + 20);
+				drawText(context, centerX - 20, centerY, '10px Verdana', '#C0D9D9', name);
+				drawText(context, centerX - (20 + 2 * area.toString().length), centerY + 20, '10px Verdana', '#C0D9D9', formatNumber(area) + "km2");
 			}
 
 		}
