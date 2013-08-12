@@ -32,22 +32,19 @@ div.ui-tooltip {
     width: 600px;
     border: 3px double #CFCFCF;
     padding: 3px;
-    margin: 10px;
+    margin: 10px 10px 20px 10px;
 }
 .questionContainer a {
 	float:right;
 }
-.buttonContainer a {
+#next {
+	margin:39%;
     border: 1px solid #000;
-    padding: 2px 5px;
+    padding: 2px 5px 2px 5px;
     font-weight: bold;
     font-size: 10px;
     background: #FFF;
     cursor: pointer;
-}
-.buttonContainer {
-    width: 45%;
-    margin: 10px 0px 10px 2%;
 }
 #feedbackContainer {
     width: 600px;
@@ -59,12 +56,11 @@ div.ui-tooltip {
     width: 600px;
     height: 230px;
 }
-
 #progressContainer {
     width: 600px;
     height: 25px;
     border: 3px double #CFCFCF;
-    margin: 0px 10px;
+    margin: 20px 10px;
     padding: 3px;
 }
 #progress {

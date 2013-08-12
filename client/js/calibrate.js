@@ -23,7 +23,7 @@ var graphData = [['Confidence', 'Ideal', 'Actual'],
  */
 $("input").keypress(function (e) {
 	if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-		$('.buttonContainer > a:visible').click();
+		$('#next').click();
 		return false;
 	} else {
 		return true;
@@ -93,13 +93,13 @@ $(function(){
 			}
 			resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
 			$('#resultContainer').html(resultDiv).show();
-			$('.buttonContainer').hide();
+			$('#next').hide();
 		},
 		init: function() {
 			// create empty array for responses
 			jQuiz.responses = [];
 			// define next button behaviour
-			$('.next').click(function(){		
+			$('#next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
 					||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
 					|| $(this).hasClass('disabled')) {
@@ -123,9 +123,9 @@ $(function(){
 					} else {
 						$($questions.get(currentQuestion)).fadeIn(300);
 						$('.confidence-slider').trigger('update');
-						$('.next').removeClass('disabled')
+						$('#next').removeClass('disabled')
 						if( currentQuestion == totalQuestions-1 ) {
-							$('.next').text('| Finish |');
+							$('#next').text('| Finish |');
 						}
 						jQuiz.showFeedback();
 					}
