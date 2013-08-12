@@ -58,7 +58,7 @@ div.ui-tooltip {
 }
 #progressContainer {
     width: 600px;
-    height: 25px;
+    height: 10px;
     border: 3px double #CFCFCF;
     margin: 20px 10px;
     padding: 3px;
@@ -66,7 +66,7 @@ div.ui-tooltip {
 #progress {
     background: #007BA7; /* Cerulean */
     width: 0;
-    height: 25px;
+    height: 10px;
 }
 .radius {
     border-radius: 6px;
