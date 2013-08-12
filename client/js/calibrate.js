@@ -10,20 +10,19 @@ var graphData = [['Confidence', 'Ideal', 'Actual'],
 				
 
 google.load("visualization", "1", {packages:["corechart"]});
-function drawChart(dataTable) {			
-	//var dataTable = google.visualization.arrayToDataTable(data);
-	
+function drawChart(dataTable) {				
 	var options = {
 		title: 'Calibration Curve',
-		chartArea:{ left:40, top:10, width:150, height:150 },
+		chartArea:{ left:40, top:3, width:150, height:160 },
 		hAxis: { title: 'Reported Confidence', titleTextStyle: {color: 'black'}, ticks: [50, 60, 70, 80, 90, 100] },
-		vAxis: { title: '% Correct',  titleTextStyle: {color: 'black'}, ticks: [40, 50, 60, 70, 80, 90, 100] },
+		vAxis: { title: '% Correct',  titleTextStyle: {color: 'black'}, ticks: [20, 30, 40, 50, 60, 70, 80, 90, 100] },
 		legend: { position: 'bottom', textStyle: {color: 'blue', fontSize: 10} },
 		animation: { duration: 1000, easing: 'out' }
 	};
 
-	if(document.getElementById('chartContainer')) {
-		var chart = new google.visualization.LineChart(document.getElementById('chartContainer'));
+	var chartContainer = document.getElementById('chartContainer');
+	if(chartContainer) {
+		var chart = new google.visualization.LineChart(chartContainer);
 		chart.draw(dataTable, options);
 	}
 }
