@@ -1,4 +1,3 @@
-
 /*
 var graphData = [['Confidence', 'Ideal', 'Actual'],
 				[50,	50, 	45],
@@ -9,27 +8,25 @@ var graphData = [['Confidence', 'Ideal', 'Actual'],
 				[100,	100,	96]];
 */
 				
-var graphData = [['Confidence', 'Ideal', 'Actual'],
-				[50,	50, 	0],
-				[60,	60, 	0],
-				[70,	70, 	0],
-				[80,	80, 	0],
-				[90,	90,		0],
-				[100,	100,	0]];
 
+google.load("visualization", "1", {packages:["corechart"]});
+function drawChart(dataTable) {			
+	//var dataTable = google.visualization.arrayToDataTable(data);
+	
+	var options = {
+		title: 'Calibration Curve',
+		chartArea:{ left:40, top:10, width:150, height:150 },
+		hAxis: { title: 'Reported Confidence', titleTextStyle: {color: 'black'}, ticks: [50, 60, 70, 80, 90, 100] },
+		vAxis: { title: '% Correct',  titleTextStyle: {color: 'black'}, ticks: [40, 50, 60, 70, 80, 90, 100] },
+		legend: { position: 'bottom', textStyle: {color: 'blue', fontSize: 10} },
+		animation: { duration: 1000, easing: 'out' }
+	};
 
-/*  
- *  Register [enter] keypress as default action
- */
-$('*').keypress(function (e) {
-	if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-		$('#next').click();
-		return false;
-	} else {
-		return true;
+	if(document.getElementById('chartContainer')) {
+		var chart = new google.visualization.LineChart(document.getElementById('chartContainer'));
+		chart.draw(dataTable, options);
 	}
-});
-
+}
 
 function confidenceSliderUpdate(event, ui) {
 	if( ui ) {
@@ -43,6 +40,16 @@ function confidenceSliderUpdate(event, ui) {
  *  Main quiz function.
  */
 $(function(){
+
+	// Register [enter] keypress as default action
+	$('*').keypress(function (e) {
+		if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+			$('#next').click();
+			return false;
+		} else {
+			return true;
+		}
+	});
 
 	$( document ).tooltip({
 		content: function() {
@@ -96,8 +103,14 @@ $(function(){
 			$('#next').hide();
 		},
 		init: function() {
+			
+
 			// create empty array for responses
 			jQuiz.responses = [];
+			
+			drawChart(jQuiz.calibrationData());
+
+			
 			// define next button behaviour
 			$('#next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
@@ -106,11 +119,12 @@ $(function(){
 					// if all inputs are not provided or link is diabled, do not proceed
 					return false;
 				}
-				
+								
 				// disable next button to prevent double-clicking
 				$(this).addClass('disabled');
 				
 				jQuiz.addResponse();
+				drawChart(jQuiz.calibrationData());
 				
 				$($questions.get(currentQuestion)).fadeOut(300, function() {
 					// advance question index
@@ -132,13 +146,13 @@ $(function(){
 				});
 
 				var el = $('#progress');
-				el.width(el.width() + progressPixels + 'px');
+				el.width(el.width() + progressPixels + 'px');				
 			});			
 		},
 		addResponse: function() {
 			var fact = $('.questionContainer:visible > .fact').text();
 			var booleanResponse = $('.boolean:visible > input[type=text]').val();
-			var confidence = $('.questionContainer:visible > .confidence-slider').slider( 'value' );
+			var confidence = $('.answers:visible > .confidence-slider').slider( 'value' );
 			
 			var response = {
 				index: currentQuestion,
@@ -147,10 +161,10 @@ $(function(){
 				fact: fact,
 				correct: (fact == booleanResponse)
 			};
-			jQuiz.responses.push(response);
-
+			jQuiz.responses.push(response);			
 		},
 		showFeedback: function() {
+		
 			$('#feedbackContainer').show();
 			var canvas = document.getElementById('feedbackCanvas');
 			var context = canvas.getContext('2d');			
@@ -181,7 +195,21 @@ $(function(){
 				context.font = '12px Verdana';
 				context.fillText(formatNumber(area) + "km²", centerX - (26 + 2 * area.toString().length), centerY + radius + 20);
 			}
-
+		},
+		calibrationData: function() {
+			var data = [['Confidence', 'Ideal', 'Actual']];
+			for(i = 50; i<=100; i+=10) {
+				var total = 0;
+				var correct = 0;
+				$.each(jQuiz.responses, function() {
+					if (this.confidence == i) {
+						total += 1;
+						correct += (this.correct ? 1 : 0);
+					}
+				});
+				data.push([i, i, (total == 0 ? 0 : correct/total*100)]);
+			}
+			return google.visualization.arrayToDataTable(data);
 		}
 	};
 	jQuiz.init();

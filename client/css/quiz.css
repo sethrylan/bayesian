@@ -1,7 +1,9 @@
-
+/* Google Charts SVGs are much larger than their containing div */
+/*
 #chartContainer * {
-	z-index: -1;		/* Google Charts SVGs are much larger than their containing div */
+	z-index: -1;		
 }
+*/
 div.ui-tooltip {
     max-width: 400px;	/* Increase default jQueryUI tooltip size */
 }
