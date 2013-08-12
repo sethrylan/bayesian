@@ -40,6 +40,19 @@ function formatNumber(number) {
 	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
+function tableToJson(table) {
+	var json = [];
+	// first row:
+	for(i = 1; i < table.length; i++) {
+		var entry = {};
+		for(j = 0; j < table[0].length; j++) {
+			entry[table[0][j]] = table[i][j];
+		}
+		json.push(entry);
+	}
+	return json;
+}
+
 CanvasRenderingContext2D.prototype.fillCircle = function(x, y, radius) {
 	this.beginPath();
 	this.arc(x, y, radius, 0, 2 * Math.PI, false);

@@ -13,7 +13,7 @@ function drawChartSidebar(dataTable) {
 	var chartContainer = document.getElementById('chartContainer');
 	if(chartContainer) {
 		var chart = new google.visualization.LineChart(chartContainer);
-		chart.draw(dataTable, options);
+		chart.draw(google.visualization.arrayToDataTable(dataTable), options);
 	}
 }
 
@@ -46,12 +46,12 @@ var yAxis = d3.svg.axis()
 
 var line = d3.svg.area()
     .interpolate("basis")
-    .x(function(d) { return x(d.ci); })
+    .x(function(d) { return x(d.confidence); })
     .y(function(d) { return y(d["ideal"]); });
 
 var area = d3.svg.area()
     .interpolate("basis")
-    .x(function(d) { return x(d.ci); })
+    .x(function(d) { return x(d.confidence); })
     .y1(function(d) { return y(d["ideal"]); });
 
 var svg = d3.select("#chartContainerLarge").append("svg")
@@ -66,7 +66,7 @@ d3.tsv("data.tsv", function(error, data) {
     d["actual"] = +d["actual"];
   });
 
-  //x.domain(d3.extent(data, function(d) { return d.ci; }));
+  //x.domain(d3.extent(data, function(d) { return d.confidence; }));
   x.domain([50, 100]);
   
   y.domain([
@@ -282,7 +282,7 @@ $(function(){
 			}
 		},
 		calibrationData: function() {
-			var data = [['Confidence', 'Ideal', 'Actual']];
+			var dataTable = [['confidence', 'ideal', 'actual']];
 			for(i = 50; i<=100; i+=10) {
 				var total = 0;
 				var correct = 0;
@@ -292,9 +292,9 @@ $(function(){
 						correct += (this.correct ? 1 : 0);
 					}
 				});
-				data.push([i, i, (total == 0 ? i : correct/total*100)]);
+				dataTable.push([i, i, (total == 0 ? i : correct/total*100)]);
 			}
-			return google.visualization.arrayToDataTable(data);
+			return dataTable;
 		}
 	};
 	jQuiz.init();
