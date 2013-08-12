@@ -1,9 +1,9 @@
-/*#main { margin-left: 360px; }*/
+
 #chartContainer * {
-	z-index: -1;
+	z-index: -1;		/* Google Charts SVGs are much larger than their containing div */
 }
 div.ui-tooltip {
-    max-width: 400px;
+    max-width: 400px;	/* Increase default jQueryUI tooltip size */
 }
 .confidence-slider {
 	margin-bottom: 10px;
@@ -64,11 +64,11 @@ div.ui-tooltip {
     padding: 3px;
 }
 #progress {
-    background: #007BA7; /* Cerulean */
+    background: #007BA7;	/* Cerulean */
     width: 0;
     height: 10px;
 }
-.radius {
+.radius {					/* adds a curvilinear border */
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -90,8 +90,6 @@ input {
     position: relative;
     top: 2px;
 }
-.prev { float: left; }
-.next, .finish { float: right; }
 .clear { clear: both; }
 .hide { display: none; }
 .disabled {
