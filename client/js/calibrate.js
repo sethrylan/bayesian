@@ -192,7 +192,7 @@ $(function(){
 						correct += (this.correct ? 1 : 0);
 					}
 				});
-				data.push([i, i, (total == 0 ? 0 : correct/total*100)]);
+				data.push([i, i, (total == 0 ? i : correct/total*100)]);
 			}
 			return google.visualization.arrayToDataTable(data);
 		}
