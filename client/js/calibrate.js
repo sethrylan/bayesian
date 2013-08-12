@@ -21,7 +21,7 @@ var graphData = [['Confidence', 'Ideal', 'Actual'],
 /*  
  *  Register [enter] keypress as default action
  */
-$("input").keypress(function (e) {
+$('*').keypress(function (e) {
 	if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
 		$('#next').click();
 		return false;
