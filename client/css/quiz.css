@@ -99,7 +99,7 @@ input {
 }
 
 /* D3.js chart styles */
-#chartContainerLarge {
+#largeDifferenceChart, #sidebarDifferenceChart {
 	font: 10px sans-serif;
 }
 .axis path, .axis line {
