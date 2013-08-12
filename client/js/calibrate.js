@@ -1,4 +1,23 @@
 
+/*
+var graphData = [['Confidence', 'Ideal', 'Actual'],
+				[50,	50, 	45],
+				[60,	60, 	51],
+				[70,	70, 	62],
+				[80,	80, 	73],
+				[90,	90,		94],
+				[100,	100,	96]];
+*/
+				
+var graphData = [['Confidence', 'Ideal', 'Actual'],
+				[50,	50, 	0],
+				[60,	60, 	0],
+				[70,	70, 	0],
+				[80,	80, 	0],
+				[90,	90,		0],
+				[100,	100,	0]];
+
+
 /*  
  *  Register [enter] keypress as default action
  */
@@ -93,7 +112,7 @@ $(function(){
 				
 				jQuiz.addResponse();
 				
-				$($questions.get(currentQuestion)).fadeOut(500, function() {
+				$($questions.get(currentQuestion)).fadeOut(300, function() {
 					// advance question index
 					currentQuestion = currentQuestion + 1;
 					
@@ -102,7 +121,7 @@ $(function(){
 						$('#feedbackContainer').hide();
 						jQuiz.finish();
 					} else {
-						$($questions.get(currentQuestion)).fadeIn(500);
+						$($questions.get(currentQuestion)).fadeIn(300);
 						$('.confidence-slider').trigger('update');
 						$('.next').removeClass('disabled')
 						if( currentQuestion == totalQuestions-1 ) {
@@ -135,8 +154,8 @@ $(function(){
 			$('#feedbackContainer').show();
 			var canvas = document.getElementById('feedbackCanvas');
 			var context = canvas.getContext('2d');			
-			canvas.width = $('#feedbackContainer').width();
-			canvas.height = $('#feedbackContainer').height();
+			canvas.width = $('#feedbackCanvas').width();
+			canvas.height = $('#feedbackCanvas').height();
 			context.clear();
 			
 			var scale = canvas.width;

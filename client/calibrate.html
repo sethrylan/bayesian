@@ -13,6 +13,7 @@
 			<p>
 				A tool for calibrated probability estimation
 			</p>
+			<div id="chartContainer" ></div>
 		</div>
 
 		<div id="main">
@@ -101,19 +102,37 @@
 			<div id="resultContainer" class="radius hide"></div>
 			
 			<div id="feedbackContainer" class="radius hide">
-				<canvas id="feedbackCanvas"></div>
+				<canvas id="feedbackCanvas">
 			</div>
 			
+
 		</div>
-		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+					
+		<script src="//www.google.com/jsapi"></script>
 		<script>
 		//<!--
 		
+		google.load("visualization", "1", {packages:["corechart"]});
+		google.setOnLoadCallback(drawChart);
+		function drawChart() {			
+			var data = google.visualization.arrayToDataTable(graphData);
+			
+			var options = {
+				title: 'Calibration Curve',
+				chartArea:{left:40, top:10, width:150, height:150},
+				hAxis: {title: 'Reported Confidence', titleTextStyle: {color: 'black'}, ticks: [50, 60, 70, 80, 90, 100]},
+				vAxis: {title: '% Correct',  titleTextStyle: {color: 'black'}, ticks: [40, 50, 60, 70, 80, 90, 100]},
+				legend: {position: 'bottom', textStyle: {color: 'blue', fontSize: 10}}
+			};
 
+			if(document.getElementById('chartContainer')) {
+				var chart = new google.visualization.LineChart(document.getElementById('chartContainer'));
+				chart.draw(data, options);
+			}
+		}
 
 		//-->
 		</script>
-
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 		<script src="js/jquery.ui.touch-punch.min.js"></script>

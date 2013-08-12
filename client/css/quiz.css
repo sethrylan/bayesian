@@ -1,4 +1,10 @@
-
+/*#main { margin-left: 360px; }*/
+#chartContainer * {
+	z-index: -1;
+}
+div.ui-tooltip {
+    max-width: 400px;
+}
 .confidence-slider {
 	margin-bottom: 10px;
 	margin-left:   40px;
@@ -46,11 +52,12 @@
 #feedbackContainer {
     width: 600px;
     height: 230px;
-    border: 3px double #CFCFCF;
     margin: 0px 10px;
     padding: 3px;
 }
 #feedbackCanvas {
+    width: 600px;
+    height: 230px;
 }
 
 #progressContainer {
@@ -92,5 +99,5 @@ input {
 .clear { clear: both; }
 .hide { display: none; }
 .disabled {
-  color: grey;
+	color: grey;
 }
