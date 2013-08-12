@@ -1,13 +1,3 @@
-/*
-var graphData = [['Confidence', 'Ideal', 'Actual'],
-				[50,	50, 	45],
-				[60,	60, 	51],
-				[70,	70, 	62],
-				[80,	80, 	73],
-				[90,	90,		94],
-				[100,	100,	96]];
-*/
-				
 
 google.load("visualization", "1", {packages:["corechart"]});
 function drawChart(dataTable) {				
