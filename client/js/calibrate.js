@@ -1,6 +1,6 @@
 
 google.load("visualization", "1", {packages:["corechart"]});
-function drawChart(dataTable) {				
+function drawChartSidebar(dataTable) {				
 	var options = {
 		title: 'Calibration Curve',
 		chartArea:{ left:40, top:3, width:150, height:160 },
@@ -77,7 +77,6 @@ $(function(){
 	
 	var jQuiz = {
 		finish: function() {
-			//alert(JSON.stringify(jQuiz.responses));			
 			var resultDiv = '';
 			var trueCount = 0;
 			for (var key in this.responses) {
@@ -85,20 +84,17 @@ $(function(){
 				if (response.correct) {
 					trueCount++;
 				}
-				resultDiv += '<div> Question ' + (response.index + 1) + ' is ' + (response.correct ? "correct" : "incorrect") + '</div>'
+				//resultDiv += '<div> Question ' + (response.index + 1) + ' is ' + (response.correct ? "correct" : "incorrect") + '</div>'
 			}
 			resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
 			$('#resultContainer').html(resultDiv).show();
 			$('#next').hide();
 		},
 		init: function() {
-			
-
 			// create empty array for responses
 			jQuiz.responses = [];
 			
-			drawChart(jQuiz.calibrationData());
-
+			drawChartSidebar(jQuiz.calibrationData());
 			
 			// define next button behaviour
 			$('#next').click(function(){		
@@ -113,7 +109,7 @@ $(function(){
 				$(this).addClass('disabled');
 				
 				jQuiz.addResponse();
-				drawChart(jQuiz.calibrationData());
+				drawChartSidebar(jQuiz.calibrationData());
 				
 				$($questions.get(currentQuestion)).fadeOut(300, function() {
 					// advance question index
