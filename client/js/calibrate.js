@@ -245,7 +245,6 @@ $(function(){
 	$('.confidence-slider').slider().bind({
 		update : confidenceSliderUpdate
 	});
-	$('.confidence-slider').trigger('update');
 	
 	var totalQuestions = $('.questionContainer').size();
 	var currentQuestion = 0;
@@ -277,7 +276,9 @@ $(function(){
 			jQuiz.responses = [];
 			
 			drawSidebarChart(jQuiz.calibrationData());
-			
+
+			$('.confidence-slider').trigger('update');
+
 			// Back Button
 			$('#back').click(function() {
 				if ( $(this).hasClass('disabled')) {
@@ -400,6 +401,18 @@ $(function(){
 						var scaledGpc = (gpc/2000) * canvas.width;
 						formattedValue = "$" + formatNumber(gpc);
 						radius = Math.sqrt(scaledGpc)/Math.sqrt(Math.PI);					
+						break;
+					case "healthExp":
+						var exp = feedback.values[i].healthExp;
+						var scaledExp = (exp) * canvas.width;
+						formattedValue = exp + "%";
+						radius = Math.sqrt(scaledExp)/Math.sqrt(Math.PI);					
+						break;
+					case "gini":
+						var gini = feedback.values[i].gini;
+						var scaledGini = gini/3 * canvas.width;
+						formattedValue = gini.toString();
+						radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);					
 						break;
 					default:
 						console.error("No such feedback type.");
