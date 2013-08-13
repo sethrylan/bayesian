@@ -388,13 +388,14 @@ $(function(){
 				context.fillCircle(centerX, centerY, radius);
 				
 				context.fillStyle = '#2F4F4F';
-				context.font = '12px sans-serif';
-				context.fillText(name, centerX - name.length * 3.2, centerY - (radius + 10));				
+				context.font = '10px monospace';
+				context.fillText(name, centerX - name.length * 3, centerY - (radius + 10));				
 				//context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
 				
 				context.fillStyle = '#2F4F4F';
-				context.font = '12px sans-serif';
-				context.fillText(formatNumber(area) + "km²", centerX - (26 + 2 * area.toString().length), centerY + radius + 20);
+				context.font = '10px monospace';
+				var formattedArea = formatNumber(area) + "km²";
+				context.fillText(formattedArea, centerX - formattedArea.length * 3, centerY + radius + 20);
 			}
 		},
 		calibrationData: function() {
