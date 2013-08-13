@@ -25,6 +25,7 @@ TODO:
 Use real data
 Darken chart as more datapoints are added
 	https://github.com/iros/d3.chart.horizontal-legend
+	http://bl.ocks.org/mbostock/4248145
 Add legend
 	http://stackoverflow.com/questions/13573771/adding-a-chart-legend-in-d3
 use json2html on calibrate.html

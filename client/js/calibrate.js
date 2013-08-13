@@ -372,17 +372,32 @@ $(function(){
 			canvas.height = $('#feedbackCanvas').height();
 			context.clear();
 			
-			var scale = canvas.width;
 			var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
 			var feedback = $.parseJSON(feedbackString);
 			
-			for( i = 0; i < feedback.length; i++ ) {
-				var name = feedback[i].name;
-				var area = feedback[i].area;
-				var scaledArea = area / scale;
+			for( i = 0; i < feedback.values.length; i++ ) {
+				var name = feedback.values[i].name;
+				var formattedValue, radius;
+				switch(feedback.type) {
+					case "area":
+						var area = feedback.values[i].area;
+						var scaledArea = area / canvas.width;
+						formattedValue = formatNumber(area) + "km²";
+						radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
+						break;
+					case "population":
+						var population = feedback.values[i].population;
+						var scaledPopulation = (population/70000000) * canvas.width;
+						formattedValue = formatNumber(population) + " people";
+						radius = Math.sqrt(scaledPopulation)/Math.sqrt(Math.PI);					
+						break;
+					default:
+						console.error("No such feedback type.");
+						return;
+				}
+
 				var centerX = (canvas.width / 4) * (2*i + 1);
 				var centerY = .50 * canvas.height;
-				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
 				
 				context.fillStyle = '#007BA7';
 				context.fillCircle(centerX, centerY, radius);
@@ -394,8 +409,7 @@ $(function(){
 				
 				context.fillStyle = '#2F4F4F';
 				context.font = '10px monospace';
-				var formattedArea = formatNumber(area) + "km²";
-				context.fillText(formattedArea, centerX - formattedArea.length * 3, centerY + radius + 20);
+				context.fillText(formattedValue, centerX - formattedValue.length * 3, centerY + radius + 20);
 			}
 		},
 		calibrationData: function() {
