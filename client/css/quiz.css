@@ -49,10 +49,11 @@ div.ui-tooltip {
     cursor: pointer;
 }
 #back {
-	margin-left:33%;
+	margin-left:40%;
 }
 #next {
 	margin-left:5%;
+	display: none;
 }
 #feedbackContainer {
     border: 3px double #CFCFCF;

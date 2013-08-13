@@ -306,6 +306,10 @@ $(function(){
 				el.width(el.width() - progressPixels + 'px');
 			});
 			
+			$('.boolean > a').click(function(){
+				$('#next').click();
+			});
+			
 			// Next Buttom
 			$('#next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
