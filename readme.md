@@ -23,12 +23,13 @@ http://stackoverflow.com/questions/8337145/optimization-of-xslt-using-identity-t
 TODO:
 =========
 Use real data
+Darken chart as more datapoints are added
+	https://github.com/iros/d3.chart.horizontal-legend
+Add legend
+	http://stackoverflow.com/questions/13573771/adding-a-chart-legend-in-d3
 use json2html on calibrate.html
 	http://www.json2html.com/
 	https://github.com/moappi/jquery.json2html
-Show graph:
-	http://bl.ocks.org/mbostock/3894205
-	https://developers.google.com/chart/interactive/docs/gallery/areachart
 Remove outlying data points (monaco, vatican)
 expand graph on click
 

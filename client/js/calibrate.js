@@ -28,7 +28,7 @@ function confidenceSliderUpdate(event, ui) {
 var margin = {top: 20, right: 10, bottom: 30, left: 30},
 	width = 200 - margin.left - margin.right,
 	height = 200 - margin.top - margin.bottom;
-var svg, x, y, xAxis, yAxis, line, area;
+var svg, x, y, xAxis, yAxis, line, area, tooltip;
 
 function updateSidebarChart(dataTable) {
 
@@ -38,8 +38,8 @@ function updateSidebarChart(dataTable) {
 		d["actual"] = +d["actual"];
 	});
 	
-	/* Uncomment to resize axis on update
-	xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(4);
+	/* 
+	// Resize y-axis
 	yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
 	y.domain([
 		d3.min(data, function(d) { return Math.min(d["ideal"], d["actual"]); }),
@@ -114,6 +114,14 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 		.append("g")
 			.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+	// see tooltip example at http://bl.ocks.org/biovisualize/1016860
+	tooltip = d3.select("body")
+		.append("div")
+		.attr("id", "chart-tooltip")
+		.attr("class", "radius")
+		.style("visibility", "hidden")
+		.text("");
+
 	var data = tableToJson(dataTable);
 	data.forEach(function(d) {
 		d["ideal"]= +d["ideal"];
@@ -141,12 +149,18 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 	svg.append("path")
 		.attr("class", "area above")
 		.attr("clip-path", "url(#clip-above)")
-		.attr("d", area.y0(function(d) { return y(d["actual"]); }));
+		.attr("d", area.y0(function(d) { return y(d["actual"]); }))
+		.on("mouseover", function(){ tooltip.text("underconfidence"); return tooltip.style("visibility", "visible"); })
+		.on("mousemove", function(){ return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px"); })
+		.on("mouseout", function(){ return tooltip.style("visibility", "hidden"); });
 
 	svg.append("path")
 		.attr("class", "area below")
 		.attr("clip-path", "url(#clip-below)")
-		.attr("d", area);
+		.attr("d", area)
+		.on("mouseover", function(){ tooltip.text("overconfidence"); return tooltip.style("visibility", "visible"); })
+		.on("mousemove", function(){ return tooltip.style("top", (d3.event.pageY - 10) + "px").style("left", (d3.event.pageX + 10) + "px"); })
+		.on("mouseout", function(){ return tooltip.style("visibility", "hidden"); });
 
 	svg.append("path")
 		.attr("class", "line")
@@ -171,6 +185,19 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 		.attr("dy", ".71em")
 		.style("text-anchor", "end")
 		.text("% correct");
+
+		/*
+	svg.append("g")
+		.attr("class", "legend")
+		.attr("transform", "translate(0," + height + ")")
+		//.call(xAxis)
+	.append("text")
+		.attr("x", width)
+		.attr("dy", "3em")
+		.style("text-anchor", "end")
+		.text("Underconfidence");
+		*/
+
 }
 
 
@@ -359,12 +386,12 @@ $(function(){
 				context.fillStyle = '#2F4F4F';
 				context.fillCircle(centerX, centerY, radius);
 				
-				context.font = '10px Verdana';
+				context.font = '10px sans-serif';
 				context.fillStyle = '#000000';
 				context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
 				
 				context.fillStyle = '#2F4F4F';
-				context.font = '12px Verdana';
+				context.font = '12px sans-serif';
 				context.fillText(formatNumber(area) + "km²", centerX - (26 + 2 * area.toString().length), centerY + radius + 20);
 			}
 		},
