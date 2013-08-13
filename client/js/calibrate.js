@@ -297,7 +297,7 @@ $(function(){
 					$('.confidence-slider').trigger('update');
 					$('#next').removeClass('disabled')
 					$('#next').text('Next >>');
-					jQuiz.showFeedback();
+					$('#feedbackContainer').hide();
 					if( currentQuestion != 0 ) {
 						$('#back').removeClass('disabled')
 					}
@@ -387,9 +387,10 @@ $(function(){
 				context.fillStyle = '#2F4F4F';
 				context.fillCircle(centerX, centerY, radius);
 				
-				context.font = '10px sans-serif';
-				context.fillStyle = '#000000';
-				context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
+				context.fillStyle = '#2F4F4F';
+				context.font = '12px sans-serif';
+				context.fillText(name, centerX - name.length * 3.2, centerY - (radius + 10));				
+				//context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
 				
 				context.fillStyle = '#2F4F4F';
 				context.font = '12px sans-serif';
