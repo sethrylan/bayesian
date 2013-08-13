@@ -61,7 +61,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 		.x(function(d) { return x(d.confidence); })
 		.y1(function(d) { return y(d["ideal"]); });
 
-	   var svg = d3.select(element)
+	var svg = d3.select(element)
 		.append("svg:svg")
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom)
@@ -194,6 +194,7 @@ $(function(){
 			resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
 			$('#resultContainer').html(resultDiv).show();
 			$('#next').hide();
+			$('#back').hide();
 			$('#sidebarDifferenceChart').hide();
 			drawLargeDifferenceChart(jQuiz.calibrationData());
 		},
