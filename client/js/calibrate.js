@@ -204,6 +204,35 @@ $(function(){
 			//drawChartSidebar(jQuiz.calibrationData());
 			drawSidebarDifferenceChart(jQuiz.calibrationData());
 			
+			$('#back').click(function() {
+				if ( $(this).hasClass('disabled')) {
+					// if link is diabled, then do not proceed
+					return false;
+				}
+
+				$(this).addClass('disabled');
+				$('#next').addClass('disabled');
+
+				jQuiz.popResponse();
+				drawSidebarDifferenceChart(jQuiz.calibrationData());
+				
+				$($questions.get(currentQuestion)).fadeOut(300, function() {					
+					currentQuestion = currentQuestion - 1;
+					$($questions.get(currentQuestion)).fadeIn(300);
+					$('.confidence-slider').trigger('update');
+					$('#next').removeClass('disabled')
+					$('#next').text('Next >>');
+					jQuiz.showFeedback();
+					if( currentQuestion != 0 ) {
+						$('#back').removeClass('disabled')
+					}
+					
+
+				});
+				var el = $('#progress');
+				el.width(el.width() - progressPixels + 'px');				
+			});
+			
 			// define next button behaviour
 			$('#next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
@@ -215,6 +244,7 @@ $(function(){
 								
 				// disable next button to prevent double-clicking
 				$(this).addClass('disabled');
+				$('#back').addClass('disabled');
 				
 				jQuiz.addResponse();
 				//drawChartSidebar(jQuiz.calibrationData());
@@ -232,7 +262,9 @@ $(function(){
 						$($questions.get(currentQuestion)).fadeIn(300);
 						$('.confidence-slider').trigger('update');
 						$('#next').removeClass('disabled')
-						if( currentQuestion == totalQuestions-1 ) {
+						$('#back').removeClass('disabled')
+
+						if( currentQuestion == totalQuestions - 1 ) {
 							$('#next').text('| Finish |');
 						}
 						jQuiz.showFeedback();
@@ -257,8 +289,10 @@ $(function(){
 			};
 			jQuiz.responses.push(response);			
 		},
+		popResponse: function() {
+			jQuiz.responses.pop();
+		},
 		showFeedback: function() {
-		
 			$('#feedbackContainer').show();
 			var canvas = document.getElementById('feedbackCanvas');
 			var context = canvas.getContext('2d');			
