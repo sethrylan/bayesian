@@ -97,11 +97,14 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 	xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(4);
 	yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
 
+	// Interpolation at https://github.com/mbostock/d3/wiki/SVG-Shapes#wiki-line_interpolate
+	// see also http://www.dashingd3js.com/svg-paths-and-d3js
 	line = d3.svg.area()
 		.interpolate("basis")
 		.x(function(d) { return x(d.confidence); })
 		.y(function(d) { return y(d["ideal"]); });
 
+	// Note: there is some undershoot in basis interpolate. Cardinal has some overshoot.
 	area = d3.svg.area()
 		.interpolate("basis")
 		.x(function(d) { return x(d.confidence); })
@@ -124,8 +127,8 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 
 	var data = tableToJson(dataTable);
 	data.forEach(function(d) {
-		d["ideal"]= +d["ideal"];
-		d["actual"] = +d["actual"];
+	//	d["ideal"]= +d["ideal"];
+	//	d["actual"] = +d["actual"];
 	});
 
 	x.domain(d3.extent(data, function(d) { return d.confidence; }));  
@@ -298,11 +301,9 @@ $(function(){
 					if( currentQuestion != 0 ) {
 						$('#back').removeClass('disabled')
 					}
-					
-
 				});
 				var el = $('#progress');
-				el.width(el.width() - progressPixels + 'px');				
+				el.width(el.width() - progressPixels + 'px');
 			});
 			
 			// Next Buttom
