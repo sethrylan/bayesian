@@ -106,7 +106,7 @@ input {
 }
 
 /* D3.js chart styles */
-#largeDifferenceChart, #sidebarDifferenceChart {
+#largeChart, #sidebarChart {
 	font: 10px sans-serif;
 }
 .axis path, .axis line {

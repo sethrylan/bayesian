@@ -25,43 +25,89 @@ function confidenceSliderUpdate(event, ui) {
 	}
 }
 
-function drawSidebarDifferenceChart(dataTable) {
-	var margin = {top: 20, right: 10, bottom: 30, left: 30},
-		width = 200 - margin.left - margin.right,
-		height = 200 - margin.top - margin.bottom;
-		
-	$("#sidebarDifferenceChart").empty();
-	drawDifferenceChart(dataTable,  "#sidebarDifferenceChart", margin, width, height)
+var margin = {top: 20, right: 10, bottom: 30, left: 30},
+	width = 200 - margin.left - margin.right,
+	height = 200 - margin.top - margin.bottom;
+var svg, x, y, xAxis, yAxis, line, area;
+
+function updateSidebarChart(dataTable) {
+
+	var data = tableToJson(dataTable);
+	data.forEach(function(d) {
+		d["ideal"]= +d["ideal"];
+		d["actual"] = +d["actual"];
+	});
+	
+	/* Uncomment to resize axis on update
+	xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(4);
+	yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
+	y.domain([
+		d3.min(data, function(d) { return Math.min(d["ideal"], d["actual"]); }),
+		d3.max(data, function(d) { return Math.max(d["ideal"], d["actual"]); })
+	]);
+	svg.select("g.y.axis").call(yAxis);
+	*/
+	
+	svg.datum(data);
+	svg.selectAll("#clip-below > path")
+		.transition()
+		.duration(150)
+		.attr("d", area.y0(height));
+
+	svg.select("#clip-above > path")
+		.transition()
+		.duration(150)
+		.attr("d", area.y0(0));
+
+	svg.select("path.area.above")
+		.transition()
+		.duration(150)
+		.attr("d", area.y0(function(d) { return y(d["actual"]); }));
+
+	svg.select("path.area.below")
+		.transition()
+		.duration(150)
+		.attr("d", area);
+
+	svg.select("path.line")
+		.transition()
+		.duration(150)
+		.attr("d", line);
 }
 
-function drawLargeDifferenceChart(dataTable) {
+function drawSidebarChart(dataTable) {		
+	$("#sidebarChart").empty();
+	drawDifferenceChart(dataTable,  "#sidebarChart", margin, width, height)
+}
+
+function drawLargeChart(dataTable) {
 	var margin = {top: 20, right: 20, bottom: 30, left: 50},
 		width = 600 - margin.left - margin.right,
 		height = 400 - margin.top - margin.bottom;
 		
-	$("#largeDifferenceChart").empty();
-	drawDifferenceChart(dataTable,  "#largeDifferenceChart", margin, width, height)
+	$("#largeChart").empty();
+	drawDifferenceChart(dataTable,  "#largeChart", margin, width, height)
 }
 
 function drawDifferenceChart(dataTable, element, margin, width, height) {
 
-	var x = d3.scale.linear().range([0, width]);
-	var y = d3.scale.linear().range([height, 0]);
+	x = d3.scale.linear().range([0, width]);
+	y = d3.scale.linear().range([height, 0]);
 
-	var xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(4);
-	var yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
+	xAxis = d3.svg.axis().scale(x).orient("bottom").ticks(4);
+	yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
 
-	var line = d3.svg.area()
+	line = d3.svg.area()
 		.interpolate("basis")
 		.x(function(d) { return x(d.confidence); })
 		.y(function(d) { return y(d["ideal"]); });
 
-	var area = d3.svg.area()
+	area = d3.svg.area()
 		.interpolate("basis")
 		.x(function(d) { return x(d.confidence); })
 		.y1(function(d) { return y(d["ideal"]); });
 
-	var svg = d3.select(element)
+	svg = d3.select(element)
 		.append("svg:svg")
 			.attr("width", width + margin.left + margin.right)
 			.attr("height", height + margin.top + margin.bottom)
@@ -74,9 +120,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 		d["actual"] = +d["actual"];
 	});
 
-  //x.domain(d3.extent(data, function(d) { return d.confidence; }));
-	x.domain([50, 100]);
-  
+	x.domain(d3.extent(data, function(d) { return d.confidence; }));  
 	y.domain([
 		d3.min(data, function(d) { return Math.min(d["ideal"], d["actual"]); }),
 		d3.max(data, function(d) { return Math.max(d["ideal"], d["actual"]); })
@@ -195,16 +239,16 @@ $(function(){
 			$('#resultContainer').html(resultDiv).show();
 			$('#next').hide();
 			$('#back').hide();
-			$('#sidebarDifferenceChart').hide();
-			drawLargeDifferenceChart(jQuiz.calibrationData());
+			$('#sidebarChart').hide();
+			drawLargeChart(jQuiz.calibrationData());
 		},
 		init: function() {
 			// create empty array for responses
 			jQuiz.responses = [];
 			
-			//drawChartSidebar(jQuiz.calibrationData());
-			drawSidebarDifferenceChart(jQuiz.calibrationData());
+			drawSidebarChart(jQuiz.calibrationData());
 			
+			// Back Button
 			$('#back').click(function() {
 				if ( $(this).hasClass('disabled')) {
 					// if link is diabled, then do not proceed
@@ -215,7 +259,7 @@ $(function(){
 				$('#next').addClass('disabled');
 
 				jQuiz.popResponse();
-				drawSidebarDifferenceChart(jQuiz.calibrationData());
+				updateSidebarChart(jQuiz.calibrationData());
 				
 				$($questions.get(currentQuestion)).fadeOut(300, function() {					
 					currentQuestion = currentQuestion - 1;
@@ -234,7 +278,7 @@ $(function(){
 				el.width(el.width() - progressPixels + 'px');				
 			});
 			
-			// define next button behaviour
+			// Next Buttom
 			$('#next').click(function(){		
 				if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
 					||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
@@ -248,8 +292,7 @@ $(function(){
 				$('#back').addClass('disabled');
 				
 				jQuiz.addResponse();
-				//drawChartSidebar(jQuiz.calibrationData());
-				drawSidebarDifferenceChart(jQuiz.calibrationData());
+				updateSidebarChart(jQuiz.calibrationData());
 				
 				$($questions.get(currentQuestion)).fadeOut(300, function() {
 					// advance question index
