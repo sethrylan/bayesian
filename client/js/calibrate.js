@@ -384,7 +384,7 @@ $(function(){
 				var centerY = .50 * canvas.height;
 				var radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
 				
-				context.fillStyle = '#2F4F4F';
+				context.fillStyle = '#007BA7';
 				context.fillCircle(centerX, centerY, radius);
 				
 				context.fillStyle = '#2F4F4F';
