@@ -395,6 +395,12 @@ $(function(){
 						formattedValue = formatNumber(population) + " people";
 						radius = Math.sqrt(scaledPopulation)/Math.sqrt(Math.PI);					
 						break;
+					case "gdpPerCapita":
+						var gpc = feedback.values[i].gdpPerCapita;
+						var scaledGpc = (gpc/2000) * canvas.width;
+						formattedValue = "$" + formatNumber(gpc);
+						radius = Math.sqrt(scaledGpc)/Math.sqrt(Math.PI);					
+						break;
 					default:
 						console.error("No such feedback type.");
 						return;
