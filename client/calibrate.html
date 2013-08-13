@@ -26,9 +26,41 @@
 			<div id="progressContainer" class="radius">
 				<div id="progress"></div>
 			</div>
-
 			
-			<div class="questionContainer radius">
+			<div class="questionContainer radius hide">
+				<div class="question">Uruguay has a higher Gini index than  per capita than Paraguay.
+					<a href="#" title="The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.">[ hint ]</a>
+				</div>
+				<div class="fact hide">false</div>
+				<div class="feedback hide">{"type": "gini", "values": [{"name": "Uruguay","gini": 45.3},{"name": "Paraguay","gini": 53.2}]}</div>
+				<div class="answers">
+					<div class="confidence"></div>
+					<div class="confidence-slider"></div>
+					<div class="boolean">
+						<a href="#">true</a>
+						<a href="#">false</a>
+						<input type="text" class="hide"/>
+					</div>
+				</div>
+			</div>
+			
+			<div class="questionContainer radius hide">
+				<div class="question">Luxembourg has higher health expenditure than Thailand.
+				</div>
+				<div class="fact hide">true</div>
+				<div class="feedback hide">{"type": "healthExp", "values": [{"name": "Luxembourg","healthExp": 7.80},{"name": "Thailand","healthExp": 3.90}]}</div>
+				<div class="answers">
+					<div class="confidence"></div>
+					<div class="confidence-slider"></div>
+					<div class="boolean">
+						<a href="#">true</a>
+						<a href="#">false</a>
+						<input type="text" class="hide"/>
+					</div>
+				</div>
+			</div>
+
+			<div class="questionContainer radius hide">
 				<div class="question">Somalia has higher GDP (PPP) per capita than Italy.
 					<a href="#" title="Somalia: total GDP is $5 billion (2010 est.)<br>Italy: total GDP is $1,834 billion (2012 est.)">[ hint ]</a>
 				</div>
