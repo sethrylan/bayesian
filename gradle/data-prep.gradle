@@ -8,24 +8,41 @@ task factbookDownload(type: Download) {
         ant.gunzip src: destinationFile, dest: destinationDir
     }
 }
+task factbookCountriesXml(dependsOn: factbookDownload) {
+    inputs.file  "$dataDir/factbook.xml"
+    outputs.file "$dataDir/factbook-countries.xml"
 
-task factbookCountriesXml(dependsOn: factbookDownload) << {
-    ant.xslt style: "$dataDir/factbook-countries.xsl", out: "$dataDir/factbook-countries.xml", in: "$dataDir/factbook.xml"
+    doLast {
+        ant.xslt style: "$dataDir/factbook-countries.xsl",
+                out: outputs.files.singleFile,
+                in: inputs.files.singleFile
+
+    }
 }
 
-task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml) {
-    inputs.file  "$dataDir/factbook.xml"
+
+task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml)  {
+    inputs.file  "$dataDir/factbook-countries.xml"
     outputs.file "$dataDir/factbook-countries.json"
+    outputs.files.singleFile.delete()
     workingDir dataDir
     standardOutput = new ByteArrayOutputStream()
 
+    // Escape quotes before JSON conversion
+    doFirst {
+        def jsonText = inputs.files.singleFile.text
+        jsonText = jsonText.replace("\"", "\\\"");
+        file("$dataDir/factbook-countries-clean.xml").write(jsonText)
+    }
+
     if (System.properties['os.name'].toLowerCase().contains('windows')) {
-        commandLine 'cmd', '/c', 'java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries.xml xml-to-json.xsl > factbook-countries.json'
+        commandLine 'cmd', '/c', "java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries-clean.xml xml-to-json.xsl > $outputs.files.singleFile.name"
     } else {
-        commandLine 'sh', '-c', 'java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries.xml xml-to-json.xsl > factbook-countries.json'
+        commandLine 'sh', '-c',  "java -classpath saxon9.jar net.sf.saxon.Transform factbook-countries-clean.xml xml-to-json.xsl > $outputs.files.singleFile.name"
     }
 
     doLast {
+        file("$dataDir/factbook-countries-clean.xml").delete()
         outputs.files.each {
             if (it.name.substring(it.name.lastIndexOf(".")) == ".json") {
                 it.setText(groovy.json.JsonOutput.prettyPrint(it.text))
@@ -35,7 +52,6 @@ task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml) {
 }
 
 task factbookCountries(dependsOn: factbookCountriesJson)
-
 
 ///////////////////////////////////////////////
 ////////////// Groovy Task Class //////////////
