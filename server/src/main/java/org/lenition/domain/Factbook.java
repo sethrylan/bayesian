@@ -1,5 +1,6 @@
 package org.lenition.domain;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 public class Factbook {
@@ -28,7 +29,7 @@ class Area {
 }
 
 class DatedValue {
-    long value;
+    BigDecimal value;
     long rank;
     String dateText;
 }

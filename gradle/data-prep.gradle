@@ -20,7 +20,6 @@ task factbookCountriesXml(dependsOn: factbookDownload) {
     }
 }
 
-
 task factbookCountriesJson(type: Exec, dependsOn: factbookCountriesXml)  {
     inputs.file  "$dataDir/factbook-countries.xml"
     outputs.file "$dataDir/factbook-countries.json"
