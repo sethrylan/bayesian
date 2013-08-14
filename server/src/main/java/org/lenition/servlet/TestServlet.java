@@ -9,8 +9,10 @@ import javax.ws.rs.core.MediaType;
 public class TestServlet {
 
     @GET
+    @Path("/")
     @Produces(MediaType.APPLICATION_XML)
     public String test() {
         return "<person><name>Jane Doe</name><age>30</age></person>";
     }
+
 }

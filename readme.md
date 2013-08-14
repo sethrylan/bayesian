@@ -1,24 +1,37 @@
 bayesian
 ========
 
-gae integration:
-https://github.com/SpringSource/spring-security/blob/7edb1089a80ea7a29adb6d01c091e6fa55d61b39/samples/gae/gae.gradle
+
+Development Workflow
+=========
+
+| Description               | Command                         |
+| ------------------------- |---------------------------------|
+| prepare dataset           | ```gradlew factbookCountries``` |
+| client pages local run    | ```serve.bat```                 |
+| client pages/docs deploy  | ```gradlew publishGhPages```    |
+| unit test                 | ```gradlew test```              |
+| server run local          | ```gradlew gaeRun```            |
+| server functional tests   | ```gradlew gaeFunctionalTest``` |
+|                           | ```gradlew gaeUpdate```         |
+
+
 
 
 Data Sources
 =========
-http://jmatchparser.sourceforge.net/factbook/
-
-
-js quiz examples
-=========
-http://jsfiddle.net/3kpFV/
-http://www.fatihacet.com/lab/jQuiz/
-
+[CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
 
 XSLT Examples
 =========
 http://stackoverflow.com/questions/8337145/optimization-of-xslt-using-identity-transform
+
+
+gae integration
+========
+https://github.com/SpringSource/spring-security/blob/7edb1089a80ea7a29adb6d01c091e6fa55d61b39/samples/gae/gae.gradle
+
+
 
 TODO:
 =========
