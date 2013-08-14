@@ -11,26 +11,23 @@ class Country {
     String name;
     String id;
     String history;
-    String stuff;
-    Area area;
-    DatedValue gdp;
-    DatedValue gdpPerCapita;
-    DatedValue gini;
-    DatedValue population;
-    DatedValue populationGrowthRate;
-    DatedValue deathRate;
-    DatedValue healthExpenditure;
+    String misc;
+    Value area;
+    Value gdp;
+    Value gdpPerCapita;
+    Value gini;
+    Value population;
+    Value populationGrowthRate;
+    Value birthRate;
+    Value deathRate;
+    Value netMigrationRate;
+    Value healthExpenditure;
+
 }
 
-class Area {
-    long value;
-    long rank;
-    String comparison;
-}
-
-class DatedValue {
+class Value {
     BigDecimal value;
     long rank;
-    String dateText;
+    String text;
 }
 

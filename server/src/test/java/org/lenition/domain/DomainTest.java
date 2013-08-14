@@ -3,6 +3,9 @@ package org.lenition.domain;
 import com.google.gson.Gson;
 import org.lenition.servlet.FactbookServlet;
 
+import java.io.InputStreamReader;
+import java.io.Reader;
+
 import static org.junit.Assert.*;
 
 public class DomainTest {
@@ -10,21 +13,15 @@ public class DomainTest {
     @org.junit.Test
     public void TestDeserialization() {
         Gson gson = new Gson();
-        String json = convertStreamToString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
+        Reader reader = new InputStreamReader(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
 
-        assertNotNull(json);
-        assertFalse(json.isEmpty());
+        assertNotNull(reader);
 
-        FactbookContainer o = gson.fromJson(json,FactbookContainer.class);
+        FactbookContainer o = gson.fromJson(reader, FactbookContainer.class);
 
         assertNotNull(o.factbook);
         assertNotNull(o.factbook.countries);
         assertTrue(o.factbook.countries.size() > 0);
-    }
-
-    static String convertStreamToString(java.io.InputStream is) {
-        java.util.Scanner s = new java.util.Scanner(is).useDelimiter("\\A");
-        return s.hasNext() ? s.next() : "";
     }
 
 
