@@ -1,7 +1,7 @@
 
 http://pic.dhe.ibm.com/infocenter/wci/v6r0m0/index.jsp?topic=%2Fcom.ibm.websphere.cast_iron.doc%2Fref_Basic_XPath_Expressions.html
 
-Country by Id
+org.lenition.domain.Country by Id
 /factbook/region/country[@id="ja"]/
 
 Countries that are actual countries
