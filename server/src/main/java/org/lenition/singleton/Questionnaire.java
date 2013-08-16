@@ -1,4 +1,4 @@
-package org.lenition.org.lenition.singleton;
+package org.lenition.singleton;
 
 import com.google.gson.Gson;
 import org.lenition.domain.Factbook;
