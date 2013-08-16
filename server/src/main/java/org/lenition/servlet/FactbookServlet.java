@@ -12,17 +12,7 @@ import javax.ws.rs.core.MediaType;
 @Path("factbook")
 public class FactbookServlet {
 
-    Gson gson;
-    Factbook factbook;
-
-    private FactbookServlet() {
-        gson = new Gson();
-        String jsonString = convertStreamToString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
-        factbook = gson.fromJson(jsonString, Factbook.class);
-    }
-
     @GET
-    @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
     public String factbook() {
         return convertStreamToString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
@@ -33,14 +23,6 @@ public class FactbookServlet {
     @Produces(MediaType.APPLICATION_JSON)
     public String question(@QueryParam("n") int n) {
         return convertStreamToString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
-    }
-
-
-    static String getRandomQuestion() {
-
-        String json = "";
-        return json;
-
     }
 
     static String convertStreamToString(java.io.InputStream is) {

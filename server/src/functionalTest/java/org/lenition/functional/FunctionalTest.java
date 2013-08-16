@@ -1,4 +1,4 @@
-package org.lenition.domain;
+package org.lenition.functional;
 
 import org.junit.Test;
 
