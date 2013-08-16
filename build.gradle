@@ -3,6 +3,7 @@ ext {
     dataDir = "$rootDir/data"
 
     versions = [
+            jersey: '1.17',
             javasimon: '3.3.0',
             slf4j: '1.7.1'
     ]
@@ -25,26 +26,20 @@ project(':client') { }
 
 project(':server') {
 
-    sourceCompatibility = JavaVersion.VERSION_1_6
-
     apply plugin: 'gae'
 
     dependencies {
         gaeSdk 'com.google.appengine:appengine-java-sdk:1.8.3'
 
         // see compatibile versions at https://code.google.com/p/googleappengine/wiki/WillItPlayInJava#Jersey
-        compile 'com.sun.jersey:jersey-servlet:1.17'
-        compile 'com.sun.jersey:jersey-core:1.17'
-        compile 'com.sun.jersey:jersey-server:1.17'
+        compile "com.sun.jersey:jersey-servlet:$versions.jersey"
+        compile "com.sun.jersey:jersey-core:$versions.jersey"
+        compile "com.sun.jersey:jersey-server:$versions.jersey"
+        compile "com.sun.jersey:jersey-json:$versions.jersey"
+        compile "com.sun.jersey:jersey-grizzly2:$versions.jersey"
+        compile "com.sun.jersey:jersey-grizzly2:$versions.jersey"
+
         compile 'com.google.code.gson:gson:2.2.4'
-        /*
-        "com.sun.jersey:jersey-server:1.12",
-        "com.sun.jersey:jersey-servlet:1.12",
-        "com.sun.jersey:jersey-json:1.12",
-        "com.sun.jersey:jersey-grizzly2:1.12",
-        "com.sun.jersey:jersey-core:1.12",
-        "javax.ws.rs:jsr311-api:1.1.1"
-        */
 
         providedCompile 'javax.servlet:servlet-api:2.5'
 
@@ -60,7 +55,7 @@ project(':server') {
 
             logs {
                 severity = 1
-                outputFile = file('logs.txt')
+                outputFile = file('gae.log')
             }
 
             app {

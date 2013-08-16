@@ -12,6 +12,5 @@ dependencies {
     classpath 'org.ajoberstar:gradle-git:0.6.0'
     classpath 'com.github.townsfolk:gradle-release:1.2'
     classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
-//    classpath 'net.sf.json-lib:json-lib:2.4:jdk15'
     classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
 }
