@@ -1,214 +1,214 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
-	<head>
-		<title>An Educated Guess | Calibrate</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-		<link rel="stylesheet" href="css/bayesian.css"/>
-		<link rel="stylesheet" href="css/quiz.css"/>
-		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-	</head>
-	<body>
-		<div id="info">
-			<h1 id="name">an educated guess</h1>
-			<p>
-				A tool for calibrated probability estimation
-			</p>
-			<div id="chartContainer" ></div>
-			<div id="sidebarChart" ></div>
-		</div>
+    <head>
+        <title>An Educated Guess | Calibrate</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+        <link rel="stylesheet" href="css/bayesian.css"/>
+        <link rel="stylesheet" href="css/quiz.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    </head>
+    <body>
+        <div id="info">
+            <h1 id="name">an educated guess</h1>
+            <p>
+                A tool for calibrated probability estimation
+            </p>
+            <div id="chartContainer" ></div>
+            <div id="sidebarChart" ></div>
+        </div>
 
-		<div id="main">
-			<h1>
-				<a class="nav" href="index.html">about</a> &#160;&#160;&#160;
-				calibrate &#160;&#160;&#160;
-			</h1>
+        <div id="main">
+            <h1>
+                <a class="nav" href="index.html">about</a> &#160;&#160;&#160;
+                calibrate &#160;&#160;&#160;
+            </h1>
 
-			<div id="progressContainer" class="radius">
-				<div id="progress"></div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">Uruguay has a higher Gini index than  per capita than Paraguay.
-					<a href="#" title="The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.">[ hint ]</a>
-				</div>
-				<div class="fact hide">false</div>
-				<div class="feedback hide">{"type": "gini", "values": [{"name": "Uruguay","gini": 45.3},{"name": "Paraguay","gini": 53.2}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">Luxembourg has higher health expenditure than Thailand.
-				</div>
-				<div class="fact hide">true</div>
-				<div class="feedback hide">{"type": "healthExp", "values": [{"name": "Luxembourg","healthExp": 7.80},{"name": "Thailand","healthExp": 3.90}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
+            <div id="progressContainer" class="radius">
+                <div id="progress"></div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">Uruguay has a higher Gini index than  per capita than Paraguay.
+                    <a href="#" title="The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.">[ hint ]</a>
+                </div>
+                <div class="fact hide">false</div>
+                <div class="feedback hide">{"type": "gini", "values": [{"name": "Uruguay","gini": 45.3},{"name": "Paraguay","gini": 53.2}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">Luxembourg has higher health expenditure than Thailand.
+                </div>
+                <div class="fact hide">true</div>
+                <div class="feedback hide">{"type": "healthExp", "values": [{"name": "Luxembourg","healthExp": 7.80},{"name": "Thailand","healthExp": 3.90}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
 
-			<div class="questionContainer radius hide">
-				<div class="question">Somalia has higher GDP (PPP) per capita than Italy.
-					<a href="#" title="Somalia: total GDP is $5 billion (2010 est.)<br>Italy: total GDP is $1,834 billion (2012 est.)">[ hint ]</a>
-				</div>
-				<div class="fact hide">false</div>
-				<div class="feedback hide">{"type": "gdpPerCapita", "values": [{"name": "Somalia","gdpPerCapita": 600},{"name": "Italy","gdpPerCapita": 30100}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
+            <div class="questionContainer radius hide">
+                <div class="question">Somalia has higher GDP (PPP) per capita than Italy.
+                    <a href="#" title="Somalia: total GDP is $5 billion (2010 est.)<br>Italy: total GDP is $1,834 billion (2012 est.)">[ hint ]</a>
+                </div>
+                <div class="fact hide">false</div>
+                <div class="feedback hide">{"type": "gdpPerCapita", "values": [{"name": "Somalia","gdpPerCapita": 600},{"name": "Italy","gdpPerCapita": 30100}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
 
-			<div class="questionContainer radius hide">
-				<div class="question">China has more people than India.
-					<a href="#" title="China: population growth rate of 0.48<br>India: population growth rate of 1.31">[ hint ]</a>
-				</div>
-				<div class="fact hide">true</div>
-				<div class="feedback hide">{"type": "population", "values": [{"name": "China","population": 1349585838},{"name": "India","population": 1220800359}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">Albania has more people than Belgium.
-					<a href="#" title="Albania population growth rate = 0.28<br>Belgium population growth rate = 0.06">[ hint ]</a>
-				</div>
-				<div class="fact hide">false</div>
-				<div class="feedback hide">{"type": "population", "values": [{"name": "Albania","population": 3011405},{"name": "Belgium","population": 10444268}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
+            <div class="questionContainer radius hide">
+                <div class="question">China has more people than India.
+                    <a href="#" title="China: population growth rate of 0.48<br>India: population growth rate of 1.31">[ hint ]</a>
+                </div>
+                <div class="fact hide">true</div>
+                <div class="feedback hide">{"type": "population", "values": [{"name": "China","population": 1349585838},{"name": "India","population": 1220800359}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">Albania has more people than Belgium.
+                    <a href="#" title="Albania population growth rate = 0.28<br>Belgium population growth rate = 0.06">[ hint ]</a>
+                </div>
+                <div class="fact hide">false</div>
+                <div class="feedback hide">{"type": "population", "values": [{"name": "Albania","population": 3011405},{"name": "Belgium","population": 10444268}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
 
-			<div class="questionContainer radius hide">
-				<div class="question">Algeria is bigger than Germany.
-					<a href="#" title="Algeria: slightly less than 3.5 times the size of Texas<br>Germany: slightly smaller than Montana">[ hint ]</a>
-				</div>
-				<div class="fact hide">true</div>
-				<div class="feedback hide">{"type": "area", "values": [{"name": "Algeria","area": 2381741},{"name": "Germany","area": 357022}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">Germany is bigger than Malaysia.
-					<a href="#" title="Germany: slightly smaller than Montana<br>Malaysia: slightly larger than New Mexico">[ hint ]</a>
-				</div>
-				<div class="fact hide">true</div>
-				<div class="feedback hide">{"type": "area", "values": [{"name": "Germany","area": 357022},{"name": "Malaysia","area": 329847}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">China is bigger than Canada.
-					<a href="#" title="China: slightly smaller than the US<br>Canada: slightly larger than the US">[ hint ]</a>
-				</div>
-				<div class="fact hide">false</div>
-				<div class="feedback hide">{"type": "area", "values": [{"name": "China","area": 9596961},{"name": "Canada","area": 9984670}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			<div class="questionContainer radius hide">
-				<div class="question">Malaysia is bigger than Algeria.
-					<a href="#" title="Malaysia: slightly larger than New Mexico<br>Algeria: slightly less than 3.5 times the size of Texas">[ hint ]</a>
-				</div>
-				<div class="fact hide">false</div>
-				<div class="feedback hide">{"type": "area", "values": [{"name": "Malaysia","area": 329847},{"name": "Algeria","area": 2381741}]}</div>
-				<div class="answers">
-					<div class="confidence"></div>
-					<div class="confidence-slider"></div>
-					<div class="boolean">
-						<a href="#">true</a>
-						<a href="#">false</a>
-						<input type="text" class="hide"/>
-					</div>
-				</div>
-			</div>
-			
-			
-			<a id="back" class="disabled">&lt;&lt; Back</a>
-			<a id="next">Next &gt;&gt;</a>
-			
-			<div id="resultContainer" class="radius hide"></div>
-			
-			<div id="feedbackContainer" class="radius hide">
-				<canvas id="feedbackCanvas">
-			</div>
-			
-			<div id="largeChart" ></div>
+            <div class="questionContainer radius hide">
+                <div class="question">Algeria is bigger than Germany.
+                    <a href="#" title="Algeria: slightly less than 3.5 times the size of Texas<br>Germany: slightly smaller than Montana">[ hint ]</a>
+                </div>
+                <div class="fact hide">true</div>
+                <div class="feedback hide">{"type": "area", "values": [{"name": "Algeria","area": 2381741},{"name": "Germany","area": 357022}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">Germany is bigger than Malaysia.
+                    <a href="#" title="Germany: slightly smaller than Montana<br>Malaysia: slightly larger than New Mexico">[ hint ]</a>
+                </div>
+                <div class="fact hide">true</div>
+                <div class="feedback hide">{"type": "area", "values": [{"name": "Germany","area": 357022},{"name": "Malaysia","area": 329847}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">China is bigger than Canada.
+                    <a href="#" title="China: slightly smaller than the US<br>Canada: slightly larger than the US">[ hint ]</a>
+                </div>
+                <div class="fact hide">false</div>
+                <div class="feedback hide">{"type": "area", "values": [{"name": "China","area": 9596961},{"name": "Canada","area": 9984670}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="questionContainer radius hide">
+                <div class="question">Malaysia is bigger than Algeria.
+                    <a href="#" title="Malaysia: slightly larger than New Mexico<br>Algeria: slightly less than 3.5 times the size of Texas">[ hint ]</a>
+                </div>
+                <div class="fact hide">false</div>
+                <div class="feedback hide">{"type": "area", "values": [{"name": "Malaysia","area": 329847},{"name": "Algeria","area": 2381741}]}</div>
+                <div class="answers">
+                    <div class="confidence"></div>
+                    <div class="confidence-slider"></div>
+                    <div class="boolean">
+                        <a href="#">true</a>
+                        <a href="#">false</a>
+                        <input type="text" class="hide"/>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <a id="back" class="disabled">&lt;&lt; Back</a>
+            <a id="next">Next &gt;&gt;</a>
+            
+            <div id="resultContainer" class="radius hide"></div>
+            
+            <div id="feedbackContainer" class="radius hide">
+                <canvas id="feedbackCanvas">
+            </div>
+            
+            <div id="largeChart" ></div>
 
-		</div>
-					
-		<script src="//www.google.com/jsapi"></script>
-		<script src="http://d3js.org/d3.v3.min.js"></script>
+        </div>
+                    
+        <script src="//www.google.com/jsapi"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
 
-		<script>
-		//<!--
+        <script>
+        //<!--
 
 
-		//-->
-		</script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script src="js/jquery.ui.touch-punch.min.js"></script>
+        //-->
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
 
-		<!--script src="js/json2html.js"></script>
-		<script src="js/jquery.json2html.js"></script-->
-		<script src="js/calibrate.js"></script>
-		<script src="js/utils.js"></script>
-	</body>
+        <!--script src="js/json2html.js"></script>
+        <script src="js/jquery.json2html.js"></script-->
+        <script src="js/calibrate.js"></script>
+        <script src="js/utils.js"></script>
+    </body>
 </html>
