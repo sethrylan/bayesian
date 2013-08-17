@@ -17,11 +17,11 @@ public class DomainTest {
 
         assertNotNull(reader);
 
-        FactbookContainer o = gson.fromJson(reader, FactbookContainer.class);
+        Factbook.FactbookContainer o = gson.fromJson(reader, Factbook.FactbookContainer.class);
 
         assertNotNull(o.factbook);
         assertNotNull(o.factbook.countries);
-        assertTrue(o.factbook.countries.size() > 0);
+        assertTrue(o.factbook.countries.length > 0);
     }
 
 
