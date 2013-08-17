@@ -2,6 +2,7 @@ package org.lenition.servlet;
 
 import com.google.gson.Gson;
 import org.lenition.domain.Factbook;
+import org.lenition.singleton.Quiz;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -19,10 +20,10 @@ public class FactbookServlet {
     }
 
     @GET
-    @Path("question")
+    @Path("questions")
     @Produces(MediaType.APPLICATION_JSON)
     public String question(@QueryParam("n") int n) {
-        return "TODO";
+        return Quiz.INSTANCE.getQuestions(n);
 
     }
 

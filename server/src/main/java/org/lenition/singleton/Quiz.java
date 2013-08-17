@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public enum Quiz {
 
-    INSTANCE;                           // must be first listed member
+    INSTANCE;                           // must be first listed member in an enum
     private Factbook factbook;
     private Random random = new Random(System.currentTimeMillis());
     private String[] cd = {};           // category distribution
@@ -23,13 +23,41 @@ public enum Quiz {
         put("healthExpenditure", 5);
         put("gini", 5);
     }};
+    private static String[] EXCLUDED_IDS = {
+        "um", // United States Pacific Island Wildlife Refuges
+        "wf", // Wallis and Futuna
+        "bq", // Navassa Island
+        "at", // Ashmore and Cartier Islands
+        "kt", // Christmas Island
+        "ck", // Cocos (Keeling) Islands
+        "cr", // Coral Sea Islands
+        "ne", // Niue
+        "nf", // Norfolk Island
+        "cq", // Northern Mariana Islands
+        "tl", // Tokelau
+        "tb", // Saint Barthelemy
+        "dx", // Dhekelia
+        "jn", // Jan Mayen
+        "je", // Jersey
+        "ip", // Clipperton Island
+        "sb", // Saint Pierre and Miquelon
+        "io", // British Indian Ocean Territory
+        "sh", // Saint Helena, Ascension, and Tristan da Cunha
+        "bv", // Bouvet Island
+        "fs", // French Southern and Antarctic Lands
+        "hm", // Heard Island and McDonald Islands
+        "nc", // New Caledonia
+        "wq" // Wake Island
+    };
 
     Quiz() {
+        // Read factbook data
         Reader reader = new InputStreamReader(Quiz.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
         Factbook.FactbookContainer o = (new Gson()).fromJson(reader, Factbook.FactbookContainer.class);
         factbook = o.factbook;
-        List<String> cdList = new ArrayList<String>();
 
+        // Create probability array for categories
+        List<String> cdList = new ArrayList<String>();
         for(Map.Entry<String, Integer> weightedCategory : weightedCategories.entrySet()) {
             cdList.addAll(Collections.nCopies(weightedCategory.getValue(), weightedCategory.getKey()));
         }
@@ -76,20 +104,19 @@ public enum Quiz {
                 }
             } while(values[0].value == null || values[1].value == null );
 
-            System.out.println("values[0].value == null ? " + String.valueOf(values[0].value == null));
-            System.out.println("values[1].value == null ? " + String.valueOf(values[1].value == null));
-
-
-            System.out.println("Category: " + q.category);
-            System.out.println("Countries: " + countries[0].name + ", " + countries[1].name);
-            System.out.println("Values: " + values[0].value + ", " + values[1].value);
-            System.out.println("Texts: " + values[0].text + ", " + values[1].text);
+//            System.out.println("values[0].value == null ? " + String.valueOf(values[0].value == null));
+//            System.out.println("values[1].value == null ? " + String.valueOf(values[1].value == null));
+//
+//            System.out.println("Category: " + q.category);
+//            System.out.println("Countries: " + countries[0].name + ", " + countries[1].name);
+//            System.out.println("Values: " + values[0].value + ", " + values[1].value);
+//            System.out.println("Texts: " + values[0].text + ", " + values[1].text);
 
 
             q.hint = String.format("%s: %s<br>%s: %s", countries[0].name, values[0].text, countries[1].name, values[1].text);
             q.fact = String.valueOf(values[0].value.compareTo(values[1].value) > 0);
             q.feedback = String.format(" {\"category\": \"%s\", \"values\": [{\"name\": \"%s\",\"value\": %d},{\"name\": \"%s\",\"value\": %d}]}",
-                    q.category, countries[0].name, values[0].value.intValue(), countries[1].name, values[0].value.intValue());
+                    q.category, countries[0].name, values[0].value.intValue(), countries[1].name, values[1].value.intValue());
             q.options = getBooleanOptions();
 
             quiz.questions = ArrayUtils.add(quiz.questions, q);
@@ -100,11 +127,19 @@ public enum Quiz {
         return gson.toJson(quiz);
     }
 
+    /**
+     * Returns a randomly selected category based on their weighted probability
+     * @return a random category
+     */
     private String getRandomCategory() {
 //        return cd[random.nextInt(cd.length)];
         return "area";
     }
 
+    /**
+     * Returns a two different, randomly selected countries, neither of which is from the excluded list
+     * @return two random countries
+     */
     public Factbook.Country[] getRandomCountries() {
         Factbook.Country countryOne, countryTwo;
         do {
@@ -113,6 +148,18 @@ public enum Quiz {
         } while( countryOne == countryTwo);
 
         return ArrayUtils.toArray(countryOne, countryTwo);
+    }
+
+    /**
+     * Returns a randomly selected country not in the excluded list
+     * @return a random country
+     */
+    private Factbook.Country getRandomCountry() {
+        Factbook.Country country;
+        do {
+            country = factbook.countries[random.nextInt(factbook.countries.length)];
+        } while(ArrayUtils.contains(EXCLUDED_IDS, country.id));
+        return country;
     }
 
     private String[] getBooleanOptions() {
