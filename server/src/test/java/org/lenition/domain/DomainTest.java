@@ -24,5 +24,4 @@ public class DomainTest {
         assertTrue(o.factbook.countries.length > 0);
     }
 
-
 }
