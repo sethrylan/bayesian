@@ -74,7 +74,7 @@ public enum Quiz {
                         log.info("No such feedback category.");
                         break;
                 }
-            } while(values[0].value == null || values[0].equals("null") || values[1].value == null || values[1].equals("null"));
+            } while(values[0].value == null || values[1].value == null );
 
             System.out.println("values[0].value == null ? " + String.valueOf(values[0].value == null));
             System.out.println("values[1].value == null ? " + String.valueOf(values[1].value == null));

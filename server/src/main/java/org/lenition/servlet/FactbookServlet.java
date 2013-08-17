@@ -22,7 +22,8 @@ public class FactbookServlet {
     @Path("question")
     @Produces(MediaType.APPLICATION_JSON)
     public String question(@QueryParam("n") int n) {
-        return convertStreamToString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
+        return "TODO";
+
     }
 
     static String convertStreamToString(java.io.InputStream is) {

@@ -14,6 +14,8 @@ Development Workflow
 | server run local          | ```gradlew gaeRun```            |
 | server functional tests   | ```gradlew gaeFunctionalTest``` |
 |                           | ```gradlew gaeUpdate```         |
+| PMD, CheckStyle, etc      | ```gradlew check```             |
+| FindBugs                  | ```gradlew findbugs```          |
 
 
 
