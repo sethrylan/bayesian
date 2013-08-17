@@ -3,7 +3,6 @@ package org.lenition.singleton;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.ArrayUtils;
 import org.lenition.domain.Factbook;
-import org.lenition.domain.Quiz;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
@@ -11,12 +10,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-public enum Questionnaire {
+public enum Quiz {
 
     INSTANCE;
     Factbook factbook;
 
-    private static final Logger log = Logger.getLogger(Questionnaire.class.getName());
+    private static final Logger log = Logger.getLogger(Quiz.class.getName());
 
     Map<String, Integer> categoryWeights = new HashMap<String, Integer>() {{
         put("area", 5);
@@ -26,8 +25,8 @@ public enum Questionnaire {
         put("gini", 5);
     }};
 
-    Questionnaire() {
-        Reader reader = new InputStreamReader(Questionnaire.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
+    Quiz() {
+        Reader reader = new InputStreamReader(Quiz.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
         Factbook.FactbookContainer o = (new Gson()).fromJson(reader, Factbook.FactbookContainer.class);
         factbook = o.factbook;
     }
@@ -36,9 +35,9 @@ public enum Questionnaire {
         Gson gson = new Gson();
         int index = 0;
 
-        Quiz quiz = new Quiz();
+        org.lenition.domain.Quiz quiz = new org.lenition.domain.Quiz();
         while(index < numberOfQuestions) {
-            Quiz.Question q = new Quiz.Question();
+            org.lenition.domain.Quiz.Question q = new org.lenition.domain.Quiz.Question();
             q.category = getRandomCategory();
             switch (q.category) {
                 case "area":
