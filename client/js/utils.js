@@ -1,83 +1,83 @@
 function assert(condition, message) {
-	if (!condition) {
-		throw message || "Assertion failed";
-	}
+    if (!condition) {
+        throw message || "Assertion failed";
+    }
 }
 
 JSON.stringify = JSON.stringify || function (obj) {
-	var t = typeof (obj);
-	if (t != "object" || obj === null) {
-		// simple data type
-		if (t == "string") obj = '"'+obj+'"';
-		return String(obj);
-	}
-	else {
-		// recurse array or object
-		var n, v, json = [], arr = (obj && obj.constructor == Array);
-		for (n in obj) {
-			v = obj[n]; t = typeof(v);
-			if (t == "string") v = '"'+v+'"';
-			else if (t == "object" && v !== null) v = JSON.stringify(v);
-			json.push((arr ? "" : '"' + n + '":') + String(v));
-		}
-		return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
-	}
+    var t = typeof (obj);
+    if (t != "object" || obj === null) {
+        // simple data type
+        if (t == "string") obj = '"'+obj+'"';
+        return String(obj);
+    }
+    else {
+        // recurse array or object
+        var n, v, json = [], arr = (obj && obj.constructor == Array);
+        for (n in obj) {
+            v = obj[n]; t = typeof(v);
+            if (t == "string") v = '"'+v+'"';
+            else if (t == "object" && v !== null) v = JSON.stringify(v);
+            json.push((arr ? "" : '"' + n + '":') + String(v));
+        }
+        return (arr ? "[" : "{") + String(json) + (arr ? "]" : "}");
+    }
 };
 
 CanvasRenderingContext2D.prototype.clear = function() {
-	// Store the current transformation matrix
-	this.save();
+    // Store the current transformation matrix
+    this.save();
 
-	// Use the identity matrix while clearing the canvas
-	this.setTransform(1, 0, 0, 1, 0, 0);
-	this.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    // Use the identity matrix while clearing the canvas
+    this.setTransform(1, 0, 0, 1, 0, 0);
+    this.clearRect(0, 0, this.canvas.width, this.canvas.height);
 
-	// Restore the transform
-	this.restore();
+    // Restore the transform
+    this.restore();
 }
 
 function formatNumber(number) {
-	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 function tableToJson(table) {
-	var json = [];
-	// first row:
-	for(i = 1; i < table.length; i++) {
-		var entry = {};
-		for(j = 0; j < table[0].length; j++) {
-			entry[table[0][j]] = table[i][j];
-		}
-		json.push(entry);
-	}
-	return json;
+    var json = [];
+    // first row:
+    for(i = 1; i < table.length; i++) {
+        var entry = {};
+        for(j = 0; j < table[0].length; j++) {
+            entry[table[0][j]] = table[i][j];
+        }
+        json.push(entry);
+    }
+    return json;
 }
 
 CanvasRenderingContext2D.prototype.fillCircle = function(x, y, radius) {
-	this.beginPath();
-	this.arc(x, y, radius, 0, 2 * Math.PI, false);
-	this.fill();
-	this.lineWidth = 5;
-	this.strokeStyle = this.fillStyle;
-	this.stroke();
+    this.beginPath();
+    this.arc(x, y, radius, 0, 2 * Math.PI, false);
+    this.fill();
+    this.lineWidth = 5;
+    this.strokeStyle = this.fillStyle;
+    this.stroke();
 }
 
 CanvasRenderingContext2D.prototype.fillTextArc = function(text, x, y, radius, startRotation, degreesPerLetter) {
-	// To fill entire circlular arc:
-	// var degreesPerLetter = 2*Math.PI / text.length;
-	this.save();
-	this.translate(x,y);
-	this.rotate(startRotation);
+    // To fill entire circlular arc:
+    // var degreesPerLetter = 2*Math.PI / text.length;
+    this.save();
+    this.translate(x,y);
+    this.rotate(startRotation);
 
-	for(var i=0;i<text.length;i++){
-		this.save();
-		this.translate(radius, 0);
-		this.translate(10, -10);
-		this.rotate(1.4)
-		this.translate(-10, 10);          
-		this.fillText(text[i],0,0);
-		this.restore();
-		this.rotate(degreesPerLetter);
-	}
-	this.restore();
+    for(var i=0;i<text.length;i++){
+        this.save();
+        this.translate(radius, 0);
+        this.translate(10, -10);
+        this.rotate(1.4)
+        this.translate(-10, 10);          
+        this.fillText(text[i],0,0);
+        this.restore();
+        this.rotate(degreesPerLetter);
+    }
+    this.restore();
 }
