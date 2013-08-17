@@ -385,31 +385,31 @@ $(function(){
                 var formattedValue, radius;
                 switch(feedback.category) {
                     case "area":
-                        var area = feedback.values[i].area;
+                        var area = feedback.values[i].value;
                         var scaledArea = area / canvas.width;
                         formattedValue = formatNumber(area) + "km²";
                         radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
                         break;
                     case "population":
-                        var population = feedback.values[i].population;
+                        var population = feedback.values[i].value;
                         var scaledPopulation = (population/70000000) * canvas.width;
                         formattedValue = formatNumber(population) + " people";
                         radius = Math.sqrt(scaledPopulation)/Math.sqrt(Math.PI);					
                         break;
                     case "gdpPerCapita":
-                        var gpc = feedback.values[i].gdpPerCapita;
+                        var gpc = feedback.values[i].value;
                         var scaledGpc = (gpc/2000) * canvas.width;
                         formattedValue = "$" + formatNumber(gpc);
                         radius = Math.sqrt(scaledGpc)/Math.sqrt(Math.PI);					
                         break;
-                    case "healthExp":
-                        var exp = feedback.values[i].healthExp;
+                    case "healthExpenditure":
+                        var exp = feedback.values[i].value;
                         var scaledExp = (exp) * canvas.width;
                         formattedValue = exp + "%";
                         radius = Math.sqrt(scaledExp)/Math.sqrt(Math.PI);					
                         break;
                     case "gini":
-                        var gini = feedback.values[i].gini;
+                        var gini = feedback.values[i].value;
                         var scaledGini = gini/3 * canvas.width;
                         formattedValue = gini.toString();
                         radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);					
