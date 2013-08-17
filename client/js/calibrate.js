@@ -383,7 +383,7 @@ $(function(){
             for( i = 0; i < feedback.values.length; i++ ) {
                 var name = feedback.values[i].name;
                 var formattedValue, radius;
-                switch(feedback.type) {
+                switch(feedback.category) {
                     case "area":
                         var area = feedback.values[i].area;
                         var scaledArea = area / canvas.width;
@@ -415,7 +415,7 @@ $(function(){
                         radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);					
                         break;
                     default:
-                        console.error("No such feedback type.");
+                        console.error("No such feedback category.");
                         return;
                 }
 
