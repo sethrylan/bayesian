@@ -1,5 +1,8 @@
 package org.lenition.domain;
 
+/**
+ * FactbookQuiz domain object
+ */
 public class Quiz {
     public Question[] questions;
 

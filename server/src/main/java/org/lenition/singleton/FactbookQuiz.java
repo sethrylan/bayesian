@@ -3,19 +3,23 @@ package org.lenition.singleton;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.ArrayUtils;
 import org.lenition.domain.Factbook;
+import org.lenition.domain.Quiz;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.util.*;
 import java.util.logging.Logger;
 
-public enum Quiz {
+/**
+ * Singleton to hold factbook quiz data
+ */
+public enum FactbookQuiz {
 
     INSTANCE;                           // must be first listed member in an enum
     private Factbook factbook;
     private Random random = new Random(System.currentTimeMillis());
     private String[] cd = {};           // category distribution
-    private static final Logger log = Logger.getLogger(Quiz.class.getName());
+    private static final Logger log = Logger.getLogger(FactbookQuiz.class.getName());
     private final Map<String, Integer> weightedCategories = new HashMap<String, Integer>() {{
         put("area", 5);
         put("population", 5);
@@ -47,30 +51,35 @@ public enum Quiz {
         "fs", // French Southern and Antarctic Lands
         "hm", // Heard Island and McDonald Islands
         "nc", // New Caledonia
-        "wq" // Wake Island
+        "wq", // Wake Island
+        "nr" // Nauru
     };
 
-    Quiz() {
+    FactbookQuiz() {
         // Read factbook data
-        Reader reader = new InputStreamReader(Quiz.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
+        Reader reader = new InputStreamReader(FactbookQuiz.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
         Factbook.FactbookContainer o = (new Gson()).fromJson(reader, Factbook.FactbookContainer.class);
         factbook = o.factbook;
 
         // Create probability array for categories
-        List<String> cdList = new ArrayList<String>();
+        List<String> cdList = new ArrayList<>();
         for(Map.Entry<String, Integer> weightedCategory : weightedCategories.entrySet()) {
             cdList.addAll(Collections.nCopies(weightedCategory.getValue(), weightedCategory.getKey()));
         }
         cd = cdList.toArray(new String[]{});
     }
 
-    public String getQuestions(final int numberOfQuestions) {
-        Gson gson = new Gson();
+    /**
+     * Return random factbook questions
+     * @param numberOfQuestions number of questions
+     * @return random
+     */
+    public Quiz getQuestions(final int numberOfQuestions) {
         int index = 0;
 
-        org.lenition.domain.Quiz quiz = new org.lenition.domain.Quiz();
+        Quiz quiz = new Quiz();
         while(index < numberOfQuestions) {
-            org.lenition.domain.Quiz.Question q = new org.lenition.domain.Quiz.Question();
+            Quiz.Question q = new Quiz.Question();
             Factbook.Value[] values = null;
             Factbook.Country[] countries;
             do {
@@ -123,7 +132,7 @@ public enum Quiz {
             index++;
         }
 
-        return gson.toJson(quiz);
+        return quiz;
     }
 
     /**
@@ -132,7 +141,6 @@ public enum Quiz {
      */
     private String getRandomCategory() {
         return cd[random.nextInt(cd.length)];
-//        return "area";
     }
 
     /**
@@ -161,6 +169,10 @@ public enum Quiz {
         return country;
     }
 
+    /**
+     * Default true/false question options
+     * @return default boolean options
+     */
     private String[] getBooleanOptions() {
             return ArrayUtils.toArray("true", "false");
     }

@@ -1,8 +1,10 @@
 package org.lenition.domain;
 
 import java.math.BigDecimal;
-import java.util.List;
 
+/**
+ * Factbook domain object
+ */
 public class Factbook {
     public Country[] countries;
 
