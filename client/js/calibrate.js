@@ -127,6 +127,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 
     var data = tableToJson(dataTable);
     data.forEach(function(d) {
+    // make all data positive, if necessary
     //	d["ideal"]= +d["ideal"];
     //	d["actual"] = +d["actual"];
     });
@@ -189,7 +190,8 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .style("text-anchor", "end")
         .text("% correct");
 
-        /*
+        /* 
+    // create legend
     svg.append("g")
         .attr("class", "legend")
         .attr("transform", "translate(0," + height + ")")
@@ -204,10 +206,38 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 }
 
 
+/* Insert questions in HTML */        
+var url = "http://localhost:8080/factbook/questions?n=5";
+$.getJSON(url, function(data) {
+  var questions = [];
+ 
+  $.each(data.questions, function(key, q) {
+      $('#progressContainer').after(
+          '<div class="questionContainer radius hide">' + 
+            '<div class="question">' + q.text +
+              '<a href="#" title="' + q.hint + '">[ hint ]</a>' +
+            '</div>' +
+            '<div class="fact hide">' + q.fact + '</div>' + 
+            '<div class="feedback hide">' + q.feedback + '</div>' +
+            '<div class="answers">' + 
+              '<div class="confidence"></div>' +
+              '<div class="confidence-slider"></div>' +
+              '<div class="boolean">' +
+                '<a href="#">' + q.options[0] + '</a>' +
+                '<a href="#">' + q.options[1] + '</a>' +
+                '<input type="text" class="hide"/>' +
+              '</div>' +
+            '</div>' +
+          '</div>');
+  });
+});
+
+
+
 /*
  *  Main quiz function.
  */
-$(function(){
+$(function() {
 
     // Register [enter] keypress as default action
     $('*').keypress(function (e) {
