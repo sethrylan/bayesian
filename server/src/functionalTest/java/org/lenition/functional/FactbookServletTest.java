@@ -1,7 +1,6 @@
 package org.lenition.functional;
 
 import org.junit.Test;
-import org.lenition.domain.Quiz;
 
 import static com.jayway.restassured.RestAssured.expect;
 import static org.hamcrest.Matchers.containsString;
@@ -27,6 +26,4 @@ public class FactbookServletTest {
             when().
             get("/factbook/questions?n={n}", String.valueOf(parameter));
     }
-
-
 }
