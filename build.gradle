@@ -61,7 +61,7 @@ project(':server') {
             }
 
             app {
-                id = 'bayesian'
+                id = 'bayesian-calibration'
             }
         }
     }
