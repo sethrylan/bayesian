@@ -2,10 +2,8 @@ package org.lenition.servlet;
 
 import com.google.gson.Gson;
 import org.lenition.singleton.FactbookQuiz;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.QueryParam;
+
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 
 /**
@@ -32,7 +30,7 @@ public class FactbookServlet {
     @GET
     @Path("questions")
     @Produces(MediaType.APPLICATION_JSON)
-    public String question(@QueryParam("n") int n) {
+    public String question(@DefaultValue("30") @QueryParam("n") int n) {
         return (new Gson()).toJson(FactbookQuiz.INSTANCE.getQuestions(n));
     }
 
