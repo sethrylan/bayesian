@@ -222,7 +222,7 @@ $.getJSON(url, function(data) {
             '<div class="answers">' + 
               '<div class="confidence"></div>' +
               '<div class="confidence-slider"></div>' +
-              '<div class="boolean">' +
+              '<div class="options">' +
                 '<a href="#">' + q.options[0] + '</a>' +
                 '<a href="#">' + q.options[1] + '</a>' +
                 '<input type="text" class="hide"/>' +
@@ -255,7 +255,7 @@ $(function() {
         }
     });
 
-    $( ".boolean > a" )
+    $( ".options > a" )
         .button()
         .click(function( event ) {
             event.preventDefault();
@@ -337,13 +337,13 @@ $(function() {
                 el.width(el.width() - progressPixels + 'px');
             });
             
-            $('.boolean > a').click(function(){
+            $('.options > a').click(function(){
                 $('#next').click();
             });
             
             // Next Buttom
             $('#next').click(function(){		
-                if ( !$('.answers > .boolean > a:visible').hasClass('selected') 
+                if ( !$('.answers > .options > a:visible').hasClass('selected') 
                     ||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
                     || $(this).hasClass('disabled')) {
                     // if all inputs are not provided or link is diabled, do not proceed
@@ -384,15 +384,15 @@ $(function() {
         },
         addResponse: function() {
             var fact = $('.questionContainer:visible > .fact').text();
-            var booleanResponse = $('.boolean:visible > input[type=text]').val();
+            var optionResponse = $('.options:visible > input[type=text]').val();
             var confidence = $('.answers:visible > .confidence-slider').slider( 'value' );
             
             var response = {
                 index: currentQuestion,
-                response: booleanResponse,
+                response: optionResponse,
                 confidence: confidence,
                 fact: fact,
-                correct: (fact == booleanResponse)
+                correct: (fact == optionResponse)
             };
             jQuiz.responses.push(response);			
         },

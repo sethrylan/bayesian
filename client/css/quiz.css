@@ -1,9 +1,3 @@
-/* Google Charts SVGs are much larger than their containing div */
-/*
-#chartContainer * {
-    z-index: -1;		
-}
-*/
 div.ui-tooltip {
     max-width: 400px;	/* Increase default jQueryUI tooltip size */
 }
@@ -12,13 +6,13 @@ div.ui-tooltip {
     margin-left:   40px;
     margin-right:  40px;
 }
-.boolean {
+.options {
     margin-left:auto;
     margin-right:auto;
     width:20%;
     padding-bottom:40px;
 }
-.boolean a:hover {
+.options a:hover {
     color:black;
 }
 .selected span {
