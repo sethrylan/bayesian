@@ -123,7 +123,6 @@ public enum Quiz {
             index++;
         }
 
-        System.out.println("quiz.questions.length:" + quiz.questions.length);
         return gson.toJson(quiz);
     }
 
@@ -132,8 +131,8 @@ public enum Quiz {
      * @return a random category
      */
     private String getRandomCategory() {
-//        return cd[random.nextInt(cd.length)];
-        return "area";
+        return cd[random.nextInt(cd.length)];
+//        return "area";
     }
 
     /**
