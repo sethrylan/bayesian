@@ -7,6 +7,10 @@ import org.lenition.domain.Quiz;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.*;
 import java.util.logging.Logger;
 
@@ -54,6 +58,8 @@ public enum FactbookQuiz {
         "wq", // Wake Island
         "nr", // Nauru
         "vc", // Saint Vincent and the Grenadines
+        "pf", // Paracel Islands
+        "kr", // Kiribati
         "tn" // Tonga
     };
 
@@ -84,30 +90,44 @@ public enum FactbookQuiz {
             Quiz.Question q = new Quiz.Question();
             Factbook.Value[] values = null;
             Factbook.Country[] countries;
+            q.category = getRandomCategory();
             do {
-                q.category = getRandomCategory();
                 countries = this.getRandomCountries();
+
+//                System.out.println("Category: " + q.category);
+//                System.out.println("Countries: " + countries[0].name + ", " + countries[1].name);
 
                 switch (q.category) {
                     case "area":
-                        q.text = String.format("%s is bigger than %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].area, countries[1].area);
+                        q.text = String.format("%s is bigger than %s.", countries[0].name, countries[1].name);
+                        q.hint = String.format("%s: %s<br>%s: %s", countries[0].name, values[0].text, countries[1].name, values[1].text);
                         break;
                     case "population":
-                        q.text = String.format("%s has more people than %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].population, countries[1].population);
+                        q.text = String.format("%s has more people than %s.", countries[0].name, countries[1].name);
+                        q.hint = String.format("%s: population growth rate of %s<br>%s: population growth rate of %s",
+                                countries[0].name, percentage(countries[0].populationGrowthRate.value),
+                                countries[1].name, percentage(countries[1].populationGrowthRate.value) );
                         break;
                     case "gdpPerCapita":
-                        q.text = String.format("%s has higher GDP (PPP) per capita than %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].gdpPerCapita, countries[1].gdpPerCapita);
+                        q.text = String.format("%s has higher GDP (PPP) per capita than %s.", countries[0].name, countries[1].name);
+                        q.hint = String.format("%s: total GDP is %s billion%s<br>%s: total GDP is %s billion%s",
+                                countries[0].name, currencyBillions(countries[0].gdp.value), countries[0].gdp.text != null ? " (" + countries[0].gdp.text + ")" : "",
+                                countries[1].name, currencyBillions(countries[1].gdp.value), countries[1].gdp.text != null ? " (" + countries[1].gdp.text + ")" : "");
                         break;
                     case "healthExpenditure":
-                        q.text = String.format("%s has higher health expenditure %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].healthExpenditure, countries[1].healthExpenditure);
+                        q.text = String.format("%s has higher health expenditure (%%GDP) than %s.", countries[0].name, countries[1].name);
+                        q.hint = String.format("%s: death rate of %s<br>%s: death rate of %s",
+                                countries[0].name, percentage(countries[0].deathRate.value),
+                                countries[1].name, percentage(countries[1].deathRate.value) );
                         break;
                     case "gini":
-                        q.text = String.format("%s has a higher Gini index than %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].gini, countries[1].gini);
+                        q.text = String.format("%s has a higher Gini index than %s.", countries[0].name, countries[1].name);
+                        q.hint = "The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.";
                         break;
                     default:
                         log.info("No such feedback category.");
@@ -124,10 +144,9 @@ public enum FactbookQuiz {
 //            System.out.println("Texts: " + values[0].text + ", " + values[1].text);
 
 
-            q.hint = String.format("%s: %s<br>%s: %s", countries[0].name, values[0].text, countries[1].name, values[1].text);
             q.fact = String.valueOf(values[0].value.compareTo(values[1].value) > 0);
             q.feedback = String.format(" {\"category\": \"%s\", \"values\": [{\"name\": \"%s\",\"value\": %d},{\"name\": \"%s\",\"value\": %d}]}",
-                    q.category, countries[0].name, values[0].value.intValue(), countries[1].name, values[1].value.intValue());
+                                        q.category, countries[0].name, values[0].value.intValue(), countries[1].name, values[1].value.intValue());
             q.options = getBooleanOptions();
 
             quiz.questions = ArrayUtils.add(quiz.questions, q);
@@ -177,5 +196,26 @@ public enum FactbookQuiz {
     private String[] getBooleanOptions() {
             return ArrayUtils.toArray("true", "false");
     }
+
+    private static String currencyBillions(BigDecimal n) {
+        if(n == null) {
+            return "--.--";
+        }
+        BigDecimal billion = new BigDecimal(1000000000);
+        return NumberFormat.getCurrencyInstance().format(n.divide(billion));
+    }
+
+    private static String percentage(BigDecimal n) {
+        if(n == null) {
+            return "NA";
+        }
+        n = n.setScale(2, BigDecimal.ROUND_DOWN);
+        DecimalFormat df = new DecimalFormat();
+        df.setMaximumFractionDigits(2);
+        df.setMinimumFractionDigits(0);
+        df.setGroupingUsed(false);
+        return df.format(n);
+    }
+
 
 }

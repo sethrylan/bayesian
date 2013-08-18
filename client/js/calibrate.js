@@ -106,7 +106,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 
     // Note: there is some undershoot in basis interpolate. Cardinal has some overshoot.
     area = d3.svg.area()
-        .interpolate("linear")
+        .interpolate("basis")
         .x(function(d) { return x(d.confidence); })
         .y1(function(d) { return y(d["ideal"]); });
 

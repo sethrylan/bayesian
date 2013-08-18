@@ -10,7 +10,7 @@ public class QuizTest {
     @org.junit.Test
     public void testGetQuestions() {
         Gson gson = new Gson();
-        for(int i = 1; i <= 20; i++) {
+        for(int i = 1; i <= 40; i++) {
             Quiz quiz = FactbookQuiz.INSTANCE.getQuestions(i);
             String json = (new Gson()).toJson(quiz);
             System.out.println(json);
