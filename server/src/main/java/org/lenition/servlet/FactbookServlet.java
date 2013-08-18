@@ -34,7 +34,6 @@ public class FactbookServlet {
     @Produces(MediaType.APPLICATION_JSON)
     public String question(@QueryParam("n") int n) {
         return (new Gson()).toJson(FactbookQuiz.INSTANCE.getQuestions(n));
-
     }
 
     static String convertStreamToString(java.io.InputStream is) {

@@ -52,7 +52,9 @@ public enum FactbookQuiz {
         "hm", // Heard Island and McDonald Islands
         "nc", // New Caledonia
         "wq", // Wake Island
-        "nr" // Nauru
+        "nr", // Nauru
+        "vc", // Saint Vincent and the Grenadines
+        "tn" // Tonga
     };
 
     FactbookQuiz() {
@@ -104,7 +106,7 @@ public enum FactbookQuiz {
                         values = ArrayUtils.toArray(countries[0].healthExpenditure, countries[1].healthExpenditure);
                         break;
                     case "gini":
-                        q.text = String.format("%s has more people than %s.", countries[0].name, countries[1].name);
+                        q.text = String.format("%s has a higher Gini index than %s.", countries[0].name, countries[1].name);
                         values = ArrayUtils.toArray(countries[0].gini, countries[1].gini);
                         break;
                     default:
@@ -150,10 +152,9 @@ public enum FactbookQuiz {
     public Factbook.Country[] getRandomCountries() {
         Factbook.Country countryOne, countryTwo;
         do {
-            countryOne = factbook.countries[random.nextInt(factbook.countries.length)];
-            countryTwo = factbook.countries[random.nextInt(factbook.countries.length)];
+            countryOne = this.getRandomCountry();
+            countryTwo = this.getRandomCountry();
         } while( countryOne == countryTwo);
-
         return ArrayUtils.toArray(countryOne, countryTwo);
     }
 
