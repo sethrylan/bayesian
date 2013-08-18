@@ -14,6 +14,11 @@
             <param-name>com.sun.jersey.config.feature.DisableWADL</param-name>
             <param-value>true</param-value>
         </init-param>
+        <init-param>
+            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+            <param-value>org.lenition.filter.AllowOriginFilter</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>Jersey Web Application</servlet-name>
