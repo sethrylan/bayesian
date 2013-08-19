@@ -39,12 +39,9 @@ h3, h4, h5 { margin: 0px; }
 br.space { line-height: 0.25em; }
 
 /* Hyperlinks */
-a, a:visited, a:hover { color: #000; text-decoration: none; }
+a, a:visited, a:hover { color: #000; }
 a.nav, a.nav:visited { color: #888; font-weight: normal; }
 a:hover, a.nav:hover { color: #33f; }
-.text a {
- font-weight: bold;
-}
 
 /* Tables */
 table, tr, td { margin: 0; padding: 0; }

@@ -208,7 +208,10 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 
 /* Insert questions in HTML */        
 //var url = "http://bayesian-calibration.appspot.com/factbook/questions?n=20"
-var url = "http://localhost:8080/factbook/questions?n=5";
+var url = 'http://localhost:8080/factbook/questions';
+if(get('n')) {
+    url += '?n=' + n;
+} 
 $.getJSON(url, function(data) {
   var questions = [];
  

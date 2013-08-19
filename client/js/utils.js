@@ -53,6 +53,13 @@ function tableToJson(table) {
     return json;
 }
 
+function get(name){
+    if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search)) {
+        return decodeURIComponent(name[1]);
+    }
+}
+
+
 CanvasRenderingContext2D.prototype.fillCircle = function(x, y, radius) {
     this.beginPath();
     this.arc(x, y, radius, 0, 2 * Math.PI, false);
