@@ -119,9 +119,10 @@ input {
 .x.axis path {
     display: none;
 }
+/* Hex Color Codes : http://www.only-zuul.com/ahexcolor.htm */
 /* Underconfidence */
 .area.above {
-    fill: rgb(0, 123, 167);
+    fill: #9370DB;              /* Rosy Brown */
     opacity: 0.5;
 }
 /* Overconfidence */
