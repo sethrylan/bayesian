@@ -3,6 +3,10 @@
  *	.class-name
  */
  
+.csl-entry {
+ padding-left: 22px;
+ text-indent: -22px;
+}    
 body {
  max-width: 960px;
  min-width: 960px;

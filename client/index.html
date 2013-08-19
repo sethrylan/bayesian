@@ -40,6 +40,7 @@
             <h1>
                 about &#160;&#160;&#160;
                 <a class="nav" href="calibrate.html">calibrate</a>&#160;&#160;&#160;
+                <a class="nav" href="think.html">think probabilistically</a>&#160;&#160;&#160;
             </h1>
 
             <div class="text">
@@ -53,11 +54,11 @@
                         </p>
 
                         <p>
-                        I'm also a terrible guesser. As are most people, with the exception of some well-trained meterologists and professional gamblers.
+                        I'm also a terrible guesser. As are most people, with the exception of some well-trained meterologists and professional gamblers (Nate Silver, Lichtenstein).
                         </p>
 
                         <p>
-                        When I say 'guessing,' I'm referring to a properly calibrated probability estimate. If one were to guess the gross domestic earnings of <em>The Goonies</em>, the answer would probably be wrong, because this tests specific domain knowledge. Rephrasing the question as:
+                        'Guessing' here refers to a properly calibrated probability estimate. If one were to guess the gross domestic earnings of <em>The Goonies</em>, the answer would probably be wrong, not because of profound personal faults, but because this tests specific domain knowledge. Rephrasing the question as:
                         <blockquote>
                         "What are your high and low estimates for the gross domestic earnings of the <em>The Goonies</em>? What interval estimate of <a href="https://en.wikipedia.org/wiki/Confidence_interval">confidence</a> would give this range?"
                         </blockquote>
@@ -67,7 +68,7 @@
                         "Between $100,000 to $100,000,000, inclusive, with 90% confidence."
                         </blockquote>
 
-                        Given enough data points (say, the 100 top grossing films of 1980-1989) in a sufficiently ideal world, the estimated confidence interval would match the observed accuracy. In other words, the range estimates given with 90% confidence should &ndash; on average and with minimal variance &ndash; be correct 90% of the time. This changes the exercise from a measurement of trivia knowledge to a measurement of ability to gauge uncertainty.  However, only about 70% [ citation needed ] of estimated ranges with a 90% confidence interval will contain the actual value, not because of a lack of public knowledge in 20th century film economics, but because humans habitually display overconfident estimates. What we know is about 25-45 percent less than what we think we know [ citation needed ].
+                        Given enough data points in a sufficiently ideal world, the estimated confidence interval would match the observed accuracy. In other words, the range estimates given with 90% confidence should &ndash; on average and with minimal variance &ndash; be correct 90% of the time (Alpert and Raffia 1982). This changes the exercise from a measurement of trivia knowledge to a measurement of ability to gauge uncertainty.  However, much fewer than 90% of answers with 90% confidence will contain the actual value, not because of a lack of public knowledge in 20th century film economics, but because humans habitually display overconfident estimates. What we know is about 10-35 percentage points less than what we think we know in this example (Note: graph example) (Lichtenstein et al 1981).
                         </p>
 
                         <p>
@@ -78,21 +79,21 @@
                         <h6 style="padding-top: 10px;">cognitive bugs</h6>
 
                         <p>
-                        There exists much more research investigating the limits and prejudgices of probability estimages than in their potential causes. The theories below are well-reasoned, but lack empirical evidence. (Note: while these theories are well thought-out and based on the attributed research, there is little to know empirical tests establishing causation to the 'uncalibration' of probability estimates).
-                        </p>
-                        <p>
-                        Cognitive biases that act against our correct estimation of prior probablity: 
+                        There exists plenty of empirical research on the limits and prejudices of probability estimates, and a few theories on their potential causes, most of which can be found among other lists of cognitive biases (Wilson 1994). 
                         </p>
                         <ul>
-                        <li>anchoring</li>
-                        <li>the pattern-seeking habits of human perception create the illusion of signal where there is only noisy data</li>
-                        <li>Prospect theory: small probabilities are overweighted, especially when attached to high-consequence events (p100, Scott Plous)</li>
-                        <li>we seek to reduce risk/uncertainty, and will pay an economic premium for it (p100, Plous)</li>
-                        <li>"missing, noisy or imprecise variables."  Ambguity makes us uncomfortable.</li>
-                        <li>Our educational training emphasizes algebra and calculus as the end goals, <a href="http://informaticsprofessor.blogspot.com/2013/05/basic-statistics-should-be-core.html">not probability and statistics</a></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Anchoring">Anchoring</a>: the wording and structure of the questions decrease epistemic accuracy by 53 percentage points (Lichtenstein).</li>
+                        <li>Pattern-seeking habits of humans create the illusion of signal where there is only noisy data (p12, Silver).</li>
+                        <li><a href="http://www.princeton.edu/~kahneman/docs/Publications/prospect_theory.pdf">Prospect theory</a>: small probabilities are overweighted, especially when attached to high-consequence events (p100, Scott Plous).</li>
+                        <li>We actively seek to reduce risk/uncertainty, and will pay an economic premium for it (p100, Plous).</li>
+                        <li>Our educational training emphasizes algebra and calculus as the end goals, <a href="http://informaticsprofessor.blogspot.com/2013/05/basic-statistics-should-be-core.html">not probability and statistics</a>.</li>
+                        <li>We <a href="http://en.wikipedia.org/wiki/Base_rate_neglect">ignore</a> prior probabilities.</li>
+                        <li>Many social systems reward overconfidence (Radzevick).</li>
+                        <li>Narrative Fallacy: in situations determined primarily by chance, a narrative is often built to coherently explain the events, often in hindsight (Kahneman 2011). E.g., market fluctuations due to labor reports, portfolio performance due to investment strategies or combat effectiveness predicted by training exercises. (Note: this same technique can be used for minimize the effect of 'overfitting' a quantitative prediction model to prior data. Silver page 196)</li>
+                        
                         </ul>
 
-                        These biases are to estimation as geometrical-optical illusions [image] are to psychometrics. A simple change of the problem context causes a predicatable change in the perceived reality. In general, humans have a very troubled relationship with uncertainty. We don't understand it instintually, and a large part of current information science is devoted to ways of <a href="http://www.nature.com/nmeth/journal/v10/n7/full/nmeth.2530.html">accurately communicating</a> it.
+                        These biases are to estimation as <a href="http://en.wikipedia.org/wiki/Checker_shadow_illusion">geometrical-optical illusions</a> are to psychometrics. A simple change of the problem context causes a predicatable change in the perceived reality. In general, humans have a very troubled relationship with uncertainty. We don't understand it instintually, we don't <a href="http://www.nature.com/nmeth/journal/v10/n7/full/nmeth.2530.html">communicate it well</a> and we're <a href="http://www.econlib.org/library/Knight/knRUP1.html#Pt.I,Ch.II">willing to pay</a> to avoid it.
                         </p>
 
 
@@ -104,93 +105,116 @@
                         <p>
                         Or that time your project estimate was off by an order-of-magnitude?
                         </p>
-                        <p>
+                        <p>pervasive and potentially catastrophic
                         Or when that investment turned out so badly it scared you back into bonds and CD's for next ten years?
                         </p>
                         <p>
                         Even if you don't live in a region with legalized gambling or work in a forecasting profession, your inability to estimate hurts you.
                         </p>
+                        <p>
+                        More importantly, the ability to accurately estimate opens the door to probablistic thinking (Jeffery 2002). Bayesian prediction avoid the nuances of frequentist statistics, while allowing your mental model to change as the facts changes. It's something for which the Army (Lichtenstein and  Fischhoff 1978) and Air Force (Gunzelmann and Gluck2004) train, and M.D.s understand through years of experience (Gill 2004, Lindey et al 1979). 
+                      
+
+                        
+                        </p>
 
                         <h6 style="padding-top: 10px;">mensa mea bona est</h6>
 
                         <p>
-                        Overconfident guessing follows a predictable pattern. Overconfidence is usual for difficult assessments (although slightly less for T/F tests; Hubbard p64). Underconfidence for easy ones. Calibration fixes this.
+                        Overconfidence follows a predictable pattern. Overconfidence is usual for difficult assessments (although slightly less for T/F tests; Hubbard p64). In some cases, very easy questions inspire underconfidence (Lichtenstein et al 1981). Calibration can help to correct this. A few recommend techniques are:
                         <ul>
+                        <li>Consider the reasons why your judgment might be wrong (Plous 228)</li>
                         <li>Rationalize answers with pros and cons (Hubbard p64)</li>
                         <li>Range estimates to reduce the anchoring effect of a point estimate. Particularly, working towards a narrow range for an absurdly large range.</li>
-                        <li>Confidence intervals</li>
-                        <li></li>
                         </ul>
-                        </p>
-
-                        <h6 style="padding-top: 10px;">the n-step method</h6>
-                        <p>
+                        Things that don't fix overconfidence:
                         <ul>
-                        <li>Get comfortable with uncertainty, particularly the idea of giving uncertain unaswers</li>
-                        <li>Practice gauging your uncertainty</li>
-                        <li>Think probablistically!</li>
-                        <li></li>
+
+                            <li>More information. Paradoxically, providing more information to the problem increases one's confidence in the answer, but not accuracy. (Oskamp) (Kassin and Fong 1999)</li>
                         </ul>
                         </p>
-
-
+                      
 
                         <h6 style="padding-top: 10px;">other examples</h6>
                         If you want to try other types of calibrated probability assessments:
 
                         <ul>
-                        <li><a href="http://lesswrong.com/lw/1f8/test_your_calibration/">A list of them here</a></li>
+                        <li><a href="http://lesswrong.com/lw/1f8/test_your_calibration/">A list of them</a></li>
                         <li><a href="http://www.acceleratingfuture.com/steven/?p=136">Aumann Game: a self-scoring example</a></li>
-                        <li><a href="http://calibratedprobabilityassessment.org">an automated quiz</a> that produces a <a href="http://calibratedprobabilityassessment.org/graph.php?y=0.28571428571429-0.90909090909091-0.75-1-1&x=55-65-75-85-95">nifty graph</a></li>
-                        <li></li>
+                        <li><a href="http://calibratedprobabilityassessment.org">An automated quiz</a> that produces a <a href="http://calibratedprobabilityassessment.org/graph.php?y=0.28571428571429-0.90909090909091-0.75-1-1&x=55-65-75-85-95">nifty graph</a></li>
+                        <li><a href="http://messymatters.com/calibration/">Reproduced from <em>Decision Traps</em>, also in Plous</a></li>
                         </ul>
 
 
-                        Sources:
-                        <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf">Cognitive Factors Affecting Subjective Probability Assessment</a>
-                        <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/pdf/bmj33001080.pdf">Why clinicians are natural bayesians</a>
-                        <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a069703.pdf">Training for Calibration</a>
-                        <a href="http://act-r.psy.cmu.edu/papers/710/gunzelmann_gluck-2004.pdf">Knowledge Tracing for Complex Training Applications: Beyond Bayesian Mastery Estimates</a>
-                        <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">Calibration of Probabilities: The State of the Art to 1980</a>
+                        <h6 style="padding-top: 10px;">notes</h6>
+                        
+                        A plot of these effects look like <a href="http://goodmorningeconomics.files.wordpress.com/2008/07/intro-calibration-chart.jpg">this</a>.
+                        
+                        <blockquote>
+                            <p>
+"The narrative fallacy addresses our limited ability to look at sequences of facts without weaving an explanation into them, or, equivalently, forcing a logical link, an arrow of relationship upon them. Explanations bind facts together. They make them all the more easily remembered; they help them make more sense. Where this propensity can go wrong is when it increases our impression of understanding."
+                            </p>
+                            <p>
+&mdash;Nassim Nicholas Taleb, The Black Swan
+                            </p>
+                        </blockquote>
 
-
-                        http://www.quora.com/Engineering-Management/Why-are-software-development-task-estimations-regularly-off-by-a-factor-of-2-3
+                        <blockquote>                
+                        "No problem in judgement in decision making is more prevalent and more potentially catastrophic than overconfidence. As loving Janis (1982) documented in his work on groupthink, American overconfidence enabled the Japanese to destroy Pearl Harbor in World War II. Overconfidence also played a role in the disastrous decision to launch the U.S. space shuttle Challenger. Before the shuttle exploded on its twenty-fifth mission, NASA's official launch risk estimate was 1 catastrophic failure in 100,000 launches (Feynman, 1988, February). This risk estimate is roughly equivalent to launching the shuttle once per day and expecting to see only one accident in three centuries." (Plous 217)
+                        </blockquote>
                         Bayesian is sometimes called "subjectivist"
-
-
-                        precision vs recall
-                        sensitivity vs specificity
-                        type I vs type II
-
-                        positive likelihood ratio = (sensitivity/(1-specificity))
-
-                        Non US preferrence for questions
-                        norse mythology trivia
-                        movie budgets
-                        Population:
-                          Area of countries
-                          <a href="http://en.wikipedia.org/wiki/List_of_United_States_cities_by_population_density">pop density</a>
-                          http://www.facster.com/display.aspx?t=2842
-                          http://www.census.gov/prod/2003pubs/02statab/pop.pdf
-                        translations
-                        <a href="http://www.census.gov/compendia/statab/2008/cats/science_technology/students_and_degrees_conferred.html">STEM degrees</a>
-
-
-
-                        f2147 (total area) -> f2023 (area comparative) -> area ranking
-                        population -> urbanization -> age struture -> population ranking
-
-                        Quote citations: http://www.webmaster-source.com/2012/04/24/pure-css-blockquote-styling/
                         
-                        Anchor examples from hemoptysis lecture by Jason Hughes (pulmonary embolism vs infectious causes (50-60% non-TB + 8% TB).
-                        EM Lecture, 17:30
 
-                        http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf
+
+                        <h6 style="padding-top: 10px;">sources</h6>
+
+
+                        <div class="csl-entry">Alpert, Marc, and Howard Raiffa. <a href="http://faculty.washington.edu/jmiyamot/p466/alpertm%20prog%20report%20on%20training%20o%20prob%20assessors.pdf">“A Progress Report on the Training of Probability Assessors.”</a> In <i>Judgment Under Uncertainty</i>, 294–305. Cambridge University Press, 1982. http://dx.doi.org/10.1017/CBO9780511809477.022.</div>
+
+<div class="csl-entry">Gill, C. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/pdf/bmj33001080.pdf">“Why Clinicians Are Natural Bayesians.”</a> <i>BMJ</i> 330, no. 7499 (May 7, 2005): 1080–1083. doi:10.1136/bmj.330.7499.1080.</div>
+  
+<div class="csl-entry">Gunzelmann, G., and K.A. Gluck. <a href="http://act-r.psy.cmu.edu/papers/710/gunzelmann_gluck-2004.pdf">“Knowledge Tracing for Complex Training Applications: Beyond Bayesian Mastery Estimates.”</a> In <i>Proceedings of the Thirteenth Conference on Behavior Representation in Modeling and Simulation</i>, 383–384. Orlando, FL: Simulation Interoperability Standards Organization, 2004.</div>
+
+<div class="csl-entry">Jeffery, Richard. <a href="http://www.princeton.edu/~bayesway/Book*.pdf"><i>Subjective Probability: The Real Thing</i></a>. Cambridge University Press, 2002.</div>
+  
+<div class="csl-entry">Kahneman, Daniel. <a href="http://www.nytimes.com/2011/10/23/magazine/dont-blink-the-hazards-of-confidence.html">“Don’t Blink! The Hazards of Confidence.”</a> <i>The New York Times</i>, October 19, 2011, sec. Magazine.</div>
+  
+<div class="csl-entry">Kassin, Saul M., and Christina T. Fong. <a href="http://web.williams.edu/Psychology/Faculty/Kassin/files/kassin_fong_1999.pdf">“‘I’m Innocent!’: Effects of Training on Judgments of Truth and Deception in the Interrogation Room.”</a> <i>Law and Human Behavior</i> 23, no. 5 (October 1, 1999): 499–516. doi:10.1023/A:1022330011811.</div>
+  
+<div class="csl-entry">Lichtenstein, Sarah, and Baruch Fischhoff. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a069703.pdf"><i>Training for Calibration</i></a>, November 1978.</div>
+  
+<div class="csl-entry">Lichtenstein, Sarah, Baruch Fischhoff, and Lawrence D. Phillips. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">“Calibration of Probabilities: The State of the Art to 1980.”</a> In <i>Judgment Under Uncertainty: Heuristics and Biases</i>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 306–334. Cambridge, UK: Cambridge University Press, 1982.</div>
+
+<div class="csl-entry">Lindley, D. V., A. Tversky, and R. V. Brown. <a href="citations/Lindly_et_al-On_the_Reconciliation_of_Probability_Assessments.pdf">“On the Reconciliation of Probability Assessments.”</a> <i>Journal of the Royal Statistical Society. Series A (General)</i> 142, no. 2 (January 1, 1979): 146–180. doi:10.2307/2345078.</div>
+  
+<div class="csl-entry">McIntyre, M.E. <a href="http://www.atm.damtp.cam.ac.uk/mcintyre/mcintyre-thinking-probabilistically.pdf">“On Thinking Probabilistically.”</a> In <i>Extreme Events (Proc. 15th ‘Aha Huliko‘a Workshop)</i>, 153–161. U. of Hawaii: SOEST, 2007.</div>
+ 
+<div class="csl-entry">Mosleh, A., and V.M. Bier. <a href="citations/Mosleh_and_Bier-Uncertainty_About_Probability.pdf">“Uncertainty About Probability: a Reconciliation with the Subjectivist Viewpoint.”</a> <i>IEEE Transactions on Systems, Man and Cybernetics, Part A: Systems and Humans</i> 26, no. 3 (1996): 303–310. doi:10.1109/3468.487956.</div>
+
+<div class="csl-entry">Oskamp, Stuart. <a href="citations/Oskamp-Overconfidence_in_Case_Study_Judgements.pdf">“Overconfidence in Case-study Judgments.”</a> <i>Journal of Consulting Psychology</i> 29, no. 3 (1965): 261–265. doi:10.1037/h0022125.</div>
+
+<div class="csl-entry">Radzevick, Joseph R., and Don A. Moore. <a href="http://www.gsb.stanford.edu/sites/default/files/documents/ob_01_09_moore.pdf">“Competing to Be Certain (but Wrong): Social Pressure and Overprecision in Judgment.”</a> <i>Academy of Management Proceedings</i> 2009, no. 1 (August 1, 2009): 1–6. doi:10.5465/AMBPP.2009.44246308.</div>
+
+<div class="csl-entry">Wilson, Alyson G. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf">“Cognitive Factors Affecting Subjective Probability Assessment,”</a> 1994.</div>
                         
-                        http://goodmorningeconomics.files.wordpress.com/2008/07/intro-calibration-chart.jpg
-                        http://commonsenseatheism.com/wp-content/uploads/2011/09/Lindley-et-al-On-the-reconciliation-of-probability-assesments.pdf
-                        
-                        "Differential dx for fever is huge." Without localizing signs, acute fever will probably be influenza (industrialized nations), malaria (non-industrialized), TB, Lyme, autoimmune complications, etcs
+
+
+
+
+
+
+<p>
+<p>
+<p>
+
+
+                       
+
+
+
+
+
+                        </p>
                         </td>
                         <td width="20%" valign="top">
                         </td>
