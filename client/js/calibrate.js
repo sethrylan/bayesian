@@ -1,22 +1,4 @@
 
-google.load("visualization", "1", {packages:["corechart"]});
-function drawChartSidebar(dataTable) {				
-    var options = {
-        title: 'Calibration Curve',
-        chartArea:{ left:40, top:3, width:150, height:160 },
-        hAxis: { title: 'Reported Confidence', titleTextStyle: {color: 'black'}, ticks: [50, 60, 70, 80, 90, 100] },
-        vAxis: { title: '% Correct',  titleTextStyle: {color: 'black'}, ticks: [20, 30, 40, 50, 60, 70, 80, 90, 100] },
-        legend: { position: 'bottom', textStyle: {color: 'blue', fontSize: 10} },
-        animation: { duration: 1000, easing: 'out' }
-    };
-
-    var chartContainer = document.getElementById('chartContainer');
-    if(chartContainer) {
-        var chart = new google.visualization.LineChart(chartContainer);
-        chart.draw(google.visualization.arrayToDataTable(dataTable), options);
-    }
-}
-
 function confidenceSliderUpdate(event, ui) {
     if( ui ) {
         $('.confidence-slider').prev('div').html("Confidence: " + ui.value + "%");
@@ -206,42 +188,46 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 }
 
 
-/* Insert questions in HTML */        
-//var url = "http://bayesian-calibration.appspot.com/factbook/questions?n=20"
-var url = 'http://localhost:8080/factbook/questions';
-if(get('n')) {
-    url += '?n=' + n;
-} 
-$.getJSON(url, function(data) {
-  var questions = [];
- 
-  $.each(data.questions, function(key, q) {
-      $('#progressContainer').after(
-          '<div class="questionContainer radius hide">' + 
-            '<div class="question">' + q.text +
-              '<a href="#" title="' + q.hint + '">[ hint ]</a>' +
-            '</div>' +
-            '<div class="fact hide">' + q.fact + '</div>' + 
-            '<div class="feedback hide">' + q.feedback + '</div>' +
-            '<div class="answers">' + 
-              '<div class="confidence"></div>' +
-              '<div class="confidence-slider"></div>' +
-              '<div class="options">' +
-                '<a href="#">' + q.options[0] + '</a>' +
-                '<a href="#">' + q.options[1] + '</a>' +
-                '<input type="text" class="hide"/>' +
-              '</div>' +
-            '</div>' +
-          '</div>');
-  });
-});
-
-
-
 /*
  *  Main quiz function.
  */
-$(function() {
+$(document).ready(function() {
+
+    // ajax/getJson must be asynchronous when modifying DOM
+    $.ajaxSetup({
+        async: false
+    });
+    
+    /* Insert questions in HTML */        
+    //var url = "http://bayesian-calibration.appspot.com/factbook/questions?n=20"
+    var url = 'http://localhost:8080/factbook/questions';
+    if(get('n')) {
+        url += '?n=' + n;
+    } 
+    $.getJSON(url, function(data) {
+      var questions = [];
+     
+      $.each(data.questions, function(key, q) {
+          $('#progressContainer').after(
+              '<div class="questionContainer radius hide">' + 
+                '<div class="question">' + q.text +
+                  '<a href="#" title="' + q.hint + '">[ hint ]</a>' +
+                '</div>' +
+                '<div class="fact hide">' + q.fact + '</div>' + 
+                '<div class="feedback hide">' + q.feedback + '</div>' +
+                '<div class="answers">' + 
+                  '<div class="confidence"></div>' +
+                  '<div class="confidence-slider"></div>' +
+                  '<div class="options">' +
+                    '<a href="#">' + q.options[0] + '</a>' +
+                    '<a href="#">' + q.options[1] + '</a>' +
+                    '<input type="text" class="hide"/>' +
+                  '</div>' +
+                '</div>' +
+              '</div>');
+      });
+    });
+
 
     // Register [enter] keypress as default action
     $('*').keypress(function (e) {
