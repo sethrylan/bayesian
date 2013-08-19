@@ -199,8 +199,8 @@ $(document).ready(function() {
     });
     
     /* Insert questions in HTML */        
-    //var url = "http://bayesian-calibration.appspot.com/factbook/questions?n=20"
-    var url = 'http://localhost:8080/factbook/questions';
+    var url = "http://bayesian-calibration.appspot.com/factbook/questions";
+    //var url = 'http://localhost:8080/factbook/questions';
     if(get('n')) {
         url += '?n=' + n;
     } 
