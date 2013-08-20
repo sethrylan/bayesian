@@ -200,10 +200,12 @@ $(document).ready(function() {
     
     /* Insert questions in HTML */        
     var url = "http://bayesian-calibration.appspot.com/factbook/questions";
+    var n = 30;
     //var url = 'http://localhost:8080/factbook/questions';
     if(get('n')) {
-        url += '?n=' + n;
-    } 
+        n = get('n');
+    }
+    url += '?n=' + n;
     $.getJSON(url, function(data) {
       var questions = [];
      
