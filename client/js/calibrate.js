@@ -211,7 +211,7 @@ $(document).ready(function() {
           $('#progressContainer').after(
               '<div class="questionContainer radius hide">' + 
                 '<div class="question">' + q.text +
-                  '<a href="#" title="' + q.hint + '">[ hint ]</a>' +
+                  '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
                 '</div>' +
                 '<div class="fact hide">' + q.fact + '</div>' + 
                 '<div class="feedback hide">' + q.feedback + '</div>' +
@@ -239,9 +239,16 @@ $(document).ready(function() {
         }
     });
 
-    $( document ).tooltip({
+    $('.hint').qtip({
+        hide: {
+            fixed: true,
+            delay: 300
+        },
         content: function() {
             return $(this).attr('title');
+        },
+        style: {
+            classes: 'qtip-light qtip-shadow'
         }
     });
 

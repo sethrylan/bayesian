@@ -22,11 +22,17 @@ $(document).ready(function() {
     });
 
 
-    $( '.cite' ).tooltip({
-        hide: { duration: 4000 },
+    $('.cite').qtip({
+        hide: {
+            fixed: true,
+            delay: 300
+        },
         content: function() {
             return $(this).attr('title');
+        },
+        style: {
+            classes: 'qtip-light qtip-shadow'
         }
     });
-        
+
 });
