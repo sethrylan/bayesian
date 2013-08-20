@@ -4,21 +4,14 @@
         <title>An Educated Guess</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <link rel="stylesheet" media="screen" href="css/bayesian.css"/>
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />        
     </head>
-
     <body>
-
         <div id="info">
             <h1 id="name">an educated guess</h1>
-            <!--p>
-            Assistant Professor<br/>
-            <a href="http://cs.stanford.edu">Computer Science Department</a><br/>
-            <a href="http://www.stanford.edu">Stanford University</a>
-            </p-->
             <p>
             A tool for calibrated probability estimation
             </p>
-
 
             <div>
                 <h2>Recent Changes</h2>
@@ -54,7 +47,7 @@
                         </p>
 
                         <p>
-                        I'm also a terrible guesser. As are most people, with the exception of some well-trained meterologists and professional gamblers (Nate Silver, Lichtenstein).
+                        I'm also a terrible guesser. As are most people, with the exception of some well-trained meterologists and professional gamblers<sup class="cite" title="Silver2012"></sup> <sup class="cite" title="LichtensteinEtAl1982"></sup>.
                         </p>
 
                         <p>
@@ -169,7 +162,7 @@
                         <h6 style="padding-top: 10px;">sources</h6>
 
 
-                        <div class="csl-entry">Alpert, Marc, and Howard Raiffa. <a href="http://faculty.washington.edu/jmiyamot/p466/alpertm%20prog%20report%20on%20training%20o%20prob%20assessors.pdf">“A Progress Report on the Training of Probability Assessors.”</a> In <i>Judgment Under Uncertainty</i>, 294–305. Cambridge University Press, 1982. http://dx.doi.org/10.1017/CBO9780511809477.022.</div>
+<div class="csl-entry">Alpert, Marc, and Howard Raiffa. <a href="http://faculty.washington.edu/jmiyamot/p466/alpertm%20prog%20report%20on%20training%20o%20prob%20assessors.pdf">“A Progress Report on the Training of Probability Assessors.”</a> In <i>Judgment Under Uncertainty</i>, 294–305. Cambridge University Press, 1982. http://dx.doi.org/10.1017/CBO9780511809477.022.</div>
 
 <div class="csl-entry">Gill, C. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/pdf/bmj33001080.pdf">“Why Clinicians Are Natural Bayesians.”</a> <i>BMJ</i> 330, no. 7499 (May 7, 2005): 1080–1083. doi:10.1136/bmj.330.7499.1080.</div>
   
@@ -183,7 +176,7 @@
   
 <div class="csl-entry">Lichtenstein, Sarah, and Baruch Fischhoff. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a069703.pdf"><i>Training for Calibration</i></a>, November 1978.</div>
   
-<div class="csl-entry">Lichtenstein, Sarah, Baruch Fischhoff, and Lawrence D. Phillips. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">“Calibration of Probabilities: The State of the Art to 1980.”</a> In <i>Judgment Under Uncertainty: Heuristics and Biases</i>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 306–334. Cambridge, UK: Cambridge University Press, 1982.</div>
+<div class="csl-entry" id="LichtensteinEtAl1982">Lichtenstein, Sarah, Baruch Fischhoff, and Lawrence D. Phillips. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">“Calibration of Probabilities: The State of the Art to 1980.”</a> In <i>Judgment Under Uncertainty: Heuristics and Biases</i>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 306–334. Cambridge, UK: Cambridge University Press, 1982.</div>
 
 <div class="csl-entry">Lindley, D. V., A. Tversky, and R. V. Brown. <a href="citations/Lindly_et_al-On_the_Reconciliation_of_Probability_Assessments.pdf">“On the Reconciliation of Probability Assessments.”</a> <i>Journal of the Royal Statistical Society. Series A (General)</i> 142, no. 2 (January 1, 1979): 146–180. doi:10.2307/2345078.</div>
   
@@ -194,6 +187,8 @@
 <div class="csl-entry">Oskamp, Stuart. <a href="citations/Oskamp-Overconfidence_in_Case_Study_Judgements.pdf">“Overconfidence in Case-study Judgments.”</a> <i>Journal of Consulting Psychology</i> 29, no. 3 (1965): 261–265. doi:10.1037/h0022125.</div>
 
 <div class="csl-entry">Radzevick, Joseph R., and Don A. Moore. <a href="http://www.gsb.stanford.edu/sites/default/files/documents/ob_01_09_moore.pdf">“Competing to Be Certain (but Wrong): Social Pressure and Overprecision in Judgment.”</a> <i>Academy of Management Proceedings</i> 2009, no. 1 (August 1, 2009): 1–6. doi:10.5465/AMBPP.2009.44246308.</div>
+
+<div class="csl-entry" id="Silver2012">Silver, Nate. <a href="http://www.amazon.com/The-Signal-Noise-Many-Predictions/dp/159420411X"><i>The Signal and the Noise: Why So Many Predictions Fail — but Some Don’t</i></a>. 1 edition. Penguin Press HC, The, 2012.</div>
 
 <div class="csl-entry">Wilson, Alyson G. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf">“Cognitive Factors Affecting Subjective Probability Assessment,”</a> 1994.</div>
                         
@@ -223,6 +218,12 @@
             </div>
 
         </div>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/utils.js"></script>                
+        <script src="js/citation.js"></script>        
+
     </body>
 
 </html>
