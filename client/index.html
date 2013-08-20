@@ -4,7 +4,8 @@
         <title>An Educated Guess</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <link rel="stylesheet" media="screen" href="css/bayesian.css"/>
-        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>        
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>      
     </head>
     <body>
         <div id="info">
@@ -121,8 +122,18 @@
                         </p>
  
                         <p>
-                        Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project.:
-                        </p>                     
+                        Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project. Select the number of questions you want and the quiq will provide give you instant feedback on your confidence as well as the correct answers.
+                        </p>
+                        <img class="center" src="images/distribution.png">
+                        <p>
+                        50% confidence indicates that you have no idea which answer is correct. 100% indicates absolute certainty of the correct answer. The more questions you select, the more accurate your calibration will be.
+                        </p>
+
+                        <p align="center">
+                        <a class="button" href="calibrate.html?n=20" title="about 4 minutes">20 questions</a>
+                        <a class="button" href="calibrate.html?n=40" title="about 8 minutes">40 questions</a>
+                        <a class="button" href="calibrate.html?n=60" title="about 12 minutes">60 questions</a>
+                        </p>
 
                         <h6 style="padding-top: 10px;">other examples</h6>
                         If you want to try other types of calibrated probability assessments:
@@ -173,18 +184,6 @@
 
 <div class="csl-entry" id="Wilson1994">Wilson, Alyson G. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf">“Cognitive Factors Affecting Subjective Probability Assessment,”</a> 1994.</div>
 
-<p>
-<p>
-<p>
-
-
-                       
-
-
-
-
-
-                        </p>
                         </td>
                         <td width="20%" valign="top">
                         </td>
@@ -194,10 +193,19 @@
 
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>        
         <script src="js/jquery.ui.touch-punch.min.js"></script>
         <script src="js/jquery.qtip.js"></script>
         <script src="js/utils.js"></script>                
-        <script src="js/citation.js"></script>        
+        <script src="js/citation.js"></script>    
+        <script>
+        <!--
+        $(document).ready(function() { 
+            $( "a.button" ).button();
+        });
+
+        -->
+        </script>
 
     </body>
 

@@ -2,7 +2,11 @@
  *	#div-id
  *	.class-name
  */
-
+.center {
+ display: block;
+ margin-left: auto;
+ margin-right: auto
+}
 sup {
  font-size: 0.83em;
  vertical-align: super;
