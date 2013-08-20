@@ -12,8 +12,6 @@ $(document).ready(function() {
 
     $.each( $citations, function( key, citation ) {
 
-        alert(key + ':' + citation.title);
-
         var source = $sources.filter(function(index) {
             return $(this).attr('id') == citation.title;
         });
@@ -25,6 +23,7 @@ $(document).ready(function() {
 
 
     $( '.cite' ).tooltip({
+        hide: { duration: 4000 },
         content: function() {
             return $(this).attr('title');
         }
