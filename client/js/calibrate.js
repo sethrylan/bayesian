@@ -196,11 +196,6 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
  *  Main quiz function.
  */
 $(document).ready(function() {
-
-    // ajax/getJson must be asynchronous when modifying DOM
-    $.ajaxSetup({
-        async: false
-    });
     
     /* Insert questions in HTML */        
     var n = 30;
@@ -208,6 +203,40 @@ $(document).ready(function() {
         n = get('n');
     }
     questionsUrl += '?n=' + n;
+
+    /* 
+     * $JQuery.ajax used instead of $.getJSON(questionsUrl, function(data){...});
+     * to have access to async parameter without using  $.ajaxSetup({ async: false });
+     * global configuration.
+     */
+    $.ajax({
+        url: questionsUrl,
+        dataType: 'json',
+        async: false,
+        success: function(data) {
+          var questions = [];
+          $.each(data.questions, function(key, q) {
+            $('#progressContainer').after(
+              '<div class="questionContainer radius hide">' + 
+                '<div class="question">' + q.text +
+                  '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
+                '</div>' +
+                '<div class="fact hide">' + q.fact + '</div>' + 
+                '<div class="feedback hide">' + q.feedback + '</div>' +
+                '<div class="answers">' + 
+                  '<div class="confidence"></div>' +
+                  '<div class="confidence-slider"></div>' +
+                  '<div class="options">' +
+                    '<a href="#">' + q.options[0] + '</a>' +
+                    '<a href="#">' + q.options[1] + '</a>' +
+                    '<input type="text" class="hide"/>' +
+                  '</div>' +
+                '</div>' +
+              '</div>');
+            });        
+        }
+    });
+    
     $.getJSON(questionsUrl, function(data) {
       var questions = [];
      
