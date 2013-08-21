@@ -26,4 +26,12 @@ public class FactbookServletTest {
             when().
             get("/factbook/questions?n={n}", String.valueOf(parameter));
     }
+
+    @Test
+    public void testAllowOriginHeaders() {
+        expect().
+            header("Access-Control-Allow-Origin", "*").
+            when().
+            get("/factbook/questions");
+    }
 }
