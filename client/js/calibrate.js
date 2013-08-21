@@ -1,3 +1,7 @@
+var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
+//var questionsUrl = 'http://localhost:8080/factbook/questions';
+//var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
+var jdsUrl = "http://localhost:8080/';
 
 function confidenceSliderUpdate(event, ui) {
     if( ui ) {
@@ -199,14 +203,12 @@ $(document).ready(function() {
     });
     
     /* Insert questions in HTML */        
-    var url = "http://bayesian-calibration.appspot.com/factbook/questions";
     var n = 30;
-    //var url = 'http://localhost:8080/factbook/questions';
     if(get('n')) {
         n = get('n');
     }
-    url += '?n=' + n;
-    $.getJSON(url, function(data) {
+    questionsUrl += '?n=' + n;
+    $.getJSON(questionsUrl, function(data) {
       var questions = [];
      
       $.each(data.questions, function(key, q) {
@@ -299,6 +301,22 @@ $(document).ready(function() {
             $('#back').hide();
             $('#sidebarChart').hide();
             drawLargeChart(jQuiz.calibrationData());
+            
+            var stats = { 
+                "startDate": "2013-08-19T14:29Z",
+                "finishDate": "2013-08-19T14:30Z",
+                "responses": this.responses
+            }; 
+            $.ajax({
+                url: jdsUrl,
+                type: 'PUT',
+                //contentType: "application/json; charset=utf-8",
+                //dataType: "json",
+                data: stats,
+                success: function(data) {
+                    alert('Load was performed.');
+                }
+            });
         },
         init: function() {
             // create empty array for responses
