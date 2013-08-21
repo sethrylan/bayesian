@@ -7,6 +7,16 @@ A test for calibrated probability assessment. See client/index.html for further 
 Development Workflow
 =========
 
+| Directory    | Description                              |
+| ------------ |------------------------------------------|
+| /client      | client-side code for gh-pages deployment |
+| /config      | build configuration                      |
+| /data        | working directory for data preparation   |
+| /gradle      | gradle wrapper and builds                |
+| /persistence | persistence code for GAE deployment      |
+| /server      | server code for GAE deployment           |
+
+
 | Description               | Command                         |
 | ------------------------- |---------------------------------|
 | prepare dataset           | ```gradlew factbookCountries``` |
