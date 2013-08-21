@@ -13,9 +13,9 @@ Development Workflow
 | client pages local run    | ```serve.bat```                 |
 | client pages/docs deploy  | ```gradlew publishGhPages```    |
 | unit test                 | ```gradlew test```              |
-| server run local          | ```gradlew gaeRun```            |
-| server functional tests   | ```gradlew gaeFunctionalTest``` |
-| upload project to GAE     | ```gradlew gaeUpdate```         |
+| server run local          | ```gradlew gae``` or ```gradlew :server:gaeRun```                       |
+| server functional tests   | ```gradlew functionalTest``` or ```gradlew :server:gaeFunctionalTest``` |
+| deploy                    | ```gradlew gaeUpdate```         |
 | PMD, CheckStyle, etc      | ```gradlew check```             |
 | FindBugs                  | ```gradlew findbugs```          |
 

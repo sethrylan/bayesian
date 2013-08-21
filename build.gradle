@@ -3,10 +3,25 @@ ext {
     dataDir = "$rootDir/data"
 
     versions = [
-            jersey: '1.17',
-            javasimon: '3.3.0',
-            slf4j: '1.7.1',
-            restassured: '1.8.1'
+        gae: '1.8.3',
+        jersey: '1.17',
+        javasimon: '3.3.0',
+        slf4j: '1.7.1',
+        restassured: '1.8.1'
+    ]
+
+    libraries = [
+        jersey : ["com.sun.jersey:jersey-servlet:$versions.jersey",
+                "com.sun.jersey:jersey-core:$versions.jersey",
+                "com.sun.jersey:jersey-server:$versions.jersey",
+                "com.sun.jersey:jersey-json:$versions.jersey",
+                "com.sun.jersey:jersey-grizzly2:$versions.jersey",
+                "com.sun.jersey:jersey-grizzly2:$versions.jersey"],
+
+        restassured : ["com.jayway.restassured:rest-assured:$versions.restassured",
+                "com.jayway.restassured:json-path:$versions.restassured",
+                'org.codehaus.groovy:groovy-all:2.1.3']
+
     ]
 }
 
@@ -23,34 +38,65 @@ subprojects {
     group = "org.lenition.$githubProjectName"
 }
 
+task gae(dependsOn: ':server:gaeRun')
+task functionalTest(dependsOn: ':server:gaeFunctionalTest')
+
 project(':client') { }
 
 project(':server') {
-
     apply plugin: 'gae'
     sourceCompatibility = JavaVersion.VERSION_1_7
 
     dependencies {
-        gaeSdk 'com.google.appengine:appengine-java-sdk:1.8.3'
-
+        gaeSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
         // see compatibile versions at https://code.google.com/p/googleappengine/wiki/WillItPlayInJava#Jersey
-        compile "com.sun.jersey:jersey-servlet:$versions.jersey"
-        compile "com.sun.jersey:jersey-core:$versions.jersey"
-        compile "com.sun.jersey:jersey-server:$versions.jersey"
-        compile "com.sun.jersey:jersey-json:$versions.jersey"
-        compile "com.sun.jersey:jersey-grizzly2:$versions.jersey"
-        compile "com.sun.jersey:jersey-grizzly2:$versions.jersey"
-
+        compile libraries.jersey
         compile 'com.google.code.gson:gson:2.2.4'
         compile 'org.apache.commons:commons-lang3:3.1'
-
         providedCompile 'javax.servlet:servlet-api:2.5'
-
         testCompile 'junit:junit:4.11'
-        testCompile "com.jayway.restassured:rest-assured:$versions.restassured"
-        testCompile "com.jayway.restassured:json-path:$versions.restassured"
-        testCompile 'org.codehaus.groovy:groovy-all:2.1.3'
+        testCompile libraries.restassured
+        testCompile "com.google.appengine:appengine-testing:$versions.gae"
+//        testRuntime "com.google.appengine:appengine-api-labs:$versions.gae",
+//        testRuntime "com.google.appengine:appengine-api-stubs:$versions.gae"
+    }
 
+    gae {
+        optimizeWar = true     // see https://github.com/musketyr/gradle-fatjar-plugin/
+        downloadSdk = true
+        appcfg {
+            email = 'seth.rylan@gmail.com'
+            passIn = true
+
+            logs {
+                severity = 1
+                outputFile = file('gae.log')
+            }
+
+            app {
+                id = 'bayesian-calibration'
+            }
+        }
+    }
+}
+
+
+project(':persistence') {
+    apply plugin: 'gae'
+    sourceCompatibility = JavaVersion.VERSION_1_7
+
+    dependencies {
+        gaeSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
+        // see compatibile versions at https://code.google.com/p/googleappengine/wiki/WillItPlayInJava#Jersey
+        compile libraries.jersey
+        compile 'com.google.code.gson:gson:2.2.4'
+        compile 'org.apache.commons:commons-lang3:3.1'
+        providedCompile 'javax.servlet:servlet-api:2.5'
+        testCompile 'junit:junit:4.11'
+        testCompile libraries.restassured
+        testCompile "com.google.appengine:appengine-testing:$versions.gae"
+//        testRuntime "com.google.appengine:appengine-api-labs:$versions.gae",
+//        testRuntime "com.google.appengine:appengine-api-stubs:$versions.gae"
     }
 
     gae {
