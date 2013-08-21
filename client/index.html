@@ -52,9 +52,9 @@
                         </p>
 
                         <p>
-                        'Guessing' here refers to a properly calibrated probability estimate. If one were to guess the gross domestic earnings of <em>The Goonies</em>, the answer would probably be wrong, not because of profound personal faults, but because this tests specific domain knowledge. Rephrasing the question as:
+                        'Guessing' here refers to a properly calibrated probability estimate. If you were to guess the gross domestic earnings of <em>The Goonies</em>, your answer would probably be wrong, not because of profound personal faults, but because the question involves exact domain knowledge. Rephrasing the question as:
                         <blockquote>
-                        &ldquo;What are your high and low estimates for the gross domestic earnings of the <em>The Goonies</em>? What interval estimate of <a href="https://en.wikipedia.org/wiki/Confidence_interval">confidence</a> would give this range?&rdquo;
+                        &ldquo;What are your high and low estimates for the gross domestic earnings of the <em>The Goonies</em>? What interval estimate of <a href="https://en.wikipedia.org/wiki/Confidence_interval">confidence</a> would you give this range?&rdquo;
                         </blockquote>
 
                         The answer might be:
@@ -62,7 +62,7 @@
                             &ldquo;Between $100,000 to $100,000,000, inclusive, with 90% confidence.&rdquo;<sup class="note" title="The exact <a href='http://www.boxofficemojo.com/movies/?id=goonies.htm'>answer</a> is $61,389,680.">[note]</sup>
                         </blockquote>
 
-                        Given enough data points in a sufficiently ideal world, the estimated confidence interval would match the observed accuracy. In other words, the range estimates given with 90% confidence should &ndash; on average and with minimal variance &ndash; be correct 90% of the time<sup class="cite" title="AlpertRaffia1982"></sup>. This changes the exercise from a measurement of trivia knowledge to a measurement of ability to gauge uncertainty.  However, much fewer than 90% of answers with 90% confidence will contain the actual value, not because of a lack of public knowledge in 20th century film economics, but because humans habitually display overconfident estimates. What we know is about 10-35 percentage points less than what we think we know in this example<sup class="note" title="A plot of these effects look like <a href='http://goodmorningeconomics.files.wordpress.com/2008/07/intro-calibration-chart.jpg'>this</a>.">[note]</sup><sup class="cite" title="LichtensteinEtAl1982"></sup>.
+                        Given enough data points in a sufficiently ideal world, the estimated confidence interval would match the observed accuracy. In other words, the range estimates given with 90% confidence should &ndash; on average and with minimal variance &ndash; be correct 90% of the time<sup class="cite" title="AlpertRaffia1982"></sup>. This changes the exercise from a measurement of trivia knowledge to a measurement of ability to gauge uncertainty.  However, much fewer than 90% of answers with 90% confidence will contain the actual value, not because of a lack of public knowledge in 20th century film economics, but because humans habitually display overconfident estimates. What we know is about 10-35 percentage points less than what we think we know in this example<sup class="cite" title="LichtensteinEtAl1982"></sup>.
                         </p>
 
 
@@ -71,21 +71,20 @@
                         <p>
                         There exists plenty of empirical research on the limits and prejudices of probability estimates, and a few theories on their potential causes, most of which can be found among other lists of cognitive biases<sup class="cite" title="Wilson1994"></sup>.
                         <ul>
-                        <li><a href="http://en.wikipedia.org/wiki/Anchoring">Anchoring</a>: the wording and structure of the questions decrease epistemic accuracy by 53 percentage points<sup class="cite" title="LichtensteinEtAl1982"></sup></li>
-                        <li>Pattern-seeking habits of humans create the illusion of signal where there is only noisy data page <sup class="cite" title="Silver2012"> 12.</sup></li>
+                        <li><a href="http://en.wikipedia.org/wiki/Anchoring">Anchoring</a>: the wording and structure of the questions can decrease epistemic accuracy by up to 53 percentage points<sup class="cite" title="LichtensteinEtAl1982"></sup>.</li>
+                        <li>Pattern-seeking habits of humans create the illusion of signal where there is only noisy data page<sup class="cite" title="Silver2012"> 12.</sup>.</li>
                         <li><a href="http://www.princeton.edu/~kahneman/docs/Publications/prospect_theory.pdf">Prospect theory</a>: small probabilities are overweighted, especially when attached to high-consequence events<sup class="cite" title="Plous1993"> 100-101.</sup>.</li>
-                        <li>We actively seek to reduce risk/uncertainty, and will pay an economic premium for it <sup class="cite" title="Plous1993"> 100-101.</sup>.</li>
                         <li>Our educational training emphasizes algebra and calculus as the end goals, <a href="http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html">not probability and statistics</a>.</li>
                         <li>We <a href="http://en.wikipedia.org/wiki/Base_rate_neglect">ignore</a> prior probabilities.</li>
-                        <li>Many social systems reward overconfidence<sup class="cite" title="RadzevickMoore2009"></sup>.</li>
-                        <li>In situations determined primarily by chance, a narrative<sup class="note" title="The term 'Narrative Fallacy' originates from Taleb:
+                        <li>Many social and professional systems reward overconfidence<sup class="cite" title="RadzevickMoore2009"></sup>.</li>
+                        <li>In situations determined primarily by chance, we often build narratives<sup class="note" title="The term 'Narrative Fallacy' originates from Taleb:
                         <blockquote><p>
 &ldquo;The narrative fallacy addresses our limited ability to look at sequences of facts without weaving an explanation into them, or, equivalently, forcing a logical link, <i>an arrow of relationship</i> upon them. Explanations bind facts together. They make them all the more easily remembered; they help them <i>make more sense</i>. Where this propensity can go wrong is when it increases our <i>impression</i> of understanding.&rdquo;
                             </p></blockquote>
-                            <p> &mdash;Nassim Nicholas Taleb, <i>The Black Swan</i> (p63-4)</p>">[note]</sup> is often built to coherently explain the events, often in hindsight<sup class="cite" title="Kahneman2011"></sup>. E.g., market fluctuations due to labor reports, portfolio performance due to investment strategies or combat effectiveness predicted by training exercises<sup class="note" title="Narrative building is also used in the benefit of data science: to minimize the effect of 'overfitting', or forcing a quantitative prediction model to prior data (Silver2012, p196).">[note]</sup>.</li>
+                            <p> &mdash;Nassim Nicholas Taleb, <i>The Black Swan</i> (p63-4)</p>">[note]</sup> to coherently explain the events, giving the illusion of control<sup class="cite" title="Kahneman2011"></sup>. E.g., market fluctuations due to labor reports, portfolio performance due to investment strategies or combat effectiveness predicted by training exercises<sup class="note" title="Narrative building is also used in the benefit of data science: to minimize the effect of 'overfitting', or forcing a quantitative prediction model to prior data (Silver2012, p196).">[note]</sup>.</li>
                         </ul>
 
-                        These biases are to estimation as <a href="http://en.wikipedia.org/wiki/Checker_shadow_illusion">geometrical-optical illusions</a> are to psychometrics. A simple change of the problem context causes a predicatable change in the perceived reality. In general, humans have a very troubled relationship with uncertainty. We don't understand it instintually, we don't communicate it well<sup class="cite" title="Marx2013"></sup> and we're willing to pay<sup class="cite" title="Knight1921"> <a href="http://www.econlib.org/library/Knight/knRUP1.html#Pt.I,Ch.II">Part I, Chapter II</a>.</sup> to avoid it.
+                        These biases are to estimation as <a href="http://en.wikipedia.org/wiki/Checker_shadow_illusion">geometrical-optical illusions</a> are to psychometrics. A simple change of the problem context causes a predicatable change in the perceived reality. In general, humans have a very troubled relationship with uncertainty. We don't understand it instintually, we don't communicate it well<sup class="cite" title="Marx2013"></sup> and we're willing to pay<sup class="cite" title="Knight1921"> <a href="http://www.econlib.org/library/Knight/knRUP1.html#Pt.I,Ch.II">Part I, Chapter II</a>.</sup><sup class="cite" title="Plous1993"> 100-101.</sup> to avoid it.
                         </p>
 
 
@@ -101,32 +100,32 @@
                         Or when that investment turned out so badly it scared you back into bonds and CD's for next ten years?
                         </p>
                         <p>
-                        Even if you don't live in a region with legalized gambling or work in a forecasting profession, everyday failures of estimation hurt your job and quality of life. You make decisions based on uncertainty and imperfect knowledge, knowing much less than you think you know. As far as ubiquitious problems of human existence, it's right up there with communicable disease<sup class="note" title="<blockquote>&ldquo;No problem in judgement in decision making is more prevalent and more potentially catastrophic than overconfidence. As loving Janis (1982) documented in his work on groupthink, American overconfidence enabled the Japanese to destroy Pearl Harbor in World War II. Overconfidence also played a role in the disastrous decision to launch the U.S. space shuttle Challenger. Before the shuttle exploded on its twenty-fifth mission, NASA's official launch risk estimate was 1 catastrophic failure in 100,000 launches (Feynman, 1988, February). This risk estimate is roughly equivalent to launching the shuttle once per day and expecting to see only one accident in three centuries.&rdquo;</blockquote> <p> &mdash;Scott Plous, <i>The Psychology of Judgment and Decision Making</i> (p217)</p>">[note]</sup>.
+                        Even if you don't live in a region with legalized gambling or work in a forecasting profession, everyday failures of estimation hurt your quality of life. You make decisions based on uncertainty and imperfect knowledge, knowing much less than you think you know. As far as ubiquitious problems of human existence, it's right up there with communicable disease<sup class="note" title="<blockquote>&ldquo;No problem in judgement in decision making is more prevalent and more potentially catastrophic than overconfidence. As loving Janis (1982) documented in his work on groupthink, American overconfidence enabled the Japanese to destroy Pearl Harbor in World War II. Overconfidence also played a role in the disastrous decision to launch the U.S. space shuttle Challenger. Before the shuttle exploded on its twenty-fifth mission, NASA's official launch risk estimate was 1 catastrophic failure in 100,000 launches (Feynman, 1988, February). This risk estimate is roughly equivalent to launching the shuttle once per day and expecting to see only one accident in three centuries.&rdquo;</blockquote> <p> &mdash;Scott Plous, <i>The Psychology of Judgment and Decision Making</i> (p217)</p>">[note]</sup>.
                         </p>
                         <p>
-                        More importantly, inability to accurately estimate closes the door to powerful tools of probablistic thinking<sup class="cite" title="Jeffery2002"></sup>. Bayesian prediction<sup class="note" title="Bayesian is sometimes called 'subjectivist'.">[note]</sup> avoids the nuances of frequentist statistics, while allowing your mental model to adapt as the facts changes. It's something for which the Army<sup class="cite" title="LichtensteinFischhoff1978"></sup> and Air Force<sup class="cite" title="GunzelmannGluck2004"></sup> train, and M.D.s understand through years of experience<sup class="cite" title="Gill2005"></sup><sup class="cite" title="LindeyEtAl1979"></sup>. Along with the <a href="http://en.wikipedia.org/wiki/Speed#Definition">distance-rate-time</a> equation, <a href="http://en.wikipedia.org/wiki/Time_value_of_money#Formula">time-value</a> equation and <a href="http://en.wikipedia.org/wiki/Logical_equality#Alternative_descriptions">logical equalities</a>, it's one of the those unreasonably effective structures of math, which internalizing will vastly improve your thinking<sup class="cite" title="McIntyre2007"></sup>.
+                        More importantly, inability to accurately estimate closes the door to powerful tools of probablistic thinking<sup class="cite" title="Jeffery2002"></sup>. With accurate prior probabilities, Bayesian prediction<sup class="note" title="Bayesian is sometimes called 'subjectivist'.">[note]</sup> avoids the nuances of frequentist statistics, while allowing your mental model to adapt as the facts changes. It's something for which the Army<sup class="cite" title="LichtensteinFischhoff1978"></sup> and Air Force<sup class="cite" title="GunzelmannGluck2004"></sup> train, and M.D.s understand through years of experience<sup class="cite" title="Gill2005"></sup><sup class="cite" title="LindeyEtAl1979"></sup>. Along with the <a href="http://en.wikipedia.org/wiki/Speed#Definition">distance-rate-time</a> equation, <a href="http://en.wikipedia.org/wiki/Time_value_of_money#Formula">time-value</a> equation and <a href="http://en.wikipedia.org/wiki/Logical_equality#Alternative_descriptions">logical equalities</a>, <a href="http://en.wikipedia.org/wiki/Bayes_theorem">Bayes' Theorem</a> is one of the those unreasonably effective structures of math, which internalizing will vastly improve your thinking<sup class="cite" title="McIntyre2007"></sup>.
                         </p>
 
                         <h6 style="padding-top: 10px;">mensa mea bona est</h6>
 
                         <p>
-                        Overconfidence follows a predictable pattern. Overconfidence is usual for difficult assessments (although slightly less for true/false tests<sup class="cite" title="Hubbard2010"> p64.</sup>). In some cases, very easy questions inspire underconfidence<sup class="cite" title="LichtensteinEtAl1982"></sup>. Calibration can help to correct this. A few recommend techniques are:
+                        Overconfidence follows a predictable pattern. It is usual for difficult assessments (although slightly less for true/false tests<sup class="cite" title="Hubbard2010"> p64.</sup>). In some cases, very easy questions inspire underconfidence<sup class="cite" title="LichtensteinEtAl1982"></sup>. Calibration can help to correct this. A few recommend techniques are:
                         <ul>
                             <li>Consider the reasons why your judgment might be wrong<sup class="cite" title="Plous1993"> p228.</sup>.</li>
                             <li>Range estimates to reduce the anchoring effect of a point estimate. Particularly, working towards a narrow range for an absurdly large range<sup class="cite" title="Hubbard2010"> p64-5.</sup>.</li>
                         </ul>
                         Things that don't fix overconfidence:
                         <ul>
-                            <li>More information. Paradoxically, providing more information to the problem increases one's confidence in the answer, but not accuracy<sup class="cite" title="Oskamp1965"></sup><sup class="cite" title="KassinFong1999"></sup>.</li>
+                            <li>More information. Paradoxically, providing more information to the problem increases one's confidence in the answer, but not accuracy<sup class="cite" title="KassinFong1999"></sup><sup class="cite" title="Oskamp1965"></sup>.</li>
                         </ul>
                         </p>
  
                         <p>
-                        Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project. Select the number of questions you want and the quiq will provide give you instant feedback on your confidence as well as the correct answers.
+                        Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project. Select the number of questions you want and the quiz will give you instant feedback on your progress.
                         </p>
                         <img class="center" src="images/distribution.png">
                         <p>
-                        50% confidence indicates that you have no idea which answer is correct. 100% indicates absolute certainty of the correct answer. The more questions you select, the more accurate your calibration will be.
+                        When choosing your confidence level, 50% confidence indicates that you have no idea which answer is correct. 100% indicates absolute certainty of the correct answer. The more questions you answer, the more accurate your calibration will be.
                         </p>
 
                         <p align="center">
@@ -139,10 +138,10 @@
                         If you want to try other types of calibrated probability assessments:
 
                         <ul>
-                            <li><a href="http://lesswrong.com/lw/1f8/test_your_calibration/">A list of them</a></li>
-                            <li><a href="http://www.acceleratingfuture.com/steven/?p=136">Aumann Game: a self-scoring example</a></li>
-                            <li><a href="http://calibratedprobabilityassessment.org">An automated quiz</a> that produces a <a href="http://calibratedprobabilityassessment.org/graph.php?y=0.28571428571429-0.90909090909091-0.75-1-1&x=55-65-75-85-95">nifty graph</a></li>
-                            <li><a href="http://messymatters.com/calibration/">Reproduced from <em>Decision Traps</em>, also in Plous</a></li>
+                            <li>A <a href="http://lesswrong.com/lw/1f8/test_your_calibration/">list</a> of them</li>
+                            <li><a href="http://www.acceleratingfuture.com/steven/?p=136">Aumann Game</a>: a manually scoring example</li>
+                            <li>An <a href="http://calibratedprobabilityassessment.org">automated quiz</a> that produces a <a href="http://calibratedprobabilityassessment.org/graph.php?y=0.28571428571429-0.90909090909091-0.75-1-1&x=55-65-75-85-95">nifty graph</a>.</li>
+                            <li>A <a href="http://messymatters.com/calibration/">range estimate quiz</a> reproduced from <em>Decision Traps</em>, and also in Plous<sup class="cite" title="Plous1993"></sup>.</li>
                         </ul> 
 
                         <h6 style="padding-top: 10px;">sources</h6>
