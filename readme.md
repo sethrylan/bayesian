@@ -29,6 +29,9 @@ Development Workflow
 | PMD, CheckStyle, etc      | ```gradlew check```             |
 | FindBugs                  | ```gradlew findbugs```          |
 
+Testing
+=========
+https://developers.google.com/appengine/docs/java/tools/localunittesting
 
 Data Sources
 =========
@@ -38,6 +41,9 @@ XSLT Examples
 =========
 http://stackoverflow.com/questions/8337145/optimization-of-xslt-using-identity-transform
 
+Known Issues:
+=========
+```gradlew clean``` with a gae* task will often fail to load the application. Run the clean and gae* tasks separately.
 
 TODO:
 =========
