@@ -312,7 +312,7 @@ $(document).ready(function() {
     $questions = $('.questionContainer');
     $questions.hide();
     $($questions.get(currentQuestion)).fadeIn();
-    
+
     var jQuiz = {
         finish: function() {
             var resultDiv = '';
@@ -331,25 +331,30 @@ $(document).ready(function() {
             $('#sidebarChart').hide();
             drawLargeChart(jQuiz.calibrationData());
             
-            var stats = { 
-                "startDate": "2013-08-19T14:29Z",
-                "finishDate": "2013-08-19T14:30Z",
-                "responses": this.responses
-            }; 
+            this.stats.finishDate = (new Date()).toISOString();
+            //this.stats.response = this.responses;
             $.ajax({
                 url: jdsUrl,
                 type: 'PUT',
-                //contentType: "application/json; charset=utf-8",
-                //dataType: "json",
-                data: stats,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                data: JSON.stringify(this.stats),
                 success: function(data) {
-                    alert('Load was performed.');
+                    alert('Stats uploaded: ' + JSON.stringify(jQuiz.stats));
+                },
+                failure: function(data) {
+                    alert('Stats failed: ' + JSON.stringify(jQuiz.stats));
                 }
+                
             });
         },
         init: function() {
             // create empty array for responses
             jQuiz.responses = [];
+            jQuiz.stats = { 
+                "startDate": (new Date()).toISOString()
+            }; 
             
             drawSidebarChart(jQuiz.calibrationData());
 
