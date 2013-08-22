@@ -79,7 +79,6 @@ project(':server') {
     }
 }
 
-
 project(':persistence') {
     apply plugin: 'gae'
     sourceCompatibility = JavaVersion.VERSION_1_7

@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import javax.ws.rs.*;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.lang.reflect.Type;
 import java.util.List;
@@ -55,8 +56,8 @@ public class JsonDataStoreServlet {
     @PUT
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String putDefault(String json) {
-        return this.put(DEFAULT_ENTITY_KIND, json);
+    public String putDefault(@Context javax.servlet.http.HttpServletRequest httpServletRequest, String json) {
+        return this.put(httpServletRequest, DEFAULT_ENTITY_KIND, json);
     }
 
     /**
@@ -69,10 +70,8 @@ public class JsonDataStoreServlet {
     @Path("{kind}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String put(@PathParam("kind") String kind, String json) {
-
+    public String put(@Context javax.servlet.http.HttpServletRequest httpServletRequest, @PathParam("kind") String kind, String json) {
         log.info("json = " + json);
-
         Key entityKey = KeyFactory.createKey(kind, UUID.randomUUID().toString());
         Entity entity = new Entity(entityKey);
 
@@ -80,6 +79,8 @@ public class JsonDataStoreServlet {
         // Supported types: https://developers.google.com/appengine/docs/java/datastore/entities
         Type mapTypeToken = new TypeToken<Map<String,Object>>(){}.getType();
         Map<String, Object> map = gson.fromJson(json, mapTypeToken);
+        map.put("clientHost", httpServletRequest.getRemoteHost());
+        map.put("clientAddress", httpServletRequest.getRemoteAddr() + ":" + httpServletRequest.getRemotePort());
         for (String key : map.keySet()) {
             log.info(key + " : " + map.get(key).toString() + " : " + map.get(key).getClass());
             Object value = map.get(key);
