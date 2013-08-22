@@ -198,7 +198,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 $(document).ready(function() {
     
     /* Insert questions in HTML */        
-    var n = 30;
+    var n = 40;
     if(get('n')) {
         n = get('n');
     }
@@ -284,6 +284,10 @@ $(document).ready(function() {
             classes: 'qtip-light qtip-shadow'
         }
     });
+
+    $('.hint').mouseover( function() {
+        $(this).addClass('visited');
+    }); 
 
     $( ".options > a" )
         .button()
@@ -442,13 +446,15 @@ $(document).ready(function() {
             var fact = $('.questionContainer:visible > .fact').text();
             var optionResponse = $('.options:visible > input[type=text]').val();
             var confidence = $('.answers:visible > .confidence-slider').slider( 'value' );
+            var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
             
             var response = {
                 index: currentQuestion,
                 response: optionResponse,
                 confidence: confidence,
                 fact: fact,
-                correct: (fact == optionResponse)
+                correct: (fact == optionResponse),
+                hinted: hinted
             };
             jQuiz.responses.push(response);			
         },
