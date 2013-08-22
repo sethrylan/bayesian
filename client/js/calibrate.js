@@ -1,9 +1,3 @@
-// see the controversy on Jekyll dev mode flags at github.com/plusjade/jekyll-bootstrap/issues/84
-var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
-//var questionsUrl = "http://localhost:8080/factbook/questions";
-var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
-//var jdsUrl = "http://localhost:8080/stats/';
-var defaultNumQuestions = 40;
 
 function confidenceSliderUpdate(event, ui) {
     if( ui ) {
