@@ -2,7 +2,7 @@ url:         http://sethrylan.org/bayesian
 baseurl:     /
 title:       An Educated Guess
 port:        4000
-safe:        false
+safe:        true
 lsi:         true
 pygments:    true
 permalink:   date
