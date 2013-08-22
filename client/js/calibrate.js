@@ -1,7 +1,16 @@
+---
+---
 var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
-//var questionsUrl = 'http://localhost:8080/factbook/questions';
-var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
-//var jdsUrl = "http://localhost:8080/stats/";
+var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/stats";
+var defaultNumQuestions = 40;
+
+// See the controversy on Jekyll dev mode flags at https://github.com/plusjade/jekyll-bootstrap/issues/84
+if ({{site.safe}}) {
+    var questionsUrl = 'http://localhost:8080/factbook/questions';
+    var jdsUrl = "http://localhost:8080/stats/";
+    
+}
+
 
 function confidenceSliderUpdate(event, ui) {
     if( ui ) {
@@ -198,7 +207,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 $(document).ready(function() {
     
     /* Insert questions in HTML */        
-    var n = 40;
+    var n = defaultNumQuestions;
     if(get('n')) {
         n = get('n');
     }
