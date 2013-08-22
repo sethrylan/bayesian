@@ -52,11 +52,17 @@ layout: nil
         <script>
         //<!--
         // see the controversy on Jekyll dev mode flags at github.com/plusjade/jekyll-bootstrap/issues/84
+        // added yaml
+        {% if site.safe %}
         var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
-        //var questionsUrl = "http://localhost:8080/factbook/questions";
-        var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
-        //var jdsUrl = "http://localhost:8080/stats/';
+        var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/stats";
+        {% else %}
+        var questionsUrl = "http://localhost:8080/factbook/questions";
+        var jdsUrl = "http://localhost:8080/stats/";
+        {% endif %}
+        
         var defaultNumQuestions = 40;
+
         //-->
         </script>
         <script src="js/utils.js"></script>        
