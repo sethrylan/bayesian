@@ -41,10 +41,12 @@ public class JsonReader<T> implements MessageBodyReader<T> {
         String json = writer.toString();
 
         // if Stream is expected to be a String, then just cast
-        if (String.class == genericType)
-        return type.cast(json);
+        if (String.class == genericType) {
+            return type.cast(json);
+        } else {
+            // otherwise deserialize to type
+            return new Gson().fromJson(json, genericType);
+        }
 
-        // otherwise deserialize to type
-        return new Gson().fromJson(json, genericType);
     }
 }
