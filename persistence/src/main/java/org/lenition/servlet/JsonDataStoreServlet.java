@@ -10,6 +10,7 @@ import java.lang.reflect.Type;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 /**
  * A class for storing generic JSON data in the GAE datastore
@@ -20,6 +21,7 @@ public class JsonDataStoreServlet {
     private static final String DEFAULT_ENTITY_KIND = "default";
     private DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     private Gson gson = new Gson();
+    private static final Logger log = Logger.getLogger(JsonDataStoreServlet.class.getName());
 
     /**
      * Retrieves default entities
@@ -69,7 +71,7 @@ public class JsonDataStoreServlet {
     @Consumes(MediaType.APPLICATION_JSON)
     public String put(@PathParam("kind") String kind, String json) {
 
-        System.out.println("json = " + json);
+        log.info("json = " + json);
 
         Key entityKey = KeyFactory.createKey(kind, UUID.randomUUID().toString());
         Entity entity = new Entity(entityKey);
@@ -79,7 +81,7 @@ public class JsonDataStoreServlet {
         Type mapTypeToken = new TypeToken<Map<String,Object>>(){}.getType();
         Map<String, Object> map = gson.fromJson(json, mapTypeToken);
         for (String key : map.keySet()) {
-            System.out.println(key + " : " + map.get(key).toString() + " : " + map.get(key).getClass());
+            log.info(key + " : " + map.get(key).toString() + " : " + map.get(key).getClass());
             Object value = map.get(key);
             if(value instanceof String) {
                 if (((String)value).length() > 0 && ((String)value).length() < 450) {
