@@ -1,7 +1,7 @@
 var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
 //var questionsUrl = 'http://localhost:8080/factbook/questions';
-//var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
-var jdsUrl = "http://localhost:8080/stats/";
+var jdsUrl = "http://persistence.bayesian-calibration.appspot.com/";
+//var jdsUrl = "http://localhost:8080/stats/";
 
 function confidenceSliderUpdate(event, ui) {
     if( ui ) {
