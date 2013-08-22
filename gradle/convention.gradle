@@ -57,6 +57,15 @@ allprojects { project ->
         test.compileClasspath += project.configurations.provided
         test.runtimeClasspath += project.configurations.provided
     }
+
+    tasks.withType(Test) {
+        testLogging.showStandardStreams = true
+
+        // listen to events in the test execution lifecycle
+        beforeTest { descriptor ->
+            logger.lifecycle(":" + descriptor)
+        }
+    }
 }
 
 apply plugin: 'github-pages' // Used to create publishGhPages task
