@@ -15,6 +15,10 @@ import java.io.StringWriter;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
+/**
+ * Reader for request with type application/json
+ * @param <T>
+ */
 @Provider
 @Consumes("application/json")
 public class JsonReader<T> implements MessageBodyReader<T> {
@@ -34,7 +38,6 @@ public class JsonReader<T> implements MessageBodyReader<T> {
                       MediaType mediaType,
                       MultivaluedMap<String, String> httpHeaders,
                       InputStream entityStream) throws IOException, WebApplicationException {
-
         // Convert Stream to String
         StringWriter writer = new StringWriter();
         IOUtils.copy(entityStream, writer, "UTF-8");
@@ -47,6 +50,5 @@ public class JsonReader<T> implements MessageBodyReader<T> {
             // otherwise deserialize to type
             return new Gson().fromJson(json, genericType);
         }
-
     }
 }
