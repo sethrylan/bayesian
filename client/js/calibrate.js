@@ -18,6 +18,15 @@ largeChartSize.height = 400 - largeChartSize.margin.top - largeChartSize.margin.
 var svg, x, y, xAxis, yAxis, line, area, tooltip;
 
 function getOffsets(data) {
+    if (!data) {
+        return [{offset: "0%", opacity: "1"},
+                {offset: "20%", opacity: "1"},
+                {offset: "40%", opacity: "1"},
+                {offset: "60%", opacity: "1"},
+                {offset: "80%", opacity: "1"},
+                {offset: "100%", opacity: "1"} ];
+    }
+
     var totalDatapoints = 0;
     $.each(data, function() {
         totalDatapoints += parseInt(this.datapoints);
@@ -226,15 +235,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .style("text-anchor", "end")
         .text("% correct");
 
-    var offsets = [
-                {offset: "0%", opacity: "1"},
-                {offset: "20%", opacity: "1"},
-                {offset: "40%", opacity: "1"},
-                {offset: "60%", opacity: "1"},
-                {offset: "80%", opacity: "1"},
-                {offset: "100%", opacity: "1"}                
-        ];    
-
+    var offsets = getOffsets(data); 
     
     svg.append("linearGradient")
         .attr("id", "density-gradient-above")
