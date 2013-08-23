@@ -4,8 +4,9 @@
         <title>An Educated Guess</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
         <link rel="stylesheet" media="screen" href="css/bayesian.css"/>
+        <link rel="stylesheet" media="screen" href="css/chart.css"/>            
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>      
+        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>    
     </head>
     <body>
         <div id="info">
@@ -123,10 +124,76 @@
                         <p>
                         Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project. Select the number of questions you want and the quiz will give you instant feedback on your progress.
                         </p>
-                        <img class="center" src="images/distribution.png">
-                        <p>
-                        When choosing your confidence level, 50% confidence indicates that you have no idea which answer is correct. 100% indicates absolute certainty of the correct answer. The more questions you answer, the more accurate your calibration will be.
-                        </p>
+
+                        <p align="center">
+                        <!-- produced with updateChart([["confidence","ideal","actual","datapoints"],[50,50,65,10],[60,60,60,1],[70,70,62,1],[80,80,65,9],[90,90,88,8],[100,100,75,1]]) -->
+<svg width="200" height="200">
+    <g transform="translate(30,20)">
+    <clipPath id="clip-below">
+    <path d="M0,150L5.333333333333333,145C10.666666666666666,140,21.333333333333332,130,32,120C42.666666666666664,110,53.33333333333333,100,64,90C74.66666666666666,80,85.33333333333333,70,96,60C106.66666666666666,50,117.33333333333333,40,128,30C138.66666666666666,20,149.33333333333331,10,154.66666666666666,5L160,0L160,150L154.66666666666666,150C149.33333333333331,150,138.66666666666666,150,128,150C117.33333333333333,150,106.66666666666666,150,96,150C85.33333333333333,150,74.66666666666666,150,64,150C53.33333333333333,150,42.666666666666664,150,32,150C21.333333333333332,150,10.666666666666666,150,5.333333333333333,150L0,150Z">
+</path>
+</clipPath>
+<clipPath id="clip-above">
+<path d="M0,150L5.333333333333333,145C10.666666666666666,140,21.333333333333332,130,32,120C42.666666666666664,110,53.33333333333333,100,64,90C74.66666666666666,80,85.33333333333333,70,96,60C106.66666666666666,50,117.33333333333333,40,128,30C138.66666666666666,20,149.33333333333331,10,154.66666666666666,5L160,0L160,0L154.66666666666666,0C149.33333333333331,0,138.66666666666666,0,128,0C117.33333333333333,0,106.66666666666666,0,96,0C85.33333333333333,0,74.66666666666666,0,64,0C53.33333333333333,0,42.666666666666664,0,32,0C21.333333333333332,0,10.666666666666666,0,5.333333333333333,0L0,0Z">
+</path>
+</clipPath>
+<path class="area above" clip-path="url(#clip-above)" d="M0,150L5.333333333333333,145C10.666666666666666,140,21.333333333333332,130,32,120C42.666666666666664,110,53.33333333333333,100,64,90C74.66666666666666,80,85.33333333333333,70,96,60C106.66666666666666,50,117.33333333333333,40,128,30C138.66666666666666,20,149.33333333333331,10,154.66666666666666,5L160,0L160,75L154.66666666666666,68.5C149.33333333333331,62,138.66666666666666,49,128,54C117.33333333333333,59,106.66666666666666,82,96,95C85.33333333333333,108,74.66666666666666,111,64,113.5C53.33333333333333,116,42.666666666666664,118,32,116.5C21.333333333333332,115,10.666666666666666,110,5.333333333333333,107.5L0,105Z">
+</path>
+<path class="area below" clip-path="url(#clip-below)" d="M0,150L5.333333333333333,145C10.666666666666666,140,21.333333333333332,130,32,120C42.666666666666664,110,53.33333333333333,100,64,90C74.66666666666666,80,85.33333333333333,70,96,60C106.66666666666666,50,117.33333333333333,40,128,30C138.66666666666666,20,149.33333333333331,10,154.66666666666666,5L160,0L160,75L154.66666666666666,68.5C149.33333333333331,62,138.66666666666666,49,128,54C117.33333333333333,59,106.66666666666666,82,96,95C85.33333333333333,108,74.66666666666666,111,64,113.5C53.33333333333333,116,42.666666666666664,118,32,116.5C21.333333333333332,115,10.666666666666666,110,5.333333333333333,107.5L0,105Z">
+</path>
+<path class="line" d="M0,150L5.333333333333333,145C10.666666666666666,140,21.333333333333332,130,32,120C42.666666666666664,110,53.33333333333333,100,64,90C74.66666666666666,80,85.33333333333333,70,96,60C106.66666666666666,50,117.33333333333333,40,128,30C138.66666666666666,20,149.33333333333331,10,154.66666666666666,5L160,0L160,0L154.66666666666666,5C149.33333333333331,10,138.66666666666666,20,128,30C117.33333333333333,40,106.66666666666666,50,96,60C85.33333333333333,70,74.66666666666666,80,64,90C53.33333333333333,100,42.666666666666664,110,32,120C21.333333333333332,130,10.666666666666666,140,5.333333333333333,145L0,150Z"></path><g class="x axis" transform="translate(0,150)">
+<g class="tick major" transform="translate(0,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">50</text></g>
+<g class="tick major" transform="translate(32,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">60</text></g>
+<g class="tick major" transform="translate(64,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">70</text></g>
+<g class="tick major" transform="translate(96,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">80</text></g>
+<g class="tick major" transform="translate(128,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">90</text></g>
+<g class="tick major" transform="translate(160,0)" style="opacity: 1;"><line y2="6" x2="0"></line><text y="9" x="0" dy=".71em" style="text-anchor: middle;">100</text></g>
+<path class="domain" d="M0,6V0H160V6"></path>
+<text x="160" dy="-.71em" style="text-anchor: end;">reported confidence</text></g><g class="y axis">
+<g class="tick major" transform="translate(0,150)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">50</text></g>
+<g class="tick major" transform="translate(0,120)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">60</text></g>
+<g class="tick major" transform="translate(0,90)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">70</text></g>
+<g class="tick major" transform="translate(0,60)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">80</text></g>
+<g class="tick major" transform="translate(0,30)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">90</text></g>
+<g class="tick major" transform="translate(0,0)" style="opacity: 1;"><line x2="-6" y2="0"></line><text x="-9" y="0" dy=".32em" style="text-anchor: end;">100</text></g>
+<path class="domain" d="M-6,0H0V150H-6"></path>
+<text transform="rotate(-90)" y="6" dy=".71em" style="text-anchor: end;">% correct</text></g>
+<linearGradient id="density-gradient-above" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="160" y2="0"><stop offset="0%" stop-color="#9370DB" stop-opacity="1"></stop><stop offset="20%" stop-color="#9370DB" stop-opacity="0.1"></stop><stop offset="40%" stop-color="#9370DB" stop-opacity="0.1"></stop><stop offset="60%" stop-color="#9370DB" stop-opacity="0.9"></stop><stop offset="80%" stop-color="#9370DB" stop-opacity="0.8"></stop><stop offset="100%" stop-color="#9370DB" stop-opacity="0.1"></stop></linearGradient><linearGradient id="density-gradient-below" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="160" y2="0">
+<stop offset="0%" stop-color="#FF9900" stop-opacity="1"></stop><stop offset="20%" stop-color="#FF9900" stop-opacity="0.1"></stop><stop offset="40%" stop-color="#FF9900" stop-opacity="0.1"></stop>
+<stop offset="60%" stop-color="#FF9900" stop-opacity="0.9"></stop>
+<stop offset="80%" stop-color="#FF9900" stop-opacity="0.8"></stop>
+<stop offset="100%" stop-color="#FF9900" stop-opacity="0.1"></stop>
+</linearGradient></g>
+</svg>
+                    </p>
+                    <p align="center">
+                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height=30>
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#9370DB;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#9370DB;stop-opacity:0" />
+                                </linearGradient>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#FF9900;stop-opacity:0" />
+                                    <stop offset="100%" style="stop-color:#FF9900;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+
+                            <rect width="100" height="15" x="290" fill="url(#grad1)"/>
+                            <rect width="100" height="15" x="190" fill="url(#grad2)"/>
+
+                            <text fill="black" font-size="12" font-family="sans-serif" x="298" y="12">underconfident</text>
+                            <text fill="black" font-size="12" font-family="sans-serif" x="208" y="12">overconfident</text>
+                        </svg>
+
+                    </p>
+                    
+                    <p>
+                    The darker the color, the more questions have been answered at that confidence, and therefore the more accurate the results.
+                    </p>
+                    <p>
+                    When choosing your confidence level, 50% confidence indicates that you have no idea which answer is correct. 100% indicates absolute certainty of the correct answer. The more questions you answer, the more accurate your calibration will be.
+                    </p>
 
                         <p align="center">
                         <a class="button" href="calibrate.html?n=20" title="about 4 minutes">20 questions</a>
@@ -147,13 +214,13 @@
                         <h6 style="padding-top: 10px;">sources</h6>
 
 
-<div class="csl-entry" id="AlpertRaffia1982">Alpert, Marc, and Howard Raiffa. <a href="http://faculty.washington.edu/jmiyamot/p466/alpertm%20prog%20report%20on%20training%20o%20prob%20assessors.pdf">“A Progress Report on the Training of Probability Assessors.”</a> In <i>Judgment Under Uncertainty</i>, 294–305. Cambridge University Press, 1982. http://dx.doi.org/10.1017/CBO9780511809477.022.</div>
+                        <div class="csl-entry" id="AlpertRaffia1982">Alpert, Marc, and Howard Raiffa. <a href="http://faculty.washington.edu/jmiyamot/p466/alpertm%20prog%20report%20on%20training%20o%20prob%20assessors.pdf">“A Progress Report on the Training of Probability Assessors.”</a> In <a href="http://www.amazon.com/gp/product/0521284147/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0521284147&linkCode=as2&tag=sethrylan-20"><i>Judgment Under Uncertainty: Heuristics and Biases</i></a>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 294–305. Cambridge University Press, 1982. <a href="http://dx.doi.org/10.1017/CBO9780511809477.022">http://dx.doi.org/10.1017/CBO9780511809477.022</a>.</div>
 
 <div class="csl-entry" id="Gill2005">Gill, C. J. <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC557240/pdf/bmj33001080.pdf">“Why Clinicians Are Natural Bayesians.”</a> <i>BMJ</i> 330, no. 7499 (May 7, 2005): 1080–1083. doi:10.1136/bmj.330.7499.1080.</div>
   
 <div class="csl-entry" id="GunzelmannGluck2004">Gunzelmann, G., and K.A. Gluck. <a href="http://act-r.psy.cmu.edu/papers/710/gunzelmann_gluck-2004.pdf">“Knowledge Tracing for Complex Training Applications: Beyond Bayesian Mastery Estimates.”</a> In <i>Proceedings of the Thirteenth Conference on Behavior Representation in Modeling and Simulation</i>, 383–384. Orlando, FL: Simulation Interoperability Standards Organization, 2004.</div>
 
-<div class="csl-entry" id="Hubbard2010">Hubbard, Douglas W. <a href="http://www.jpmeloche.com/crr/ebooksclub.org__How_to_Measure_Anything__Finding_the_Value_of_Intangibles_in_Business__Second_Edition.pdf"><i>How to Measure Anything Finding the Value of Intangibles in Business</i></a>. 2ed. Wiley, 2010.</div>
+<div class="csl-entry" id="Hubbard2010">Hubbard, Douglas W. <a href="http://www.amazon.com/gp/product/0470539399/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0470539399&linkCode=as2&tag=sethrylan-20"><!--http://www.jpmeloche.com/crr/ebooksclub.org__How_to_Measure_Anything__Finding_the_Value_of_Intangibles_in_Business__Second_Edition.pdf--><i>How to Measure Anything Finding the Value of Intangibles in Business</i></a>. 2ed. Wiley, 2010.</div>
 
 <div class="csl-entry" id="Jeffery2002">Jeffery, Richard. <a href="http://www.princeton.edu/~bayesway/Book*.pdf"><i>Subjective Probability: The Real Thing</i></a>. Cambridge University Press, 2002.</div>
   
@@ -161,11 +228,11 @@
   
 <div class="csl-entry" id="KassinFong1999">Kassin, Saul M., and Christina T. Fong. <a href="http://web.williams.edu/Psychology/Faculty/Kassin/files/kassin_fong_1999.pdf">“‘I’m Innocent!’: Effects of Training on Judgments of Truth and Deception in the Interrogation Room.”</a> <i>Law and Human Behavior</i> 23, no. 5 (October 1, 1999): 499–516. doi:10.1023/A:1022330011811.</div>
 
-<div class="csl-entry" id="Knight1921">Knight, Frank H. (Frank Hyneman). <a href="http://www.econlib.org/library/Knight/knRUP.html"><i>Risk, Uncertainty and Profit</i></a>. Boston, New York, Houghton Mifflin Company, 1921.</div>
+<div class="csl-entry" id="Knight1921">Knight, Frank H. (Frank Hyneman). <a href="http://www.amazon.com/gp/product/1602060053/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=1602060053&linkCode=as2&tag=sethrylan-20"><!--http://www.econlib.org/library/Knight/knRUP.html--><i>Risk, Uncertainty and Profit</i></a>. Boston, New York, Houghton Mifflin Company, 1921.</div>
 
 <div class="csl-entry" id="LichtensteinFischhoff1978">Lichtenstein, Sarah, and Baruch Fischhoff. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a069703.pdf"><i>Training for Calibration</i></a>, November 1978.</div>
   
-<div class="csl-entry" id="LichtensteinEtAl1982">Lichtenstein, Sarah, Baruch Fischhoff, and Lawrence D. Phillips. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">“Calibration of Probabilities: The State of the Art to 1980.”</a> In <i>Judgment Under Uncertainty: Heuristics and Biases</i>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 306–334. Cambridge, UK: Cambridge University Press, 1982.</div>
+<div class="csl-entry" id="LichtensteinEtAl1982">Lichtenstein, Sarah, Baruch Fischhoff, and Lawrence D. Phillips. <a href="http://www.dtic.mil/dtic/tr/fulltext/u2/a101986.pdf">“Calibration of Probabilities: The State of the Art to 1980.”</a> In <a href="http://www.amazon.com/gp/product/0521284147/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0521284147&linkCode=as2&tag=sethrylan-20"><i>Judgment Under Uncertainty: Heuristics and Biases</i></a>, edited by Daniel Kahneman, Paul Slovic, and Amos Tversky, 306–334. Cambridge, UK: Cambridge University Press, 1982.</div>
 
 <div class="csl-entry" id="LindeyEtAl1979">Lindley, D. V., A. Tversky, and R. V. Brown. <a href="citations/Lindly_et_al-On_the_Reconciliation_of_Probability_Assessments.pdf">“On the Reconciliation of Probability Assessments.”</a> <i>Journal of the Royal Statistical Society. Series A (General)</i> 142, no. 2 (January 1, 1979): 146–180. doi:10.2307/2345078.</div>
 
@@ -175,11 +242,11 @@
  
 <div class="csl-entry" id="Oskamp1965">Oskamp, Stuart. <a href="citations/Oskamp-Overconfidence_in_Case_Study_Judgements.pdf">“Overconfidence in Case-study Judgments.”</a> <i>Journal of Consulting Psychology</i> 29, no. 3 (1965): 261–265. doi:10.1037/h0022125.</div>
 
-<div class="csl-entry" id="Plous1993">Plous, Scott. <i>The Psychology of Judgment and Decision Making</i>. New York: McGraw-Hill, 1993.</div>
+<div class="csl-entry" id="Plous1993">Plous, Scott. <a href="http://www.amazon.com/gp/product/0070504776/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=0070504776&linkCode=as2&tag=sethrylan-20"><i>The Psychology of Judgment and Decision Making</i></a>. New York: McGraw-Hill, 1993.</div>
 
 <div class="csl-entry" id="RadzevickMoore2009">Radzevick, Joseph R., and Don A. Moore. <a href="http://www.gsb.stanford.edu/sites/default/files/documents/ob_01_09_moore.pdf">“Competing to Be Certain (but Wrong): Social Pressure and Overprecision in Judgment.”</a> <i>Academy of Management Proceedings</i> 2009, no. 1 (August 1, 2009): 1–6. doi:10.5465/AMBPP.2009.44246308.</div>
 
-<div class="csl-entry" id="Silver2012">Silver, Nate. <a href="http://www.amazon.com/The-Signal-Noise-Many-Predictions/dp/159420411X"><i>The Signal and the Noise: Why So Many Predictions Fail — but Some Don’t</i></a>. 1ed. Penguin Press HC, The, 2012.</div>
+<div class="csl-entry" id="Silver2012">Silver, Nate. <a href="http://www.amazon.com/gp/product/159420411X/ref=as_li_ss_tl?ie=UTF8&camp=1789&creative=390957&creativeASIN=159420411X&linkCode=as2&tag=sethrylan-20"><i>The Signal and the Noise: Why So Many Predictions Fail — but Some Don’t</i></a>. 1ed. Penguin Press HC, The, 2012.</div>
 
 <div class="csl-entry" id="Wilson1994">Wilson, Alyson G. <a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.71.4909&rep=rep1&type=pdf">“Cognitive Factors Affecting Subjective Probability Assessment,”</a> 1994.</div>
 

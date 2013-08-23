@@ -630,6 +630,7 @@ $(document).ready(function() {
                 });
                 dataTable.push([i, i, (total == 0 ? i : correct/total*100), total]);
             }
+            console.log(JSON.stringify(dataTable));
             return dataTable;
         }
     };
