@@ -12,6 +12,14 @@ var margin = {top: 20, right: 10, bottom: 30, left: 30},
     height = 200 - margin.top - margin.bottom;
 var svg, x, y, xAxis, yAxis, line, area, tooltip;
 
+function normalize(domainMin, domainMax, x) {
+    return normalize(domainMin, domainMax, 0.0, 1.0, x);
+}
+
+function normalize(domainMin, domainMax, rangeMin, rangeMax, x) {
+    return (rangeMin + (x-domainMin)*(rangeMax-rangeMin)/(domainMax-domainMin));
+}
+
 function updateSidebarChart(dataTable) {
 
     var data = tableToJson(dataTable);
@@ -19,6 +27,46 @@ function updateSidebarChart(dataTable) {
         d["ideal"]= +d["ideal"];
         d["actual"] = +d["actual"];
     });
+
+    var transition = d3.transition()
+        .duration(150);
+   
+    var totalDatapoints = 0;
+    $.each(data, function() {
+        totalDatapoints += parseInt(this.datapoints);
+    });
+
+    var offsets = [];
+    jQuery.each([50, 60, 70, 80, 90, 100], function() {
+        var interval = this;
+        var o = {};
+        o.offset = (interval - 50) * 2 + "%";
+        var intervalDatapoints = 0;
+        for(var key in data) {
+            if(data[key].confidence == interval) {
+                intervalDatapoints = data[key].datapoints;
+            }
+        } 
+        o.opacity = (intervalDatapoints/totalDatapoints ).toString();
+        offsets.push(o);
+    });
+
+    console.log(JSON.stringify(offsets));
+/*
+    var offsets = [
+                {offset: "0%", opacity: "0"},
+                {offset: "20%", opacity: ".2"},
+                {offset: "40%", opacity: ".4"},
+                {offset: "60%", opacity: ".6"},
+                {offset: "80%", opacity: ".8"},
+                {offset: "100%", opacity: "1"}                
+    ];    
+    */
+    //console.log(JSON.stringify(offsets));
+                
+    //console.log(JSON.stringify(data));
+
+    svg.datum(data);
     
     /* 
     // Resize y-axis
@@ -29,32 +77,43 @@ function updateSidebarChart(dataTable) {
     ]);
     svg.select("g.y.axis").call(yAxis);
     */
+
     
-    svg.datum(data);
-    svg.selectAll("#clip-below > path")
-        .transition()
-        .duration(150)
-        .attr("d", area.y0(height));
+    transition.each(function() {
+        svg.selectAll("#clip-below > path")
+            .transition()
+                .attr("d", area.y0(height));
 
-    svg.select("#clip-above > path")
-        .transition()
-        .duration(150)
-        .attr("d", area.y0(0));
+        svg.select("#clip-above > path")
+            .transition()
+                .attr("d", area.y0(0));
 
-    svg.select("path.area.above")
-        .transition()
-        .duration(150)
-        .attr("d", area.y0(function(d) { return y(d["actual"]); }));
+        svg.select("path.area.above")
+            .transition()
+                .attr("d", area.y0(function(d) { return y(d["actual"]); }));
 
-    svg.select("path.area.below")
-        .transition()
-        .duration(150)
-        .attr("d", area);
+        svg.select("path.area.below")
+            .transition()
+                .attr("d", area);
 
-    svg.select("path.line")
-        .transition()
-        .duration(150)
-        .attr("d", line);
+        svg.select("path.line")
+            .transition()
+                .attr("d", line);
+        
+        d3.select("#density-gradient-above").selectAll("stop")
+            .data(offsets)
+            .transition()
+                .attr("offset", function(d) { return d.offset; })
+                .attr("stop-color", "#9370DB")
+                .attr("stop-opacity", function(d) { return d.opacity; });
+
+        d3.select("#density-gradient-below").selectAll("stop")
+            .data(offsets)
+            .transition()
+                .attr("offset", function(d) { return d.offset; })
+                .attr("stop-color", "#FF9900")              // Orange Peel
+                .attr("stop-opacity", function(d) { return d.opacity; });
+        });
 }
 
 function drawSidebarChart(dataTable) {		
@@ -175,11 +234,15 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .text("% correct");
 
     var offsets = [
-                {offset: "0%", opacity: ".2"},
-                {offset: "50%", opacity: ".5"},
-                {offset: "100%", opacity: ".8"}
-            ];
-    //console.log(JSON.stringify(data));
+                {offset: "0%", opacity: "1"},
+                {offset: "20%", opacity: "1"},
+                {offset: "40%", opacity: "1"},
+                {offset: "60%", opacity: "1"},
+                {offset: "80%", opacity: "1"},
+                {offset: "100%", opacity: "1"}                
+        ];    
+
+    console.log(JSON.stringify(data));
     
     svg.append("linearGradient")
         .attr("id", "density-gradient-above")
