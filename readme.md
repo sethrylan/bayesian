@@ -3,8 +3,7 @@ Bayesian
 
 A test for calibrated probability assessment. See client/index.html for further info. 
 
-
-Development Workflow
+Directory Structure
 =========
 
 | Directory    | Description                              |
@@ -16,6 +15,9 @@ Development Workflow
 | /persistence | persistence code for GAE deployment      |
 | /server      | server code for GAE deployment           |
 
+
+Development Workflow
+=========
 
 | Description               | Command                         |
 | ------------------------- |---------------------------------|
@@ -29,9 +31,6 @@ Development Workflow
 | PMD, CheckStyle, etc      | ```gradlew check```             |
 | FindBugs                  | ```gradlew findbugs```          |
 
-Testing
-=========
-https://developers.google.com/appengine/docs/java/tools/localunittesting
 
 Data Sources
 =========
@@ -47,9 +46,6 @@ Known Issues:
 
 TODO:
 =========
-Darken chart as more datapoints are added
-    https://github.com/iros/d3.chart.horizontal-legend
-    http://bl.ocks.org/mbostock/4248145
 Add legend
     http://stackoverflow.com/questions/13573771/adding-a-chart-legend-in-d3
 Remove outlying data points (monaco, vatican)
