@@ -152,6 +152,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .attr("class", "line")
         .attr("d", line);
 
+    // x-axis lable
     svg.append("g")
         .attr("class", "x axis")
         .attr("transform", "translate(0," + height + ")")
@@ -162,6 +163,7 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .style("text-anchor", "end")
         .text("reported confidence");
 
+    // y-axis label
     svg.append("g")
         .attr("class", "y axis")
         .call(yAxis)
