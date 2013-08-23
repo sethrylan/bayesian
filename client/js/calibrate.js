@@ -33,7 +33,8 @@ function getOffsets(data) {
     });
 
     var offsets = [];
-    var minOpacity = 0, maxOpacity = 0;
+    var minOpacity = 0, maxOpacity = 0, isAreaVisible = false;
+    console.log(JSON.stringify(data));
     jQuery.each([50, 60, 70, 80, 90, 100], function() {
         var interval = this;
         var o = {};
@@ -43,12 +44,15 @@ function getOffsets(data) {
             if(data[key].confidence == interval) {
                 intervalDatapoints = data[key].datapoints;
             }
+            if(data[key].ideal != data[key].actual) {
+                isAreaVisible = true;
+            }
         } 
         o.opacity = (intervalDatapoints/totalDatapoints ).toString();
-        if (o.opacity < minOpacity) {
+        if (isAreaVisible && o.opacity < minOpacity) {
             minOpacity = o.opacity;
         }
-        if (o.opacity > maxOpacity) {
+        if (isAreaVisible && o.opacity > maxOpacity) {
             maxOpacity = o.opacity;
         } 
         offsets.push(o);
