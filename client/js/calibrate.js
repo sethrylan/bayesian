@@ -12,14 +12,6 @@ var margin = {top: 20, right: 10, bottom: 30, left: 30},
     height = 200 - margin.top - margin.bottom;
 var svg, x, y, xAxis, yAxis, line, area, tooltip;
 
-function normalize(domainMin, domainMax, x) {
-    return normalize(domainMin, domainMax, 0.0, 1.0, x);
-}
-
-function normalize(domainMin, domainMax, rangeMin, rangeMax, x) {
-    return (rangeMin + (x-domainMin)*(rangeMax-rangeMin)/(domainMax-domainMin));
-}
-
 function updateSidebarChart(dataTable) {
 
     var data = tableToJson(dataTable);
@@ -37,6 +29,7 @@ function updateSidebarChart(dataTable) {
     });
 
     var offsets = [];
+    var minOpacity = 0, maxOpacity = 0;
     jQuery.each([50, 60, 70, 80, 90, 100], function() {
         var interval = this;
         var o = {};
@@ -48,23 +41,18 @@ function updateSidebarChart(dataTable) {
             }
         } 
         o.opacity = (intervalDatapoints/totalDatapoints ).toString();
+        if (o.opacity < minOpacity) {
+            minOpacity = o.opacity;
+        }
+        if (o.opacity > maxOpacity) {
+            maxOpacity = o.opacity;
+        } 
         offsets.push(o);
     });
 
-    console.log(JSON.stringify(offsets));
-/*
-    var offsets = [
-                {offset: "0%", opacity: "0"},
-                {offset: "20%", opacity: ".2"},
-                {offset: "40%", opacity: ".4"},
-                {offset: "60%", opacity: ".6"},
-                {offset: "80%", opacity: ".8"},
-                {offset: "100%", opacity: "1"}                
-    ];    
-    */
-    //console.log(JSON.stringify(offsets));
-                
-    //console.log(JSON.stringify(data));
+    for(var key in offsets) {
+        offsets[key].opacity = normalize(minOpacity, maxOpacity, 0, 1, offsets[key].opacity);
+    }
 
     svg.datum(data);
     
@@ -242,7 +230,6 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
                 {offset: "100%", opacity: "1"}                
         ];    
 
-    console.log(JSON.stringify(data));
     
     svg.append("linearGradient")
         .attr("id", "density-gradient-above")

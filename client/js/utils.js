@@ -4,6 +4,10 @@ function assert(condition, message) {
     }
 }
 
+function normalize(domainMin, domainMax, rangeMin, rangeMax, x) {
+    return (rangeMin + (x-domainMin)*(rangeMax-rangeMin)/(domainMax-domainMin));
+}
+
 JSON.stringify = JSON.stringify || function (obj) {
     var t = typeof (obj);
     if (t != "object" || obj === null) {
