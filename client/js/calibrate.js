@@ -527,7 +527,7 @@ $(document).ready(function() {
             }
         },
         calibrationData: function() {
-            var dataTable = [['confidence', 'ideal', 'actual']];
+            var dataTable = [['confidence', 'ideal', 'actual', 'datapoints']];
             for(i = 50; i<=100; i+=10) {
                 var total = 0;
                 var correct = 0;
@@ -537,7 +537,7 @@ $(document).ready(function() {
                         correct += (this.correct ? 1 : 0);
                     }
                 });
-                dataTable.push([i, i, (total == 0 ? i : correct/total*100)]);
+                dataTable.push([i, i, (total == 0 ? i : correct/total*100), total]);
             }
             return dataTable;
         }

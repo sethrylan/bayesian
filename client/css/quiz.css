@@ -127,7 +127,7 @@ input {
 }
 /* Overconfidence */
 .area.below {
-    fill: rgb(255, 153, 0);		/* Orange Peel */
+    fill: #FF9900;		/* Orange Peel */
     opacity: 0.5;
 }
 .line {
