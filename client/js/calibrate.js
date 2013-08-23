@@ -174,6 +174,39 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .style("text-anchor", "end")
         .text("% correct");
 
+    var offsets = [
+                {offset: "0%", opacity: ".2"},
+                {offset: "50%", opacity: ".5"},
+                {offset: "100%", opacity: ".8"}
+            ];
+    //console.log(JSON.stringify(data));
+    
+    svg.append("linearGradient")
+        .attr("id", "density-gradient-above")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", x(50)).attr("y1", 0)            // start gradient at x=50
+            .attr("x2", x(100)).attr("y2", 0)           // end gradient at x=100
+        .selectAll("stop")
+            .data(offsets)
+        .enter().append("stop")
+            .attr("offset", function(d) { return d.offset; })
+            .attr("stop-color", "#9370DB")
+            .attr("stop-opacity", function(d) { return d.opacity; });
+
+     svg.append("linearGradient")
+            .attr("id", "density-gradient-below")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", x(50)).attr("y1", 0)            // start gradient at x=50
+            .attr("x2", x(100)).attr("y2", 0)           // end gradient at x=100
+        .selectAll("stop")
+            .data(offsets)
+        .enter().append("stop")
+            .attr("offset", function(d) { return d.offset; })
+            .attr("stop-color", "#FF9900")              // Orange Peel
+            .attr("stop-opacity", function(d) { return d.opacity; });
+     
+    
+
         /* 
     // create legend
     svg.append("g")

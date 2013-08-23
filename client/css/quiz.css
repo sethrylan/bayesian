@@ -122,13 +122,11 @@ input {
 /* Hex Color Codes : http://www.only-zuul.com/ahexcolor.htm */
 /* Underconfidence */
 .area.above {
-    fill: #9370DB;              /* Rosy Brown */
-    opacity: 0.5;
+    fill: url(#density-gradient-above);
 }
 /* Overconfidence */
 .area.below {
-    fill: #FF9900;		/* Orange Peel */
-    opacity: 0.5;
+    fill: url(#density-gradient-below);
 }
 .line {
     fill: none;
