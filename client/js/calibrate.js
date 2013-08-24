@@ -324,31 +324,6 @@ $(document).ready(function() {
             });        
         }
     });
-    
-    $.getJSON(questionsUrl, function(data) {
-      var questions = [];
-     
-      $.each(data.questions, function(key, q) {
-          $('#progressContainer').after(
-              '<div class="questionContainer radius hide">' + 
-                '<div class="question">' + q.text +
-                  '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
-                '</div>' +
-                '<div class="fact hide">' + q.fact + '</div>' + 
-                '<div class="feedback hide">' + q.feedback + '</div>' +
-                '<div class="answers">' + 
-                  '<div class="confidence"></div>' +
-                  '<div class="confidence-slider"></div>' +
-                  '<div class="options">' +
-                    '<a href="#">' + q.options[0] + '</a>' +
-                    '<a href="#">' + q.options[1] + '</a>' +
-                    '<input type="text" class="hide"/>' +
-                  '</div>' +
-                '</div>' +
-              '</div>');
-      });
-    });
-
 
     // Register [enter] keypress as default action
     $('*').keypress(function (e) {
