@@ -29,6 +29,8 @@ public enum FactbookQuiz {
         put("gdpPerCapita", 5);
         put("healthExpenditure", 2);
         put("gini", 2);
+        put("lifeExpectancy", 5);
+
     }};
     private static String[] EXCLUDED_IDS = {
         "um", // United States Pacific Island Wildlife Refuges
@@ -94,9 +96,6 @@ public enum FactbookQuiz {
             do {
                 countries = this.getRandomCountries();
 
-//                System.out.println("Category: " + q.category);
-//                System.out.println("Countries: " + countries[0].name + ", " + countries[1].name);
-
                 switch (q.category) {
                     case "area":
                         values = ArrayUtils.toArray(countries[0].area, countries[1].area);
@@ -128,6 +127,13 @@ public enum FactbookQuiz {
                         values = ArrayUtils.toArray(countries[0].gini, countries[1].gini);
                         q.text = String.format("%s has a higher Gini index than %s.", countries[0].name, countries[1].name);
                         q.hint = "The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.";
+                        break;
+                    case "lifeExpectancy":
+                        values = ArrayUtils.toArray(countries[0].lifeExpectancy, countries[1].lifeExpectancy);
+                        q.text = String.format("%s has a higher life expectancy at birth than %s.", countries[0].name, countries[1].name);
+                        q.hint = String.format("%s: fertility rate of %s<br>%s: fertility rate of %s",
+                                countries[0].name, percentage(countries[0].totalFertilityRate.value),
+                                countries[1].name, percentage(countries[1].totalFertilityRate.value) );
                         break;
                     default:
                         log.info("No such feedback category.");

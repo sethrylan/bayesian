@@ -569,6 +569,12 @@ $(document).ready(function() {
                         formattedValue = gini.toString();
                         radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);					
                         break;
+                    case "lifeExpectancy":
+                        var lifeExp = feedback.values[i].value;
+                        var scaledLifeExp = lifeExp/3 * canvas.width;
+                        formattedValue = lifeExp + " years";
+                        radius = Math.sqrt(scaledLifeExp)/Math.sqrt(Math.PI);					
+                        break;
                     default:
                         console.error("No such feedback category.");
                         return;

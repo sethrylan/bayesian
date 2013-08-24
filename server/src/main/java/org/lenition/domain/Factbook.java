@@ -23,6 +23,8 @@ public class Factbook {
         public Value deathRate;
         public Value netMigrationRate;
         public Value healthExpenditure;
+        public Value lifeExpectancy;
+        public Value totalFertilityRate;
     }
 
     public static class Value {
