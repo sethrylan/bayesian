@@ -95,6 +95,7 @@ public enum FactbookQuiz {
             q.category = getRandomCategory();
             do {
                 countries = this.getRandomCountries();
+                clean(countries);
 
                 switch (q.category) {
                     case "area":
@@ -151,6 +152,12 @@ public enum FactbookQuiz {
         }
 
         return quiz;
+    }
+
+    protected static void clean(Factbook.Country[] countries) {
+        for(Factbook.Country country : countries) {
+            country.name = country.name.replaceAll(", The$", "");
+        }
     }
 
     /**
