@@ -8,7 +8,6 @@ import org.lenition.domain.Quiz;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.*;
@@ -28,8 +27,8 @@ public enum FactbookQuiz {
         put("area", 5);
         put("population", 5);
         put("gdpPerCapita", 5);
-        put("healthExpenditure", 5);
-        put("gini", 5);
+        put("healthExpenditure", 2);
+        put("gini", 2);
     }};
     private static String[] EXCLUDED_IDS = {
         "um", // United States Pacific Island Wildlife Refuges
@@ -60,6 +59,7 @@ public enum FactbookQuiz {
         "vc", // Saint Vincent and the Grenadines
         "pf", // Paracel Islands
         "kr", // Kiribati
+        "cc", // Curacao
         "tn" // Tonga
     };
 
@@ -135,18 +135,9 @@ public enum FactbookQuiz {
                 }
             } while(values[0].value == null || values[1].value == null );
 
-//            System.out.println("values[0].value == null ? " + String.valueOf(values[0].value == null));
-//            System.out.println("values[1].value == null ? " + String.valueOf(values[1].value == null));
-//
-//            System.out.println("Category: " + q.category);
-//            System.out.println("Countries: " + countries[0].name + ", " + countries[1].name);
-//            System.out.println("Values: " + values[0].value + ", " + values[1].value);
-//            System.out.println("Texts: " + values[0].text + ", " + values[1].text);
-
-
             q.fact = String.valueOf(values[0].value.compareTo(values[1].value) > 0);
-            q.feedback = String.format(" {\"category\": \"%s\", \"values\": [{\"name\": \"%s\",\"value\": %d},{\"name\": \"%s\",\"value\": %d}]}",
-                                        q.category, countries[0].name, values[0].value.intValue(), countries[1].name, values[1].value.intValue());
+            q.feedback = String.format(" {\"category\": \"%s\", \"values\": [{\"name\": \"%s\",\"value\": %s},{\"name\": \"%s\",\"value\": %s}]}",
+                                        q.category, countries[0].name, fmt(values[0].value.doubleValue()), countries[1].name, fmt(values[1].value.doubleValue()));
             q.options = getBooleanOptions();
 
             quiz.questions = ArrayUtils.add(quiz.questions, q);
@@ -217,5 +208,11 @@ public enum FactbookQuiz {
         return df.format(n);
     }
 
-
+    private static String fmt(double d) {
+        if(d == (int) d) {
+            return String.format("%d",(int)d);
+        } else {
+            return String.format("%s",d);
+        }
+    }
 }
