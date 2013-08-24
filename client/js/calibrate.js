@@ -264,18 +264,24 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
             .attr("stop-color", "#FF9900")              // Orange Peel
             .attr("stop-opacity", function(d) { return d.opacity; }); 
 
-    /* 
+ 
     // create legend
-    svg.append("g")
-        .attr("class", "legend")
-        .attr("transform", "translate(0," + height + ")")
-        //.call(xAxis)
-    .append("text")
-        .attr("x", width)
-        .attr("dy", "3em")
-        .style("text-anchor", "end")
-        .text("Underconfidence");
-    */
+    $(element).after("<svg xmlns='http://www.w3.org/2000/sv' version='1.1' height=35 id='sidebarLegend'>" +
+                        "<defs>" +
+                            "<linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>" +
+                                "<stop offset='0%' style='stop-color:#9370DB;stop-opacity:0' />" +
+                                "<stop offset='100%' style='stop-color:#9370DB;stop-opacity:1' />" +
+                            "</linearGradient>" +
+                            "<linearGradient id='grad2' x1='0%' y1='0%' x2='100%' y2='0%'>" +
+                                "<stop offset='0%' style='stop-color:#FF9900;stop-opacity:0' />" +
+                                "<stop offset='100%' style='stop-color:#FF9900;stop-opacity:1' />" +
+                            "</linearGradient>" +
+                        "</defs>" +
+                        "<rect width='100' height='12' x='50' y='0' fill='url(#grad1)'/>" +
+                        "<rect width='100' height='12' x='50' y='16' fill='url(#grad2)'/>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='70' y='9'>underconfident</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='77' y='25'>overconfident</text>" +
+                    "</svg>");
 
 }
 
@@ -466,6 +472,7 @@ $(document).ready(function() {
             });			
         },        
         finish: function() {
+            /*
             var resultDiv = '';
             var trueCount = 0;
             for (var key in this.responses) {
@@ -476,9 +483,11 @@ $(document).ready(function() {
             }
             resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
             $('#resultContainer').html(resultDiv).show();
+            */
             $('#next').hide();
             $('#back').hide();
             $('#sidebarChart').hide();
+            $('#sidebarLegend').hide();
             drawLargeChart(jQuiz.calibrationData());
             
             // Build and post telemetry data
