@@ -279,8 +279,12 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
                         "</defs>" +
                         "<rect width='100' height='12' x='50' y='0' fill='url(#grad1)'/>" +
                         "<rect width='100' height='12' x='50' y='16' fill='url(#grad2)'/>" +
-                        "<text fill='black' font-size='10' font-family='sans-serif' x='70' y='9'>underconfident</text>" +
-                        "<text fill='black' font-size='10' font-family='sans-serif' x='77' y='25'>overconfident</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='65' y='9'>underconfident</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='68' y='25'>overconfident</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='155' y='12'>more</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='155' y='22'>answers</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='23' y='12'>fewer</text>" +
+                        "<text fill='black' font-size='10' font-family='sans-serif' x='13' y='22'>answers</text>" +
                     "</svg>");
 
 }
