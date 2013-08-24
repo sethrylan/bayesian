@@ -154,6 +154,10 @@ public enum FactbookQuiz {
         return quiz;
     }
 
+    /**
+     * Sanitize countries data
+     * @param countries array of countries to sanitize; modification in place
+     */
     protected static void clean(Factbook.Country[] countries) {
         for(Factbook.Country country : countries) {
             country.name = country.name.replaceAll(", The$", "");
@@ -201,6 +205,11 @@ public enum FactbookQuiz {
             return ArrayUtils.toArray("true", "false");
     }
 
+    /**
+     * Format number as currency in billions
+     * @param n number
+     * @return number as billions
+     */
     private static String currencyBillions(BigDecimal n) {
         if(n == null) {
             return "--.--";
