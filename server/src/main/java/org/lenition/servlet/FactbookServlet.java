@@ -4,25 +4,29 @@ import com.google.gson.Gson;
 import org.apache.commons.io.IOUtils;
 import org.lenition.singleton.FactbookQuiz;
 
-import javax.ws.rs.*;
+import javax.ws.rs.DefaultValue;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 
 /**
- * ReST resource for factbook questions
+ * ReST resource for factbook questions.
  */
 @Path("factbook")
 public class FactbookServlet {
 
     /**
-     * Returns JSON representation of factbook country data
+     * Returns JSON representation of factbook country data.
      * @return  factbook countries in JSON
      */
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public String factbook() {
         try {
-            return IOUtils.toString(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"), "UTF-8");
+            return IOUtils.toString(FactbookServlet.class.getClassLoader().getResourceAsStream(FactbookQuiz.FACTBOOK), "UTF-8");
         } catch (IOException e) {
             e.printStackTrace();
             return "{ \"error\" : \"Could not find factbook\" }";
@@ -30,7 +34,7 @@ public class FactbookServlet {
     }
 
     /**
-     * Returns JSON representation of factbook questions
+     * Returns JSON representation of factbook questions.
      * @param n number of questions
      * @return factbook questions in JSON
      */

@@ -3,11 +3,21 @@ package org.lenition.domain;
 import java.math.BigDecimal;
 
 /**
- * Factbook domain object
+ * Factbook domain object.
  */
 public class Factbook {
     public Country[] countries;
 
+    /**
+     * Container for factbook serialization.
+     */
+    public static class FactbookContainer {
+        public Factbook factbook;
+    }
+
+    /**
+     * Country object.
+     */
     public static class Country {
         public String name;
         public String id;
@@ -27,15 +37,13 @@ public class Factbook {
         public Value totalFertilityRate;
     }
 
+    /**
+     * Generic value object.
+     */
     public static class Value {
         public BigDecimal value;
         public long rank;
         public String text;
     }
-
-    public static class FactbookContainer {
-        public Factbook factbook;
-    }
-
 }
 

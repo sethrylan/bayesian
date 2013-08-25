@@ -16,7 +16,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Type;
 
 /**
- * Reader for request with type application/json
+ * Reader for request with type application/json.
  * @param <T>
  */
 @Provider

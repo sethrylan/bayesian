@@ -1,10 +1,22 @@
 package org.lenition.servlet;
 
-import com.google.appengine.api.datastore.*;
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.Entity;
+import com.google.appengine.api.datastore.FetchOptions;
+import com.google.appengine.api.datastore.Key;
+import com.google.appengine.api.datastore.KeyFactory;
+import com.google.appengine.api.datastore.Query;
+import com.google.appengine.api.datastore.Text;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import javax.ws.rs.*;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
+import javax.ws.rs.Produces;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import java.lang.reflect.Type;
@@ -14,18 +26,19 @@ import java.util.UUID;
 import java.util.logging.Logger;
 
 /**
- * A class for storing generic JSON data in the GAE datastore
+ * A class for storing generic JSON data in the GAE datastore.
  */
 @Path("/")
 public class JsonDataStoreServlet {
 
     private static final String DEFAULT_ENTITY_KIND = "default";
+    private static final int MAX_STRING_VALUE = 450;
     private DatastoreService datastore = DatastoreServiceFactory.getDatastoreService();
     private Gson gson = new Gson();
-    private static final Logger log = Logger.getLogger(JsonDataStoreServlet.class.getName());
+    private final Logger log = Logger.getLogger(JsonDataStoreServlet.class.getName());
 
     /**
-     * Retrieves default entities
+     * Retrieves default entities.
      * @return default entities as JSON
      */
     @GET
@@ -35,7 +48,7 @@ public class JsonDataStoreServlet {
     }
 
     /**
-     * Retrieves entities
+     * Retrieves entities.
      * @param kind type entity
      * @return entites as JSON
      */
@@ -61,7 +74,7 @@ public class JsonDataStoreServlet {
     }
 
     /**
-     * Stores JSON in datastore
+     * Stores JSON in datastore.
      * @param kind type of entity to store as
      * @param json data to store
      * @return presisted key of stored object
@@ -70,14 +83,15 @@ public class JsonDataStoreServlet {
     @Path("{kind}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String put(@Context javax.servlet.http.HttpServletRequest httpServletRequest, @PathParam("kind") String kind, String json) {
+    public String put(@Context javax.servlet.http.HttpServletRequest httpServletRequest,
+                      @PathParam("kind") String kind, String json) {
         log.info("json = " + json);
         Key entityKey = KeyFactory.createKey(kind, UUID.randomUUID().toString());
         Entity entity = new Entity(entityKey);
 
-        // See example code at http://google-gson.googlecode.com/svn-history/r550/trunk/gson/src/test/java/com/google/gson/functional/MapTest.java
+        // See example of mapping serialization com.google.gson.functional.MapTest.java
         // Supported types: https://developers.google.com/appengine/docs/java/datastore/entities
-        Type mapTypeToken = new TypeToken<Map<String,Object>>(){}.getType();
+        Type mapTypeToken = new TypeToken<Map<String, Object>>(){}.getType();
         Map<String, Object> map = gson.fromJson(json, mapTypeToken);
         map.put("clientHost", httpServletRequest.getRemoteHost());
         map.put("clientAddress", httpServletRequest.getRemoteAddr() + ":" + httpServletRequest.getRemotePort());
@@ -85,10 +99,10 @@ public class JsonDataStoreServlet {
             log.info(key + " : " + map.get(key).toString() + " : " + map.get(key).getClass());
             Object value = map.get(key);
             if(value instanceof String) {
-                if (((String)value).length() > 0 && ((String)value).length() < 450) {
+                if (((String) value).length() > 0 && ((String) value).length() < MAX_STRING_VALUE) {
                     entity.setProperty(key, value);
-                } else if (((String)value).length()>=450) {
-                    entity.setProperty(key, new Text((String)value));
+                } else if (((String) value).length() >= MAX_STRING_VALUE) {
+                    entity.setProperty(key, new Text((String) value));
                 }
             } else {
                 entity.setProperty(key, new Text(gson.toJson(value)));
