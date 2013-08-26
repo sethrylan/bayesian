@@ -77,49 +77,6 @@ li { margin-bottom: 2px; }
  margin-top: -1px;
  letter-spacing: 0.065em;
 }
-.announce {
- width: 190px;
- padding: 0px 0px 0px 7px;
- border: dashed 1px #ccc;
-}
-.more {
- width: 100%;
- font-weight: bold;
- text-align: right;
-}
-
-/* Project Entries */
-.entry {
- clear: both;
- height: 80px;
- margin-bottom: 10px;
- overflow: hidden;
-}
-.entry img {
- float: left;
- border: 1px solid #fff;
- margin: 2px 7px 5px 0px;
- padding: 0px;
-}
-.entry a:hover img {
- border: 1px solid #33f;
-}
-.entry .links {
- margin: 5px 0px 0px 0px;
-}
-.entry .main {
- padding-top: 1px;
-}
-
-
-/* Bio */
-#bio .body {
- width: 495px; //398
-}
-.right {
- float: right;
-}
-
 
 /* IE6 work-around hack */
 /* Hide from IE5-mac. Only IE-win sees this. \*/
