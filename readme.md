@@ -1,7 +1,9 @@
 Bayesian
 ========
 
-A test for calibrated probability assessment. See client/index.html for further info. 
+A test for calibrated probability assessment. See client/index.html for further info.
+
+This subfolder is hosted on the gh-pages service as DOMAIN/bayesian.
 
 Directory Structure
 =========
