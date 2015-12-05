@@ -41,10 +41,6 @@ Hosted locations
 | http://bayesian-calibration.appspot.com/factbook/questions |
 | http://persistence.bayesian-calibration.appspot.com/stats  |
 
-
-http://bayesian-calibration.appspot.com/factbook/questions
-http://persistence.bayesian-calibration.appspot.com/stats
-
 Data Sources
 =========
 [CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
