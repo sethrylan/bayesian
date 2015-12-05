@@ -13,7 +13,7 @@ Directory Structure
 | /client      | client-side code for gh-pages deployment |
 | /config      | build configuration                      |
 | /data        | working directory for data preparation   |
-| /gradle      | gradle wrapper and builds                |
+| /gradle      | gradle wrapper and build scripts         |
 | /persistence | persistence code for GAE deployment      |
 | /server      | server code for GAE deployment           |
 
