@@ -3,7 +3,7 @@ ext {
     dataDir = "$rootDir/data"
 
     versions = [
-        gae: '1.8.3',
+        gae: '1.9.28',
         jersey: '1.17',
         javasimon: '3.3.0',
         slf4j: '1.7.1',
