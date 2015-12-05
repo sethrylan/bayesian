@@ -1,4 +1,3 @@
 rootProject.name='bayesian'
 include 'server'
-include 'client'
 include 'persistence'

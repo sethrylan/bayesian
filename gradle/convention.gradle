@@ -68,9 +68,6 @@ allprojects { project ->
     }
 }
 
-apply plugin: 'github-pages' // Used to create publishGhPages task
-// org.ajoberstar:gradle-git:0.5.0 causes warning:  The TaskContainer.add() method has been deprecated ...
-
 def docTasks = [:]
 [Javadoc,ScalaDoc,Groovydoc].each{ Class docClass ->
     def allSources = allprojects.tasks*.withType(docClass).flatten()*.source
@@ -84,22 +81,6 @@ def docTasks = [:]
             }
         }
         docTasks[shortName] = docTask
-        processGhPages.dependsOn(docTask)
-    }
-}
-
-githubPages {
-    repoUri = "git@github.com:sethrylan/${rootProject.githubProjectName}.git"
-    pages {
-        docTasks.each { shortName, docTask ->
-            from(docTask.outputs.files) {
-                into "docs/${shortName}"
-            }
-        }
-
-        from(findProject(':client').files('/')) {
-            include '**/*'
-        }
     }
 }
 

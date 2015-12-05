@@ -24,8 +24,8 @@ Development Workflow
 | Description               | Command                         |
 | ------------------------- |---------------------------------|
 | prepare dataset           | ```gradlew factbookCountries``` |
-| client pages local run    | ```serve.bat```                 |
-| client pages/docs deploy  | ```gradlew publishGhPages```    |
+| client pages local run    | ```bundle exec jekyll serve --watch``` |
+| client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```    |
 | unit test                 | ```gradlew test```              |
 | server run local          | ```gradlew gae``` or ```gradlew :server:gaeRun```                       |
 | server functional tests   | ```gradlew functionalTest``` or ```gradlew :server:gaeFunctionalTest``` |
@@ -52,3 +52,4 @@ Add legend
     http://stackoverflow.com/questions/13573771/adding-a-chart-legend-in-d3
 Remove outlying data points (monaco, vatican)
 expand graph on click
+
