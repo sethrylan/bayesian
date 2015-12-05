@@ -6,11 +6,11 @@ layout: nil
     <head>
         <title>An Educated Guess | Calibrate</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
-        <link rel="stylesheet" href="css/bayesian.css"/>
         <link rel="stylesheet" href="css/quiz.css"/>
-        <link rel="stylesheet" href="css/chart.css"/>                    
+        <link rel="stylesheet" href="css/bayesian.css"/>
+        <link rel="stylesheet" href="css/chart.css"/>
         <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>  
+        <link rel="stylesheet" media="screen" href="css/jquery.qtip.css"/>
     </head>
     <body>
         <div id="info">
@@ -18,7 +18,7 @@ layout: nil
             <p>
                 A tool for calibrated probability estimation
             </p>
-            
+
             <div>
                 This application was designed for <a href="http://chrome.google.com">Google Chrome</a> and may not function properly in other browsers.
             </div>
@@ -37,23 +37,23 @@ layout: nil
             <div id="progressContainer" class="radius">
                 <div id="progress"></div>
             </div>
-            
+
             <a id="back" class="disabled">&lt;&lt; Back</a>
             <a id="next">Next &gt;&gt;</a>
-            
+
             <div id="resultContainer" class="radius hide"></div>
-            
+
             <div id="feedbackContainer" class="radius hide">
                 <canvas id="feedbackCanvas">
             </div>
-            
+
             <div id="largeChart" ></div>
         </div>
 
         <script src="http://d3js.org/d3.v3.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-        <script src="js/jquery.qtip.js"></script>        
+        <script src="js/jquery.qtip.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
         <script type="text/javascript">
         // read the controversy on Jekyll flags at github.com/plusjade/jekyll-bootstrap/issues/84
@@ -63,10 +63,10 @@ layout: nil
         {% else %}
         var questionsUrl = "http://localhost:8080/factbook/questions";
         var jdsUrl = "http://localhost:8080/stats/";
-        {% endif %}        
+        {% endif %}
         var defaultNumQuestions = 40;
         </script>
-        <script src="js/utils.js"></script>        
+        <script src="js/utils.js"></script>
         <script src="js/calibrate.js"></script>
 
         <!-- analytics -->
