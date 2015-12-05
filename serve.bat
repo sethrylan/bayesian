@@ -1,1 +1,0 @@
-cd client && jekyll serve --watch
