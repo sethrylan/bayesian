@@ -24,7 +24,7 @@ Development Workflow
 | Description               | Command                         |
 | ------------------------- |---------------------------------|
 | prepare dataset           | ```gradlew factbookCountries``` |
-| client pages local run    | ```bundle exec jekyll serve --watch``` |
+| client pages local run    | ```bundle exec jekyll serve --watch``` (use ```safe``` to use locally hosted data) |
 | client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```    |
 | unit test                 | ```gradlew test```              |
 | server run local          | ```gradlew gae``` or ```gradlew :server:gaeRun```                       |
@@ -33,6 +33,17 @@ Development Workflow
 | PMD, CheckStyle, etc      | ```gradlew check```             |
 | FindBugs                  | ```gradlew findbugs```          |
 
+Hosted locations
+=========
+| URL                                                        |
+| -----------------------------------------------------------|
+| http://sethrylan.org/bayesian                              |
+| http://bayesian-calibration.appspot.com/factbook/questions |
+| http://persistence.bayesian-calibration.appspot.com/stats  |
+
+
+http://bayesian-calibration.appspot.com/factbook/questions
+http://persistence.bayesian-calibration.appspot.com/stats
 
 Data Sources
 =========
