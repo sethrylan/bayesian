@@ -6,7 +6,7 @@ safe:        false
 lsi:         true
 highlighter: pygments
 permalink:   date
-markdown:    maruku
+markdown:    Kramdown
 maruku:
   use_tex:   false
   use_divs:  false
