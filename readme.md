@@ -27,7 +27,7 @@ Development Workflow
 | Description               | Command                         |
 | ------------------------- |---------------------------------|
 | prepare dataset           | ```gradlew factbookCountries``` |
-| client pages local run    | ```bundle exec jekyll serve --watch``` (add ```--safe``` to use locally hosted data) |
+| client pages local run    | ```bundle exec jekyll serve --watch``` (add ```--safe``` to use gae hosted data) |
 | client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```    |
 | unit test                 | ```gradlew test```              |
 | server run local          | ```gradlew :server:appengineRun``` |

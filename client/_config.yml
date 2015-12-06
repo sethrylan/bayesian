@@ -2,7 +2,7 @@ url:         http://sethrylan.org/bayesian
 baseurl:     /
 title:       An Educated Guess
 port:        4000
-safe:        false
+safe:        false  # defaults to true on gh-pages (see https://help.github.com/articles/using-jekyll-with-pages/)
 lsi:         true
 highlighter: pygments
 permalink:   date
