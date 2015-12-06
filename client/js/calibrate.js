@@ -1,5 +1,4 @@
 
-
 var sidebarChartSize = { margin : {top: 20, right: 10, bottom: 30, left: 30} };
 sidebarChartSize.width = 200 - sidebarChartSize.margin.left - sidebarChartSize.margin.right;
 sidebarChartSize.height = 200 - sidebarChartSize.margin.top - sidebarChartSize.margin.bottom;
@@ -378,6 +377,30 @@ $(document).ready(function() {
     $($questions.get(currentQuestion)).fadeIn();
 
     var jQuiz = {
+        postStats: function() {            // Build and post telemetry data
+            this.stats.client = {};
+            this.stats.client.platform = navigator.platform;
+            this.stats.client.userAgent = navigator.userAgent;
+            this.stats.client.systemLanguage = navigator.systemLanguage;
+            this.stats.client.gmtOffset = new Date().getTimezoneOffset();
+            this.stats.client.screenResolution = screen.width + '×' + screen.height;
+            this.stats.client.platform = navigator.platform;
+            this.stats.client.platform = navigator.platform;
+
+            this.stats.finishDate = (new Date()).toISOString();
+            this.stats.responses = this.responses;
+            $.ajax({
+                url: jdsUrl,
+                type: 'PUT',
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                crossDomain: true,
+                data: JSON.stringify(this.stats),
+                failure: function(data) {
+                    console.error("data failed to upload: " + JSON.stringify(this.stats));
+                }
+            });
+        },
         init: function() {
             // create empty array for responses
             jQuiz.responses = [];
@@ -447,29 +470,7 @@ $(document).ready(function() {
             $('#sidebarLegend').hide();
             drawLargeChart(jQuiz.calibrationData());
 
-            // Build and post telemetry data
-            this.stats.client = {};
-            this.stats.client.platform = navigator.platform;
-            this.stats.client.userAgent = navigator.userAgent;
-            this.stats.client.systemLanguage = navigator.systemLanguage;
-            this.stats.client.gmtOffset = new Date().getTimezoneOffset();
-            this.stats.client.screenResolution = screen.width + '×' + screen.height;
-            this.stats.client.platform = navigator.platform;
-            this.stats.client.platform = navigator.platform;
-
-            this.stats.finishDate = (new Date()).toISOString();
-            this.stats.responses = this.responses;
-            $.ajax({
-                url: jdsUrl,
-                type: 'PUT',
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                crossDomain: true,
-                data: JSON.stringify(this.stats),
-                failure: function(data) {
-                    console.error("data failed to upload: " + JSON.stringify(this.stats));
-                }
-            });
+            this.postStats();
         },
         addResponse: function() {
             var fact = $('.questionContainer:visible > .fact').text();
