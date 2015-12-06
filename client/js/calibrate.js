@@ -341,7 +341,7 @@ $(document).ready(function() {
 
     $('.hint').mouseover( function() {
         $(this).addClass('visited');
-    }); 
+    });
 
     $( ".options > a" )
         .button()
