@@ -39,7 +39,7 @@ subprojects {
 project(':server') {
     apply plugin: 'war'
     apply plugin: 'appengine'
-    sourceCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_7
 
     dependencies {
         // see compatibile versions at https://code.google.com/p/googleappengine/wiki/WillItPlayInJava#Jersey
@@ -81,7 +81,7 @@ project(':persistence') {
     apply plugin: 'java'
     apply plugin: 'war'
     apply plugin: 'appengine'
-    sourceCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_7
 
     dependencies {
         appengineSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
