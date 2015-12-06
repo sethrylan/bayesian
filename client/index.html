@@ -14,9 +14,9 @@
             <p>
             A tool for calibrated probability estimation
             </p>
-            
+
             <div>
-                This application was designed for <a href="http://chrome.google.com">Google Chrome</a> and may not function properly in other browsers.
+                This application is built using <a href="https://travis-ci.org/sethrylan/bayesian">Travis CI</a>, hosted on <a href="https://cloud.google.com/appengine/docs">Google App Engine</a> and developed through <a href="https://github.com/sethrylan/bayesian/">GitHub</a>.
             </div>
 
             <div>
@@ -27,7 +27,7 @@
                         <td valign="top">2013 Aug 10</td>
                         <td valign="top">GAE deployment</td>
                     </tr>
-                    
+
                     <tr class="visited">
                         <td valign="top">2013 Aug 08</td>
                         <td valign="top">Device support</td>
@@ -55,7 +55,7 @@
                         <h6 style="padding-top: 10px;">the bad news</h6>
 
                         <p>
-                        You are a terrible guesser. 
+                        You are a terrible guesser.
                         </p>
 
                         <p>
@@ -118,15 +118,15 @@
                         <ul>
                             <li>More information. Paradoxically, providing more information to the problem increases one's confidence in the answer, but not accuracy<sup class="cite" title="KassinFong1999"></sup><sup class="cite" title="Oskamp1965"></sup>.</li>
                         </ul>
- 
+
                         <p>
                         Most importantly, feedback and iterative practice allow us to improve our estimation techniques<sup class="cite" title="LichtensteinEtAl1982"></sup>, hence the purpose of this project. Select the number of questions you want and the quiz will give you instant feedback on your progress.
                         </p>
-                        
+
                         <p align="center">
                             <img alt="probability distribution" src="images/distribution_gradients.png">
                         </p>
-                        
+
                         <p>
                         The darker the color, the more questions have been answered at that confidence, and the more reliable the results will be.
                         </p>
@@ -135,7 +135,7 @@
                         </p>
 
                         <p align="center">
-                            <a class="button" href="calibrate.html?n=20" title="about 4 minutes">20 questions</a>                        
+                            <a class="button" href="calibrate.html?n=20" title="about 4 minutes">20 questions</a>
                             <a class="button" href="calibrate.html?n=40" title="about 8 minutes">40 questions</a>
                             <a class="button" href="calibrate.html?n=70" title="about 14 minutes">70 questions</a>
                             <a class="button" href="calibrate.html?n=100" title="about 25 minutes">100 questions</a>
@@ -195,16 +195,15 @@
                     </tr>
                 </table>
             </div>
-
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>        
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
         <script src="js/jquery.qtip.js"></script>
-        <script src="js/utils.js"></script>                
-        <script src="js/citation.js"></script>    
+        <script src="js/utils.js"></script>
+        <script src="js/citation.js"></script>
         <script type="text/javascript">
-            $(document).ready(function() { 
+            $(document).ready(function() {
                 $('a.button').button();
 
                 $('a.button').qtip({
@@ -212,17 +211,14 @@
                         fixed: true,
                         delay: 300
                     },
-                    content: function() { 
+                    content: function() {
                         return $(this).attr('title');
                     },
                     style: {
                         classes: 'qtip-light qtip-shadow'
                     }
                 });
-                
             });
-
-
         </script>
         <!-- analytics -->
         <script type="text/javascript">
@@ -237,7 +233,5 @@
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
         </script>
-
     </body>
-
 </html>
