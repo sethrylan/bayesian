@@ -1,6 +1,9 @@
 Bayesian
 ========
 
+[![Build Status](https://travis-ci.org/sethrylan/bayesian.svg?branch=master)](https://travis-ci.org/sethrylan/bayesian)
+
+
 A test for calibrated probability assessment. See client/index.html for further info.
 
 This subfolder is hosted on the gh-pages service as DOMAIN/bayesian.
