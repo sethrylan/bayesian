@@ -63,6 +63,7 @@ public class JsonDataStoreServlet {
 
     /**
      * Stores JSON as default entity in datastore
+     * @param httpServletRequest request with data to store
      * @param json data to store
      * @return presisted key of stored object
      */
@@ -75,9 +76,10 @@ public class JsonDataStoreServlet {
 
     /**
      * Stores JSON in datastore.
+     * @param httpServletRequest request with data to store
      * @param kind type of entity to store as
      * @param json data to store
-     * @return presisted key of stored object
+     * @return persisted key of stored object
      */
     @PUT
     @Path("{kind}")

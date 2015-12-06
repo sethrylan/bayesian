@@ -17,7 +17,7 @@ import java.lang.reflect.Type;
 
 /**
  * Reader for request with type application/json.
- * @param <T>
+ * @param <T> parameterized type of JSON data
  */
 @Provider
 @Consumes("application/json")
