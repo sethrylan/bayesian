@@ -1,7 +1,5 @@
 package org.lenition.domain;
 
-import java.math.BigDecimal;
-
 /**
  * Factbook domain object.
  */
@@ -37,13 +35,5 @@ public class Factbook {
         public Value totalFertilityRate;
     }
 
-    /**
-     * Generic value object.
-     */
-    public static class Value {
-        public BigDecimal value;
-        public long rank;
-        public String text;
-    }
 }
 

@@ -2,20 +2,14 @@ package org.lenition.singleton;
 
 import com.google.gson.Gson;
 import org.apache.commons.lang3.ArrayUtils;
-import org.lenition.domain.Factbook;
-import org.lenition.domain.Quiz;
+import org.lenition.domain.*;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Random;
+import java.util.*;
 import java.util.logging.Logger;
 
 /**
@@ -106,7 +100,7 @@ public enum FactbookQuiz {
         Quiz quiz = new Quiz();
         while (index < numberOfQuestions) {
             Quiz.Question q = new Quiz.Question();
-            Factbook.Value[] values = null;
+            Value[] values = null;
             Factbook.Country[] countries;
             q.category = getRandomCategory();
             do {
@@ -167,18 +161,8 @@ public enum FactbookQuiz {
             } while(values[0].value == null || values[1].value == null );
 
             q.fact = String.valueOf(values[0].value.compareTo(values[1].value) > 0);
-            q.feedback = String.format(
-                    " {\"category\": " +
-                        "\"%s\", " +
-                        "\"values\": [" +
-                            "{\"name\": \"%s\",\"value\": %s},{\"name\": \"%s\",\"value\": %s}" +
-                        "]" +
-                    "}",
-                    q.category,
-                    countries[0].name, fmt(values[0].value.doubleValue()),
-                    countries[1].name, fmt(values[1].value.doubleValue()));
+            q.feedback = new Feedback(q.category, new NameValue[]{new NameValue(countries[0].name, values[0].value), new NameValue(countries[1].name, values[1].value)}); 
             q.options = getBooleanOptions();
-
             quiz.questions = ArrayUtils.add(quiz.questions, q);
             index++;
         }

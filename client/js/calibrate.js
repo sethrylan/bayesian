@@ -311,7 +311,7 @@ $(document).ready(function() {
                   '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
                 '</div>' +
                 '<div class="fact hide">' + q.fact + '</div>' +
-                '<div class="feedback hide">' + q.feedback + '</div>' +
+                '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
                 '<div class="answers">' +
                   '<div class="confidence"></div>' +
                   '<div class="confidence-slider"></div>' +

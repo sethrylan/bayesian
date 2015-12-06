@@ -14,7 +14,7 @@ public class Quiz {
         public String text;
         public String hint;
         public String fact;
-        public String feedback;
+        public Feedback feedback;
         public String[] options;
     }
 }
