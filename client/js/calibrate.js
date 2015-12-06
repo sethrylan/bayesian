@@ -39,14 +39,14 @@ function getOffsets(data) {
             if(data[key].ideal != data[key].actual) {
                 isAreaVisible = true;
             }
-        } 
+        }
         o.opacity = (intervalDatapoints/totalDatapoints ).toString();
         if (isAreaVisible && o.opacity < minOpacity) {
             minOpacity = o.opacity;
         }
         if (isAreaVisible && o.opacity > maxOpacity) {
             maxOpacity = o.opacity;
-        } 
+        }
         offsets.push(o);
     });
 
@@ -65,10 +65,10 @@ function updateChart(dataTable) {
 
     var transition = d3.transition()
         .duration(150);
-   
+
     svg.datum(data);
-    
-    /* 
+
+    /*
     // Resize y-axis
     yAxis = d3.svg.axis().scale(y).orient("left").ticks(7);
     y.domain([
@@ -99,7 +99,7 @@ function updateChart(dataTable) {
         svg.select("path.line")
             .transition()
                 .attr("d", line);
-        
+
         d3.select("#density-gradient-above").selectAll("stop")
             .data(offsets)
             .transition()
@@ -116,7 +116,7 @@ function updateChart(dataTable) {
         });
 }
 
-function drawSidebarChart(dataTable) {		
+function drawSidebarChart(dataTable) {
     $("#sidebarChart").empty();
     drawDifferenceChart(dataTable,  "#sidebarChart", sidebarChartSize.margin, sidebarChartSize.width, sidebarChartSize.height);
     updateChart(dataTable);
@@ -171,14 +171,14 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
     //	d["actual"] = +d["actual"];
     });
 
-    x.domain(d3.extent(data, function(d) { return d.confidence; }));  
+    x.domain(d3.extent(data, function(d) { return d.confidence; }));
     y.domain([
         d3.min(data, function(d) { return Math.min(d["ideal"], d["actual"]); }),
         d3.max(data, function(d) { return Math.max(d["ideal"], d["actual"]); })
     ]);
 
     svg.datum(data);
-    
+
     svg.append("clipPath")
         .attr("id", "clip-below")
     .append("path")
@@ -231,8 +231,8 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .style("text-anchor", "end")
         .text("% correct");
 
-    var offsets = getOffsets(data); 
-    
+    var offsets = getOffsets(data);
+
     svg.append("linearGradient")
         .attr("id", "density-gradient-above")
             .attr("gradientUnits", "userSpaceOnUse")
@@ -255,9 +255,8 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
         .enter().append("stop")
             .attr("offset", function(d) { return d.offset; })
             .attr("stop-color", "#FF9900")              // Orange Peel
-            .attr("stop-opacity", function(d) { return d.opacity; }); 
+            .attr("stop-opacity", function(d) { return d.opacity; });
 
- 
     // create legend
     $(element).after("<svg xmlns='http://www.w3.org/2000/sv' version='1.1' height=35 id='sidebarLegend'>" +
                         "<defs>" +
@@ -287,15 +286,15 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
  *  Main quiz function.
  */
 $(document).ready(function() {
-    
-    /* Insert questions in HTML */        
+
+    /* Insert questions in HTML */
     var n = defaultNumQuestions;
     if(get('n')) {
         n = get('n');
     }
     questionsUrl += '?n=' + n;
 
-    /* 
+    /*
      * $JQuery.ajax used instead of $.getJSON(questionsUrl, function(data){...});
      * to have access to async parameter without using  $.ajaxSetup({ async: false });
      * global configuration.
@@ -308,13 +307,13 @@ $(document).ready(function() {
           var questions = [];
           $.each(data.questions, function(key, q) {
             $('#progressContainer').after(
-              '<div class="questionContainer radius hide">' + 
+              '<div class="questionContainer radius hide">' +
                 '<div class="question">' + q.text +
                   '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
                 '</div>' +
-                '<div class="fact hide">' + q.fact + '</div>' + 
+                '<div class="fact hide">' + q.fact + '</div>' +
                 '<div class="feedback hide">' + q.feedback + '</div>' +
-                '<div class="answers">' + 
+                '<div class="answers">' +
                   '<div class="confidence"></div>' +
                   '<div class="confidence-slider"></div>' +
                   '<div class="options">' +
@@ -324,7 +323,7 @@ $(document).ready(function() {
                   '</div>' +
                 '</div>' +
               '</div>');
-            });        
+            });
         }
     });
 
@@ -371,8 +370,6 @@ $(document).ready(function() {
         step : 10
     });
 
-    $('.confidence-slider').slider();
-
     var totalQuestions = $('.questionContainer').size();
     var currentQuestion = 0;
     var progressPixels = $('#progressContainer').width()/totalQuestions;
@@ -384,10 +381,10 @@ $(document).ready(function() {
         init: function() {
             // create empty array for responses
             jQuiz.responses = [];
-            jQuiz.stats = { 
+            jQuiz.stats = {
                 "startDate": (new Date()).toISOString()
-            }; 
-            
+            };
+
             drawSidebarChart(jQuiz.calibrationData());
 
             $('.confidence-slider').trigger('update');
@@ -404,8 +401,8 @@ $(document).ready(function() {
 
                 jQuiz.popResponse();
                 updateChart(jQuiz.calibrationData());
-                
-                $($questions.get(currentQuestion)).fadeOut(300, function() {					
+
+                $($questions.get(currentQuestion)).fadeOut(300, function() {
                     currentQuestion = currentQuestion - 1;
                     $($questions.get(currentQuestion)).fadeIn(300);
                     $('.confidence-slider').trigger('update');
@@ -419,31 +416,31 @@ $(document).ready(function() {
                 var el = $('#progress');
                 el.width(el.width() - progressPixels + 'px');
             });
-            
+
             $('.options > a').click(function(){
                 $('#next').click();
             });
-            
+
             // Next Buttom
-            $('#next').click(function(){		
-                if ( !$('.answers > .options > a:visible').hasClass('selected') 
-                    ||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0 
+            $('#next').click(function(){
+                if ( !$('.answers > .options > a:visible').hasClass('selected')
+                    ||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0
                     || $(this).hasClass('disabled')) {
                     // if all inputs are not provided or link is diabled, do not proceed
                     return false;
                 }
-                                
+
                 // disable next button to prevent double-clicking
                 $(this).addClass('disabled');
                 $('#back').addClass('disabled');
-                
+
                 jQuiz.addResponse();
                 updateChart(jQuiz.calibrationData());
-                
+
                 $($questions.get(currentQuestion)).fadeOut(300, function() {
                     // advance question index
                     currentQuestion = currentQuestion + 1;
-                    
+
                     if( currentQuestion == totalQuestions ) {
                         // if on last question, finish quiz
                         $('#feedbackContainer').hide();
@@ -462,9 +459,9 @@ $(document).ready(function() {
                 });
 
                 var el = $('#progress');
-                el.width(el.width() + progressPixels + 'px');				
-            });			
-        },        
+                el.width(el.width() + progressPixels + 'px');
+            });
+        },
         finish: function() {
             /*
             var resultDiv = '';
@@ -483,7 +480,7 @@ $(document).ready(function() {
             $('#sidebarChart').hide();
             $('#sidebarLegend').hide();
             drawLargeChart(jQuiz.calibrationData());
-            
+
             // Build and post telemetry data
             this.stats.client = {};
             this.stats.client.platform = navigator.platform;
@@ -513,7 +510,7 @@ $(document).ready(function() {
             var optionResponse = $('.options:visible > input[type=text]').val();
             var confidence = $('.answers:visible > .confidence-slider').slider( 'value' );
             var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
-            
+
             var response = {
                 index: currentQuestion,
                 response: optionResponse,
@@ -522,7 +519,7 @@ $(document).ready(function() {
                 correct: (fact == optionResponse),
                 hinted: hinted
             };
-            jQuiz.responses.push(response);			
+            jQuiz.responses.push(response);
         },
         popResponse: function() {
             jQuiz.responses.pop();
@@ -530,14 +527,14 @@ $(document).ready(function() {
         showFeedback: function() {
             $('#feedbackContainer').show();
             var canvas = document.getElementById('feedbackCanvas');
-            var context = canvas.getContext('2d');			
+            var context = canvas.getContext('2d');
             canvas.width = $('#feedbackCanvas').width();
             canvas.height = $('#feedbackCanvas').height();
             context.clear();
-            
+
             var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
             var feedback = $.parseJSON(feedbackString);
-            
+
             for( i = 0; i < feedback.values.length; i++ ) {
                 var name = feedback.values[i].name;
                 var formattedValue, radius;
@@ -552,31 +549,31 @@ $(document).ready(function() {
                         var population = feedback.values[i].value;
                         var scaledPopulation = (population/70000000) * canvas.width;
                         formattedValue = formatNumber(population) + " people";
-                        radius = Math.sqrt(scaledPopulation)/Math.sqrt(Math.PI);					
+                        radius = Math.sqrt(scaledPopulation)/Math.sqrt(Math.PI);
                         break;
                     case "gdpPerCapita":
                         var gpc = feedback.values[i].value;
                         var scaledGpc = (gpc/2000) * canvas.width;
                         formattedValue = "$" + formatNumber(gpc);
-                        radius = Math.sqrt(scaledGpc)/Math.sqrt(Math.PI);					
+                        radius = Math.sqrt(scaledGpc)/Math.sqrt(Math.PI);
                         break;
                     case "healthExpenditure":
                         var exp = feedback.values[i].value;
                         var scaledExp = (exp) * canvas.width;
                         formattedValue = exp + "%";
-                        radius = Math.sqrt(scaledExp)/Math.sqrt(Math.PI);					
+                        radius = Math.sqrt(scaledExp)/Math.sqrt(Math.PI);
                         break;
                     case "gini":
                         var gini = feedback.values[i].value;
                         var scaledGini = (gini - 25)/3 * canvas.width;
                         formattedValue = gini.toString();
-                        radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);					
+                        radius = Math.sqrt(scaledGini)/Math.sqrt(Math.PI);
                         break;
                     case "lifeExpectancy":
                         var lifeExp = feedback.values[i].value;
                         var scaledLifeExp = (lifeExp - 30)/3 * canvas.width;
                         formattedValue = lifeExp + " years";
-                        radius = Math.sqrt(scaledLifeExp)/Math.sqrt(Math.PI);					
+                        radius = Math.sqrt(scaledLifeExp)/Math.sqrt(Math.PI);
                         break;
                     default:
                         console.error("No such feedback category.");
@@ -585,16 +582,16 @@ $(document).ready(function() {
 
                 var centerX = (canvas.width / 4) * (2*i + 1);
                 var centerY = .50 * canvas.height;
-                
+
                 context.fillStyle = '#007BA7';
                 context.fillCircle(centerX, centerY, radius);
-                
+
                 context.fillStyle = '#2F4F4F';
                 context.font = '10px monospace';
-                context.fillText(name, centerX - name.length * 3, centerY - (radius + 10));			
-                // uncomment for country text to appear in arc around circle    
-                //context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);				
-                
+                context.fillText(name, centerX - name.length * 3, centerY - (radius + 10));
+                // uncomment for country text to appear in arc around circle
+                //context.fillTextArc(name, centerX, centerY, radius + 20, (7/6)*Math.PI, Math.PI/name.length);
+
                 context.fillStyle = '#2F4F4F';
                 context.font = '10px monospace';
                 context.fillText(formattedValue, centerX - formattedValue.length * 3, centerY + radius + 20);
