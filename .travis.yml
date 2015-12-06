@@ -3,6 +3,9 @@ language: java
 jdk:
   - oraclejdk8
 
+script:
+  - ./gradlew check -x appengineFunctionalTest
+
 sudo: false
 
 branches:
