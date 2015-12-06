@@ -1,0 +1,11 @@
+---
+language: java
+
+sudo: false
+
+branches:
+  only:
+  - master
+notifications:
+  email:
+  - seth.rylan@gmail.com
