@@ -1,11 +1,4 @@
 
-function confidenceSliderUpdate(event, ui) {
-    if( ui ) {
-        $('.confidence-slider').prev('div').html("Confidence: " + ui.value + "%");
-    } else {
-        $('.confidence-slider').prev('div').html("Confidence: " + $( '.confidence-slider:visible' ).slider('value') + "%");
-    }
-}
 
 var sidebarChartSize = { margin : {top: 20, right: 10, bottom: 30, left: 30} };
 sidebarChartSize.width = 200 - sidebarChartSize.margin.left - sidebarChartSize.margin.right;
@@ -370,19 +363,16 @@ $(document).ready(function() {
             $(this).siblings('.selected').removeClass('selected');
             $(this).siblings('input[type=text]').val($(this).text());
     });
-    
+
     $( ".confidence-slider" ).slider({
         min : 50,
         max : 100,
         value : 50,
-        step : 10,
-        slide : confidenceSliderUpdate
+        step : 10
     });
-    
-    $('.confidence-slider').slider().bind({
-        update : confidenceSliderUpdate
-    });
-    
+
+    $('.confidence-slider').slider();
+
     var totalQuestions = $('.questionContainer').size();
     var currentQuestion = 0;
     var progressPixels = $('#progressContainer').width()/totalQuestions;
