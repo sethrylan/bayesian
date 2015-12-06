@@ -1,9 +1,13 @@
+buildscript {
+  apply from: file('gradle/buildscript.gradle'), to: buildscript
+}
+
 ext {
     githubProjectName = 'bayesian'
     dataDir = "$rootDir/data"
 
     versions = [
-        gae: '1.9.28',
+        gae: '1.9.3',
         jersey: '1.17',
         javasimon: '3.3.0',
         slf4j: '1.7.1',
@@ -24,10 +28,6 @@ ext {
     ]
 }
 
-buildscript {
-    apply from: file('gradle/buildscript.gradle'), to: buildscript
-}
-
 apply from: file('gradle/data-prep.gradle')
 apply from: file('gradle/convention.gradle')
 apply from: file('gradle/check.gradle')
@@ -36,16 +36,14 @@ subprojects {
     group = "org.lenition.$githubProjectName"
 }
 
-task gae(dependsOn: ':server:gaeRun')
-task functionalTest(dependsOn: ':server:gaeFunctionalTest')
-
 project(':server') {
-    apply plugin: 'gae'
-    sourceCompatibility = JavaVersion.VERSION_1_7
+    apply plugin: 'war'
+    apply plugin: 'appengine'
+    sourceCompatibility = JavaVersion.VERSION_1_8
 
     dependencies {
         // see compatibile versions at https://code.google.com/p/googleappengine/wiki/WillItPlayInJava#Jersey
-        gaeSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
+        appengineSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
 
         compile libraries.jersey
         compile 'com.google.code.gson:gson:2.2.4'
@@ -59,8 +57,8 @@ project(':server') {
         testCompile "com.google.appengine:appengine-testing:$versions.gae"
     }
 
-    gae {
-        optimizeWar = true     // see https://github.com/musketyr/gradle-fatjar-plugin/
+    appengine {
+        httpPort = 8080
         downloadSdk = true
         disableUpdateCheck = true
         appcfg {
@@ -80,11 +78,13 @@ project(':server') {
 }
 
 project(':persistence') {
-    apply plugin: 'gae'
-    sourceCompatibility = JavaVersion.VERSION_1_7
+    apply plugin: 'java'
+    apply plugin: 'war'
+    apply plugin: 'appengine'
+    sourceCompatibility = JavaVersion.VERSION_1_8
 
     dependencies {
-        gaeSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
+        appengineSdk "com.google.appengine:appengine-java-sdk:$versions.gae"
 
         compile "com.google.appengine:appengine-api-1.0-sdk:$versions.gae"
         compile libraries.jersey
@@ -101,8 +101,8 @@ project(':persistence') {
         testCompile "com.google.appengine:appengine-api-stubs:$versions.gae"
     }
 
-    gae {
-        optimizeWar = true     // see https://github.com/musketyr/gradle-fatjar-plugin/
+    appengine {
+        httpPort = 8081
         downloadSdk = true
         disableUpdateCheck = true
         appcfg {
@@ -118,5 +118,12 @@ project(':persistence') {
                 id = 'bayesian-calibration'
             }
         }
+
+        endpoints {
+            getClientLibsOnBuild = false
+            getDiscoveryDocsOnBuild = false
+        }
+
+
     }
 }

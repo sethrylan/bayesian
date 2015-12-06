@@ -27,9 +27,9 @@ Development Workflow
 | client pages local run    | ```bundle exec jekyll serve --watch``` (add ```--safe``` to use locally hosted data) |
 | client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```    |
 | unit test                 | ```gradlew test```              |
-| server run local          | ```gradlew gae``` or ```gradlew :server:gaeRun```                       |
-| server functional tests   | ```gradlew functionalTest``` or ```gradlew :server:gaeFunctionalTest``` |
-| deploy                    | ```gradlew gaeUpdate```         |
+| server run local          | ```gradlew :server:appengineRun``` |
+| server functional tests   | ```gradlew functionalTest```    |
+| deploy                    | ```gradlew appengineUpdateAll```         |
 | PMD, CheckStyle, etc      | ```gradlew check```             |
 | FindBugs                  | ```gradlew findbugs```          |
 
@@ -44,14 +44,6 @@ Hosted locations
 Data Sources
 =========
 [CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
-
-XSLT Examples
-=========
-http://stackoverflow.com/questions/8337145/optimization-of-xslt-using-identity-transform
-
-Known Issues:
-=========
-```gradlew clean``` with a gae* task will often fail to load the application. Run the clean and gae* tasks separately.
 
 TODO:
 =========

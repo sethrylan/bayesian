@@ -8,10 +8,12 @@ task factbookDownload(type: Download) {
         ant.gunzip src: destinationFile, dest: destinationDir
     }
 }
+
 task factbookCountriesXml(dependsOn: factbookDownload) {
     inputs.file  "$dataDir/factbook.xml"
     outputs.file "$dataDir/factbook-countries.xml"
 
+    // examples: http://stackoverflow.com/questions/8337145/optimization-of-xslt-using-identity-transform
     doLast {
         ant.xslt style: "$dataDir/factbook-countries.xsl",
                 out: outputs.files.singleFile,

@@ -1,6 +1,9 @@
 package org.lenition.functional;
 
-import com.google.appengine.api.datastore.*;
+import com.google.appengine.api.datastore.DatastoreService;
+import com.google.appengine.api.datastore.DatastoreServiceFactory;
+import com.google.appengine.api.datastore.FetchOptions;
+import com.google.appengine.api.datastore.Query;
 import com.google.appengine.tools.development.testing.LocalDatastoreServiceTestConfig;
 import com.google.appengine.tools.development.testing.LocalServiceTestHelper;
 import com.jayway.restassured.http.ContentType;
@@ -9,7 +12,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import static com.google.appengine.api.datastore.FetchOptions.Builder.withLimit;
-import static com.jayway.restassured.RestAssured.expect;
 import static com.jayway.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.assertEquals;
@@ -17,6 +19,7 @@ import static org.junit.Assert.assertEquals;
 public class JsonDataStoreServletTest {
 
     private final LocalServiceTestHelper helper = new LocalServiceTestHelper(new LocalDatastoreServiceTestConfig());
+    private static final int PORT = 8081; // see appengine config
 
     @Before
     public void setUp() {
@@ -31,6 +34,8 @@ public class JsonDataStoreServletTest {
 
     @Test
     public void testAllowOriginHeaders() {
+        given().
+            port(PORT).
         expect().
             header("Access-Control-Allow-Origin", "*").
             when().
@@ -46,20 +51,23 @@ public class JsonDataStoreServletTest {
         assertEquals(0, datastore.prepare(new Query(kind)).asList(FetchOptions.Builder.withDefaults()).size());
 
         // Test put/creation
-        given().contentType(ContentType.JSON).with()
-                .body(json).
-            expect().
-                body("kind", equalTo(kind)).
-                body("id", notNullValue()).
-                body("name", notNullValue()).
-                when().
-                put("/" + kind);
+        given().contentType(ContentType.JSON).with().
+            body(json).with().
+            port(PORT).
+        expect().
+            body("kind", equalTo(kind)).
+            body("id", notNullValue()).
+            body("name", notNullValue()).
+            when().
+            put("/" + kind);
 
         // Test get/retrieval
+        given().
+            port(PORT).
         expect().
-                body(allOf(containsString("testkey"), containsString("testvalue"))).
-                when().
-                get("/" + kind);
+            body(allOf(containsString("testkey"), containsString("testvalue"))).
+            when().
+            get("/" + kind);
 
     }
 

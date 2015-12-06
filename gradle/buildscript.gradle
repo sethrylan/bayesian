@@ -1,15 +1,11 @@
 // Executed in context of buildscript
-repositories {
-    // Repo in addition to maven central
-    maven { url "https://oss.sonatype.org/content/groups/public"}                       // for gradle-release plugin
-    maven { url 'http://dl.bintray.com/content/netflixoss/external-gradle-plugins/' }   // for license-gradle-plugin
-    mavenCentral()
 
+repositories {
+    mavenCentral()
 }
 
 dependencies {
-    classpath 'org.ajoberstar:gradle-git:0.6.0'
-    classpath 'com.github.townsfolk:gradle-release:1.2'
-    classpath 'org.gradle.api.plugins:gradle-gae-plugin:0.8'
+    classpath "com.google.appengine:gradle-appengine-plugin:1.9.3"
     classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
 }
+
