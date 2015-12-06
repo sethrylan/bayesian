@@ -314,20 +314,19 @@ $(document).ready(function() {
                 '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
                 '<div class="answers">' +
                   '<div class="options">' +
-                    '<a href="#" data-confidence="100" data-option="true">' + true + " 100%" + '</a>' +
+                    '<a href="#" data-confidence="100" data-option="true">' + " 100% true" + '</a>' +
                     '<a href="#" data-confidence="90" data-option="true">' + " 90%" + '</a>' +
                     '<a href="#" data-confidence="80" data-option="true">' + " 80%" + '</a>' +
                     '<a href="#" data-confidence="70" data-option="true">' + " 70%" + '</a>' +
                     '<a href="#" data-confidence="60" data-option="true">' + " 60%" + '</a>' +
                     '<a href="#" data-confidence="50" data-option="true">' + " 50%" + '</a>' +
-                    '<br><br>' +
-                    '<a href="#" data-confidence="100" data-option="false">' + false + " 100%" + '</a>' +
-                    '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
-                    '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
-                    '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
-                    '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
+                    // '<br><br>' +
                     '<a href="#" data-confidence="50" data-option="false">' + " 50%" + '</a>' +
-                    '<input type="text" class="hide"/>' +
+                    '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
+                    '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
+                    '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
+                    '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
+                    '<a href="#" data-confidence="100" data-option="false">' + " 100% false" + '</a>' +
                   '</div>' +
                 '</div>' +
               '</div>');
@@ -411,7 +410,7 @@ $(document).ready(function() {
                 $(this).addClass('disabled');
 
                 var fact = $('.questionContainer:visible > .fact').text();
-                var responseOption = $(this).data('option');
+                var responseOption = $(this).data('option').toString();
                 var responseConfidence = $(this).data('confidence');
                 var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
 

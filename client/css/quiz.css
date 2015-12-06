@@ -25,7 +25,7 @@ div.ui-tooltip {
     margin: 10px;
 }
 .questionContainer {
-    width: 600px;
+    width: 800px;
     border: 3px double #CFCFCF;
     padding: 3px;
     margin: 10px 10px 20px 10px;
@@ -45,17 +45,17 @@ div.ui-tooltip {
 
 #feedbackContainer {
     border: 3px double #CFCFCF;
-    width: 600px;
+    width: 800px;
     height: 230px;
     margin: 20px 10px;
     padding: 3px;
 }
 #feedbackCanvas {
-    width: 600px;
+    width: 800px;
     height: 230px;
 }
 #progressContainer {
-    width: 600px;
+    width: 800px;
     height: 10px;
     border: 3px double #CFCFCF;
     margin: 20px 10px;
