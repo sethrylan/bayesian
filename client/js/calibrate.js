@@ -313,11 +313,20 @@ $(document).ready(function() {
                 '<div class="fact hide">' + q.fact + '</div>' +
                 '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
                 '<div class="answers">' +
-                  '<div class="confidence"></div>' +
-                  '<div class="confidence-slider"></div>' +
                   '<div class="options">' +
-                    '<a href="#">' + q.options[0] + '</a>' +
-                    '<a href="#">' + q.options[1] + '</a>' +
+                    '<a href="#" data-confidence="100" data-option="true">' + true + " 100%" + '</a>' +
+                    '<a href="#" data-confidence="90" data-option="true">' + " 90%" + '</a>' +
+                    '<a href="#" data-confidence="80" data-option="true">' + " 80%" + '</a>' +
+                    '<a href="#" data-confidence="70" data-option="true">' + " 70%" + '</a>' +
+                    '<a href="#" data-confidence="60" data-option="true">' + " 60%" + '</a>' +
+                    '<a href="#" data-confidence="50" data-option="true">' + " 50%" + '</a>' +
+                    '<br><br>' +
+                    '<a href="#" data-confidence="100" data-option="false">' + false + " 100%" + '</a>' +
+                    '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
+                    '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
+                    '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
+                    '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
+                    '<a href="#" data-confidence="50" data-option="false">' + " 50%" + '</a>' +
                     '<input type="text" class="hide"/>' +
                   '</div>' +
                 '</div>' +
@@ -350,13 +359,6 @@ $(document).ready(function() {
             $(this).addClass('selected');
             $(this).siblings('.selected').removeClass('selected');
             $(this).siblings('input[type=text]').val($(this).text());
-    });
-
-    $( ".confidence-slider" ).slider({
-        min : 50,
-        max : 100,
-        value : 50,
-        step : 10
     });
 
     var totalQuestions = $('.questionContainer').size();
@@ -400,8 +402,6 @@ $(document).ready(function() {
 
             drawSidebarChart(jQuiz.calibrationData());
 
-            $('.confidence-slider').trigger('update');
-
             $('.options > a').click(function(){
                 if ($(this).hasClass('disabled')) {
                     return false;
@@ -410,7 +410,12 @@ $(document).ready(function() {
                 // disable button to prevent double-clicking
                 $(this).addClass('disabled');
 
-                jQuiz.addResponse();
+                var fact = $('.questionContainer:visible > .fact').text();
+                var responseOption = $(this).data('option');
+                var responseConfidence = $(this).data('confidence');
+                var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
+
+                jQuiz.addResponse(fact, responseOption, responseConfidence, hinted);
                 updateChart(jQuiz.calibrationData());
 
                 $($questions.get(currentQuestion)).fadeOut(300, function() {
@@ -423,7 +428,6 @@ $(document).ready(function() {
                         jQuiz.finish();
                     } else {
                         $($questions.get(currentQuestion)).fadeIn(300);
-                        $('.confidence-slider').trigger('update');
                         jQuiz.showFeedback();
                     }
                 });
@@ -450,18 +454,13 @@ $(document).ready(function() {
             drawLargeChart(jQuiz.calibrationData());
             this.postStats();
         },
-        addResponse: function() {
-            var fact = $('.questionContainer:visible > .fact').text();
-            var optionResponse = $('.options:visible > input[type=text]').val();
-            var confidence = $('.answers:visible > .confidence-slider').slider( 'value' );
-            var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
-
+        addResponse: function(fact, responseOption, responseConfidence, hinted) {
             var response = {
                 index: currentQuestion,
-                response: optionResponse,
-                confidence: confidence,
+                response: responseOption,
+                confidence: responseConfidence,
                 fact: fact,
-                correct: (fact == optionResponse),
+                correct: (fact == responseOption),
                 hinted: hinted
             };
             jQuiz.responses.push(response);
