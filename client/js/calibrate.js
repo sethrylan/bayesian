@@ -326,16 +326,6 @@ $(document).ready(function() {
         }
     });
 
-    // Register [enter] keypress as default action
-    $('*').keypress(function (e) {
-        if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-            $('#next').click();
-            return false;
-        } else {
-            return true;
-        }
-    });
-
     $('.hint').qtip({
         hide: {
             fixed: true,
@@ -413,16 +403,11 @@ $(document).ready(function() {
             $('.confidence-slider').trigger('update');
 
             $('.options > a').click(function(){
-                $('#next').click();
-            });
-
-            // Next Buttom
-            $('#next').click(function(){
                 if ($(this).hasClass('disabled')) {
                     return false;
                 }
 
-                // disable next button to prevent double-clicking
+                // disable button to prevent double-clicking
                 $(this).addClass('disabled');
 
                 jQuiz.addResponse();
@@ -439,11 +424,6 @@ $(document).ready(function() {
                     } else {
                         $($questions.get(currentQuestion)).fadeIn(300);
                         $('.confidence-slider').trigger('update');
-                        $('#next').removeClass('disabled')
-
-                        if( currentQuestion == totalQuestions - 1 ) {
-                            $('#next').text('| Finish |');
-                        }
                         jQuiz.showFeedback();
                     }
                 });
@@ -465,11 +445,9 @@ $(document).ready(function() {
             resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
             $('#resultContainer').html(resultDiv).show();
             */
-            $('#next').hide();
             $('#sidebarChart').hide();
             $('#sidebarLegend').hide();
             drawLargeChart(jQuiz.calibrationData());
-
             this.postStats();
         },
         addResponse: function() {
