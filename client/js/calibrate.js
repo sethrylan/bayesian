@@ -389,50 +389,18 @@ $(document).ready(function() {
 
             $('.confidence-slider').trigger('update');
 
-            // Back Button
-            $('#back').click(function() {
-                if ( $(this).hasClass('disabled')) {
-                    // if link is diabled, then do not proceed
-                    return false;
-                }
-
-                $(this).addClass('disabled');
-                $('#next').addClass('disabled');
-
-                jQuiz.popResponse();
-                updateChart(jQuiz.calibrationData());
-
-                $($questions.get(currentQuestion)).fadeOut(300, function() {
-                    currentQuestion = currentQuestion - 1;
-                    $($questions.get(currentQuestion)).fadeIn(300);
-                    $('.confidence-slider').trigger('update');
-                    $('#next').removeClass('disabled')
-                    $('#next').text('Next >>');
-                    $('#feedbackContainer').hide();
-                    if( currentQuestion != 0 ) {
-                        $('#back').removeClass('disabled')
-                    }
-                });
-                var el = $('#progress');
-                el.width(el.width() - progressPixels + 'px');
-            });
-
             $('.options > a').click(function(){
                 $('#next').click();
             });
 
             // Next Buttom
             $('#next').click(function(){
-                if ( !$('.answers > .options > a:visible').hasClass('selected')
-                    ||  $('.answers > input:visible').filter(function() { return !this.value;}).length > 0
-                    || $(this).hasClass('disabled')) {
-                    // if all inputs are not provided or link is diabled, do not proceed
+                if ($(this).hasClass('disabled')) {
                     return false;
                 }
 
                 // disable next button to prevent double-clicking
                 $(this).addClass('disabled');
-                $('#back').addClass('disabled');
 
                 jQuiz.addResponse();
                 updateChart(jQuiz.calibrationData());
@@ -449,7 +417,6 @@ $(document).ready(function() {
                         $($questions.get(currentQuestion)).fadeIn(300);
                         $('.confidence-slider').trigger('update');
                         $('#next').removeClass('disabled')
-                        $('#back').removeClass('disabled')
 
                         if( currentQuestion == totalQuestions - 1 ) {
                             $('#next').text('| Finish |');
@@ -476,7 +443,6 @@ $(document).ready(function() {
             $('#resultContainer').html(resultDiv).show();
             */
             $('#next').hide();
-            $('#back').hide();
             $('#sidebarChart').hide();
             $('#sidebarLegend').hide();
             drawLargeChart(jQuiz.calibrationData());
