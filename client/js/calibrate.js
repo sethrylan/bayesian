@@ -35,7 +35,7 @@ function getOffsets(data) {
             if(data[key].confidence == interval) {
                 intervalDatapoints = data[key].datapoints;
             }
-            if(data[key].ideal != data[key].actual) {
+            if(data[key].ideal !== data[key].actual) {
                 isAreaVisible = true;
             }
         }
@@ -421,7 +421,7 @@ $(document).ready(function() {
                     // advance question index
                     currentQuestion = currentQuestion + 1;
 
-                    if( currentQuestion == totalQuestions ) {
+                    if( currentQuestion === totalQuestions ) {
                         // if on last question, finish quiz
                         $('#feedbackContainer').hide();
                         jQuiz.finish();
@@ -459,7 +459,7 @@ $(document).ready(function() {
                 response: responseOption,
                 confidence: responseConfidence,
                 fact: fact,
-                correct: (fact == responseOption),
+                correct: (fact === responseOption),
                 hinted: hinted
             };
             jQuiz.responses.push(response);
@@ -546,12 +546,12 @@ $(document).ready(function() {
                 var total = 0;
                 var correct = 0;
                 $.each(jQuiz.responses, function() {
-                    if (this.confidence == i) {
+                    if (this.confidence === i) {
                         total += 1;
                         correct += (this.correct ? 1 : 0);
                     }
                 });
-                dataTable.push([i, i, (total == 0 ? i : correct/total*100), total]);
+                dataTable.push([i, i, (total === 0 ? i : correct/total*100), total]);
             }
             return dataTable;
         }
