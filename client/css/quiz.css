@@ -33,7 +33,7 @@ div.ui-tooltip {
 .questionContainer a {
     float:right;
 }
-#next, #back {
+#next {
     display:inline;
     border: 1px solid #000;
     padding: 2px 5px 2px 5px;
@@ -42,13 +42,7 @@ div.ui-tooltip {
     background: #FFF;
     cursor: pointer;
 }
-#back {
-    margin-left:40%;
-}
-#next {
-    margin-left:5%;
-    display: none;
-}
+
 #feedbackContainer {
     border: 3px double #CFCFCF;
     width: 600px;
