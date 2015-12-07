@@ -1,4 +1,7 @@
 
+
+// todo: http://jsfiddle.net/um78o3ev/6/
+
 var sidebarChartSize = { margin : {top: 20, right: 10, bottom: 30, left: 30} };
 sidebarChartSize.width = 200 - sidebarChartSize.margin.left - sidebarChartSize.margin.right;
 sidebarChartSize.height = 200 - sidebarChartSize.margin.top - sidebarChartSize.margin.bottom;
