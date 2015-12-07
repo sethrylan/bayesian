@@ -284,17 +284,93 @@ function drawDifferenceChart(dataTable, element, margin, width, height) {
 }
 
 
+// (function($){
+//     // see https://github.com/chitacan/anatomy-of-backbonejs/blob/master/lesson_6/server/public/javascripts/TodoApp.js
+//     var n = defaultNumQuestions;
+//     if(get('n')) {
+//         n = get('n');
+//     }
+//     var url = questionsUrl + '?n=' + n;
+
+//     var questionDom = $('#backboneQuestions');
+
+//     var Question = Backbone.Model.extend();
+
+//     var QuestionView = Backbone.View.extend({
+//         template: _.template('<h3 class=<% print(status) %>>' + 
+//             '<input type=checkbox ' +
+//             '<% if (status == "complete") print("checked") %>/>' +
+//             '<%= text %></h3>'),
+
+//         events: {
+//             'change input': 'toggleStatus'
+//         },
+
+//         initialize: function() {
+//             this.model.on('change', this.render, this);
+//             // this.model.on('destroy', this.remove, this);
+//         },
+
+//         render: function() {
+//             var attr = this.model.toJSON();
+//             this.$el.html( this.template(attr) );
+//             return this;
+//         },
+
+//         remove: function() {
+//             // remove elements from DOM
+//         }
+//     });
+
+//     var QuestionList = Backbone.Collection.extend({
+//         url: url,
+//         model: Question,
+//         parse: function(data) {
+//             return data.questions;
+//         }
+//     });
+
+//     var QuestionListView = Backbone.View.extend({
+//         initialize: function() {
+//             this.collection.on('reset', this.render, this);
+//             this.collection.on('add', this.addOne, this);
+//         },
+//         render: function() {
+//             this.collection.forEach(this.addOne, this);
+//             questionDom.append(this.$el);
+//             console.log("collection view render complete");
+
+//         },
+//         addOne: function(questionItem) {
+//             var questionView = new QuestionView({model: questionItem});
+//             this.$el.append(questionView.render().el);
+//         }
+//     });
+
+//     // var question = new Question();
+//     // var questionView = new QuestionView({model: question});
+
+//     var questionList        = new QuestionList();
+//     var questionListView    = new QuestionListView({collection: questionList});
+
+//     questionList.on('change', function() {
+//         questionsView.render();
+//     });
+
+//     questionList.fetch();
+// })(jQuery);
+
+
 /*
  *  Main quiz function.
  */
 $(document).ready(function() {
-
     /* Insert questions in HTML */
     var n = defaultNumQuestions;
     if(get('n')) {
         n = get('n');
     }
-    questionsUrl += '?n=' + n;
+    var url = questionsUrl + '?n=' + n;
 
     /*
      * $JQuery.ajax used instead of $.getJSON(questionsUrl, function(data){...});
@@ -302,7 +378,7 @@ $(document).ready(function() {
      * global configuration.
      */
     $.ajax({
-        url: questionsUrl,
+        url: url,
         dataType: 'json',
         async: false,
         success: function(data) {
@@ -377,7 +453,7 @@ $(document).ready(function() {
             this.stats.client.userAgent = navigator.userAgent;
             this.stats.client.systemLanguage = navigator.systemLanguage;
             this.stats.client.gmtOffset = new Date().getTimezoneOffset();
-            this.stats.client.screenResolution = screen.width + '×' + screen.height;
+            this.stats.client.screenResolution = screen.width + 'Ã—' + screen.height;
             this.stats.client.platform = navigator.platform;
             this.stats.client.platform = navigator.platform;
 
@@ -488,7 +564,7 @@ $(document).ready(function() {
                     case "area":
                         var area = feedback.values[i].value;
                         var scaledArea = area / canvas.width;
-                        formattedValue = formatNumber(area) + "km²";
+                        formattedValue = formatNumber(area) + "kmÂ²";
                         radius = Math.sqrt(scaledArea)/Math.sqrt(Math.PI);
                         break;
                     case "population":
