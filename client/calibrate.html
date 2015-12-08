@@ -22,9 +22,6 @@ layout: null
             <div>
                 This application is built using <a href="https://travis-ci.org/sethrylan/bayesian">Travis CI</a>, hosted on <a href="https://cloud.google.com/appengine/docs">Google App Engine</a> and developed through <a href="https://github.com/sethrylan/bayesian/">GitHub</a>.
             </div>
-
-            <div id="chartContainer" ></div>
-            <div id="sidebarChart" ></div>
         </div>
 
         <div id="main">
@@ -41,7 +38,8 @@ layout: null
             <div id="resultContainer" class="radius hide"></div>
 
             <div id="feedbackContainer" class="radius hide">
-                <canvas id="feedbackCanvas"/>
+                <div id="confidenceChartContainer" ></div>
+                <div id="feedbackChartContainer" ></div>
             </div>
 
             <div id="largeChart" ></div>
@@ -52,6 +50,8 @@ layout: null
         <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
         <script src="js/jquery.qtip.js"></script>
         <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/highcharts-more.js"></script>
 <!--         <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
         <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
  -->

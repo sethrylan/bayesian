@@ -33,27 +33,21 @@ div.ui-tooltip {
 .questionContainer a {
     float:right;
 }
-#next {
-    display:none;
-    border: 1px solid #000;
-    padding: 2px 5px 2px 5px;
-    font-weight: bold;
-    font-size: 10px;
-    background: #FFF;
-    cursor: pointer;
-}
 
 #feedbackContainer {
     border: 3px double #CFCFCF;
     width: 800px;
-    height: 230px;
+    height: 350px;
     margin: 20px 10px;
     padding: 3px;
 }
-#feedbackCanvas {
-    width: 800px;
-    height: 230px;
+
+#confidenceChartContainer, #feedbackChartContainer {
+    width:395px;
+    height:350px;
+    display:inline-block;
 }
+
 #progressContainer {
     width: 800px;
     height: 10px;

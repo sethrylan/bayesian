@@ -63,7 +63,6 @@ function get(name){
     }
 }
 
-
 if ( !Date.prototype.toISOString ) {
     ( function() {
         function pad(number) {
@@ -86,34 +85,4 @@ if ( !Date.prototype.toISOString ) {
         };
 
     }() );
-}
-
-
-CanvasRenderingContext2D.prototype.fillCircle = function(x, y, radius) {
-    this.beginPath();
-    this.arc(x, y, radius, 0, 2 * Math.PI, false);
-    this.fill();
-    this.lineWidth = 5;
-    this.strokeStyle = this.fillStyle;
-    this.stroke();
-}
-
-CanvasRenderingContext2D.prototype.fillTextArc = function(text, x, y, radius, startRotation, degreesPerLetter) {
-    // To fill entire circlular arc:
-    // var degreesPerLetter = 2*Math.PI / text.length;
-    this.save();
-    this.translate(x,y);
-    this.rotate(startRotation);
-
-    for(var i=0;i<text.length;i++){
-        this.save();
-        this.translate(radius, 0);
-        this.translate(10, -10);
-        this.rotate(1.4)
-        this.translate(-10, 10);          
-        this.fillText(text[i],0,0);
-        this.restore();
-        this.rotate(degreesPerLetter);
-    }
-    this.restore();
 }
