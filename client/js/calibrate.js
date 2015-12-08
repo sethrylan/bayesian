@@ -99,18 +99,16 @@ var getPointFormat = function(category) {
         case 'area':
             return '{point.y:.1f} km2'
         case 'population':
-            return '{point.y} millions'
+            return '{point.y} people'
         case 'gdpPerCapita':
-            return '${point.y}'
+            return '${point.y} per person'
         case 'healthExpenditure':
-            return '{point.y:.1f}%'
+            return '{point.y:.1f}% of GDP'
         case 'gini':
-            return '{point.y:.1f}'
+            return '{point.y:.1f} Gini coefficient'
         case 'lifeExpectancy':
-            return '{point.y:.1f}'
-        case 'gini':
             return '{point.y:.1f} years'
-        case 'gini':
+        default:
             console.error("No such feedback category.");
             return;
     }
