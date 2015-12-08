@@ -1,14 +1,6 @@
 
 
-// todo: http://jsfiddle.net/um78o3ev/6/
-
-var sidebarChartSize = { margin : {top: 20, right: 10, bottom: 30, left: 30} };
-sidebarChartSize.width = 200 - sidebarChartSize.margin.left - sidebarChartSize.margin.right;
-sidebarChartSize.height = 200 - sidebarChartSize.margin.top - sidebarChartSize.margin.bottom;
-
-var largeChartSize = { margin : {top: 20, right: 20, bottom: 30, left: 50} };
-largeChartSize.width = 600 - largeChartSize.margin.left - largeChartSize.margin.right;
-largeChartSize.height = 400 - largeChartSize.margin.top - largeChartSize.margin.bottom;
+// fiddle example: http://jsfiddle.net/um78o3ev/6/
 
 Highcharts.setOptions({
     chart: {
@@ -79,13 +71,14 @@ var confidenceChart = new Highcharts.Chart({
 
     tooltip: {
       crosshairs: true,
-      shared: true,
+      shared: false,
       valueSuffix: '%',
-      pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b> ({point.y:,.0f} millions)<br/>'
+      pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.high} to {point.low}<br/>'
     },
 
     legend: {
-      enabled: false
+      enabled: true,
+      itemStyle: {'fontSize': '10px', 'fontWeight':'normal'}
     },
 
     series: [
@@ -93,17 +86,18 @@ var confidenceChart = new Highcharts.Chart({
         name: 'confidence',
         fillOpacity: 0.1,
         color: 'grey',
+        showInLegend: false,
         data: []
       },
-      getOverconfidenceSeries(),
       getUnderconfidenceSeries(),
+      getOverconfidenceSeries(),
     ]
 });
 
 var getPointFormat = function(category) {
     switch (category) {
         case 'area':
-            return '{point.y:.1f} km²'
+            return '{point.y:.1f} km2'
         case 'population':
             return '{point.y} millions'
         case 'gdpPerCapita':
