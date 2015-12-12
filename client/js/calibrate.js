@@ -443,11 +443,9 @@ $(document).ready(function() {
                     renderTo: 'feedbackChartContainer',
                     spacing: [15,15,15,15]
                 },
-
                 credits: {
                   enabled: false
                 },
-
                 title: {
                     text: 'Last Question',
                     style: {'fontSize': '12px' }
@@ -455,6 +453,13 @@ $(document).ready(function() {
                 subtitle: {
                     text: 'Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/">World Factbook</a>',
                     style: {'fontSize': '8px' }
+                },
+                plotOptions: {
+                  series: {
+                    animation: {
+                        duration: 500
+                    }
+                  }
                 },
                 xAxis: {
                     type: 'category',
