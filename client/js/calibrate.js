@@ -12,7 +12,7 @@ Highcharts.setOptions({
 
 var getOverconfidenceSeries = function() {
     return {
-        name: 'overconfidence',
+        name: 'overconfident',
         fillOpacity: 0.2,
         color: '#FF9900',
         data: [ [50, 0, 50],
