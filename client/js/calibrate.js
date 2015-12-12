@@ -134,7 +134,6 @@ var getPointFormat = function(category) {
 }
 
 function drawConfidenceChart(confidenceSeriesData) {
-    console.log(confidenceChart.series);
     confidenceChart.series[0].setData(confidenceSeriesData);
 }
 
@@ -352,7 +351,6 @@ $(document).ready(function() {
 
                 jQuiz.addResponse(fact, responseOption, responseConfidence, hinted);
 
-                console.log(jQuiz.getConfidenceSeriesData());
                 drawConfidenceChart(jQuiz.getConfidenceSeriesData());
 
                 $($questions.get(currentQuestion)).fadeOut(300, function() {
