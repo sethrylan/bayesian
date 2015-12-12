@@ -4,7 +4,7 @@ div.ui-tooltip {
 .options {
     margin-left:auto;
     margin-right:auto;
-    width:100%;
+    width:96%;
     padding-bottom:40px;
 }
 .options a:hover {
@@ -16,6 +16,7 @@ div.ui-tooltip {
 .answers div {
     text-align:center;
 }
+
 .question {
     margin: 10px;
 }

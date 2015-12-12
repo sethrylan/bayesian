@@ -72,8 +72,10 @@ var confidenceChart = new Highcharts.Chart({
     tooltip: {
       crosshairs: true,
       shared: false,
-      valueSuffix: '%',
-      pointFormat: '<span style="color:{series.color}">{series.name}</span>: {point.high} to {point.low}<br/>'
+      formatter: function() {
+        var difference = (this.point.high - this.point.low);
+        return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(this.point.high - this.point.low) + ' % points' + '<br/>';
+      }
     },
 
     legend: {
@@ -87,7 +89,12 @@ var confidenceChart = new Highcharts.Chart({
         fillOpacity: 0.1,
         color: 'grey',
         showInLegend: false,
-        data: []
+        data: [ [50, 50, 50],
+                [60, 60, 60],
+                [70, 70, 70],
+                [80, 80, 80],
+                [90, 90, 90],
+                [100, 100, 100]]
       },
       getUnderconfidenceSeries(),
       getOverconfidenceSeries(),
