@@ -447,7 +447,7 @@ $(document).ready(function() {
                   enabled: false
                 },
                 title: {
-                    text: 'Last Question',
+                    text: 'Last Question : ' + feedback.category,
                     style: {'fontSize': '12px' }
                 },
                 subtitle: {
@@ -473,9 +473,7 @@ $(document).ready(function() {
                 },
                 yAxis: {
                     min: 0,
-                    title: {
-                        text: feedback.category
-                    }
+                    title: null
                 },
                 legend: {
                     enabled: false
