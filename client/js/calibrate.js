@@ -71,10 +71,22 @@ var confidenceChart = new Highcharts.Chart({
 
     tooltip: {
       crosshairs: true,
-      shared: false,
+      shared: true,
       formatter: function() {
-        var difference = (this.point.high - this.point.low);
-        return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(this.point.high - this.point.low) + ' % points' + '<br/>';
+        var point;
+        this.points.forEach( function(element) {
+          if (element.series.name === 'confidence') {
+            point = element.point;
+          }
+        });
+        if (point) {
+          var difference = (point.high - point.low);
+          if (difference === 0) {
+              return 'no difference';
+          } else {
+              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points at ' + point.total + '<br/>';
+          }
+        }
       }
     },
 
@@ -455,7 +467,7 @@ $(document).ready(function() {
                         correct += (this.correct ? 1 : 0);
                     }
                 });
-                data.push([i, i, (total === 0 ? i : correct/total*100)]);
+                data.push( {x:i, high:i, low:(total === 0 ? i : correct/total*100), total:total});
             }
             return data;
         }
