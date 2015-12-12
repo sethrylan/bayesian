@@ -43,7 +43,8 @@ var confidenceChart = new Highcharts.Chart({
       type: 'areasplinerange',
       zoomType: 'x',
       renderTo: 'confidenceChartContainer',
-      spacing: [15,15,15,15]
+      spacing: [15,15,15,15],
+      alignTicks: false
     },
 
     credits : {
@@ -61,13 +62,30 @@ var confidenceChart = new Highcharts.Chart({
       }
     },
 
-    yAxis: {
-      min: 50,
-      max: 100,
-      title: {
-        text: '% correct'
+    yAxis: [
+      {
+        min: 50,
+        max: 100,
+        title: {
+          text: '% correct'
+        }
+      },
+      {
+        min: 0,
+        max: 10,
+        title: null,
+        // hide ticks and labels
+        opposite: true,
+        lineWidth: 0,
+        minorGridLineWidth: 0,
+        gridLineColor: 'transparent',
+        labels: {
+          enabled: false
+        },
+        minorTickLength: 0,
+        tickLength: 0
       }
-    },
+    ],
 
     tooltip: {
       crosshairs: true,
@@ -84,7 +102,7 @@ var confidenceChart = new Highcharts.Chart({
           if (difference === 0) {
               return 'no difference';
           } else {
-              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points at ' + point.total + '<br/>';
+              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points<br>';
           }
         }
       }
@@ -110,6 +128,20 @@ var confidenceChart = new Highcharts.Chart({
       },
       getUnderconfidenceSeries(),
       getOverconfidenceSeries(),
+      {
+            name: '#answers',
+            type: 'spline',
+            yAxis: 1,
+            data: [ ],
+            tooltip: {
+                valueSuffix: ' mm'
+            },
+            marker: {
+                enabled: false
+            },
+            dashStyle: 'shortdot',
+            color: 'grey'
+      }
     ]
 });
 
@@ -135,6 +167,7 @@ var getPointFormat = function(category) {
 
 function drawConfidenceChart(confidenceSeriesData) {
     confidenceChart.series[0].setData(confidenceSeriesData);
+    confidenceChart.series[3].setData(confidenceSeriesData);
 }
 
 function drawFeedbackChart(dataTable) {
@@ -465,7 +498,7 @@ $(document).ready(function() {
                         correct += (this.correct ? 1 : 0);
                     }
                 });
-                data.push( {x:i, high:i, low:(total === 0 ? i : correct/total*100), total:total});
+                data.push( {x:i, high:i, low:(total === 0 ? i : correct/total*100), y:total});
             }
             return data;
         }
