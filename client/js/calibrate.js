@@ -46,22 +46,27 @@ var confidenceChart = new Highcharts.Chart({
       spacing: [15,15,15,15],
       alignTicks: false
     },
-
+    plotOptions: {
+      series: {
+        states: {
+          hover: {
+            enabled: false
+          }
+        }
+      }
+    },
     credits : {
       enabled: false
     },
-
     title: {
       text: ''
     },
-
     xAxis: {
       type: 'linear',
       title: {
         text: 'reported confidence'
       }
     },
-
     yAxis: [
       { // primary axis
         min: 50,
@@ -86,7 +91,6 @@ var confidenceChart = new Highcharts.Chart({
         tickLength: 0
       }
     ],
-
     tooltip: {
       crosshairs: true,
       shared: true,
@@ -98,7 +102,6 @@ var confidenceChart = new Highcharts.Chart({
           }
         });
         if (point) {
-            console.log(point);
           var difference = (point.high - point.low);
           if (!point.total || point.total === 0) {
             return 'no answers';
@@ -110,12 +113,10 @@ var confidenceChart = new Highcharts.Chart({
         }
       }
     },
-
     legend: {
       enabled: true,
       itemStyle: {'fontSize': '10px', 'fontWeight':'normal'}
     },
-
     series: [
       {
         name: 'confidence',
@@ -132,18 +133,18 @@ var confidenceChart = new Highcharts.Chart({
       getUnderconfidenceSeries(),
       getOverconfidenceSeries(),
       {
-            name: '#answers',
-            type: 'spline',
-            yAxis: 1,
-            data: [ ],
-            tooltip: {
-                valueSuffix: ' mm'
-            },
-            marker: {
-                enabled: false
-            },
-            dashStyle: 'shortdot',
-            color: 'grey'
+        name: '#answers',
+        type: 'spline',
+        yAxis: 1,
+        data: [ ],
+        tooltip: {
+            valueSuffix: ' mm'
+        },
+        marker: {
+            enabled: false
+        },
+        dashStyle: 'shortdot',
+        color: 'grey'
       }
     ]
 });
