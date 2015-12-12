@@ -439,6 +439,7 @@ $(document).ready(function() {
             $('#feedbackContainer').show();
 
             var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
+            var isCorrect = this.responses[currentQuestion-1].correct;
             var feedback = $.parseJSON(feedbackString);
 
             $('#feedbackChartContainer').highcharts({
@@ -455,8 +456,10 @@ $(document).ready(function() {
                     style: {'fontSize': '12px' }
                 },
                 subtitle: {
-                    text: 'Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/">World Factbook</a>',
-                    style: {'fontSize': '8px' }
+                    text: (isCorrect ? 'Correct' : 'Incorrect') + '<br>'
+                          + 'Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/">World Factbook</a>',
+                    style: {'fontSize': '8px',
+                            'color': isCorrect ? 'green' : 'red'}
                 },
                 plotOptions: {
                   series: {
