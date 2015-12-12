@@ -63,16 +63,16 @@ var confidenceChart = new Highcharts.Chart({
     },
 
     yAxis: [
-      {
+      { // primary axis
         min: 50,
         max: 100,
         title: {
           text: '% correct'
         }
       },
-      {
+      { // secondary axis for number of questions
         min: 0,
-        max: 10,
+        max: 20,
         title: null,
         // hide ticks and labels
         opposite: true,
