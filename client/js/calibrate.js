@@ -98,9 +98,12 @@ var confidenceChart = new Highcharts.Chart({
           }
         });
         if (point) {
+            console.log(point);
           var difference = (point.high - point.low);
-          if (difference === 0) {
-              return 'no difference';
+          if (!point.total || point.total === 0) {
+            return 'no answers';
+          } else if (difference === 0) {
+            return 'perfectly confident!';
           } else {
               return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points<br>';
           }
@@ -501,7 +504,7 @@ $(document).ready(function() {
                         correct += (this.correct ? 1 : 0);
                     }
                 });
-                data.push( {x:i, high:i, low:(total === 0 ? i : correct/total*100), y:total});
+                data.push( {x:i, high:i, low:(total === 0 ? i : correct/total*100), y:total, total:total});
             }
             return data;
         }
