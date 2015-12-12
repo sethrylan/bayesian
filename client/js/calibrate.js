@@ -457,7 +457,7 @@ $(document).ready(function() {
                 plotOptions: {
                   series: {
                     animation: {
-                        duration: 500
+                        duration: 300
                     }
                   }
                 },
