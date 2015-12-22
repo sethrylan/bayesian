@@ -64,14 +64,11 @@ project(':server') {
         downloadSdk = true
         disableUpdateCheck = true
         appcfg {
-            email = 'seth.rylan@gmail.com'
-            passIn = true
-
+            oauth2 = true
             logs {
                 severity = 1
                 outputFile = file('gae.log')
             }
-
             app {
                 id = 'bayesian-calibration'
             }
@@ -111,14 +108,11 @@ project(':persistence') {
         downloadSdk = true
         disableUpdateCheck = true
         appcfg {
-            email = 'seth.rylan@gmail.com'
-            passIn = true
-
+            oauth2 = true
             logs {
                 severity = 1
                 outputFile = file('gae.log')
             }
-
             app {
                 id = 'bayesian-calibration'
             }
