@@ -29,8 +29,6 @@ ext {
 }
 
 apply from: file('gradle/data-prep.gradle')
-apply from: file('gradle/convention.gradle')
-//apply from: file('gradle/check.gradle')
 
 subprojects {
     group = "org.lenition.$githubProjectName"
@@ -39,6 +37,9 @@ subprojects {
 project(':server') {
     apply plugin: 'war'
     apply plugin: 'appengine'
+    //apply from: file("$rootDir/gradle/check.gradle")
+    apply from: file("$rootDir/gradle/convention.gradle")
+  
     sourceCompatibility = JavaVersion.VERSION_1_7
 
     dependencies {
@@ -81,6 +82,9 @@ project(':persistence') {
     apply plugin: 'java'
     apply plugin: 'war'
     apply plugin: 'appengine'
+    apply from: file("$rootDir/gradle/convention.gradle")
+    //apply from: file("$rootDir/gradle/check.gradle")
+
     sourceCompatibility = JavaVersion.VERSION_1_7
 
     dependencies {
