@@ -10,9 +10,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class QuizTest {
-
-    private static final Logger log = Logger.getLogger(QuizTest.class.getName());
-
+    
     @org.junit.Test
     public void testGetQuestions() {
         Gson gson = new Gson();

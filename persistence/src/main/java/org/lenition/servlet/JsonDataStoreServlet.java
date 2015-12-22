@@ -62,7 +62,7 @@ public class JsonDataStoreServlet {
     }
 
     /**
-     * Stores JSON as default entity in datastore
+     * Stores JSON as default entity in datastore.
      * @param httpServletRequest request with data to store
      * @param json data to store
      * @return presisted key of stored object
@@ -93,14 +93,14 @@ public class JsonDataStoreServlet {
 
         // See example of mapping serialization com.google.gson.functional.MapTest.java
         // Supported types: https://developers.google.com/appengine/docs/java/datastore/entities
-        Type mapTypeToken = new TypeToken<Map<String, Object>>(){}.getType();
+        Type mapTypeToken = new TypeToken<Map<String, Object>>() { }.getType();
         Map<String, Object> map = gson.fromJson(json, mapTypeToken);
         map.put("clientHost", httpServletRequest.getRemoteHost());
         map.put("clientAddress", httpServletRequest.getRemoteAddr() + ":" + httpServletRequest.getRemotePort());
         for (String key : map.keySet()) {
             log.info(key + " : " + map.get(key).toString() + " : " + map.get(key).getClass());
             Object value = map.get(key);
-            if(value instanceof String) {
+            if (value instanceof String) {
                 if (((String) value).length() > 0 && ((String) value).length() < MAX_STRING_VALUE) {
                     entity.setProperty(key, value);
                 } else if (((String) value).length() >= MAX_STRING_VALUE) {

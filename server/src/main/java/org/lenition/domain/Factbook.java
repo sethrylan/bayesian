@@ -4,6 +4,7 @@ package org.lenition.domain;
  * Factbook domain object.
  */
 public class Factbook {
+    
     public Country[] countries;
 
     /**

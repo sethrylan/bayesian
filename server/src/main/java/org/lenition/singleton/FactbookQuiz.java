@@ -2,14 +2,24 @@ package org.lenition.singleton;
 
 import com.google.gson.Gson;
 import org.apache.commons.lang3.ArrayUtils;
-import org.lenition.domain.*;
+import org.lenition.domain.Factbook;
+import org.lenition.domain.Feedback;
+import org.lenition.domain.NameValue;
+import org.lenition.domain.Quiz;
+import org.lenition.domain.Value;
 
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Random;
+import java.util.Collections;
+import java.util.ArrayList;
+
 import java.util.logging.Logger;
 
 /**
@@ -31,7 +41,7 @@ public enum FactbookQuiz {
     private Random random = new Random(System.currentTimeMillis());
     private String[] cd = {};           // category distribution
     private final Logger log = Logger.getLogger(FactbookQuiz.class.getName());
-    private final Map<String, Integer> categories = new HashMap<String, Integer>() { {
+    private final Map<String, Integer> weightedCategories = new HashMap<String, Integer>() { {
         put("area", 5);
         put("population", 5);
         put("gdpPerCapita", 5);
@@ -82,8 +92,8 @@ public enum FactbookQuiz {
         factbook = o.factbook;
 
         // Create probability array for categories
-        List<String> cdList = new ArrayList<>();
-        for (Map.Entry<String, Integer> weightedCategory : categories.entrySet()) {
+        List<String> cdList = new ArrayList<String>();
+        for (Map.Entry<String, Integer> weightedCategory : weightedCategories.entrySet()) {
             cdList.addAll(Collections.nCopies(weightedCategory.getValue(), weightedCategory.getKey()));
         }
         cd = cdList.toArray(new String[]{});
@@ -158,10 +168,11 @@ public enum FactbookQuiz {
                         log.info("No such feedback category.");
                         break;
                 }
-            } while(values[0].value == null || values[1].value == null );
+            } while(values[0].value == null || values[1].value == null);
 
             q.fact = String.valueOf(values[0].value.compareTo(values[1].value) > 0);
-            q.feedback = new Feedback(q.category, new NameValue[]{new NameValue(countries[0].name, values[0].value), new NameValue(countries[1].name, values[1].value)}); 
+            NameValue[] namedValues = new NameValue[]{new NameValue(countries[0].name, values[0].value), new NameValue(countries[1].name, values[1].value)};
+            q.feedback = new Feedback(q.category, namedValues);
             q.options = getBooleanOptions();
             quiz.questions = ArrayUtils.add(quiz.questions, q);
             index++;
@@ -214,7 +225,7 @@ public enum FactbookQuiz {
     }
 
     /**
-     * Default true/false question options
+     * Returns default true/false question options.
      * @return default boolean options
      */
     private String[] getBooleanOptions() {

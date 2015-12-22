@@ -31,7 +31,6 @@ public class JsonDataStoreServletTest {
         helper.tearDown();
     }
 
-
     @Test
     public void testAllowOriginHeaders() {
         given().
