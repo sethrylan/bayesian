@@ -7,7 +7,7 @@ ext {
     dataDir = "$rootDir/data"
 
     versions = [
-        gae: '1.9.3',
+        gae: '1.9.30',
         jersey: '1.17',
         javasimon: '3.3.0',
         slf4j: '1.7.1',
@@ -30,7 +30,7 @@ ext {
 
 apply from: file('gradle/data-prep.gradle')
 apply from: file('gradle/convention.gradle')
-apply from: file('gradle/check.gradle')
+//apply from: file('gradle/check.gradle')
 
 subprojects {
     group = "org.lenition.$githubProjectName"

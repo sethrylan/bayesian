@@ -5,7 +5,7 @@ repositories {
 }
 
 dependencies {
-    classpath "com.google.appengine:gradle-appengine-plugin:1.9.3"
+    classpath "com.google.appengine:gradle-appengine-plugin:1.9.30"
     classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
 }
 
