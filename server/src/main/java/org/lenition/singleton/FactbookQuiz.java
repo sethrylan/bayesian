@@ -11,6 +11,7 @@ import org.lenition.domain.Value;
 import java.io.InputStreamReader;
 import java.io.Reader;
 import java.math.BigDecimal;
+import java.nio.charset.Charset;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.HashMap;
@@ -87,7 +88,7 @@ public enum FactbookQuiz {
      */
     FactbookQuiz() {
         // Read factbook data
-        Reader reader = new InputStreamReader(FactbookQuiz.class.getClassLoader().getResourceAsStream(FACTBOOK));
+        Reader reader = new InputStreamReader(FactbookQuiz.class.getClassLoader().getResourceAsStream(FACTBOOK), Charset.forName("UTF-8"));
         Factbook.FactbookContainer o = (new Gson()).fromJson(reader, Factbook.FactbookContainer.class);
         factbook = o.factbook;
 

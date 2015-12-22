@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import org.lenition.servlet.FactbookServlet;
 import java.io.InputStreamReader;
 import java.io.Reader;
+import java.nio.charset.Charset;
 
 import static org.junit.Assert.*;
 
@@ -12,7 +13,7 @@ public class DomainTest {
     @org.junit.Test
     public void testDeserialization() {
         Gson gson = new Gson();
-        Reader reader = new InputStreamReader(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"));
+        Reader reader = new InputStreamReader(FactbookServlet.class.getClassLoader().getResourceAsStream("factbook-countries.json"), Charset.forName("UTF-8"));
 
         assertNotNull(reader);
 
