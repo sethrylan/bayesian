@@ -1,3 +1,8 @@
+
+function htmlEncode(value){
+    return $('<div/>').text(value).html();
+}
+
 function assert(condition, message) {
     if (!condition) {
         throw message || "Assertion failed";

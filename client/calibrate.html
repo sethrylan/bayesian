@@ -34,7 +34,8 @@ layout: null
                 <div id="progress"></div>
             </div>
 
-            <div id="resultContainer" class="radius hide"></div>
+            <div id="questionListContainer">
+            </div>
 
             <div id="feedbackContainer" class="radius">
                 <div id="confidenceChartContainer" ></div>
@@ -63,6 +64,35 @@ layout: null
         </script>
         <script src="js/utils.js"></script>
         <script src="js/calibrate.js"></script>
+
+        <script type="text/template" id="questions-template">
+            <% _.each(questions, function(question) { %>
+            <div class="questionContainer radius hide">
+                <div class="question">
+                    <%= htmlEncode(question.get('text')) %>
+                    <a href="#" class="hint" title="<%= htmlEncode(question.get('hint')) %>">[ hint ]</a>
+                </div>
+                <div class="fact hide"> <%= htmlEncode(question.get('fact')) %> </div>
+                <div class="feedback hide"> <%=htmlEncode(JSON.stringify(question.get('feedback')))%> </div>
+                <div class="answers">
+                    <div class="options">
+                        <a href="#" data-confidence="100" data-option="true">100% true</a>
+                        <a href="#" data-confidence="90" data-option="true">90%</a>
+                        <a href="#" data-confidence="80" data-option="true">80%</a>
+                        <a href="#" data-confidence="70" data-option="true">70%</a>
+                        <a href="#" data-confidence="60" data-option="true">60%</a>
+                        <a href="#" data-confidence="50" data-option="true">50%</a>
+                        <a href="#" data-confidence="50" data-option="false">50%</a>
+                        <a href="#" data-confidence="60" data-option="false">60%</a>
+                        <a href="#" data-confidence="70" data-option="false">70%</a>
+                        <a href="#" data-confidence="80" data-option="false">80%</a>
+                        <a href="#" data-confidence="90" data-option="false">90%</a>
+                        <a href="#" data-confidence="100" data-option="false">100% false</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+        </script>
 
         <!-- analytics -->
         <script type="text/javascript">

@@ -260,6 +260,55 @@ function drawFeedbackChart(dataTable) {
  *  Main quiz function.
  */
 $(document).ready(function() {
+
+    // see https://github.com/chitacan/anatomy-of-backbonejs/blob/master/lesson_6/server/public/javascripts/TodoApp.js
+    var n = defaultNumQuestions;
+    if(get('n')) {
+        n = get('n');
+    }
+    var url = questionsUrl + '?n=' + n;
+
+    var Question = Backbone.Model.extend({
+        urlRoot: url
+    });
+
+    var Questions = Backbone.Collection.extend({
+        url: url,
+        model: Question,
+        parse: function(data) {
+            return data.questions;
+        }
+    });
+
+    var QuestionListView = Backbone.View.extend({
+        el: '#questionListContainer',
+        // initialize: function() {
+        //     this.collection.on('reset', this.render, this);
+        //     this.collection.on('add', this.addOne, this);
+        // },
+        render: function () {
+            var that = this;
+            var questions = new Questions();
+            questions.fetch({
+                success: function (questions) {
+                    console.log(questions.models);
+                    var template = _.template($('#questions-template').html());
+                    that.$el.html(template({questions:questions.models}));
+                    jQuiz.init();
+                }
+            })
+
+        }
+    });
+
+    var questionListView = new QuestionListView();
+
+    // questions.on('change', function() {
+    //     questionsView.render();
+    // });
+
+    questionListView.render();
+
     /* Insert questions in HTML */
     var n = defaultNumQuestions;
     if(get('n')) {
@@ -272,74 +321,41 @@ $(document).ready(function() {
      * to have access to async parameter without using  $.ajaxSetup({ async: false });
      * global configuration.
      */
-    $.ajax({
-        url: url,
-        dataType: 'json',
-        async: false,
-        success: function(data) {
-          var questions = [];
-          $.each(data.questions, function(key, q) {
-            $('#progressContainer').after(
-              '<div class="questionContainer radius hide">' +
-                '<div class="question">' + q.text +
-                  '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
-                '</div>' +
-                '<div class="fact hide">' + q.fact + '</div>' +
-                '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
-                '<div class="answers">' +
-                  '<div class="options">' +
-                    '<a href="#" data-confidence="100" data-option="true">' + " 100% true" + '</a>' +
-                    '<a href="#" data-confidence="90" data-option="true">' + " 90%" + '</a>' +
-                    '<a href="#" data-confidence="80" data-option="true">' + " 80%" + '</a>' +
-                    '<a href="#" data-confidence="70" data-option="true">' + " 70%" + '</a>' +
-                    '<a href="#" data-confidence="60" data-option="true">' + " 60%" + '</a>' +
-                    '<a href="#" data-confidence="50" data-option="true">' + " 50%" + '</a>' +
-                    // '<br><br>' +
-                    '<a href="#" data-confidence="50" data-option="false">' + " 50%" + '</a>' +
-                    '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
-                    '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
-                    '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
-                    '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
-                    '<a href="#" data-confidence="100" data-option="false">' + " 100% false" + '</a>' +
-                  '</div>' +
-                '</div>' +
-              '</div>');
-            });
-        }
-    });
-
-    $('.hint').qtip({
-        hide: {
-            fixed: true,
-            delay: 300
-        },
-        content: function() {
-            return $(this).attr('title');
-        },
-        style: {
-            classes: 'qtip-light qtip-shadow'
-        }
-    });
-
-    $('.hint').mouseover( function() {
-        $(this).addClass('visited');
-    });
-
-    $( ".options > a" )
-        .button()
-        .click(function( event ) {
-            event.preventDefault();
-            $(this).addClass('selected');
-            $(this).siblings('.selected').removeClass('selected');
-            $(this).siblings('input[type=text]').val($(this).text());
-    });
-
-    var totalQuestions = $('.questionContainer').size();
-    var currentQuestion = 0;
-    var progressPixels = $('#progressContainer').width()/totalQuestions;
-    $questions = $('.questionContainer');
-    $questions.hide();
-    $($questions.get(currentQuestion)).fadeIn();
+    // $.ajax({
+    //     url: url,
+    //     dataType: 'json',
+    //     async: false,
+    //     success: function(data) {
+    //       var questions = [];
+    //       $.each(data.questions, function(key, q) {
+    //         $('#questionListContainer').append(
+    //           '<div class="questionContainer radius hide">' +
+    //             '<div class="question">' + q.text +
+    //               '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
+    //             '</div>' +
+    //             '<div class="fact hide">' + q.fact + '</div>' +
+    //             '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
+    //             '<div class="answers">' +
+    //               '<div class="options">' +
+    //                 '<a href="#" data-confidence="100" data-option="true">' + " 100% true" + '</a>' +
+    //                 '<a href="#" data-confidence="90" data-option="true">' + " 90%" + '</a>' +
+    //                 '<a href="#" data-confidence="80" data-option="true">' + " 80%" + '</a>' +
+    //                 '<a href="#" data-confidence="70" data-option="true">' + " 70%" + '</a>' +
+    //                 '<a href="#" data-confidence="60" data-option="true">' + " 60%" + '</a>' +
+    //                 '<a href="#" data-confidence="50" data-option="true">' + " 50%" + '</a>' +
+    //                 // '<br><br>' +
+    //                 '<a href="#" data-confidence="50" data-option="false">' + " 50%" + '</a>' +
+    //                 '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
+    //                 '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
+    //                 '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
+    //                 '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
+    //                 '<a href="#" data-confidence="100" data-option="false">' + " 100% false" + '</a>' +
+    //               '</div>' +
+    //             '</div>' +
+    //           '</div>');
+    //         });
+    //     }
+    // });
 
     var jQuiz = {
         postStats: function() {            // Build and post telemetry data
@@ -367,7 +383,40 @@ $(document).ready(function() {
             });
         },
         init: function() {
+            $('.hint').qtip({
+                hide: {
+                    fixed: true,
+                    delay: 300
+                },
+                content: function() {
+                    return $(this).attr('title');
+                },
+                style: {
+                    classes: 'qtip-light qtip-shadow'
+                }
+            });
+
+            $('.hint').mouseover( function() {
+                $(this).addClass('visited');
+            });
+
+            $( ".options > a" )
+                .button()
+                .click(function( event ) {
+                    event.preventDefault();
+                    $(this).addClass('selected');
+                    $(this).siblings('.selected').removeClass('selected');
+                    $(this).siblings('input[type=text]').val($(this).text());
+            });
             // create empty array for responses
+            var totalQuestions = $('.questionContainer').size();  // todo: use models size
+            jQuiz.currentQuestion = 0;
+            var progressPixels = $('#progressContainer').width()/totalQuestions;
+            $questions = $('.questionContainer');
+            // $questions.hide();
+            $($questions.get(this.currentQuestion)).fadeIn();
+            console.log("fadein");
+
             jQuiz.responses = [];
             jQuiz.stats = {
                 "startDate": (new Date()).toISOString()
@@ -390,15 +439,15 @@ $(document).ready(function() {
 
                 drawConfidenceChart(jQuiz.getConfidenceSeriesData());
 
-                $($questions.get(currentQuestion)).fadeOut(300, function() {
+                $($questions.get(jQuiz.currentQuestion)).fadeOut(300, function() {
+                    jQuiz.showFeedback(jQuiz.currentQuestion);
                     // advance question index
-                    currentQuestion = currentQuestion + 1;
-                    jQuiz.showFeedback();
-                    if( currentQuestion === totalQuestions ) {
+                    jQuiz.currentQuestion = jQuiz.currentQuestion + 1;
+                    if( jQuiz.currentQuestion === totalQuestions ) {
                         // if on last question, finish quiz
                         jQuiz.finish();
                     } else {
-                        $($questions.get(currentQuestion)).fadeIn(300);
+                        $($questions.get(jQuiz.currentQuestion)).fadeIn(300);
                     }
                 });
 
@@ -423,7 +472,7 @@ $(document).ready(function() {
         },
         addResponse: function(fact, responseOption, responseConfidence, hinted) {
             var response = {
-                index: currentQuestion,
+                index: this.currentQuestion,
                 response: responseOption,
                 confidence: responseConfidence,
                 fact: fact,
@@ -435,11 +484,12 @@ $(document).ready(function() {
         popResponse: function() {
             jQuiz.responses.pop();
         },
-        showFeedback: function() {
+        showFeedback: function(questionIndex) {
             $('#feedbackContainer').show();
+            console.log(questionIndex);
 
-            var feedbackString = $($questions.get(currentQuestion-1)).children('.feedback').text();
-            var isCorrect = this.responses[currentQuestion-1].correct;
+            var feedbackString = $($questions.get(questionIndex)).children('.feedback').text();
+            var isCorrect = this.responses[questionIndex].correct;
             var feedback = $.parseJSON(feedbackString);
 
             $('#feedbackChartContainer').highcharts({
@@ -513,5 +563,4 @@ $(document).ready(function() {
             return data;
         }
     };
-    jQuiz.init();
 })
