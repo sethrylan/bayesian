@@ -2,13 +2,14 @@
 language: java
 jdk:
   - oraclejdk8
+install: /bin/true
 script:
-  - git push "https://582d117551d7cce23a5d5e930dfd631aeed00048@github.com/sethrylan/bayesian.git" `git subtree split --prefix client master`:gh-pages --force
+  - git push "https://${GH_TOKEN}@${GH_REF}" `git subtree split --prefix client master`:gh-pages --force > /dev/null 2>&1
 sudo: false
 env:
   global:
   - GH_REF: github.com/sethrylan/bayesian.git
-  - secure: "gjkQQUsjjPipkTxzg/yhSu5rR7WjG5SUtSrcOco9+ksEVp/x3/Ftu1H7EeaPBR3cjdNZiSCQAJUZf6DlfqULu8voh+N4GJTg+z3pO4ow/jhe+GjfHufnAPVyw2uBZFOR9tYS/7K3S2Zz+NY4oeQmZLERUUbPJgyit27if8uT2YcB9XK3kcGPuy/xwcdfZquR4Ag+SFWxC8uZJ9rcjBdE7TP1TYpdj3qHpbgx4/C6xJQc7O3NbZhkYxEce/uLyzAMxFOSSjMD4fk0vN9CpYx5q5t5MdJHxRrmKz0bjIpDGuUiLptOT3qWaFL7AU1VenakolpD8UOnMINM+VlFS0pmEXU9hYLdq22VXKmuHkK1mO01Ri5MjXyz8dLrCvEq0d9lKnjNRkTvH+8WuY2hDsRNi5P9CAmVE/7+cwYi8227AUYh8d/1kNT7wMKUqUZCe487ZZPgEqpecwoYdLozp97f7cpIE9JxtF26FdAXOO7eD01GP+Fj0ntO1YMYN3voe6OphiP8Q87pt1eyd4Al1Vip/uvqk7WBfwvTPh7UdG4u1wYqZB2axwhK8Wto8cSRJxozh6HaO/+t41viSfQFKJQw8ZPTm8mjJgp86LFD03nOiFLdhi8w2c28xiYiPGcbo8Z0ClD4Ygii8sX+BqwKHPqZcwMiHDo6Q/Er+kNHGWMfX6Y="
+  - secure: "KQD/8U+WHOUFMkRj+OrFx7Xkm8o8wrgSVaAz4cemigGa/++0qqkr2mYlWGl2lK1cjdo20DBqMx98OTcSW2Mr59XAd0gU7WlCxdwaZneSswvhaC4qe56XEgHicdN3q90AQM3VYAa0plza614DQ2GV7Bt20edwZrOZx52PoRBg1KoSgAR9dszu8UKw6TClsDl2/uC2kuX0alqyayBwTNA9KhqrH7GFaJf+GhH/0tJyDf8rk/9VkREUu+bV1BwLrFGorC4z+quI7YSIxpTLoMwvO/4YPKXKmkXjGWaKDRCUo9QQmngdQp5b1UyiuyxF0+vZ/aW3XK0nWcJ00tFfmUBHKVTCU3rckgWk9UQoT5Lx226+8xTLkwO6CIAKTjOJ5e66Ol5elwD/G7E4NpsSBxkNt3gLF/VGSIqD8RAxxbhBKIeDvRrZ1ANdvminK3xjz+/vDch3sMvJBUHhypQxXZJjKHawmeMqPVTDxbDzZODX0ggBH1vq9G9yPzssMU5KTUoK3oVSZru+RKW3tyh5Ys4GkOko7J2gYr3Wk4tA+hB0tuA7iImC6kUlw9cofXDjgfheldUVDgoSSwfCYtAnXOX43MCLfJSEncqG5eHabzGLcbc1LUbtV8CKaL/WnpMwrGXu8w1NlWP5S1UFeqTszas55o25ZBtICPgeVg2wJw9iUGU="
 branches:
   only:
   - master
