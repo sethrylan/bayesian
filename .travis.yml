@@ -7,7 +7,7 @@ script:
 sudo: false
 env:
   global:
-  - GH_REF: github.com/<your name>/<your repo>.git
+  - GH_REF: github.com/sethrylan/bayesian.git
   - secure: "gjkQQUsjjPipkTxzg/yhSu5rR7WjG5SUtSrcOco9+ksEVp/x3/Ftu1H7EeaPBR3cjdNZiSCQAJUZf6DlfqULu8voh+N4GJTg+z3pO4ow/jhe+GjfHufnAPVyw2uBZFOR9tYS/7K3S2Zz+NY4oeQmZLERUUbPJgyit27if8uT2YcB9XK3kcGPuy/xwcdfZquR4Ag+SFWxC8uZJ9rcjBdE7TP1TYpdj3qHpbgx4/C6xJQc7O3NbZhkYxEce/uLyzAMxFOSSjMD4fk0vN9CpYx5q5t5MdJHxRrmKz0bjIpDGuUiLptOT3qWaFL7AU1VenakolpD8UOnMINM+VlFS0pmEXU9hYLdq22VXKmuHkK1mO01Ri5MjXyz8dLrCvEq0d9lKnjNRkTvH+8WuY2hDsRNi5P9CAmVE/7+cwYi8227AUYh8d/1kNT7wMKUqUZCe487ZZPgEqpecwoYdLozp97f7cpIE9JxtF26FdAXOO7eD01GP+Fj0ntO1YMYN3voe6OphiP8Q87pt1eyd4Al1Vip/uvqk7WBfwvTPh7UdG4u1wYqZB2axwhK8Wto8cSRJxozh6HaO/+t41viSfQFKJQw8ZPTm8mjJgp86LFD03nOiFLdhi8w2c28xiYiPGcbo8Z0ClD4Ygii8sX+BqwKHPqZcwMiHDo6Q/Er+kNHGWMfX6Y="
 branches:
   only:
