@@ -172,13 +172,10 @@
             jQuiz.responses.pop();
         },
         showFeedback: function(questionIndex) {
-
             $('#feedbackContainer').show();
-
             var feedback = questions.at(questionIndex).get('feedback');
             var isCorrect = this.responses[questionIndex].correct;
             drawFeedbackChart(feedback, isCorrect);
-
         },
         getConfidenceSeriesData: function() {
             data = [];
