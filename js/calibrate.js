@@ -179,83 +179,6 @@ function drawFeedbackChart(dataTable) {
 
 }
 
-// (function($){
-//     // see https://github.com/chitacan/anatomy-of-backbonejs/blob/master/lesson_6/server/public/javascripts/TodoApp.js
-//     var n = defaultNumQuestions;
-//     if(get('n')) {
-//         n = get('n');
-//     }
-//     var url = questionsUrl + '?n=' + n;
-
-//     var questionDom = $('#backboneQuestions');
-
-//     var Question = Backbone.Model.extend();
-
-//     var QuestionView = Backbone.View.extend({
-//         template: _.template('<h3 class=<% print(status) %>>' + 
-//             '<input type=checkbox ' +
-//             '<% if (status == "complete") print("checked") %>/>' +
-//             '<%= text %></h3>'),
-
-//         events: {
-//             'change input': 'toggleStatus'
-//         },
-
-//         initialize: function() {
-//             this.model.on('change', this.render, this);
-//             // this.model.on('destroy', this.remove, this);
-//         },
-
-//         render: function() {
-//             var attr = this.model.toJSON();
-//             this.$el.html( this.template(attr) );
-//             return this;
-//         },
-
-//         remove: function() {
-//             // remove elements from DOM
-//         }
-//     });
-
-//     var QuestionList = Backbone.Collection.extend({
-//         url: url,
-//         model: Question,
-//         parse: function(data) {
-//             return data.questions;
-//         }
-//     });
-
-//     var QuestionListView = Backbone.View.extend({
-//         initialize: function() {
-//             this.collection.on('reset', this.render, this);
-//             this.collection.on('add', this.addOne, this);
-//         },
-//         render: function() {
-//             this.collection.forEach(this.addOne, this);
-//             questionDom.append(this.$el);
-//             console.log("collection view render complete");
-
-//         },
-//         addOne: function(questionItem) {
-//             var questionView = new QuestionView({model: questionItem});
-//             this.$el.append(questionView.render().el);
-//         }
-//     });
-
-//     // var question = new Question();
-//     // var questionView = new QuestionView({model: question});
-
-//     var questionList        = new QuestionList();
-//     var questionListView    = new QuestionListView({collection: questionList});
-
-//     questionList.on('change', function() {
-//         questionsView.render();
-//     });
-
-//     questionList.fetch();
-// })(jQuery);
-
-
 /*
  *  Main quiz function.
  */
@@ -280,7 +203,7 @@ function drawFeedbackChart(dataTable) {
         }
     });
 
-    var QuestionListView = Backbone.View.extend({
+    var QuestionsView = Backbone.View.extend({
         el: '#questionListContainer',
         // initialize: function() {
         //     this.collection.on('reset', this.render, this);
@@ -288,25 +211,20 @@ function drawFeedbackChart(dataTable) {
         // },
         render: function () {
             var that = this;
-            var questions = new Questions();
-            questions.fetch({
-                success: function (questions) {
-                    var template = _.template($('#questions-template').html());
-                    that.$el.html(template({questions:questions.models}));
-                    jQuiz.init();
-                }
-            })
-
+            var template = _.template($('#questions-template').html());
+            that.$el.html(template({questions:questions.models}));
+            jQuiz.init();
         }
     });
 
-    var questionListView = new QuestionListView();
+    var questions = new Questions();
 
-    // questions.on('change', function() {
-    //     questionsView.render();
-    // });
-
-    questionListView.render();
+    questions.fetch({
+        success: function(questions, response) {
+            questionsView = new QuestionsView({model: questions});
+            questionsView.render();
+        }
+    });
 
     var jQuiz = {
         postStats: function() {            // Build and post telemetry data
@@ -360,9 +278,8 @@ function drawFeedbackChart(dataTable) {
                     $(this).siblings('input[type=text]').val($(this).text());
             });
             // create empty array for responses
-            var totalQuestions = $('.questionContainer').size();  // todo: use models size
             jQuiz.currentQuestion = 0;
-            var progressPixels = $('#progressContainer').width()/totalQuestions;
+            var progressPixels = $('#progressContainer').width()/questions.length;
             $questions = $('.questionContainer');
             // $questions.hide();
             $($questions.get(this.currentQuestion)).fadeIn();
@@ -393,7 +310,7 @@ function drawFeedbackChart(dataTable) {
                     jQuiz.showFeedback(jQuiz.currentQuestion);
                     // advance question index
                     jQuiz.currentQuestion = jQuiz.currentQuestion + 1;
-                    if( jQuiz.currentQuestion === totalQuestions ) {
+                    if( jQuiz.currentQuestion === questions.length ) {
                         // if on last question, finish quiz
                         jQuiz.finish();
                     } else {
