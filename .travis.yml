@@ -3,7 +3,7 @@ language: java
 jdk:
   - oraclejdk8
 script:
-  - ./gradlew check --info && git subtree push --quiet --prefix client "https://${GH_TOKEN}@${GH_REF}" gh-pages > /dev/null 2>&1
+  - ./gradlew check --info && git subtree push --prefix client "https://${GH_TOKEN}@${GH_REF}" gh-pages
 sudo: false
 env:
   global:
