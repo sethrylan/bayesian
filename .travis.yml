@@ -2,9 +2,8 @@
 language: java
 jdk:
   - oraclejdk8
-install: /bin/true
 script:
-  - git push "https://${GH_TOKEN}@${GH_REF}" `git subtree split --prefix client master`:gh-pages --force > /dev/null 2>&1
+  - ./gradlew check && git push "https://${GH_TOKEN}@${GH_REF}" `git subtree split --prefix client master`:gh-pages --force > /dev/null 2>&1
 sudo: false
 env:
   global:
