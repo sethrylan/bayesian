@@ -259,7 +259,7 @@ function drawFeedbackChart(dataTable) {
 /*
  *  Main quiz function.
  */
-$(document).ready(function() {
+(function($){
 
     // see https://github.com/chitacan/anatomy-of-backbonejs/blob/master/lesson_6/server/public/javascripts/TodoApp.js
     var n = defaultNumQuestions;
@@ -291,7 +291,6 @@ $(document).ready(function() {
             var questions = new Questions();
             questions.fetch({
                 success: function (questions) {
-                    console.log(questions.models);
                     var template = _.template($('#questions-template').html());
                     that.$el.html(template({questions:questions.models}));
                     jQuiz.init();
@@ -308,54 +307,6 @@ $(document).ready(function() {
     // });
 
     questionListView.render();
-
-    /* Insert questions in HTML */
-    var n = defaultNumQuestions;
-    if(get('n')) {
-        n = get('n');
-    }
-    var url = questionsUrl + '?n=' + n;
-
-    /*
-     * $JQuery.ajax used instead of $.getJSON(questionsUrl, function(data){...});
-     * to have access to async parameter without using  $.ajaxSetup({ async: false });
-     * global configuration.
-     */
-    // $.ajax({
-    //     url: url,
-    //     dataType: 'json',
-    //     async: false,
-    //     success: function(data) {
-    //       var questions = [];
-    //       $.each(data.questions, function(key, q) {
-    //         $('#questionListContainer').append(
-    //           '<div class="questionContainer radius hide">' +
-    //             '<div class="question">' + q.text +
-    //               '<a href="#" class="hint" title="' + q.hint + '">[ hint ]</a>' +
-    //             '</div>' +
-    //             '<div class="fact hide">' + q.fact + '</div>' +
-    //             '<div class="feedback hide">' + JSON.stringify(q.feedback) + '</div>' +
-    //             '<div class="answers">' +
-    //               '<div class="options">' +
-    //                 '<a href="#" data-confidence="100" data-option="true">' + " 100% true" + '</a>' +
-    //                 '<a href="#" data-confidence="90" data-option="true">' + " 90%" + '</a>' +
-    //                 '<a href="#" data-confidence="80" data-option="true">' + " 80%" + '</a>' +
-    //                 '<a href="#" data-confidence="70" data-option="true">' + " 70%" + '</a>' +
-    //                 '<a href="#" data-confidence="60" data-option="true">' + " 60%" + '</a>' +
-    //                 '<a href="#" data-confidence="50" data-option="true">' + " 50%" + '</a>' +
-    //                 // '<br><br>' +
-    //                 '<a href="#" data-confidence="50" data-option="false">' + " 50%" + '</a>' +
-    //                 '<a href="#" data-confidence="60" data-option="false">' + " 60%" + '</a>' +
-    //                 '<a href="#" data-confidence="70" data-option="false">' + " 70%" + '</a>' +
-    //                 '<a href="#" data-confidence="80" data-option="false">' + " 80%" + '</a>' +
-    //                 '<a href="#" data-confidence="90" data-option="false">' + " 90%" + '</a>' +
-    //                 '<a href="#" data-confidence="100" data-option="false">' + " 100% false" + '</a>' +
-    //               '</div>' +
-    //             '</div>' +
-    //           '</div>');
-    //         });
-    //     }
-    // });
 
     var jQuiz = {
         postStats: function() {            // Build and post telemetry data
@@ -415,7 +366,6 @@ $(document).ready(function() {
             $questions = $('.questionContainer');
             // $questions.hide();
             $($questions.get(this.currentQuestion)).fadeIn();
-            console.log("fadein");
 
             jQuiz.responses = [];
             jQuiz.stats = {
@@ -486,7 +436,6 @@ $(document).ready(function() {
         },
         showFeedback: function(questionIndex) {
             $('#feedbackContainer').show();
-            console.log(questionIndex);
 
             var feedbackString = $($questions.get(questionIndex)).children('.feedback').text();
             var isCorrect = this.responses[questionIndex].correct;
@@ -563,4 +512,4 @@ $(document).ready(function() {
             return data;
         }
     };
-})
+})(jQuery);
