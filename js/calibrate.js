@@ -152,31 +152,26 @@ var confidenceChart = new Highcharts.Chart({
 var getPointFormat = function(category) {
     switch (category) {
         case 'area':
-            return '{point.y:.1f} km2'
+            return '{point.y:.1f} km2';
         case 'population':
-            return '{point.y} people'
+            return '{point.y} people';
         case 'gdpPerCapita':
-            return '${point.y} per person'
+            return '${point.y} per person';
         case 'healthExpenditure':
-            return '{point.y:.1f}% of GDP'
+            return '{point.y:.1f}% of GDP';
         case 'gini':
-            return '{point.y:.1f} Gini coefficient'
+            return '{point.y:.1f} Gini coefficient';
         case 'lifeExpectancy':
-            return '{point.y:.1f} years'
+            return '{point.y:.1f} years';
         default:
             console.error("No such feedback category.");
             return;
     }
-}
+};
 
 function drawConfidenceChart(confidenceSeriesData) {
     confidenceChart.series[0].setData(confidenceSeriesData);
     confidenceChart.series[3].setData(confidenceSeriesData);
-}
-
-function drawFeedbackChart(dataTable) {
-    $("#largeChart").empty();
-
 }
 
 /*
@@ -372,8 +367,7 @@ function drawFeedbackChart(dataTable) {
                     style: {'fontSize': '12px' }
                 },
                 subtitle: {
-                    text: (isCorrect ? 'Correct' : 'Incorrect') + '<br>'
-                          + 'Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/">World Factbook</a>',
+                    text: (isCorrect ? 'Correct' : 'Incorrect') + '<br>' + 'Source: <a href="https://www.cia.gov/library/publications/the-world-factbook/">World Factbook</a>',
                     style: {'fontSize': '8px',
                             'color': isCorrect ? 'green' : 'red'}
                 },
