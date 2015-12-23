@@ -261,7 +261,7 @@ function drawFeedbackChart(dataTable) {
  */
 (function($){
 
-    // see https://github.com/chitacan/anatomy-of-backbonejs/blob/master/lesson_6/server/public/javascripts/TodoApp.js
+    // handle variables defined in html to take advantage of jekyll environment variables
     var n = defaultNumQuestions;
     if(get('n')) {
         n = get('n');
