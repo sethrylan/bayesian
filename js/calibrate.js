@@ -292,7 +292,7 @@ function drawConfidenceChart(confidenceSeriesData) {
                 // disable button to prevent double-clicking
                 $(this).addClass('disabled');
 
-                var fact = $('.questionContainer:visible > .fact').text();
+                var fact = questions.at(jQuiz.currentQuestion).get('fact');
                 var responseOption = $(this).data('option').toString();
                 var responseConfidence = $(this).data('confidence');
                 var hinted = $('.questionContainer:visible > .question > .hint').hasClass('visited');
