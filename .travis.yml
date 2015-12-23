@@ -3,7 +3,7 @@ language: java
 jdk:
   - oraclejdk8
 script:
-  - ./gradlew check --info && git push "https://582d117551d7cce23a5d5e930dfd631aeed00048@github.com/sethrylan/bayesian.git" `git subtree split --prefix client master`:gh-pages --force > /dev/null 2>&1
+  - ./gradlew check --info && git push "https://582d117551d7cce23a5d5e930dfd631aeed00048@github.com/sethrylan/bayesian.git" `git subtree split --prefix client master`:gh-pages --force
 sudo: false
 env:
   global:
