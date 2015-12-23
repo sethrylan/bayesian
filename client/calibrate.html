@@ -72,7 +72,6 @@ layout: null
                     <%= htmlEncode(question.get('text')) %>
                     <a href="#" class="hint" title="<%= htmlEncode(question.get('hint')) %>">[ hint ]</a>
                 </div>
-                <div class="feedback hide"><%= htmlEncode(JSON.stringify(question.get('feedback')))%></div>
                 <div class="answers">
                     <div class="options">
                         <a href="#" data-confidence="100" data-option="true">100% true</a>

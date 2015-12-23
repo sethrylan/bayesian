@@ -349,9 +349,8 @@ function drawConfidenceChart(confidenceSeriesData) {
         showFeedback: function(questionIndex) {
             $('#feedbackContainer').show();
 
-            var feedbackString = $($questions.get(questionIndex)).children('.feedback').text();
+            var feedback = questions.at(questionIndex).get('feedback');
             var isCorrect = this.responses[questionIndex].correct;
-            var feedback = $.parseJSON(feedbackString);
 
             $('#feedbackChartContainer').highcharts({
                 chart: {
