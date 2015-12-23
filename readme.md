@@ -24,17 +24,17 @@ Directory Structure
 Development Workflow
 =========
 
-| Description               | Command                         |
-| ------------------------- |---------------------------------|
-| prepare dataset           | ```gradlew factbookCountries``` |
-| client pages local run    | ```bundle exec jekyll serve --watch``` (add ```--safe``` to use gae hosted data) |
-| client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```    |
-| unit test                 | ```gradlew test```              |
-| server run local          | ```gradlew :server:appengineRun``` |
-| server functional tests   | ```gradlew functionalTest```    |
-| deploy                    | ```gradlew appengineUpdateAll```         |
-| PMD, CheckStyle, etc      | ```gradlew check```             |
-| FindBugs                  | ```gradlew findbugs```          |
+| Description               | Command                                                  |  CI Task |
+| ------------------------- |----------------------------------------------------------|----------|
+| prepare dataset           | ```gradlew factbookCountries```                          |          |
+| client pages local run    | ```bundle exec jekyll serve --watch [--safe]```          |          |
+| client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```   |     X    |
+| unit test                 | ```gradlew test```                                       |     X    |
+| server run local          | ```gradlew :server:appengineRun```                       |          |
+| server functional tests   | ```gradlew functionalTest```                             |     X    |
+| deploy                    | ```gradlew appengineUpdateAll```                         |          |
+| PMD, CheckStyle, etc      | ```gradlew check```                                      |     X    |
+| FindBugs                  | ```gradlew findbugs```                                   |     X    |
 
 Hosted locations
 =========
