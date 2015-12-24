@@ -49,7 +49,7 @@ public class JsonDataStoreServletTest {
         assertEquals(0, datastore.prepare(new Query(kind)).countEntities(withLimit(10)));
         assertEquals(0, datastore.prepare(new Query(kind)).asList(FetchOptions.Builder.withDefaults()).size());
 
-        // Test put/creation
+        // Test post/creation
         given().contentType(ContentType.JSON).with().
             body(json).with().
             port(PORT).
@@ -58,7 +58,7 @@ public class JsonDataStoreServletTest {
             body("id", notNullValue()).
             body("name", notNullValue()).
             when().
-            put("/" + kind);
+            post("/" + kind);
 
         // Test get/retrieval
         given().

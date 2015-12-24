@@ -13,7 +13,7 @@ import com.google.gson.reflect.TypeToken;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
-import javax.ws.rs.PUT;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -67,11 +67,11 @@ public class JsonDataStoreServlet {
      * @param json data to store
      * @return presisted key of stored object
      */
-    @PUT
+    @POST
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String putDefault(@Context javax.servlet.http.HttpServletRequest httpServletRequest, String json) {
-        return this.put(httpServletRequest, DEFAULT_ENTITY_KIND, json);
+    public String postDefault(@Context javax.servlet.http.HttpServletRequest httpServletRequest, String json) {
+        return this.post(httpServletRequest, DEFAULT_ENTITY_KIND, json);
     }
 
     /**
@@ -81,11 +81,11 @@ public class JsonDataStoreServlet {
      * @param json data to store
      * @return persisted key of stored object
      */
-    @PUT
+    @POST
     @Path("{kind}")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)
-    public String put(@Context javax.servlet.http.HttpServletRequest httpServletRequest,
+    public String post(@Context javax.servlet.http.HttpServletRequest httpServletRequest,
                       @PathParam("kind") String kind, String json) {
         log.info("json = " + json);
         Key entityKey = KeyFactory.createKey(kind, UUID.randomUUID().toString());
