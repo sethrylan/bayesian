@@ -11,6 +11,10 @@
     }
     var url = questionsUrl + '?n=' + n;
 
+    var Stats = Backbone.Model.extend({
+        urlRoot: jdsUrl
+    });
+
     var Question = Backbone.Model.extend({
         urlRoot: url
     });
@@ -56,18 +60,19 @@
             this.stats.client.screenResolution = screen.width + '×' + screen.height;
             this.stats.client.platform = navigator.platform;
             this.stats.client.platform = navigator.platform;
-
             this.stats.finishDate = (new Date()).toISOString();
             this.stats.responses = this.responses;
-            $.ajax({
-                url: jdsUrl,
-                type: 'PUT',
-                contentType: "application/json; charset=utf-8",
-                dataType: "json",
-                crossDomain: true,
-                data: JSON.stringify(this.stats),
-                failure: function(data) {
-                    console.error("data failed to upload: " + JSON.stringify(this.stats));
+
+            stats = new Stats();
+            stats.save(this.stats, {
+                wait : true,
+                success : function(response){
+                    console.log('success')
+                    console.log(response);
+                },
+                error: function(model, error) {
+                    console.log(model.toJSON());
+                    console.log('error.responseText');
                 }
             });
         },
