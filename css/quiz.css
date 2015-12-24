@@ -1,6 +1,7 @@
 div.ui-tooltip {
     max-width: 400px;	/* Increase default jQueryUI tooltip size */
 }
+
 .options {
     font-size: .9em;
     margin-left:auto;
@@ -8,14 +9,13 @@ div.ui-tooltip {
     width:99%;
     padding-bottom:40px;
 }
+
 .options a:hover {
     color:black;
 }
+
 .selected span {
     border: 1px solid black
-}
-.answers div {
-    text-align:center;
 }
 
 .question {
