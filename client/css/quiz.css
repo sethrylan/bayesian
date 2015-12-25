@@ -16,10 +16,6 @@ div.ui-tooltip {
     color:black;
 }
 
-.selected span {
-    border: 1px solid black
-}
-
 .question {
     margin: 10px;
 }
