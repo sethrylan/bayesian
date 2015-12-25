@@ -8,6 +8,7 @@ div.ui-tooltip {
     margin-right:auto;
     width:99%;
     padding-bottom:40px;
+    text-align: center;
 }
 
 .options a:hover {
@@ -26,9 +27,6 @@ div.ui-tooltip {
     border: 3px double #CFCFCF;
     padding: 3px;
     margin: 10px 10px 20px 10px;
-}
-.questionContainer a {
-    float:right;
 }
 
 #feedbackContainer {
