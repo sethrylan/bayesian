@@ -94,8 +94,8 @@
                 $(this).addClass('visited');
             });
 
-            $( ".options > a" )
-                .button()
+            $( ".options" )
+                .buttonset()
                 .click(function( event ) {
                     event.preventDefault();
                     $(this).addClass('selected');
