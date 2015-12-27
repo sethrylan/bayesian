@@ -3,9 +3,7 @@
  *	.class-name
  */
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto
+  text-align: center
 }
 sup {
   font-size: 0.83em;
