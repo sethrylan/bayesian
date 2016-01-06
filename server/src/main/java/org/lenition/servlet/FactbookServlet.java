@@ -19,21 +19,6 @@ import java.io.IOException;
 public class FactbookServlet {
 
     /**
-     * Returns JSON representation of factbook country data.
-     * @return  factbook countries in JSON
-     */
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public String factbook() {
-        try {
-            return IOUtils.toString(FactbookServlet.class.getClassLoader().getResourceAsStream(FactbookQuiz.FACTBOOK), "UTF-8");
-        } catch (IOException e) {
-            e.printStackTrace();
-            return "{ \"error\" : \"Could not find factbook\" }";
-        }
-    }
-
-    /**
      * Returns JSON representation of factbook questions.
      * @param n number of questions
      * @return factbook questions in JSON
@@ -42,7 +27,7 @@ public class FactbookServlet {
     @Path("questions")
     @Produces(MediaType.APPLICATION_JSON)
     public String question(@DefaultValue("30") @QueryParam("n") int n) {
-        return (new Gson()).toJson(FactbookQuiz.INSTANCE.getQuestions(n));
+        return (new Gson()).toJson(FactbookQuiz.INSTANCE.getQuestions(n).questions);
     }
 
 }
