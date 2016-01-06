@@ -21,10 +21,7 @@
 
     var Questions = Backbone.Collection.extend({
         url: url,
-        model: Question,
-        parse: function(data) {
-            return data.questions;
-        }
+        model: Question
     });
 
     var QuestionsView = Backbone.View.extend({
