@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>An Educated Guess | Calibrate</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="css/quiz.css">
+        <link rel="stylesheet" href="css/bayesian.css">
+        <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/basic/jquery.qtip.min.css">
+    </head>
+    <body>
+        <div id="info">
+            <h1 id="name">an educated guess</h1>
+            <p>
+                A tool for calibrated probability estimation
+            </p>
+
+            <div>
+                This application is built using <a href="https://travis-ci.org/sethrylan/bayesian">Travis CI</a>, hosted on <a href="https://cloud.google.com/appengine/docs">Google App Engine</a> and developed through <a href="https://github.com/sethrylan/bayesian/">GitHub</a>.
+            </div>
+        </div>
+
+        <div id="main">
+            <h1>
+                <a class="nav" href="index.html">about</a> &#160;&#160;&#160;
+                calibrate &#160;&#160;&#160;
+                <a class="nav" href="think.html">think probabilistically</a>&#160;&#160;&#160;
+            </h1>
+
+            <div id="progressContainer" class="radius">
+                <div id="progress"></div>
+            </div>
+
+            <div id="questionListContainer">
+            </div>
+
+            <div id="feedbackContainer" class="radius">
+                <div id="confidenceChartContainer" ></div>
+                <div id="feedbackChartContainer" ></div>
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/qtip2/2.1.1/basic/jquery.qtip.min.js"></script>
+        <script src="https://code.highcharts.com/4.1/highcharts.js"></script>
+        <script src="https://code.highcharts.com/4.1/highcharts-more.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.2.3/backbone-min.js"></script>
+
+        <script type="text/javascript">
+
+        
+        var questionsUrl = "http://localhost:8080/factbook/questions";
+        var jdsUrl = "http://localhost:8081/stats/";
+        
+        var defaultNumQuestions = 40;
+        </script>
+        <script src="js/utils.js"></script>
+        <script src="js/calibrate.js"></script>
+        <script src="js/charting.js"></script>
+
+        <script type="text/template" id="questions-template">
+            <% _.each(questions, function(question) { %>
+            <div class="questionContainer radius hide">
+                <div class="question">
+                    <%= htmlEncode(question.get('text')) %>
+                    <a href="#" class="hint" title="<%= htmlEncode(question.get('hint')) %>">[ hint ]</a>
+                </div>
+                <div class="options">
+                    <a href="#" data-confidence="100" data-option="true">100% true</a>
+                    <a href="#" data-confidence="90" data-option="true">90%</a>
+                    <a href="#" data-confidence="80" data-option="true">80%</a>
+                    <a href="#" data-confidence="70" data-option="true">70%</a>
+                    <a href="#" data-confidence="60" data-option="true">60%</a>
+                    <a href="#" data-confidence="50" data-option="true">50%</a>
+                    <a href="#" data-confidence="50" data-option="false">50%</a>
+                    <a href="#" data-confidence="60" data-option="false">60%</a>
+                    <a href="#" data-confidence="70" data-option="false">70%</a>
+                    <a href="#" data-confidence="80" data-option="false">80%</a>
+                    <a href="#" data-confidence="90" data-option="false">90%</a>
+                    <a href="#" data-confidence="100" data-option="false">100% false</a>
+                </div>
+            </div>
+            <% }); %>
+        </script>
+
+        <!-- analytics -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-33138107-1']);
+            _gaq.push(['_setDomainName', 'sethrylan.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+    	</script>
+    </body>
+</html>
