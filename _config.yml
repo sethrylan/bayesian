@@ -4,9 +4,9 @@ title:       An Educated Guess
 port:        4000
 safe:        false  # defaults to true on gh-pages (see https://help.github.com/articles/using-jekyll-with-pages/)
 lsi:         true
-highlighter: pygments
+highlighter: rouge
 permalink:   date
-markdown:    Kramdown
+markdown:    kramdown
 maruku:
   use_tex:   false
   use_divs:  false
