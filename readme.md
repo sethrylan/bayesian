@@ -24,17 +24,17 @@ Directory Structure
 Development Workflow
 =========
 
-| Description               | Command                                                  |  CI Task |
-| ------------------------- |----------------------------------------------------------|----------|
-| prepare dataset           | ```gradlew factbookCountries```                          |          |
-| client pages local run    | ```bundle exec jekyll serve --watch [--safe]```          |          |
-| client pages/docs deploy  | ```git subtree push --prefix client origin gh-pages```   |     X    |
-| unit test                 | ```gradlew test```                                       |     X    |
-| server run local          | ```gradlew :server:appengineRun```                       |          |
-| server functional tests   | ```gradlew functionalTest```                             |     X    |
-| deploy                    | ```gradlew appengineUpdateAll```                         |          |
-| PMD, CheckStyle, etc      | ```gradlew check```                                      |     X    |
-| FindBugs                  | ```gradlew findbugs```                                   |     X    |
+| Description               | Command                                          | CI Task |
+| ------------------------- |--------------------------------------------------|---------|
+| prepare dataset           | ```gradlew factbookCountries```                  |         |
+| client pages local run    | ```bundle exec jekyll serve --watch [--safe]```  |         |
+| client pages/docs deploy  | ```gradlew publishGhPages```                     |    X    |
+| unit test                 | ```gradlew test```                               |    X    |
+| server run local          | ```gradlew :server:appengineRun```               |         |
+| server functional tests   | ```gradlew functionalTest```                     |    X    |
+| deploy                    | ```gradlew appengineUpdateAll```                 |         |
+| PMD, CheckStyle, etc      | ```gradlew check```                              |    X    |
+| FindBugs                  | ```gradlew findbugs```                           |    X    |
 
 Hosted locations
 =========

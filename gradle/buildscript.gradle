@@ -6,5 +6,6 @@ repositories {
 
 dependencies {
     classpath 'net.sourceforge.saxon:saxon:9.1.0.8'
+    classpath 'org.ajoberstar:gradle-git:1.4.2'
 }
 
