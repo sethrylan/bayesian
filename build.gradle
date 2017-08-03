@@ -2,8 +2,6 @@ buildscript {
   apply from: file('gradle/buildscript.gradle'), to: buildscript
 }
 
-apply plugin: 'org.ajoberstar.github-pages'
-
 ext {
     githubProjectName = 'bayesian'
     dataDir = "$rootDir/data"
@@ -31,23 +29,9 @@ ext {
     ]
 }
 
-githubPages {
-    // See .travis.yml for how these environment variables are injected
-    // These variables must be set to use the publishGhPages task locally
-    repoUri = "https://${System.getenv("GH_REF")}"
-    pages {
-        from './client'
-    }
-    credentials {
-        username = System.getenv("GH_TOKEN")
-        password = ''
-    }
-}
-
 task cleanClientFolder(type: Delete) {
     delete './client/_site', './client/*.iml'
 }
-publishGhPages.dependsOn cleanClientFolder
 
 apply from: file('gradle/data-prep.gradle')
 

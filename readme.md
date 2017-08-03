@@ -13,7 +13,7 @@ Directory Structure
 
 | Directory    | Description                              |
 | ------------ |------------------------------------------|
-| /client      | client-side code for gh-pages deployment |
+| /docs        | client-side code for gh-pages deployment |
 | /config      | build configuration                      |
 | /data        | working directory for data preparation   |
 | /gradle      | gradle wrapper and build scripts         |
@@ -28,7 +28,6 @@ Development Workflow
 | ------------------------- |--------------------------------------------------|---------|
 | prepare dataset           | ```gradlew factbookCountries```                  |         |
 | client pages local run    | ```bundle exec jekyll serve --watch [--safe]```  |         |
-| client pages/docs deploy  | ```gradlew publishGhPages```                     |    X    |
 | unit test                 | ```gradlew test```                               |    X    |
 | server run local          | ```gradlew :server:appengineRun```               |         |
 | server functional tests   | ```gradlew functionalTest```                     |    X    |
