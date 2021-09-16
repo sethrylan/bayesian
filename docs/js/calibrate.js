@@ -11,10 +11,6 @@
     }
     var url = questionsUrl + '?n=' + n;
 
-    var Stats = Backbone.Model.extend({
-        urlRoot: jdsUrl
-    });
-
     var Question = Backbone.Model.extend({
         urlRoot: url
     });
@@ -48,31 +44,6 @@
     });
 
     var jQuiz = {
-        postStats: function() {            // Build and post telemetry data
-            this.stats.client = {};
-            this.stats.client.platform = navigator.platform;
-            this.stats.client.userAgent = navigator.userAgent;
-            this.stats.client.systemLanguage = navigator.systemLanguage;
-            this.stats.client.gmtOffset = new Date().getTimezoneOffset();
-            this.stats.client.screenResolution = screen.width + '×' + screen.height;
-            this.stats.client.platform = navigator.platform;
-            this.stats.client.platform = navigator.platform;
-            this.stats.finishDate = (new Date()).toISOString();
-            this.stats.responses = this.responses;
-
-            stats = new Stats();
-            stats.save(this.stats, {
-                wait : true,
-                success : function(response){
-                    console.log('success')
-                    console.log(response);
-                },
-                error: function(model, error) {
-                    console.log(model.toJSON());
-                    console.log('error.responseText');
-                }
-            });
-        },
         init: function() {
             $('.hint').qtip({
                 hide: {
@@ -107,9 +78,6 @@
             $($questions.get(this.currentQuestion)).fadeIn();
 
             jQuiz.responses = [];
-            jQuiz.stats = {
-                "startDate": (new Date()).toISOString()
-            };
 
             $('.options > a').click(function(){
                 if ($(this).hasClass('disabled')) {
@@ -145,19 +113,6 @@
             });
         },
         finish: function() {
-            /*
-            var resultDiv = '';
-            var trueCount = 0;
-            for (var key in this.responses) {
-                var response = this.responses[key];
-                if (response.correct) {
-                    trueCount++;
-                }
-            }
-            resultDiv += '<div class="totalScore">Your total score is ' + parseInt(trueCount * (100/totalQuestions), 10) + ' / 100</div>'
-            $('#resultContainer').html(resultDiv).show();
-            */
-            this.postStats();
         },
         addResponse: function(fact, responseOption, responseConfidence, hinted) {
             var response = {
