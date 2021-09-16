@@ -6,7 +6,7 @@ Bayesian
 
 A test for calibrated probability assessment. See [sethrylan.org/bayesian](http://sethrylan.org/bayesian) for further info.
 
-The client/ subfolder is hosted on the gh-pages service as DOMAIN/bayesian.
+The docs/ subfolder is hosted on the gh-pages service as DOMAIN/bayesian.
 
 Directory Structure
 =========
