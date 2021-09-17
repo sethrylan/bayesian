@@ -193,5 +193,3 @@ func getTwoCountries(countries map[string]Country) (Country, Country) {
 		return countryOne, countryTwo
 	}
 }
-
-// gcloud functions deploy Questions --runtime go113 --trigger-http --allow-unauthenticated
