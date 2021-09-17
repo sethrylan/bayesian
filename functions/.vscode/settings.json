@@ -1,0 +1,19 @@
+{
+    "go.useLanguageServer": true,
+	"[go]": {
+		"editor.snippetSuggestions": "none",
+		"editor.formatOnSave": true,
+		"editor.codeActionsOnSave": {
+			"source.organizeImports": true,
+		}
+	},
+	"gopls": {
+		"usePlaceholders": true,
+		"completeUnimported": true,
+		"watchFileChanges": true,
+		"deepCompletion": true,
+		"staticcheck": false,
+	},
+	"go.lintTool": "golangci-lint",
+
+}

@@ -17,10 +17,6 @@ layout: null
             <p>
                 A tool for calibrated probability estimation
             </p>
-
-            <div>
-                This application is built using <a href="https://travis-ci.org/sethrylan/bayesian">Travis CI</a>, hosted on <a href="https://cloud.google.com/appengine/docs">Google App Engine</a> and developed through <a href="https://github.com/sethrylan/bayesian/">GitHub</a>.
-            </div>
         </div>
 
         <div id="main">
@@ -54,9 +50,9 @@ layout: null
         <script type="text/javascript">
 
         {% if site.safe %}
-        var questionsUrl = "http://bayesian-calibration.appspot.com/factbook/questions";
+        var questionsUrl = "https://us-central1-bayesian-calibration.cloudfunctions.net/Questions";
         {% else %}
-        var questionsUrl = "http://localhost:8080/factbook/questions";
+        var questionsUrl = "http://localhost:8080/questions";
         {% endif %}
         var defaultNumQuestions = 40;
         </script>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<cronentries>
-    <cron>
-        <url>/factbook/questions</url>
-        <description>ping questions</description>
-        <schedule>every 5 minutes synchronized</schedule>
-    </cron>
-</cronentries>

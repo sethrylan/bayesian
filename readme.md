@@ -16,24 +16,14 @@ Directory Structure
 | /docs        | client-side code for gh-pages deployment |
 | /config      | build configuration                      |
 | /data        | working directory for data preparation   |
-| /gradle      | gradle wrapper and build scripts         |
-| /persistence | persistence code for GAE deployment      |
-| /server      | server code for GAE deployment           |
-
 
 Development Workflow
 =========
 
 | Description               | Command                                          | CI Task |
 | ------------------------- |--------------------------------------------------|---------|
-| prepare dataset           | ```gradlew factbookCountries```                  |         |
-| client pages local run    | ```bundle exec jekyll serve --watch [--safe]```  |         |
-| unit test                 | ```gradlew test```                               |    X    |
-| server run local          | ```gradlew :server:appengineRun```               |         |
-| server functional tests   | ```gradlew functionalTest```                     |    X    |
-| deploy                    | ```gradlew appengineUpdateAll```                 |         |
-| PMD, CheckStyle, etc      | ```gradlew check```                              |    X    |
-| FindBugs                  | ```gradlew findbugs```                           |    X    |
+| client pages local run    | ```bundle exec jekyll serve [--safe]```  |         |
+| deploy                    | ```gcloud functions deploy Questions --runtime go113 --trigger-http --allow-unauthenticated --max-instances=2```                 |         |
 
 Hosted locations
 =========
@@ -46,8 +36,4 @@ Hosted locations
 Data Sources
 =========
 [CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
-
-TODO:
-=========
-Remove outlying data points (monaco, vatican)
 
