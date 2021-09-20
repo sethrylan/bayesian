@@ -151,7 +151,7 @@ func GetQuestions(countries map[string]Country, n int) []Question {
 		case "gini":
 			v1, v2 = c1.Gini.Value, c2.Gini.Value
 			q.Text = fmt.Sprintf("%s has a higher Gini index than %s.", c1.Name, c2.Name)
-			q.Hint = fmt.Sprint("The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality.")
+			q.Hint = "The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality."
 		case "lifeExpectancy":
 			v1, v2 = c1.LifeExpectancy.Value, c2.LifeExpectancy.Value
 			q.Text = fmt.Sprintf("%s has a higher life expectancy at birth than %s.", c1.Name, c2.Name)
