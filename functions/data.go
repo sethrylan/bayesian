@@ -189,7 +189,6 @@ func getTwoCountries(countries map[string]Country) (Country, Country) {
 
 	if contains(excludedCountries, countryOne.Id) || contains(excludedCountries, countryTwo.Id) || countryOne == countryTwo {
 		return getTwoCountries(countries)
-	} else {
-		return countryOne, countryTwo
 	}
+	return countryOne, countryTwo
 }
