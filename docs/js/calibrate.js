@@ -22,10 +22,6 @@
 
     var QuestionsView = Backbone.View.extend({
         el: '#questionListContainer',
-        // initialize: function() {
-        //     this.collection.on('reset', this.render, this);
-        //     this.collection.on('add', this.addOne, this);
-        // },
         render: function () {
             var that = this;
             var template = _.template($('#questions-template').html());
@@ -137,7 +133,7 @@
         getConfidenceSeriesData: function() {
             data = [];
 
-            for(i = 50; i<=100; i+=10) {
+            for(i = 55; i<=95; i+=10) {
                 var total = 0;
                 var correct = 0;
                 $.each(jQuiz.responses, function() {

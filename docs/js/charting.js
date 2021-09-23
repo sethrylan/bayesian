@@ -14,12 +14,12 @@ var getOverconfidenceSeries = function() {
         name: 'overconfident',
         fillOpacity: 0.2,
         color: '#FF9900',
-        data: [ [50, 0, 50],
-                [60, 0, 60],
-                [70, 0, 70],
-                [80, 0, 80],
-                [90, 0, 90],
-                [100, 0, 100]]
+        data: [ [55, 0, 55],
+                [65, 0, 65],
+                [75, 0, 75],
+                [85, 0, 85],
+                [95, 0, 95]
+              ]
     };
 };
 
@@ -28,12 +28,11 @@ var getUnderconfidenceSeries = function () {
         name: 'underconfident',
         fillOpacity: 0.2,
         color: '#9370DB',
-        data: [ [50, 50, 100],
-                [60, 60, 100],
-                [70, 70, 100],
-                [80, 80, 100],
-                [90, 90, 100],
-                [100, 100, 100]]
+        data: [ [55, 55, 100],
+                [65, 65, 100],
+                [75, 75, 100],
+                [85, 85, 100],
+                [95, 95, 100]]
     };
 };
 
@@ -122,12 +121,11 @@ var confidenceChart = new Highcharts.Chart({
         fillOpacity: 0.1,
         color: 'grey',
         showInLegend: false,
-        data: [ [50, 50, 50],
-                [60, 60, 60],
-                [70, 70, 70],
-                [80, 80, 80],
-                [90, 90, 90],
-                [100, 100, 100]]
+        data: [ [55, 55, 55],
+                [65, 65, 65],
+                [75, 75, 75],
+                [85, 85, 85],
+                [95, 95, 95]]
       },
       getUnderconfidenceSeries(),
       getOverconfidenceSeries(),
