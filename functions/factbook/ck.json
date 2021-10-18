@@ -1,0 +1,495 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>British captain William KEELING discovered Cocos (Keeling) Islands in 1609 and they were named the Cocos Islands in 1622 for their coconut trees. Some maps began referring to them as the Keeling Islands in 1703. In 1825, Scottish trader John CLUNIES-ROSS was trying to get to Christmas Island but was blown off-course and landed on Cocos (Keeling) Islands. The next year, a British trader hired John’s brother to bring slaves and a harem of Malay women to create the first permanent settlement on the island. By the 1830s, the Clunies-Ross family had firmly established themselves as the leaders of the islands and they ruled Cocos (Keeling) Islands in a feudal style until 1978.<br><br>The UK annexed the islands in 1857 and administered them from Ceylon after 1878 and from Singapore after 1886. Cocos (Keeling) Islands hosted a cable relaying station and was attacked by the Germans in World War I. The Japanese similarly attacked the islands in World War II. The UK transferred the islands to Australia in 1955, which officially named the islands the Cocos (Keeling) Islands, and in 1978, Australia bought all the land held by the Clunies-Ross family, ending their control of the islands’ governance. In a referendum in 1984, most islanders voted to integrate with Australia, and Western Australian laws have applied on the islands since 1992.</p> <p> </p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Southeastern Asia, group of islands in the Indian Ocean, southwest of Indonesia, about halfway between Australia and Sri Lanka"
+    },
+    "Geographic coordinates": {
+      "text": "12 30 S, 96 50 E"
+    },
+    "Map references": {
+      "text": "Southeast Asia"
+    },
+    "Area": {
+      "total": {
+        "text": "14 sq km"
+      },
+      "land": {
+        "text": "14 sq km"
+      },
+      "water": {
+        "text": "0 sq km"
+      },
+      "note": "<strong>note:</strong> includes the two main islands of West Island and Home Island"
+    },
+    "Area - comparative": {
+      "text": "about 24 times the size of The Mall in Washington, DC"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "26 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "exclusive fishing zone": {
+        "text": "200 nm"
+      }
+    },
+    "Climate": {
+      "text": "tropical with high humidity, moderated by the southeast trade winds for about nine months of the year"
+    },
+    "Terrain": {
+      "text": "flat, low-lying coral atolls"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "South Point on South Island 9 m"
+      },
+      "lowest point": {
+        "text": "Indian Ocean 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "fish"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "0% (2018 est.)"
+      },
+      "forest": {
+        "text": "0% (2018 est.)"
+      },
+      "other": {
+        "text": "100% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "NA"
+    },
+    "Population distribution": {
+      "text": "only Home Island and West Island are populated"
+    },
+    "Natural hazards": {
+      "text": "cyclone season is October to April"
+    },
+    "Geography - note": {
+      "text": "<strong>note 1: </strong>there are 27 coral islands in the group; apart from North Keeling Island, which lies 30 km north of the main group, the islands form a horseshoe-shaped atoll surrounding a lagoon; North Keeling Island was declared a national park in 1995 and is administered by Parks Australia; the population on the two inhabited islands generally is split between the ethnic Europeans on West Island and the ethnic Malays on Home Island; the islands are thickly covered with coconut palms and other vegetation<br><br><strong>note 2:</strong> site of a World War I naval battle in November 1914 between the Australian light cruiser HMAS Sydney and the German raider SMS Emden; after being heavily damaged in the engagement, the Emden was beached by her captain on North Keeling Island"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "596 (July 2014 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Cocos Islander(s)"
+      },
+      "adjective": {
+        "text": "Cocos Islander"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Europeans, Cocos Malays"
+    },
+    "Languages": {
+      "Languages": {
+        "text": "Malay (Cocos dialect) 68.8%, English 22.3%, unspecified 8.9%; note - data represent language spoken at home (2016 est.)"
+      },
+      "major-language sample(s)": {
+        "text": "<br>Buku Fakta Dunia, sumber yang diperlukan untuk maklumat asas. (Malay)<br><br>The World Factbook, the indispensable source for basic information."
+      }
+    },
+    "Religions": {
+      "text": "Muslim (predominantly Sunni) 75%, Anglican 3.5%, Roman Catholic 2.2%, none 12.9%, unspecified 6.3% (2016 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "NA"
+      },
+      "15-24 years": {
+        "text": "NA"
+      },
+      "25-54 years": {
+        "text": "NA"
+      },
+      "55-64 years": {
+        "text": "NA"
+      },
+      "65 years and over": {
+        "text": "NA"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "NA"
+      },
+      "youth dependency ratio": {
+        "text": "NA"
+      },
+      "elderly dependency ratio": {
+        "text": "NA"
+      },
+      "potential support ratio": {
+        "text": "NA"
+      }
+    },
+    "Population growth rate": {
+      "text": "NA (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "NA"
+    },
+    "Death rate": {
+      "text": "8.89 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "NA (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "only Home Island and West Island are populated"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "NA"
+      },
+      "male": {
+        "text": "NA"
+      },
+      "female": {
+        "text": "NA (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "NA"
+      },
+      "male": {
+        "text": "NA"
+      },
+      "female": {
+        "text": "NA (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "NA (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: NA"
+      },
+      "improved: rural": {
+        "text": "rural: NA"
+      },
+      "improved: total": {
+        "text": "total: NA"
+      },
+      "unimproved: urban": {
+        "text": "urban: NA"
+      },
+      "unimproved: rural": {
+        "text": "rural: NA"
+      },
+      "unimproved: total": {
+        "text": "total: NA"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "NA"
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "NA"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "freshwater resources are limited to rainwater accumulations in natural underground reservoirs; illegal fishing a concern"
+    },
+    "Climate": {
+      "text": "tropical with high humidity, moderated by the southeast trade winds for about nine months of the year"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "0% (2018 est.)"
+      },
+      "forest": {
+        "text": "0% (2018 est.)"
+      },
+      "other": {
+        "text": "100% (2018 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Territory of Cocos (Keeling) Islands"
+      },
+      "conventional short form": {
+        "text": "Cocos (Keeling) Islands"
+      },
+      "etymology": {
+        "text": "the name refers to the abundant coconut trees on the islands and to English Captain William KEELING, the first European to sight the islands in 1609"
+      }
+    },
+    "Government type": {
+      "text": "non-self-governing overseas territory of Australia"
+    },
+    "Dependency status": {
+      "text": "non-self governing territory of Australia; administered from Canberra by the Department of Infrastructure, Transport, Cities &amp; Regional Development"
+    },
+    "Capital": {
+      "name": {
+        "text": "West Island"
+      },
+      "geographic coordinates": {
+        "text": "12 10 S, 96 50 E"
+      },
+      "time difference": {
+        "text": "UTC+6.5 (11.5 hours ahead of Washington, DC, during Standard Time)"
+      }
+    },
+    "Administrative divisions": {
+      "text": "none (territory of Australia)"
+    },
+    "Independence": {
+      "text": "none (territory of Australia)"
+    },
+    "National holiday": {
+      "text": "Australia Day (commemorates the arrival of the First Fleet of Australian settlers), 26 January (1788)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "23 November 1955 (Cocos (Keeling) Islands Act 1955)"
+      },
+      "amendments": {
+        "text": "amended many times, last in 2020"
+      }
+    },
+    "Legal system": {
+      "text": "common law based on the Australian model"
+    },
+    "Citizenship": {
+      "text": "see Australia"
+    },
+    "Suffrage": {
+      "text": "18 years of age"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "Queen ELIZABETH II (since 6 February 1952); represented by Governor General of the Commonwealth of Australia General David HURLEY (since 1 July 2019)"
+      },
+      "head of government": {
+        "text": "Administrator Natasha GRIGGS (since 5 October 2017)"
+      },
+      "cabinet": {
+        "text": "NA"
+      },
+      "elections/appointments": {
+        "text": "the monarchy is hereditary; governor general appointed by the monarch on the recommendation of the Australian prime minister; administrator appointed by the governor general for a 2-year term and represents the monarch and Australia"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral Cocos (Keeling) Islands Shire Council (7 seats; members directly elected by simple majority vote to serve 4-year terms with half the membership renewed every 2 years)"
+      },
+      "elections": {
+        "text": "last held in October 2017 (next to be held on 31 October 2019)"
+      },
+      "election results": {
+        "text": "percent of vote by party - NA; seats by party - NA; composition - men 5, women 2, percent of women 28.6%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "under the terms of the Territorial Law Reform Act 1992, Western Australia provides court services as needed for the island including the Supreme Court and subordinate courts (District Court, Magistrate Court, Family Court, Children's Court, and Coroners' Court)"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "none"
+    },
+    "International organization participation": {
+      "text": "none"
+    },
+    "Diplomatic representation in the US": {
+      "text": "none (territory of Australia)"
+    },
+    "Diplomatic representation from the US": {
+      "embassy": {
+        "text": "none (territory of Australia)"
+      }
+    },
+    "Flag description": {
+      "text": "the flag of Australia is used"
+    },
+    "National anthem": {
+      "text": "<p><strong>note:</strong> as a territory of Australia, \"Advance Australia Fair\" remains official as the national anthem, while \"God Save the Queen\" serves as the royal anthem (see Australia)</p>"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "Coconuts, grown throughout the islands, are the sole cash crop. Small local gardens and fishing contribute to the food supply, but additional food and most other necessities must be imported from Australia. There is a small tourist industry."
+    },
+    "Real GDP (purchasing power parity)": {
+      "text": "<p>NA</p>"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2003": {
+        "text": "1% (2003)"
+      }
+    },
+    "Agricultural products": {
+      "text": "vegetables, bananas, pawpaws, coconuts"
+    },
+    "Industries": {
+      "text": "copra products, tourism"
+    },
+    "Labor force": {
+      "text": "NA"
+    },
+    "Labor force - by occupation": {
+      "text": "<p><strong>note:</strong> the Cocos Islands Cooperative Society Ltd. employs construction workers, stevedores, and lighterage workers; tourism is the other main source of employment</p>"
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2011": {
+        "text": "0.1% (2011)"
+      },
+      "Unemployment rate 2000": {
+        "text": "60% (2000 est.)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "NA"
+      },
+      "expenditures": {
+        "text": "NA"
+      }
+    },
+    "Fiscal year": {
+      "text": "1 July - 30 June"
+    },
+    "Exports": {
+      "text": "<p>NA</p>"
+    },
+    "Exports - partners": {
+      "text": "United States 57%, Ireland 15% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "computers, packaged medicines, precious metal watches, office machinery/parts, chemical analysis instruments (2019)"
+    },
+    "Imports": {
+      "text": "<p>NA</p>"
+    },
+    "Imports - partners": {
+      "text": "Australia 73%, United Arab Emirates 15%, Netherlands 5% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "gold, x-ray equipment, cars, prefabricated buildings, packaged medicines (2019)"
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "Australian dollars (AUD) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "1.311 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "1.3442 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "1.3442 (2015)"
+      },
+      "Exchange rates 2014": {
+        "text": "1.3291 (2014)"
+      },
+      "Exchange rates 2013": {
+        "text": "1.1094 (2013)"
+      }
+    }
+  },
+  "Communications": {
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "telephone service is part of the Australian network; an operational local mobile-cellular network available; wireless Internet connectivity available"
+      },
+      "domestic": {
+        "text": "local area code - 08"
+      },
+      "international": {
+        "text": "international code - 61 8; telephone, telex, and facsimile communications with Australia and elsewhere via satellite; satellite earth station - 1 (Intelsat)"
+      }
+    },
+    "Broadcast media": {
+      "text": "1 local radio station staffed by community volunteers; satellite broadcasts of several Australian radio and TV stations available (2017)"
+    },
+    "Internet country code": {
+      "text": ".cc"
+    }
+  },
+  "Transportation": {
+    "Airports": {
+      "total": {
+        "text": "1 (2020)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "1"
+      },
+      "2,438 to 3,047 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "22 km (2007)"
+      },
+      "paved": {
+        "text": "10 km (2007)"
+      },
+      "unpaved": {
+        "text": "12 km (2007)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Port Refuge"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military - note": {
+      "text": "defense is the responsibility of Australia"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>none</p>"
+    }
+  }
+}

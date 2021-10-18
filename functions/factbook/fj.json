@@ -1,0 +1,1123 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>Austronesians settled Fiji around 1000 B.C., followed by successive waves of Melanesians starting around the first century A.D. Fijians traded with Polynesian groups in Samoa and Tonga, and by about 900, much of Fiji was in the Tu’i Tongan Empire’s sphere of influence. The Tongan influence declined significantly by 1200 while Melanesian seafarers continued to periodically arrive in Fiji, further mixing Melanesian and Polynesian cultural traditions. Dutch explorer Abel TASMAN was the first European to spot Fiji in 1643, followed by British explorer James COOK in 1774. Captain William BLIGH plotted the islands in 1789. In the 1800s, merchants, traders, and whalers frequented the islands and the first missionaries arrived in 1835. Rival kings and chiefs competed for power, at times aided by Europeans and their weapons, and in 1865, Seru Epenisa CAKOBAU united many groups into the Confederacy of Independent Kingdoms of Viti. The arrangement proved weak and a subsequent attempt in 1871 to centralize power as a Kingdom of Fiji also faltered. Fearing a hostile takeover by a foreign power, CAKOBAU ceded Fiji to the UK in 1874.<br><br>The first British governor set up a plantation-style economy and brought in more than 60,000 Indians as indentured laborers, most of whom chose to stay in Fiji rather than return to India when their contracts expired. In the early 1900s, society was divided along ethnic lines, with iTaukei (indigenous Fijians), Europeans, and Indo-Fijians living in separate areas and maintaining their own languages and traditions. ITaukei fears of an Indo-Fijian takeover of government delayed independence through the 1960s; Fiji achieved independence in 1970 with agreements in place to allocate parliamentary seats by ethnic groups. Long-serving Prime Minister Kamisese MARA largely balanced these ethnic divisions but concerns about growing Indo-Fijian political influence led to two coups in 1987. A new constitution in 1990 cemented iTaukei control of politics, leading thousands of Indo-Fijians to leave. A reformed constitution in 1997 was more equitable and led to the election of an Indo-Fijian prime minister in 1999, who was ousted in a coup the following year. In 2005, the new prime minister put forward a bill that would grant pardons to the coup perpetrators, leading Commodore Josaia BAINIMARAMA to launch a coup in 2006. BAINIMARAMA  appointed himself prime minister in 2007 and continues to hold the position after elections in 2014 and 2018 that international observers deemed credible.<br><br>With well-developed infrastructure, Fiji has become a hub for the Pacific, hosting the secretariat for the Pacific Islands Forum and the main campus of the University of the South Pacific. In addition, Fiji is a center for Pacific tourism, and Nadi International Airport is by far the busiest airport in a pacific island country.</p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Oceania, island group in the South Pacific Ocean, about two-thirds of the way from Hawaii to New Zealand"
+    },
+    "Geographic coordinates": {
+      "text": "18 00 S, 175 00 E"
+    },
+    "Map references": {
+      "text": "Oceania"
+    },
+    "Area": {
+      "total": {
+        "text": "18,274 sq km"
+      },
+      "land": {
+        "text": "18,274 sq km"
+      },
+      "water": {
+        "text": "0 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly smaller than New Jersey"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "1,129 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      },
+      "continental shelf": {
+        "text": "200-m depth or to the depth of exploitation"
+      },
+      "note": "measured from claimed archipelagic straight baselines"
+    },
+    "Climate": {
+      "text": "tropical marine; only slight seasonal temperature variation"
+    },
+    "Terrain": {
+      "text": "mostly mountains of volcanic origin"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Tomanivi 1,324 m"
+      },
+      "lowest point": {
+        "text": "Pacific Ocean 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "timber, fish, gold, copper, offshore oil potential, hydropower"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "23.3% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 9% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 4.7% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9.6% (2018 est.)"
+      },
+      "forest": {
+        "text": "55.7% (2018 est.)"
+      },
+      "other": {
+        "text": "21% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "40 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "approximately 70% of the population lives on the island of Viti Levu; roughly half of the population lives in urban areas"
+    },
+    "Natural hazards": {
+      "text": "cyclonic storms can occur from November to January"
+    },
+    "Geography - note": {
+      "text": "consists of 332 islands, approximately 110 of which are inhabited, and more than 500 islets"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "939,535 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Fijian(s)"
+      },
+      "adjective": {
+        "text": "Fijian"
+      }
+    },
+    "Ethnic groups": {
+      "text": "iTaukei 56.8% (predominantly Melanesian with a Polynesian admixture), Indo-Fijian 37.5%, Rotuman 1.2%, other 4.5% (European, part European, other Pacific Islanders, Chinese) (2007 est.)",
+      "note": "<strong>note:</strong> a 2010 law replaces 'Fijian' with 'iTaukei' when referring to the original and native settlers of Fiji"
+    },
+    "Languages": {
+      "text": "English (official), iTaukei (official), Fiji Hindi (official)"
+    },
+    "Religions": {
+      "text": "Protestant 45% (Methodist 34.6%, Assembly of God 5.7%, Seventh Day Adventist 3.9%, and Anglican 0.8%), Hindu 27.9%, other Christian 10.4%, Roman Catholic 9.1%, Muslim 6.3%, Sikh 0.3%, other 0.3%, none 0.8% (2007 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "26.86% (male 128,499/female 122,873)"
+      },
+      "15-24 years": {
+        "text": "15.51% (male 73,993/female 71,139)"
+      },
+      "25-54 years": {
+        "text": "41.05% (male 196,932/female 187,270)"
+      },
+      "55-64 years": {
+        "text": "9.25% (male 43,813/female 42,763)"
+      },
+      "65 years and over": {
+        "text": "7.34% (male 31,556/female 37,136) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "53.4"
+      },
+      "youth dependency ratio": {
+        "text": "44.5"
+      },
+      "elderly dependency ratio": {
+        "text": "8.9"
+      },
+      "potential support ratio": {
+        "text": "11.2 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "29.9 years"
+      },
+      "male": {
+        "text": "29.7 years"
+      },
+      "female": {
+        "text": "30.1 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "0.46% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "16.9 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "6.31 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-6.02 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "approximately 70% of the population lives on the island of Viti Levu; roughly half of the population lives in urban areas"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "57.7% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "1.37% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "178,000 SUVA (capital) (2018)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.05 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.04 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.02 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.85 male(s)/female"
+      },
+      "total population": {
+        "text": "1.03 male(s)/female (2020 est.)"
+      }
+    },
+    "Maternal mortality ratio": {
+      "text": "34 deaths/100,000 live births (2017 est.)"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "10.27 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "11.84 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "8.63 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "74 years"
+      },
+      "male": {
+        "text": "71.32 years"
+      },
+      "female": {
+        "text": "76.82 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "2.28 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 97.8% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 88.7% of population"
+      },
+      "improved: total": {
+        "text": "total: 93.8% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 2.2% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 11.3% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 6.2% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "3.4% (2018)"
+    },
+    "Physicians density": {
+      "text": "0.86 physicians/1,000 population (2015)"
+    },
+    "Hospital bed density": {
+      "text": "2 beds/1,000 population (2016)"
+    },
+    "Sanitation facility access": {
+      "improved: urban": {
+        "text": "urban: 94% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 89% of population"
+      },
+      "improved: total": {
+        "text": "total: 98% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 6% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 11% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 2% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "0.2% (2020 est.)"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "1,300 (2020 est.)"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "<100 (2020 est.)"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea"
+      },
+      "vectorborne diseases": {
+        "text": "malaria"
+      }
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "30.2% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "5.1% of GDP (2019)"
+    },
+    "Literacy": {
+      "total population": {
+        "text": "99.1%"
+      },
+      "male": {
+        "text": "99.1%"
+      },
+      "female": {
+        "text": "99.1% (2018)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "15.4%"
+      },
+      "male": {
+        "text": "11.9%"
+      },
+      "female": {
+        "text": "22.4% (2016 est.)"
+      }
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "the widespread practice of waste incineration is a major contributor to air pollution in the country, as are vehicle emissions in urban areas; deforestation and soil erosion are significant problems; a contributory factor to erosion is clearing of land by bush burning, a widespread practie that threatens biodiversity"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Comprehensive Nuclear Test Ban, Desertification, Endangered Species, Law of the Sea, Marine Life Conservation, Nuclear Test Ban, Ozone Layer Protection, Ship Pollution, Tropical Timber 2006, Wetlands"
+      },
+      "signed, but not ratified": {
+        "text": "none of the selected agreements"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "10.19 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "2.05 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "0.95 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "25.3 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "9.6 million cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "50 million cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "28.55 billion cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical marine; only slight seasonal temperature variation"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "23.3% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 9% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 4.7% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9.6% (2018 est.)"
+      },
+      "forest": {
+        "text": "55.7% (2018 est.)"
+      },
+      "other": {
+        "text": "21% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0.59% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "57.7% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "1.37% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea"
+      },
+      "vectorborne diseases": {
+        "text": "malaria"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "189,390 tons (2011 est.)"
+      },
+      "municipal solid waste recycled annually": {
+        "text": "10,322 tons (2013 est.)"
+      },
+      "percent of municipal solid waste recycled": {
+        "text": "5.5% (2013 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Republic of Fiji"
+      },
+      "conventional short form": {
+        "text": "Fiji"
+      },
+      "local long form": {
+        "text": "Republic of Fiji/Matanitu ko Viti"
+      },
+      "local short form": {
+        "text": "Fiji/Viti"
+      },
+      "etymology": {
+        "text": "the Fijians called their home Viti, but the neighboring Tongans called it Fisi, and in the Anglicized spelling of the Tongan pronunciation - promulgated by explorer Captain James COOK - the designation became Fiji"
+      }
+    },
+    "Government type": {
+      "text": "parliamentary republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Suva (on Viti Levu)"
+      },
+      "geographic coordinates": {
+        "text": "18 08 S, 178 25 E"
+      },
+      "time difference": {
+        "text": "UTC+12 (17 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "daylight saving time": {
+        "text": "+1hr, begins first Sunday in November; ends second Sunday in January"
+      },
+      "etymology": {
+        "text": "the name means \"little hill\" in the native Fijian (iTaukei) language and refers to a mound where a temple once stood"
+      }
+    },
+    "Administrative divisions": {
+      "text": "14 provinces and 1 dependency*; Ba, Bua, Cakaudrove, Kadavu, Lau, Lomaiviti, Macuata, Nadroga and Navosa, Naitasiri, Namosi, Ra, Rewa, Rotuma*, Serua, Tailevu"
+    },
+    "Independence": {
+      "text": "10 October 1970 (from the UK)"
+    },
+    "National holiday": {
+      "text": "Fiji (Independence) Day, 10 October (1970)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "several previous; latest signed into law 6 September 2013"
+      },
+      "amendments": {
+        "text": "proposed as a bill by Parliament and supported by at least three quarters of its members, followed by referral to the president and then to the Electoral Commission, which conducts a referendum; passage requires approval by at least three-quarters of registered voters and assent by the president"
+      }
+    },
+    "Legal system": {
+      "text": "common law system based on the English model"
+    },
+    "International law organization participation": {
+      "text": "has not submitted an ICJ jurisdiction declaration; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "at least one parent must be a citizen of Fiji"
+      },
+      "dual citizenship recognized": {
+        "text": "yes"
+      },
+      "residency requirement for naturalization": {
+        "text": "at least 5 years residency out of the 10 years preceding application"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Jioji Konousi KONROTE (since 12 November 2015)"
+      },
+      "head of government": {
+        "text": "Prime Minister Voreqe \"Frank\" BAINIMARAMA (since 22 September 2014)"
+      },
+      "cabinet": {
+        "text": "Cabinet appointed by the prime minister from among members of Parliament and is responsible to Parliament"
+      },
+      "elections/appointments": {
+        "text": "president elected by Parliament for a 3-year term (eligible for a second term); election last held on 31 August 2018 (next to be held in 2021); prime minister endorsed by the president"
+      },
+      "election results": {
+        "text": "Jioji Konousi KONROTE reelected president (unopposed)"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral Parliament (51 seats; members directly elected in a nationwide, multi-seat constituency by open-list proportional representation vote to serve 4-year terms)"
+      },
+      "elections": {
+        "text": "last held on 14 November 2018 (next to be held in 2022)"
+      },
+      "election results": {
+        "text": "percent of vote by party - FijiFirst 50%, SODELPA 39.6%, NFP 7.4%; seats by party - FijiFirst 27, SODELPA 21, NFP 3; composition - men 41, women 10, percent of women 19.6%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme Court (consists of the chief justice, all justices of the Court of Appeal, and judges appointed specifically as Supreme Court judges); Court of Appeal (consists of the court president, all puisne judges of the High Court, and judges specifically appointed to the Court of Appeal); High Court (chaired by the chief justice and includes a minimum of 10 puisne judges; High Court organized into civil, criminal, family, employment, and tax divisions)"
+      },
+      "judge selection and term of office": {
+        "text": "chief justice appointed by the president of Fiji on the advice of the prime minister following consultation with the parliamentary leader of the opposition; judges of the Supreme Court, the president of the Court of Appeal, the justices of the Court of Appeal, and puisne judges of the High Court appointed by the president of Fiji upon the nomination of the Judicial Service Commission after consulting with the cabinet minister and the committee of the House of Representatives responsible for the administration of justice; the chief justice, Supreme Court judges and justices of Appeal generally required to retire at age 70, but this requirement may be waived for one or more sessions of the court; puisne judges appointed for not less than 4 years nor more than 7 years, with mandatory retirement at age 65"
+      },
+      "subordinate courts": {
+        "text": "Magistrates' Court (organized into civil, criminal, juvenile, and small claims divisions)"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "FijiFirst [Veroqe \"Frank\" BAINIMARAMA]<br>Fiji Labor Party or FLP [Mahendra CHAUDHRY]<br>Fiji United Freedon Party or FUFP [Jagath KARUNARATNE]<br>National Federation Party or NFP [Biman PRASAD] (primarily Indian)<br>Peoples Democratic Party or PDP [Lynda TABUYA]<br>Social Democratic Liberal Party or SODELPA<br>Unity Fiji [Adi QORO]"
+    },
+    "International organization participation": {
+      "text": "ACP, ADB, AOSIS, C, CP, FAO, G-77, IAEA, IBRD, ICAO, ICCt, ICRM, IDA, IFAD, IFC, IFRCS, IHO, ILO, IMF, IMO, Interpol, IOC, IOM, ISO, ITSO, ITU, ITUC (NGOs), MIGA, OPCW, PCA, PIF, Sparteca (suspended), SPC, UN, UNCTAD, UNDOF, UNESCO, UNIDO, UNMISS, UNWTO, UPU, WCO, WFTU (NGOs), WHO, WIPO, WMO, WTO"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador (vacant); Charge d'Affaires Akuila VUIRA"
+      },
+      "chancery": {
+        "text": "1707 L Street NW, Suite 200, Washington, DC 20036"
+      },
+      "telephone": {
+        "text": "[1] (202) 466-8320"
+      },
+      "FAX": {
+        "text": "[1] (202) 466-8325"
+      },
+      "email address and website": {
+        "text": "<br>info@FijiEmbassyDC.com<br><br>https://www.fijiembassydc.com/"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador (vacant); Charge d'Affaires Tony GREUBEL (since 20 January 2021); note - also accredited to Kiribati, Nauru, Tonga, and Tuvalu"
+      },
+      "embassy": {
+        "text": "158 Princes Road, Tamavua, Suva"
+      },
+      "mailing address": {
+        "text": "4290 Suva Place, Washington DC&nbsp; 20521-4290"
+      },
+      "telephone": {
+        "text": "[679] 331-4466"
+      },
+      "FAX": {
+        "text": "[679] 330-2267"
+      },
+      "email address and website": {
+        "text": "<br>SuvaACS@state.gov<br><br>https://fj.usembassy.gov/"
+      }
+    },
+    "Flag description": {
+      "text": "light blue with the flag of the UK in the upper hoist-side quadrant and the Fijian shield centered on the outer half of the flag; the blue symbolizes the Pacific Ocean and the Union Jack reflects the links with Great Britain; the shield - taken from Fiji's coat of arms - depicts a yellow lion, holding a coconut pod between its paws, above a white field quartered by the cross of Saint George; the four quarters depict stalks of sugarcane, a palm tree, a banana bunch, and a white dove of peace"
+    },
+    "National symbol(s)": {
+      "text": "Fijian canoe; national color: light blue"
+    },
+    "National anthem": {
+      "name": {
+        "text": "God Bless Fiji"
+      },
+      "lyrics/music": {
+        "text": "Michael Francis Alexander PRESCOTT/C. Austin MILES (adapted by Michael Francis Alexander PRESCOTT)"
+      },
+      "note": "<strong>note:</strong> adopted 1970; known in Fijian as \"Meda Dau Doka\" (Let Us Show Pride); adapted from the hymn, \"Dwelling in Beulah Land,\" the anthem's English lyrics are generally sung, although they differ in meaning from the official Fijian lyrics"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Fiji, endowed with forest, mineral, and fish resources, is one of the most developed and connected of the Pacific island economies. Earnings from the tourism industry, with an estimated 842,884 tourists visiting in 2017, and remittances from Fijian’s working abroad are the country’s largest foreign exchange earners.</p><p></p><p>Bottled water exports to the US is Fiji’s largest domestic export. Fiji's sugar sector remains a significant industry and a major export, but crops and one of the sugar mills suffered damage during Cyclone Winston in 2016. Fiji’s trade imbalance continues to widen with increased imports and sluggish performance of domestic exports.</p><p></p><p>The return to parliamentary democracy and successful elections in September 2014 improved investor confidence, but increasing bureaucratic regulation, new taxes, and lack of consultation with relevant stakeholders brought four consecutive years of decline for Fiji on the World Bank Ease of Doing Business index. Private sector investment in 2017 approached 20% of GDP, compared to 13% in 2013.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$12.178 billion (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$12.232 billion (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$11.783 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "3% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "0.7% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "3.8% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$13,684 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$13,846 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$13,429 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$4.891 billion (2017 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "3.4% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "3.9% (2016 est.)"
+      }
+    },
+    "Credit ratings": {
+      "Moody's rating": {
+        "text": "Ba3 (2017)"
+      },
+      "Standard & Poors rating": {
+        "text": "BB- (2019)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "13.5% (2017 est.)"
+      },
+      "industry": {
+        "text": "17.4% (2017 est.)"
+      },
+      "services": {
+        "text": "69.1% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "81.3% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "24.4% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "16.9% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "29% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-51.6% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "sugar cane, cassava, taro, poultry, vegetables, coconuts, eggs, milk, ginger, sweet potatoes"
+    },
+    "Industries": {
+      "text": "tourism, sugar processing, clothing, copra, gold, silver, lumber"
+    },
+    "Industrial production growth rate": {
+      "text": "2.8% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "353,100 (2017 est.)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "44.2%"
+      },
+      "industry": {
+        "text": "14.3%"
+      },
+      "services": {
+        "text": "41.6% (2011)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2017": {
+        "text": "4.5% (2017 est.)"
+      },
+      "Unemployment rate 2016": {
+        "text": "5.5% (2016 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "29.9% (2019 est.)"
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "Gini Index coefficient - distribution of family income 2013": {
+        "text": "36.7 (2013 est.)"
+      }
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "2.6%"
+      },
+      "highest 10%": {
+        "text": "34.9% (2009 est.)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "1.454 billion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "1.648 billion (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-4% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "48.9% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "47.5% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "29.7% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$277 million (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "-$131 million (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$908.2 million (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$709 million (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "United States 29%, Australia 14%, New Zealand 7%, Japan 6%, Tonga 6% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "water, refined petroleum, fish, raw sugar, gold (2019)"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$1.911 billion (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$1.761 billion (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "Singapore 18%, Australia 13%, China 13.8%, New Zealand 11%, France 11%, South Korea 8% (2017)"
+    },
+    "Imports - commodities": {
+      "text": "refined petroleum, aircraft, cars, wheat, broadcasting equipment (2019)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$1.116 billion (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "text": "$908.6 million (31 December 2016 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 31 December 2017": {
+        "text": "$1.022 billion (31 December 2017 est.)"
+      },
+      "Debt - external 31 December 2016": {
+        "text": "$696.4 million (31 December 2016 est.)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "Fijian dollars (FJD) per US dollar -"
+      },
+      "Exchange rates 2020": {
+        "text": "2.05955 (2020 est.)"
+      },
+      "Exchange rates 2019": {
+        "text": "2.17345 (2019 est.)"
+      },
+      "Exchange rates 2018": {
+        "text": "2.1104 (2018 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "2.0976 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "1.8874 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "99.6% (2018)"
+      },
+      "electrification - urban areas": {
+        "text": "100% (2018)"
+      },
+      "electrification - rural areas": {
+        "text": "99.2% (2018)"
+      }
+    },
+    "Electricity - production": {
+      "text": "914 million kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "850 million kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "338,000 kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "34% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "38% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "27% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "16,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "17,460 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "80,650"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "8.66 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "1,097,345"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "117.83 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "<p>Fiji has a relatively sophisticated communications infrastructure with the highest mobile and Internet penetration in the Pacific Islands; aggressively developing LTE and 5G, though the pandemic negatively affected the economy, largely reliant on tourism; population is spread across more than 100 islands, yet most live on two main islands, with communications based on link by a submarine cable system; cables provide a secure link during natural disasters, protecting telecom connectivity; provider plans to expand fiber infrastructure to remote islands (2021)</p> (2020)"
+      },
+      "domestic": {
+        "text": "fixed-line 9 per 100 persons and mobile-cellular teledensity roughly 118 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 679; landing points for the ICN1, SCCN, Southern Cross NEXT, Tonga Cable and Tui-Samoa&nbsp;submarine cable links&nbsp;to US,&nbsp;NZ, Australia and Pacific islands of Fiji, Vanuatu, Kiribati, Samoa, Tokelau, Tonga, Fallis &amp; Futuna, and American Samoa; satellite earth stations - 2 Inmarsat (Pacific Ocean) (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "Fiji TV, a publicly traded company, operates a free-to-air channel; Digicel Fiji operates the Sky Fiji and Sky Pacific multi-channel pay-TV services; state-owned commercial company, Fiji Broadcasting Corporation, Ltd, operates 6 radio stations - 2 public broadcasters and 4 commercial broadcasters with multiple repeaters; 5 radio stations with repeaters operated by Communications Fiji, Ltd; transmissions of multiple international broadcasters are available"
+    },
+    "Internet country code": {
+      "text": ".fj"
+    },
+    "Internet users": {
+      "total": {
+        "text": "462,860"
+      },
+      "percent of population": {
+        "text": "49.97% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "13,033"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "1 (2018 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "2 (2020)"
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "text": "16"
+      },
+      "annual passenger traffic on registered air carriers": {
+        "text": "1,670,216 (2018)"
+      },
+      "annual freight traffic on registered air carriers": {
+        "text": "106.83 million mt-km (2018)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "DQ"
+    },
+    "Airports": {
+      "total": {
+        "text": "28 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "4"
+      },
+      "over 3,047 m": {
+        "text": "1"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1"
+      },
+      "914 to 1,523 m": {
+        "text": "2 (2017)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "24"
+      },
+      "914 to 1,523 m": {
+        "text": "5"
+      },
+      "under 914 m": {
+        "text": "19 (2013)"
+      }
+    },
+    "Railways": {
+      "total": {
+        "text": "597 km (2008)"
+      },
+      "narrow gauge": {
+        "text": "597 km 0.600-m gauge (2008)"
+      },
+      "note": "<strong>note:</strong> belongs to the government-owned Fiji Sugar Corporation; used to haul sugarcane during the harvest season, which runs from May to December"
+    },
+    "Roadways": {
+      "total": {
+        "text": "3,440 km (2011)"
+      },
+      "paved": {
+        "text": "1,686 km (2011)"
+      },
+      "unpaved": {
+        "text": "1,754 km (2011)"
+      }
+    },
+    "Waterways": {
+      "text": "203 km (122 km are navigable by motorized craft and 200-metric-ton barges) (2012)"
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "70"
+      },
+      "by type": {
+        "text": "general cargo 18, oil tanker 4, other 48 (2020)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Lautoka, Levuka, Suva"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Republic of Fiji Military Forces (RFMF): Land Force Command, Maritime Command (2021)"
+    },
+    "Military expenditures": {
+      "Military Expenditures 2020": {
+        "text": "1.4% of GDP (2020 est.)"
+      },
+      "Military Expenditures 2019": {
+        "text": "1.6% of GDP (2019)"
+      },
+      "Military Expenditures 2018": {
+        "text": "1.6% of GDP (2018)"
+      },
+      "Military Expenditures 2017": {
+        "text": "1.5% of GDP (2017)"
+      },
+      "Military Expenditures 2016": {
+        "text": "1.2% of GDP (2016)"
+      }
+    },
+    "Military and security service personnel strengths": {
+      "text": "the<strong> </strong>Republic of Fiji Military Forces (RFMF) have about 3,500 personnel (3,200 Land Force; 300 Maritime Command) (2020)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the RFMF is lightly armed and equipped; Australia has provided patrol boats and a few armored personnel carriers; it also provides logistical support for RFMF regional or UN operations; in recent years, China has provided construction equipment and military vehicles (2020)"
+    },
+    "Military deployments": {
+      "text": "170 Egypt (MFO); 160 Iraq (UNAMI); 130 Golan Heights (UNDOF) (2021)"
+    },
+    "Military service age and obligation": {
+      "text": "18 years of age for voluntary military service; mandatory retirement at age 55 (2013)"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "maritime boundary dispute with Tonga"
+    },
+    "Trafficking in persons": {
+      "current situation": {
+        "text": "human traffickers exploit domestic and foreign victims in Fiji and Fijians abroad; Fijian women and children and victims from Thailand and China are sex trafficked in illegal brothels, local hotels, private homes, and massage parlors; Fijian children sent to live with families in larger cities are vulnerable to forced labor or sexual activity in exchange for food, clothing, shelter, or school fees; labor traffickers exploit Southeast Asian workers on small informal farms and factories and in construction; Southeast Asian fisherman may be subject to forced labor on Fijian-flagged ships or foreign-flagged ships transiting Fijian ports and water"
+      },
+      "tier rating": {
+        "text": "Tier 2 Watch List &mdash; Fiji does not fully meet the minimum standards for the elimination of trafficking but is making significant efforts to do so; authorities maintained anti-trafficking law enforcement, investigating a similar number of cases as the prior year and convicting a trafficker for the first time since 2014; a government-convened working group finalized an updated anti-trafficking national action plan; however, the government did not demonstrate overall increasing efforts; law enforcement was often unaware of the definition of trafficking, procedures for interviewing victims, and how to proactively screen vulnerable populations for trafficking victims; inspectors did not adequately investigate labor violations for trafficking indicators or provide adequate support to victims (2020)"
+      }
+    }
+  }
+}

@@ -1,0 +1,977 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "The Siboney were the first people to inhabit the islands of Antigua and Barbuda in 2400 B.C., but Arawak Indians populated the islands when COLUMBUS landed on his second voyage in 1493. Early Spanish and French settlements were succeeded by an English colony in 1667. Slavery, established to run the sugar plantations on Antigua, was abolished in 1834. The islands became an independent state within the British Commonwealth of Nations in 1981. On 6 September 2017, Hurricane Irma passed over the island of Barbuda devastating the island and forcing the evacuation of the population to Antigua. Almost all the structures on Barbuda were destroyed and the vegetation stripped, but Antigua was spared the worst."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Caribbean, islands between the Caribbean Sea and the North Atlantic Ocean, east-southeast of Puerto Rico"
+    },
+    "Geographic coordinates": {
+      "text": "17 03 N, 61 48 W"
+    },
+    "Map references": {
+      "text": "Central America and the Caribbean"
+    },
+    "Area": {
+      "total": {
+        "text": "443 sq km (Antigua 280 sq km; Barbuda 161 sq km)"
+      },
+      "land": {
+        "text": "442.6 sq km"
+      },
+      "water": {
+        "text": "0 sq km"
+      },
+      "note": "<strong>note:</strong> includes Redonda, 1.6 sq km"
+    },
+    "Area - comparative": {
+      "text": "2.5 times the size of Washington, DC"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "153 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      },
+      "continental shelf": {
+        "text": "200 nm or to the edge of the continental margin"
+      }
+    },
+    "Climate": {
+      "text": "tropical maritime; little seasonal temperature variation"
+    },
+    "Terrain": {
+      "text": "mostly low-lying limestone and coral islands, with some higher volcanic areas"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Mount Obama 402 m"
+      },
+      "lowest point": {
+        "text": "Caribbean Sea 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "NEGL; pleasant climate fosters tourism"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "20.5% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 9% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 2.3% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9% (2018 est.)"
+      },
+      "forest": {
+        "text": "18.8% (2018 est.)"
+      },
+      "other": {
+        "text": "60.8% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "1.3 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "the island of Antigua is home to approximately 97% of the population; nearly the entire population of Barbuda lives in Codrington"
+    },
+    "Natural hazards": {
+      "text": "hurricanes and tropical storms (July to October); periodic droughts"
+    },
+    "Geography - note": {
+      "text": "Antigua has a deeply indented shoreline with many natural harbors and beaches; Barbuda has a large western harbor"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "99,175 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Antiguan(s), Barbudan(s)"
+      },
+      "adjective": {
+        "text": "Antiguan, Barbudan"
+      }
+    },
+    "Ethnic groups": {
+      "text": "African descent 87.3%, mixed 4.7%, Hispanic 2.7%, White 1.6%, other 2.7%, unspecified 0.9% (2011 est.)",
+      "note": "<strong>note:</strong> data represent population by ethnic group"
+    },
+    "Languages": {
+      "text": "English (official), Antiguan creole"
+    },
+    "Religions": {
+      "text": "Protestant 68.3% (Anglican 17.6%, Seventh Day Adventist 12.4%, Pentecostal 12.2%, Moravian 8.3%, Methodist 5.6%, Wesleyan Holiness 4.5%, Church of God 4.1%, Baptist 3.6%), Roman Catholic 8.2%, other 12.2%, unspecified 5.5%, none 5.9% (2011 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "22.52% (male 11,243/female 10,871)"
+      },
+      "15-24 years": {
+        "text": "16.15% (male 7,891/female 7,961)"
+      },
+      "25-54 years": {
+        "text": "41.68% (male 18,757/female 22,167)"
+      },
+      "55-64 years": {
+        "text": "10.74% (male 4,693/female 5,848)"
+      },
+      "65 years and over": {
+        "text": "8.91% (male 3,736/female 5,012) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "45.3"
+      },
+      "youth dependency ratio": {
+        "text": "31.8"
+      },
+      "elderly dependency ratio": {
+        "text": "13.6"
+      },
+      "potential support ratio": {
+        "text": "7.4 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "32.7 years"
+      },
+      "male": {
+        "text": "30.7 years"
+      },
+      "female": {
+        "text": "34.4 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "1.17% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "15.3 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "5.63 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "2.06 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "the island of Antigua is home to approximately 97% of the population; nearly the entire population of Barbuda lives in Codrington"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "24.4% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0.87% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "21,000 SAINT JOHN'S (capital) (2018)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.05 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "0.99 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "0.85 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "0.8 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.75 male(s)/female"
+      },
+      "total population": {
+        "text": "0.89 male(s)/female (2020 est.)"
+      }
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "14.65 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "17.71 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "11.44 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "77.55 years"
+      },
+      "male": {
+        "text": "75.37 years"
+      },
+      "female": {
+        "text": "79.85 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "1.96 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: total": {
+        "text": "total: 96.7% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 3.2% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "5.2% (2018)"
+    },
+    "Physicians density": {
+      "text": "2.96 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "2.9 beds/1,000 population (2017)"
+    },
+    "Sanitation facility access": {
+      "improved: total": {
+        "text": "total: 91.7% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 8.1% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "1.1% (2018)"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "<1,000 (2018)"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "<100 (2018)"
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "18.9% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "3.3% of GDP (2020)"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over has completed five or more years of schooling"
+      },
+      "total population": {
+        "text": "99%"
+      },
+      "male": {
+        "text": "98.4%"
+      },
+      "female": {
+        "text": "99.4% (2015)"
+      }
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "15 years"
+      },
+      "male": {
+        "text": "14 years"
+      },
+      "female": {
+        "text": "16 years (2012)"
+      }
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "water management - a major concern because of limited natural freshwater resources - is further hampered by the clearing of trees to increase crop production, causing rainfall to run off quickly"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Comprehensive Nuclear Test Ban, Desertification, Endangered Species, Environmental Modification, Hazardous Wastes, Law of the Sea, Marine Dumping-London Convention, Marine Dumping-London Protocol, Nuclear Test Ban, Ozone Layer Protection, Ship Pollution, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "none of the selected agreements"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "17.92 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "0.56 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "0.22 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "7.2 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "2.5 million cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "1.8 million cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "52 million cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical maritime; little seasonal temperature variation"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "20.5% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 9% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 2.3% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9% (2018 est.)"
+      },
+      "forest": {
+        "text": "18.8% (2018 est.)"
+      },
+      "other": {
+        "text": "60.8% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "24.4% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0.87% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "30,585 tons (2012 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "none"
+      },
+      "conventional short form": {
+        "text": "Antigua and Barbuda"
+      },
+      "etymology": {
+        "text": "\"antiguo\" is Spanish for \"ancient\" or \"old\"; the island was discovered by Christopher COLUMBUS in 1493 and, according to tradition, named by him after the church of Santa Maria la Antigua (Old Saint Mary's) in Seville; \"barbuda\" is Spanish for \"bearded\" and the adjective may refer to the alleged beards of the indigenous people or to the island's bearded fig trees"
+      }
+    },
+    "Government type": {
+      "text": "parliamentary democracy under a constitutional monarchy; a Commonwealth realm"
+    },
+    "Capital": {
+      "name": {
+        "text": "Saint John's"
+      },
+      "geographic coordinates": {
+        "text": "17 07 N, 61 51 W"
+      },
+      "time difference": {
+        "text": "UTC-4 (1 hour ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "named after Saint John the Apostle"
+      }
+    },
+    "Administrative divisions": {
+      "text": "6 parishes and 2 dependencies*; Barbuda*, Redonda*, Saint George, Saint John, Saint Mary, Saint Paul, Saint Peter, Saint Philip"
+    },
+    "Independence": {
+      "text": "1 November 1981 (from the UK)"
+    },
+    "National holiday": {
+      "text": "Independence Day, 1 November (1981)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "several previous; latest presented 31 July 1981, effective 31 October 1981 (The Antigua and Barbuda Constitution Order 1981)"
+      },
+      "amendments": {
+        "text": "proposed by either house of Parliament; passage of amendments to constitutional sections such as citizenship, fundamental rights and freedoms, the establishment, power, and authority of the executive and legislative branches, the Supreme Court Order, and the procedure for amending the constitution requires approval by at least two-thirds majority vote of the membership of both houses, approval by at least two-thirds majority in a referendum, and assent to by the governor general; passage of other amendments requires only two-thirds majority vote by both houses; amended 2009, 2011, 2018"
+      }
+    },
+    "Legal system": {
+      "text": "common law based on the English model"
+    },
+    "International law organization participation": {
+      "text": "has not submitted an ICJ jurisdiction declaration; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "yes"
+      },
+      "citizenship by descent only": {
+        "text": "yes"
+      },
+      "dual citizenship recognized": {
+        "text": "yes"
+      },
+      "residency requirement for naturalization": {
+        "text": "7 years"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "Queen ELIZABETH II (since 6 February 1952); represented by Governor General Rodney WILLIAMS (since 14 August 2014)"
+      },
+      "head of government": {
+        "text": "Prime Minister Gaston BROWNE (since 13 June 2014)"
+      },
+      "cabinet": {
+        "text": "Council of Ministers appointed by the governor general on the advice of the prime minister"
+      },
+      "elections/appointments": {
+        "text": "the monarchy is hereditary; governor general appointed by the monarch on the advice of the prime minister; following legislative elections, the leader of the majority party or majority coalition usually appointed prime minister by the governor general"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "bicameral Parliament consists of:<br>Senate (17 seats; members appointed by the governor general)<br>House of Representatives (18 seats; members directly elected in single-seat constituencies by simple majority vote to serve 5-year terms)"
+      },
+      "elections": {
+        "text": "<br>Senate - last appointed on 26 March 2018 (next NA)<br>House of Representatives - last held on 21 March 2018 (next to be held in March 2023)"
+      },
+      "election results": {
+        "text": "<br>Senate -  composition - men 8, women 9, percent of women 52.9%<br>House of Representatives - percent of vote by party - ABLP 59.4%, UPP 37.2%, BPM 1.4%, other 1.9% ; seats by party - ABLP 15, UPP 1, BPM 1; composition - men 16, women 2, percent of women 11.1%; note - total Parliament percent of women 31.4%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "the Eastern Caribbean Supreme Court (ECSC) is the superior court of the Organization of Eastern Caribbean States; the ECSC - headquartered on St. Lucia - consists of the Court of Appeal - headed by the chief justice and 4 judges - and the High Court with 18 judges; the Court of Appeal is itinerant, travelling to member states on a schedule to hear appeals from the High Court and subordinate courts; High Court judges reside in the member states, with 2 assigned to Antigua and Barbuda"
+      },
+      "judge selection and term of office": {
+        "text": "chief justice of Eastern Caribbean Supreme Court appointed by the Her Majesty, Queen ELIZABETH II; other justices and judges appointed by the Judicial and Legal Services Commission; Court of Appeal justices appointed for life with mandatory retirement at age 65; High Court judges appointed for life with mandatory retirement at age 62"
+      },
+      "subordinate courts": {
+        "text": "Industrial Court; Magistrates' Courts"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "Antigua Caribbean Liberation Movement or ACLM<br>Antigua Labor Party or ABLP [Gaston BROWNE]<br>Antigua Barbuda True Labor Party or ABTLP [Sharlene SAMUEL]<br>Barbuda People's Movement or BPM [Trevor WALKER]<br>Barbuda People's Movement for Change [Arthur NIBBS]<br>Barbudans for a Better Barbuda [Ordrick SAMUEL]<br>Democratic National Alliance or DNA [Joanne MASSIAH]<br>Go Green for Life [Owen GEORGE]<br>Progressive Labor Movement or PLM<br>United National Democratic Party or UNDP<br>United Progressive Party or UPP [Harold LOVELL] (a coalition of ACLM, PLM, UNDP)"
+    },
+    "International organization participation": {
+      "text": "ACP, AOSIS, C, Caricom, CDB, CELAC, FAO, G-77, IBRD, ICAO, ICC (NGOs), ICCt, ICRM, IDA, IFAD, IFC, IFRCS, ILO, IMF, IMO, IMSO, Interpol, IOC, IOM, ISO (subscriber), ITU, ITUC (NGOs), MIGA, NAM (observer), OAS, OECS, OPANAL, OPCW, Petrocaribe, UN, UNCTAD, UNESCO, UPU, WFTU (NGOs), WHO, WIPO, WMO, WTO"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador Sir Ronald SANDERS (since 17 September 2015)"
+      },
+      "chancery": {
+        "text": "3234 Prospect Street NW, Washington, DC 20007"
+      },
+      "telephone": {
+        "text": "[1] (202) 362-5122"
+      },
+      "FAX": {
+        "text": "[1] (202) 362-5225"
+      },
+      "email address and website": {
+        "text": "<br>embantbar@aol.com"
+      },
+      "consulate(s) general": {
+        "text": "Miami, New York"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "embassy": {
+        "text": "the US does not have an embassy in Antigua and Barbuda; the US Ambassador to Barbados is accredited to Antigua and Barbuda; [1] (246) 227-4000"
+      }
+    },
+    "Flag description": {
+      "text": "red, with an inverted isosceles triangle based on the top edge of the flag; the triangle contains three horizontal bands of black (top), light blue, and white, with a yellow rising sun in the black band; the sun symbolizes the dawn of a new era, black represents the African heritage of most of the population, blue is for hope, and red is for the dynamism of the people; the \"V\" stands for victory; the successive yellow, blue, and white coloring is also meant to evoke the country's tourist attractions of sun, sea, and sand"
+    },
+    "National symbol(s)": {
+      "text": "fallow deer; national colors: red, white, blue, black, yellow"
+    },
+    "National anthem": {
+      "name": {
+        "text": "Fair Antigua, We Salute Thee"
+      },
+      "lyrics/music": {
+        "text": "Novelle Hamilton RICHARDS/Walter Garnet Picart CHAMBERS"
+      },
+      "note": "<strong>note:</strong> adopted 1967; as a Commonwealth country, in addition to the national anthem, \"God Save the Queen\" serves as the royal anthem (see United Kingdom)"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Tourism continues to dominate Antigua and Barbuda's economy, accounting for nearly 60% of GDP and 40% of investment. The dual-island nation's agricultural production is focused on the domestic market and constrained by a limited water supply and a labor shortage stemming from the lure of higher wages in tourism and construction. Manufacturing comprises enclave-type assembly for export with major products being bedding, handicrafts, and electronic components.</p><p></p><p>Like other countries in the region, Antigua's economy was severely hit by effects of the global economic recession in 2009. The country suffered from the collapse of its largest private sector employer, a steep decline in tourism, a rise in debt, and a sharp economic contraction between 2009 and 2011. Antigua has not yet returned to its pre-crisis growth levels. Barbuda suffered significant damages after hurricanes Irma and Maria passed through the Caribbean in 2017.</p><p></p><p>Prospects for economic growth in the medium term will continue to depend on tourist arrivals from the US, Canada, and Europe and could be disrupted by potential damage from natural disasters. The new government, elected in 2014 and led by Prime Minister Gaston Browne, continues to face significant fiscal challenges. The government places some hope in a new Citizenship by Investment Program, to both reduce public debt levels and spur growth, and a resolution of a WTO dispute with the US.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$2.127 billion (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$2.033 billion (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$1.893 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "2.8% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "5.3% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "4.1% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$21,910 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$21,116 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$19,840 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$1.524 billion (2017 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "2.5% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "-0.5% (2016 est.)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "1.8% (2017 est.)"
+      },
+      "industry": {
+        "text": "20.8% (2017 est.)"
+      },
+      "services": {
+        "text": "77.3% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "53.5% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "15.2% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "23.9% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0.1% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "73.9% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-66.5% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "tropical fruit, milk, mangoes/guavas, melons, tomatoes, pineapples, lemons, limes, eggplants, onions"
+    },
+    "Industries": {
+      "text": "tourism, construction, light manufacturing (clothing, alcohol, household appliances)"
+    },
+    "Industrial production growth rate": {
+      "text": "6.8% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "30,000 (1991)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "7%"
+      },
+      "industry": {
+        "text": "11%"
+      },
+      "services": {
+        "text": "82% (1983 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2014": {
+        "text": "11% (2014 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "NA"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "NA"
+      },
+      "highest 10%": {
+        "text": "NA"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "298.2 million (2017 est.)"
+      },
+      "expenditures": {
+        "text": "334 million (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-2.4% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "86.8% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "86.2% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "19.6% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "1 April - 31 March"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$112 million (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "$2 million (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$86.7 million (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$56.5 million (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "Poland 37%, Suriname 33%, United Arab Emirates 8% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "ships, refined petroleum, precious/semi-precious metal scraps, rice, corn (2019)"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$560 million (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$503.4 million (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "United States 39%, Poland 16%, China 7% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "refined petroleum, ships, cars, precious/semi-precious metals, recreational boats (2019)"
+    },
+    "Debt - external": {
+      "Debt - external 31 December 2012": {
+        "text": "$441.2 million (31 December 2012)"
+      },
+      "Debt - external June 2010": {
+        "text": "$458 million (June 2010)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "East Caribbean dollars (XCD) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "2.7 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "2.7 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "2.7 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "2.7 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "2.7 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "331 million kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "307.8 million kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "124,000 kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "97% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "3% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "5,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "91 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "5,065 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "24,403"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "25.15 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "187,095"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "192.82 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "good automatic telephone system with fiber-optic lines; telecom sector contributes heavily to GDP; numerous mobile network competitors licensed, but small and local; govt. to spend EC80 million in 2019 to improve state-owned telecom market competitiveness; legislative amendments extend jurisdiction of its telecom regulator in Barbuda to include mobile services (2020)"
+      },
+      "domestic": {
+        "text": "fixed-line teledensity roughly 25 per 100 persons; mobile-cellular teledensity is about 193 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 1-268; landing points for the ECFS and&nbsp;Southern Caribbean Fiber&nbsp;submarine cable systems with links to other islands in the eastern Caribbean; satellite earth stations&nbsp;- 1 Intelsat (Atlantic Ocean) (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "state-controlled Antigua and Barbuda Broadcasting Service (ABS) operates 1 TV station; multi-channel cable TV subscription services are available; ABS operates 1 radio station; roughly 15 radio stations, some broadcasting on multiple frequencies"
+    },
+    "Internet country code": {
+      "text": ".ag"
+    },
+    "Internet users": {
+      "total": {
+        "text": "72,870"
+      },
+      "percent of population": {
+        "text": "76% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "9,261"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "10 (2017 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "1 (2020)"
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "text": "10"
+      },
+      "annual passenger traffic on registered air carriers": {
+        "text": "580,174 (2018)"
+      },
+      "annual freight traffic on registered air carriers": {
+        "text": "290,000 mt-km (2018)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "V2"
+    },
+    "Airports": {
+      "total": {
+        "text": "3 (2020)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "2"
+      },
+      "2,438 to 3,047 m": {
+        "text": "1"
+      },
+      "under 914 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "1"
+      },
+      "under 914 m": {
+        "text": "1 (2013)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "1,170 km (2011)"
+      },
+      "paved": {
+        "text": "386 km (2011)"
+      },
+      "unpaved": {
+        "text": "784 km (2011)"
+      }
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "727"
+      },
+      "by type": {
+        "text": "bulk carrier 27, container ship 135, general cargo 507, oil tanker 2, other 56 (2020)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Saint John's"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Antigua and Barbuda Defense Force (ABDF): Coast Guard and the Antigua and Barbuda Regiment (2021)"
+    },
+    "Military and security service personnel strengths": {
+      "text": "the Antigua and Barbuda Defense Force (ABDF) has approximately 200 active personnel (2021)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the ABDF's equipment inventory is limited to small arms, light weapons, and soft-skin vehicles; the Coast Guard maintains ex-US patrol vessels and some smaller boats (2020)"
+    },
+    "Military service age and obligation": {
+      "text": "18-23 years of age for voluntary military service for both males and females; no conscription (2021)"
+    },
+    "Military - note": {
+      "text": "<p>has been a member of the Caribbean Regional Security System (RSS) since its creation in 1982; RSS signatories (Barbados, Dominica, Grenada, Saint Kitts, Saint Lucia, and Saint Vincent and the Grenadines) agreed to prepare contingency plans and assist one another, on request, in national emergencies, prevention of smuggling, search and rescue, immigration control, fishery protection, customs and excise control, maritime policing duties, protection of off-shore installations, pollution control, national and other disasters, and threats to national security</p>"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>none</p>"
+    },
+    "Illicit drugs": {
+      "text": "considered a minor transshipment point for narcotics bound for the US and Europe; more significant as an offshore financial center"
+    }
+  }
+}

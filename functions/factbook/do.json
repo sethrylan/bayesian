@@ -1,0 +1,923 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "Dominica was the last of the Caribbean islands to be colonized by Europeans due chiefly to the fierce resistance of the native Caribs. France ceded possession to Great Britain in 1763, which colonized the island in 1805. Slavery ended in 1833 and in 1835 the first three men of African descent were elected to the legislative assembly of Dominica. In 1871, Dominica became part first of the British Leeward Islands and then the British Windward Islands until 1958. In 1967 Dominica became an associated state of the UK, and formally took responsibility for its internal affairs. In 1980, two years after independence, Dominica's fortunes improved when a corrupt and tyrannical administration was replaced by that of Mary Eugenia CHARLES, the first female prime minister in the Caribbean, who remained in office for 15 years. On 18 September 2017, Hurricane Maria passed over the island causing extensive damage to structures, roads, communications, and the power supply, and largely destroying critical agricultural areas."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Caribbean, island between the Caribbean Sea and the North Atlantic Ocean, about halfway between Puerto Rico and Trinidad and Tobago"
+    },
+    "Geographic coordinates": {
+      "text": "15 25 N, 61 20 W"
+    },
+    "Map references": {
+      "text": "Central America and the Caribbean"
+    },
+    "Area": {
+      "total": {
+        "text": "751 sq km"
+      },
+      "land": {
+        "text": "751 sq km"
+      },
+      "water": {
+        "text": "NEGL"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly more than four times the size of Washington, DC"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "148 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      }
+    },
+    "Climate": {
+      "text": "tropical; moderated by northeast trade winds; heavy rainfall"
+    },
+    "Terrain": {
+      "text": "rugged mountains of volcanic origin"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Morne Diablotins 1,447 m"
+      },
+      "lowest point": {
+        "text": "Caribbean Sea 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "timber, hydropower, arable land"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "34.7% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 8% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 24% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 2.7% (2018 est.)"
+      },
+      "forest": {
+        "text": "59.2% (2018 est.)"
+      },
+      "other": {
+        "text": "6.1% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "NA"
+    },
+    "Population distribution": {
+      "text": "population is mosly clustered along the coast, with roughly a third living in the parish of St. George, in or around the capital of Roseau; the volcanic interior is sparsely populated"
+    },
+    "Natural hazards": {
+      "text": "<p>flash floods are a constant threat; destructive hurricanes can be expected during the late summer months</p><p><strong>volcanism:</strong> Dominica was the last island to be formed in the Caribbean some 26 million years ago, it lies in the middle of the volcanic island arc of the Lesser Antilles that extends from the island of Saba in the north to Grenada in the south; of the 16 volcanoes that make up this arc, five are located on Dominica, more than any other island in the Caribbean: Morne aux Diables (861 m), Morne Diablotins (1,430 m), Morne Trois Pitons (1,387 m), Watt Mountain (1,224 m), which last erupted in 1997, and Morne Plat Pays (940 m); the two best known volcanic features on Dominica, the Valley of Desolation and the Boiling Lake thermal areas, lie on the flanks of Watt Mountain and both are popular tourist destinations</p>"
+    },
+    "Geography - note": {
+      "text": "known as \"The Nature Island of the Caribbean\" due to its spectacular, lush, and varied flora and fauna, which are protected by an extensive natural park system; the most mountainous of the Lesser Antilles, its volcanic peaks are cones of lava craters and include Boiling Lake, the second-largest, thermally active lake in the world"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "74,584 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Dominican(s)"
+      },
+      "adjective": {
+        "text": "Dominican"
+      }
+    },
+    "Ethnic groups": {
+      "text": "African descent 84.5%, mixed 9%, Indigenous 3.8%, other 2.1%, unspecified 0.6% (2011 est.)"
+    },
+    "Languages": {
+      "text": "English (official), French patois"
+    },
+    "Religions": {
+      "text": "Roman Catholic 52.7%, Protestant 29.7% (includes Seventh Day Adventist 6.7%, Pentecostal 6.1%, Baptist 5.2%, Christian Union Church 3.9%, Methodist 2.6%, Gospel Mission 2.1%, other Protestant 3.1%), Jehovah's Witness 1.3%, Rastafarian 1.1%, other 4.3%, none 9.4%, unspecified 1.4% (2011 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "21.41% (male 8,135/female 7,760)"
+      },
+      "15-24 years": {
+        "text": "13.15% (male 5,017/female 4,746)"
+      },
+      "25-54 years": {
+        "text": "42.79% (male 16,133/female 15,637)"
+      },
+      "55-64 years": {
+        "text": "10.53% (male 4,089/female 3,731)"
+      },
+      "65 years and over": {
+        "text": "12.12% (male 4,128/female 4,867) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "NA"
+      },
+      "youth dependency ratio": {
+        "text": "NA"
+      },
+      "elderly dependency ratio": {
+        "text": "NA"
+      },
+      "potential support ratio": {
+        "text": "NA"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "34.9 years"
+      },
+      "male": {
+        "text": "34.4 years"
+      },
+      "female": {
+        "text": "35.5 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "0.07% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "14.16 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "8.14 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-5.31 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "population is mosly clustered along the coast, with roughly a third living in the parish of St. George, in or around the capital of Roseau; the volcanic interior is sparsely populated"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "71.4% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0.84% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "15,000 ROSEAU (capital) (2018)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.05 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.06 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.1 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.85 male(s)/female"
+      },
+      "total population": {
+        "text": "1.02 male(s)/female (2020 est.)"
+      }
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "11.56 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "15.67 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "7.24 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "77.96 years"
+      },
+      "male": {
+        "text": "74.99 years"
+      },
+      "female": {
+        "text": "81.09 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "2.02 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 95.7% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 4.3% of population"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "6.6% (2018)"
+    },
+    "Physicians density": {
+      "text": "1.12 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "3.8 beds/1,000 population (2010)"
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "0.6% (2018)"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "<500 (2018)"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "<100 (2018)"
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "27.9% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "5% of GDP (2020)"
+    },
+    "People - note": {
+      "text": "3,000-3,500 Kalinago (Carib) still living on Dominica are the only pre-Columbian population remaining in the Caribbean; only 70-100 may be \"pure\" Kalinago because of years of integration into the broader population"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "water shortages a continuing concern; pollution from agrochemicals and from untreated sewage; forests endangered by the expansion of farming; soil erosion; pollution of the coastal zone by agricultural and industrial chemicals, and untreated sewage"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Desertification, Endangered Species, Environmental Modification, Hazardous Wastes, Law of the Sea, Ozone Layer Protection, Ship Pollution, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "none of the selected agreements"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "18.17 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "0.18 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "0.04 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "19 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "0 cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "1 million cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "200 million cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical; moderated by northeast trade winds; heavy rainfall"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "34.7% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 8% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 24% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 2.7% (2018 est.)"
+      },
+      "forest": {
+        "text": "59.2% (2018 est.)"
+      },
+      "other": {
+        "text": "6.1% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0.03% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "71.4% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0.84% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "13,176 tons (2013 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Commonwealth of Dominica"
+      },
+      "conventional short form": {
+        "text": "Dominica"
+      },
+      "etymology": {
+        "text": "the island was named by explorer Christopher COLUMBUS for the day of the week on which he spotted it, Sunday (\"Domingo\" in Latin), 3 November 1493"
+      }
+    },
+    "Government type": {
+      "text": "parliamentary republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Roseau"
+      },
+      "geographic coordinates": {
+        "text": "15 18 N, 61 24 W"
+      },
+      "time difference": {
+        "text": "UTC-4 (1 hour ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "the name is French for \"reed\"; the first settlement was named after the river reeds that grew in the area"
+      }
+    },
+    "Administrative divisions": {
+      "text": "10 parishes; Saint Andrew, Saint David, Saint George, Saint John, Saint Joseph, Saint Luke, Saint Mark, Saint Patrick, Saint Paul, Saint Peter"
+    },
+    "Independence": {
+      "text": "3 November 1978 (from the UK)"
+    },
+    "National holiday": {
+      "text": "Independence Day, 3 November (1978)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "previous 1967 (preindependence); latest presented 25 July 1978, entered into force 3 November 1978"
+      },
+      "amendments": {
+        "text": "proposed by the House of Assembly; passage of amendments to constitutional sections such as fundamental rights and freedoms, the government structure, and constitutional amendment procedures requires approval by three fourths of the Assembly membership in the final reading of the amendment bill, approval by simple majority in a referendum, and assent of the president; amended several times, last in 2015"
+      }
+    },
+    "Legal system": {
+      "text": "common law based on the English model"
+    },
+    "International law organization participation": {
+      "text": "accepts compulsory ICJ jurisdiction; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "yes"
+      },
+      "citizenship by descent only": {
+        "text": "yes"
+      },
+      "dual citizenship recognized": {
+        "text": "yes"
+      },
+      "residency requirement for naturalization": {
+        "text": "5 years"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Charles A. SAVARIN (since 2 October 2013)"
+      },
+      "head of government": {
+        "text": "Prime Minister Roosevelt SKERRIT (since 8 January 2004)"
+      },
+      "cabinet": {
+        "text": "Cabinet appointed by the president on the advice of the prime minister"
+      },
+      "elections/appointments": {
+        "text": "president nominated by the prime minister and leader of the opposition party and elected by the House of Assembly for a 5-year term (eligible for a second term); election last held on 1 October 2018 (next to be held in October 2023); prime minister appointed by the president"
+      },
+      "election results": {
+        "text": "Charles A. SAVARIN (DLP) reelected president unopposed"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral House of Assembly (32 seats; 21 representatives directly elected in single-seat constituencies by simple majority vote, 9 senators appointed by the president - 5 on the advice of the prime minister, and 4 on the advice of the leader of the opposition party, plus 2 ex-officio members - the house speaker and the attorney general; members serve 5-year terms)"
+      },
+      "elections": {
+        "text": "last held on&nbsp;6 December 2019 (next to be held in 2024); note - tradition dictates that the election is held within 5 years of the last election, but technically it is 5 years from the first seating of parliament plus a 90-day grace period"
+      },
+      "election results": {
+        "text": "percent of vote by party - DLP 59.0%, UWP 41.0%; seats by party - DLP 18, UWP 3"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "the Eastern Caribbean Supreme Court (ECSC) is the superior court of the Organization of Eastern Caribbean States; the ECSC - headquartered on St. Lucia - consists of the Court of Appeal - headed by the chief justice and 4 judges - and the High Court with 18 judges; the Court of Appeal is itinerant, traveling to member states on a schedule to hear appeals from the High Court and subordinate courts; High Court judges reside in the member states, with 2 in Dominica; note - in 2015, Dominica acceded to the Caribbean Court of Justice as final court of appeal, replacing that of the Judicial Committee of the Privy Council, in London"
+      },
+      "judge selection and term of office": {
+        "text": "chief justice of Eastern Caribbean Supreme Court appointed by the Her Majesty, Queen ELIZABETH II; other justices and judges appointed by the Judicial and Legal Services Commission, an independent body of judicial officials; Court of Appeal justices appointed for life with mandatory retirement at age 65; High Court judges appointed for life with mandatory retirement at age 62"
+      },
+      "subordinate courts": {
+        "text": "Court of Summary Jurisdiction; magistrates' courts"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "Dominica Freedom Party or DFP [Judith PESTAINA]<br>Dominica Labor Party or DLP [Roosevelt SKERRIT]<br>Dominica United Workers Party or UWP [Lennox LINTON]"
+    },
+    "International organization participation": {
+      "text": "ACP, AOSIS, C, Caricom, CD, CDB, CELAC, Commonwealth of Nations, ECCU, FAO, G-77, IAEA, IBRD, ICCt, ICRM, IDA, IFAD, IFC, IFRCS, ILO, IMF, IMO, Interpol, IOC, ISO (correspondent), ITU, ITUC (NGOs), MIGA, NAM, OAS, OECS, OIF, OPANAL, OPCW, Petrocaribe, UN, UNCTAD, UNESCO, UNIDO, UPU, WFTU, WHO, WIPO, WMO, WTO"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador Vince HENDERSON (since 18 January 2017)"
+      },
+      "chancery": {
+        "text": "3216 New Mexico Avenue NW, Washington, DC 20016"
+      },
+      "telephone": {
+        "text": "[1] (202) 364-6781"
+      },
+      "FAX": {
+        "text": "[1] (202) 364-6791"
+      },
+      "email address and website": {
+        "text": "<br>embdomdc@aol.com<br>"
+      },
+      "consulate(s) general": {
+        "text": "New York"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "embassy": {
+        "text": "the US does not have an embassy in Dominica; the US Ambassador to Barbados is accredited to Dominica"
+      }
+    },
+    "Flag description": {
+      "text": "green with a centered cross of three equal bands - the vertical part is yellow (hoist side), black, and white and the horizontal part is yellow (top), black, and white; superimposed in the center of the cross is a red disk bearing a Sisserou parrot, unique to Dominica, encircled by 10 green, five-pointed stars edged in yellow; the 10 stars represent the 10 administrative divisions (parishes); green symbolizes the island's lush vegetation; the triple-colored cross represents the Christian Trinity; the yellow color denotes sunshine, the main agricultural products (citrus and bananas), and the native Carib Indians; black is for the rich soil and the African heritage of most citizens; white signifies rivers, waterfalls, and the purity of aspirations; the red disc stands for social justice"
+    },
+    "National symbol(s)": {
+      "text": "Sisserou parrot, Carib Wood flower; national colors: green, yellow, black, white, red"
+    },
+    "National anthem": {
+      "name": {
+        "text": "Isle of Beauty"
+      },
+      "lyrics/music": {
+        "text": "Wilfred Oscar Morgan POND/Lemuel McPherson CHRISTIAN"
+      },
+      "note": "<strong>note:</strong> adopted 1967"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "The Dominican economy was dependent on agriculture - primarily bananas - in years past, but increasingly has been driven by tourism, as the government seeks to promote Dominica as an \"ecotourism\" destination. However, Hurricane Maria, which passed through the island in September 2017, destroyed much of the country’s agricultural sector and caused damage to all of the country’s transportation and physical infrastructure. Before Hurricane Maria, the government had attempted to foster an offshore financial industry and planned to sign agreements with the private sector to develop geothermal energy resources. At a time when government finances are fragile, the government’s focus has been to get the country back in shape to service cruise ships. The economy contracted in 2015 and recovered to positive growth in 2016 due to a recovery of agriculture and tourism. Dominica suffers from high debt levels, which increased from 67% of GDP in 2010 to 77% in 2016. Dominica is one of five countries in the East Caribbean that have citizenship by investment programs whereby foreigners can obtain passports for a fee and revenue from this contribute to government budgets."
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$855 million (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$826 million (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$807 million (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "-4.7% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "2.6% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "-3.7% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$11,917 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$11,537 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$11,304 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$557 million (2017 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "0.6% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "0% (2016 est.)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "22.3% (2017 est.)"
+      },
+      "industry": {
+        "text": "12.6% (2017 est.)"
+      },
+      "services": {
+        "text": "65.1% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "60.6% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "26.2% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "21.5% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "54.4% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-62.7% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "bananas, yams, grapefruit, taro, milk, coconuts, oranges, yautia, plantains, sugar cane",
+      "note": "<strong>note:</strong> forest and fishery potential not exploited"
+    },
+    "Industries": {
+      "text": "soap, coconut oil, tourism, copra, furniture, cement blocks, shoes"
+    },
+    "Industrial production growth rate": {
+      "text": "-13% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "25,000 (2000 est.)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "40%"
+      },
+      "industry": {
+        "text": "32%"
+      },
+      "services": {
+        "text": "28% (2002 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2000": {
+        "text": "23% (2000 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "29% (2009 est.)"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "NA"
+      },
+      "highest 10%": {
+        "text": "NA"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "227.8 million (2017 est.)"
+      },
+      "expenditures": {
+        "text": "260.4 million (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-5.9% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "82.7% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "71.7% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "40.9% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "1 July - 30 June"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$70 million (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "$5 million (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$28 million (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$43.7 million (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "Saudi Arabia 47%, Qatar 5% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "medical instruments, pharmaceuticals, low-voltage protection equipment, tropical fruits, bandages (2019)"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$206.6 million (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$188.4 million (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "United States 57%, Nigeria 11%, China 6%, Italy 5% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "refined petroleum, natural gas, crude petroleum, recreational boats, cars (2019)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$212.3 million (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "text": "$221.9 million (31 December 2016 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 31 December 2017": {
+        "text": "$280.4 million (31 December 2017 est.)"
+      },
+      "Debt - external 31 December 2015": {
+        "text": "$314.2 million (31 December 2015 est.)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "East Caribbean dollars (XCD) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "2.7 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "2.7 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "2.7 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "2.7 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "2.7 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "111.4 million kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "103.6 million kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "27,800 kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "72% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "25% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "3% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "1,300 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "1,237 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "2,751"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "3.71 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "78,437"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "105.79 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "fully automatic network;&nbsp;there are multiple competing operators licensed to provide services, most of them are small and localized; the telecom sector across the Caribbean region remains one of the key growth areas; (2020)"
+      },
+      "domestic": {
+        "text": "fixed-line connections continue to decline slowly with only two active operators providing about 4 fixed-line connections per 100 persons; subscribership among the three mobile-cellular providers is about 106 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 1-767; landing points for the ECFS and the&nbsp;Southern Caribbean Fiber&nbsp;submarine cables providing connectivity to other islands in the eastern Caribbean extending from the British Virgin Islands to Trinidad and to the US; microwave radio relay and SHF radiotelephone links to Martinique and Guadeloupe; VHF and UHF radiotelephone links to Saint Lucia (2019)"
+      },
+      "note": "<!-- x-tinymce/html --><strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "no terrestrial TV service available; subscription cable TV provider offers some locally produced programming plus channels from the US, Latin America, and the Caribbean; state-operated radio broadcasts on 6 stations; privately owned radio broadcasts on about 15 stations (2019)"
+    },
+    "Internet country code": {
+      "text": ".dm"
+    },
+    "Internet users": {
+      "total": {
+        "text": "51,538"
+      },
+      "percent of population": {
+        "text": "69.62% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "11,514"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "16 (2018 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "Civil aircraft registration country code prefix": {
+      "text": "J7"
+    },
+    "Airports": {
+      "total": {
+        "text": "2 (2020)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "2"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1"
+      },
+      "914 to 1,523 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "1,512 km (2018)"
+      },
+      "paved": {
+        "text": "762 km (2018)"
+      },
+      "unpaved": {
+        "text": "750 km (2018)"
+      }
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "98"
+      },
+      "by type": {
+        "text": "general cargo 28, oil tanker 22, other 48 (2020)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Portsmouth, Roseau"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "no regular military forces; Commonwealth of Dominica Police Force (includes Coast Guard) (2020)"
+    },
+    "Military - note": {
+      "text": "<p>Dominica has been a member of the Caribbean Regional Security System (RSS) since its creation in 1982; RSS signatories (Antigua and Barbuda, Barbados, Grenada, St. Kitts, St. Lucia, and St. Vincent and the Grenadines) agreed to prepare contingency plans and assist one another, on request, in national emergencies, prevention of smuggling, search and rescue, immigration control, fishery protection, customs and excise control, maritime policing duties, protection of off-shore installations, pollution control, national and other disasters, and threats to national security</p>"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>Dominica is the only Caribbean state to challenge Venezuela's sovereignty claim over Aves Island and joins the other island nations in challenging whether the feature sustains human habitation, a criterion under the UN Convention on the Law of the Sea, which permits Venezuela to extend its EEZ and continental shelf claims over a large portion of the eastern Caribbean Sea</p>"
+    },
+    "Illicit drugs": {
+      "text": "transshipment point for narcotics bound for the US and Europe; minor cannabis producer"
+    }
+  }
+}

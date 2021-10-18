@@ -1,0 +1,606 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>Tokelau, which comprises three atolls, was first settled by Polynesians around A.D. 1000. The three atolls operated relatively independently but had contact with one another, intermarrying and occasionally fighting wars. Fakaofo Atoll eventually subjugated the other two. British explorer John BYRON was the first European to see Atafu Atoll in 1765. British naval officer Edward EDWARDS saw Nukunonu Atoll in 1791, and ships occasionally continued to pass by Atafu and Nukunonu. In 1835, a US whaling ship became the first non-Pacific island ship to pass by Fakaofo. Catholic and Protestant missionaries arrived in 1845 and converted the population on the islands on which they landed. To this day, Nukunonu is predominantly Catholic while Atafu is mostly Protestant; Catholic and Protestnat missionaries both worked in Fakaofo, and the population there is more mixed.<br><br>In 1863, Peruvian slave traders, masquerading as missionaries, kidnapped nearly all the men from Tokelau, and local governance moved to a system based on a Council of Elders, which still exists today. The atolls were repopulated when new Polynesian settlers and American and European migrants intermarried with local Tokelauan women. Tokelau became a British protectorate in 1889 and included in the Gilbert and Ellice Islands Protectorate - later a colony - in 1908. In 1925, the UK placed Tokealu under New Zealand administration. The Tokelau Islands Act of 1948 formally transferred sovereignty from the UK to New Zealand and Tokelauans were granted New Zealand citizenship. In 1979, the US relinquished its claims over Tokelau in the Treaty of Tokehega, and Tokelau relinquished its claims over Swains Island, which is part of American Samoa.<br><br>Economic opportunities in Tokelau are sparse, and about 80% of Tokelauans live in New Zealand. Tokelau held two self-governance referendums in 2006 and 2007, in which more than 60% of voters chose to go into free association with New Zealand; however, the referendums failed to achieve the two-thirds majority necessary to enact a status change. Tokelau lacks an airport and is only accessible via a day-long boat trip from Samoa, although a site for an airstrip on Nukunonu was selected in 2019. Because of its dependency on Samoa for transportation, in 2011, Tokelau followed Samoa’s lead and shifted the international date line to its east, skipping December 30 and becoming one hour ahead of New Zealand rather than 23 hours behind.</p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Oceania, group of three atolls in the South Pacific Ocean, about one-half of the way from Hawaii to New Zealand"
+    },
+    "Geographic coordinates": {
+      "text": "9 00 S, 172 00 W"
+    },
+    "Map references": {
+      "text": "Oceania"
+    },
+    "Area": {
+      "total": {
+        "text": "12 sq km"
+      },
+      "land": {
+        "text": "12 sq km"
+      },
+      "water": {
+        "text": "0 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "about 17 times the size of the National Mall in Washington, DC"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "101 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      }
+    },
+    "Climate": {
+      "text": "tropical; moderated by trade winds (April to November)"
+    },
+    "Terrain": {
+      "text": "low-lying coral atolls enclosing large lagoons"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "unnamed location 5 m"
+      },
+      "lowest point": {
+        "text": "Pacific Ocean 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "NEGL"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "60% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 0% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 60% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 0% (2018 est.)"
+      },
+      "forest": {
+        "text": "0% (2018 est.)"
+      },
+      "other": {
+        "text": "40% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "0 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "the country's small population is fairly evenly distributed amongst the three atolls"
+    },
+    "Natural hazards": {
+      "text": "lies in Pacific cyclone belt"
+    },
+    "Geography - note": {
+      "text": "consists of three atolls (Atafu, Fakaofo, Nukunonu), each with a lagoon surrounded by a number of reef-bound islets of varying length and rising to over 3 m above sea level"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "1,647 (2019 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Tokelauan(s)"
+      },
+      "adjective": {
+        "text": "Tokelauan"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Tokelauan 64.5%, part Tokelauan/Samoan 9.7%, part Tokelauan/Tuvaluan 2.8%, Tuvaluan 7.5%, Samoan 5.8%, other Pacific Islander 3.4%, other 5.6%, unspecified 0.8% (2016 est.)"
+    },
+    "Languages": {
+      "text": "Tokelauan 88.1% (a Polynesian language), English 48.6%, Samoan 26.7%, Tuvaluan 11.2%, Kiribati 1.5%, other 2.8%, none 2.8%, unspecified 0.8% (2016 ests.)",
+      "note": "<strong>note:</strong> shares sum to more than 100% because some respondents gave more than one answer on the census"
+    },
+    "Religions": {
+      "text": "Congregational Christian Church 50.4%, Roman Catholic 38.7%, Presbyterian 5.9%, other Christian 4.2%, unspecified 0.8% (2016 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "NA"
+      },
+      "15-24 years": {
+        "text": "NA"
+      },
+      "25-54 years": {
+        "text": "NA"
+      },
+      "55-64 years": {
+        "text": "NA"
+      },
+      "65 years and over": {
+        "text": "NA"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "NA"
+      },
+      "youth dependency ratio": {
+        "text": "NA"
+      },
+      "elderly dependency ratio": {
+        "text": "NA"
+      },
+      "potential support ratio": {
+        "text": "NA"
+      }
+    },
+    "Population growth rate": {
+      "text": "-0.01% (2019 est.)"
+    },
+    "Birth rate": {
+      "text": "NA"
+    },
+    "Net migration rate": {
+      "text": "-3.84 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "the country's small population is fairly evenly distributed amongst the three atolls"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "0% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Sex ratio": {
+      "text": "NA"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "NA"
+      },
+      "male": {
+        "text": "NA"
+      },
+      "female": {
+        "text": "NA (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "NA"
+      },
+      "male": {
+        "text": "NA"
+      },
+      "female": {
+        "text": "NA (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "NA (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: rural": {
+        "text": "rural: 100% of population"
+      },
+      "improved: total": {
+        "text": "total: 100% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 0% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 0% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "NA"
+    },
+    "Physicians density": {
+      "text": "2.72 physicians/1,000 population (2010)"
+    },
+    "Sanitation facility access": {
+      "improved: rural": {
+        "text": "rural: 100% of population"
+      },
+      "improved: total": {
+        "text": "total: 100% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 0% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 0% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea"
+      },
+      "vectorborne diseases": {
+        "text": "malaria"
+      }
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "NA"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "overexploitation of certain fish and other marine species, coastal sand, and forest resources; pollution of freshwater lenses and coastal waters from improper disposal of chemicals"
+    },
+    "Total renewable water resources": {
+      "text": "0 cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical; moderated by trade winds (April to November)"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "60% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 0% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 60% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 0% (2018 est.)"
+      },
+      "forest": {
+        "text": "0% (2018 est.)"
+      },
+      "other": {
+        "text": "40% (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "0% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "0% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea"
+      },
+      "vectorborne diseases": {
+        "text": "malaria"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "none"
+      },
+      "conventional short form": {
+        "text": "Tokelau"
+      },
+      "former": {
+        "text": "Union Islands, Tokelau Islands"
+      },
+      "etymology": {
+        "text": "\"tokelau\" is a Polynesian word meaning \"north wind\""
+      }
+    },
+    "Government type": {
+      "text": "<p>parliamentary democracy under a constitutional monarchy</p>"
+    },
+    "Dependency status": {
+      "text": "self-administering territory of New Zealand; note - Tokelau and New Zealand have agreed to a draft constitution as Tokelau moves toward free association with New Zealand; a UN-sponsored referendum on self governance in October 2007 did not meet the two-thirds majority vote necessary for changing the political status"
+    },
+    "Capital": {
+      "time difference": {
+        "text": "UTC+13 (18 hours ahead of Washington, DC during Standard Time)"
+      },
+      "note": "note: there is no designated, official capital for Tokelau; the location of the capital rotates among the three atolls along with the head of government or Ulu o Tokelau"
+    },
+    "Administrative divisions": {
+      "text": "none (territory of New Zealand)"
+    },
+    "Independence": {
+      "text": "none (territory of New Zealand)"
+    },
+    "National holiday": {
+      "text": "Waitangi Day (Treaty of Waitangi established British sovereignty over New Zealand), 6 February (1840)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "many previous; latest effective 1 January 1949 (Tokelau Islands Act 1948)"
+      },
+      "amendments": {
+        "text": "proposed as a resolution by the General Fono; passage requires support by each village and approval by the General Fono; amended several times, last in 2007"
+      }
+    },
+    "Legal system": {
+      "text": "common law system of New Zealand"
+    },
+    "Citizenship": {
+      "text": "see New Zealand"
+    },
+    "Suffrage": {
+      "text": "21 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "Queen ELIZABETH II (since 6 February 1952); represented by Governor General of New Zealand Governor General Dame Patricia Lee REDDY (since 28 September 2016); New Zealand is represented by Administrator Ross ARDERN (since May 2018)"
+      },
+      "head of government": {
+        "text": "(Ulu o Tokelau) Kelihiano KALOLO (since 8 March 2021); note - position rotates annually among the three Faipule (village leaders) of the atolls"
+      },
+      "cabinet": {
+        "text": "Council for the Ongoing Government of Tokelau (or Tokelau Council) functions as a cabinet; consists of 3 Faipule (village leaders) and 3 Pulenuku (village mayors)"
+      },
+      "elections/appointments": {
+        "text": "the monarchy is hereditary; governor general appointed by the monarch; administrator appointed by the Minister of Foreign Affairs and Trade in New Zealand; head of government chosen from the Council of Faipule to serve a 1-year term"
+      },
+      "note": "<strong>note:</strong> the meeting place of the Tokelau Council rotates annually among the three atolls; this tradition has given rise to the somewhat misleading description that the capital rotates yearly between the three atolls; in actuality, it is the seat of the government councilors that rotates since Tokelau has no capital"
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral General Fono (20 seats apportioned by island - Atafu 7, Fakaofo 7, Nukunonu 6; members directly elected by simple majority vote to serve 3-year terms); note - the Tokelau Amendment Act of 1996 confers limited legislative power to the General Fono"
+      },
+      "elections": {
+        "text": "last held on 23 January 2020 depending on island (next to be held in January 2023)"
+      },
+      "election results": {
+        "text": "percent of vote by party - NA; seats by party - independent 20; composition - men 17, women 3, percent of women 15%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Court of Appeal (in New Zealand) (consists of the court president and 8 judges sitting in 3- or 5-judge panels, depending on the case)"
+      },
+      "judge selection and term of office": {
+        "text": "judges nominated by the Judicial Selection Committee and approved by three-quarters majority of the Parliament; judges serve for life"
+      },
+      "subordinate courts": {
+        "text": "High Court (in New Zealand); Council of Elders or Taupulega"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "none"
+    },
+    "International organization participation": {
+      "text": "PIF (associate member), SPC, UNESCO (associate), UPU"
+    },
+    "Diplomatic representation in the US": {
+      "text": "none (territory of New Zealand)"
+    },
+    "Diplomatic representation from the US": {
+      "text": "none (territory of New Zealand)"
+    },
+    "Flag description": {
+      "text": "a yellow stylized Tokelauan canoe on a dark blue field sails toward the manu - the Southern Cross constellation of four, white, five-pointed stars at the hoist side; the Southern Cross represents the role of Christianity in Tokelauan culture and, in conjunction with the canoe, symbolizes the country navigating into the future; the color yellow indicates happiness and peace, and the blue field represents the ocean on which the community relies"
+    },
+    "National symbol(s)": {
+      "text": "tuluma (fishing tackle box); national colors: blue, yellow, white"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"Te Atua\" (For the Almighty)"
+      },
+      "lyrics/music": {
+        "text": "unknown/Falani KALOLO"
+      },
+      "note": "<strong>note:</strong> adopted 2008; in preparation for eventual self governance, Tokelau held a national contest to choose an anthem; as a territory of New Zealand, \"God Defend New Zealand\" and \"God Save the Queen\" are official (see New Zealand)"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Tokelau's small size (three villages), isolation, and lack of resources greatly restrain economic development and confine agriculture to the subsistence level. The principal sources of revenue are from sales of copra, postage stamps, souvenir coins, and handicrafts. Money is also remitted to families from relatives in New Zealand.</p><p></p><p>The people rely heavily on aid from New Zealand - about $15 million annually in FY12/13 and FY13/14 - to maintain public services. New Zealand's support amounts to 80% of Tokelau's recurrent government budget. An international trust fund, currently worth nearly $32 million, was established in 2004 by New Zealand to provide Tokelau an independent source of revenue.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$7,711,583 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars."
+    },
+    "Real GDP growth rate": {
+      "text": "<p>NA</p>"
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2017": {
+        "text": "$6,004 (2017 est.)"
+      },
+      "Real GDP per capita 2016": {
+        "text": "$4,855 (2016 est.)"
+      },
+      "Real GDP per capita 2015": {
+        "text": "$4,292 (2015 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars."
+    },
+    "GDP (official exchange rate)": {
+      "text": "$12.658 million (2017 est.)",
+      "note": "<strong>note:</strong> data uses New Zealand Dollar (NZD) as the currency of exchange."
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2020": {
+        "text": "4% (2020 est.)"
+      },
+      "Inflation rate (consumer prices) 2019": {
+        "text": "2.5% (2019 est.)"
+      },
+      "Inflation rate (consumer prices) 2017": {
+        "text": "11% (2017 est.)"
+      },
+      "note": "<strong>note: </strong>Tokelau notes that its wide inflation swings are due almost entirely due to cigarette prices, a chief import."
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "NA"
+      },
+      "industry": {
+        "text": "NA"
+      },
+      "services": {
+        "text": "NA"
+      }
+    },
+    "Agricultural products": {
+      "text": "coconuts, roots/tubers nes, tropical fruit, pork, bananas, eggs, poultry, pig offals, pig fat, fruit"
+    },
+    "Industries": {
+      "text": "small-scale enterprises for copra production, woodworking, plaited craft goods; stamps, coins; fishing"
+    },
+    "Labor force": {
+      "text": "1,100 (2019 est.)"
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2015": {
+        "text": "2% (2015 est.)"
+      },
+      "note": "<strong>note:</strong> Underemployment may be as high as 6.6%"
+    },
+    "Population below poverty line": {
+      "text": "NA"
+    },
+    "Budget": {
+      "revenues": {
+        "text": "24,324,473 (2017 est.)"
+      },
+      "expenditures": {
+        "text": "11,666,542 (2017 est.)"
+      }
+    },
+    "Fiscal year": {
+      "text": "1 April - 31 March"
+    },
+    "Exports": {
+      "Exports 2015": {
+        "text": "$103,000 (2015 est.)"
+      },
+      "Exports 2002": {
+        "text": "$102,826 (2002 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "Singapore 25%, France 19%, South Africa 7%, New Zealand 5%, United States 5%, Ireland 5% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "oscilloscopes, house linens, fruits, nuts, recreational boats, iron products (2019)"
+    },
+    "Imports": {
+      "Imports 2015": {
+        "text": "$15,792,720 (2015 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "Samoa 35%, Ireland 17%, Philippines 14%, Malaysia 13%, South Africa 9% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "oscilloscopes, integrated circuits, refined petroleum, packaged medicines, orthopedic appliances (2019)"
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "New Zealand dollars (NZD) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "1.543 (2017 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2010 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "300"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "21 (July 2016 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "modern satellite-based communications system; demand for mobile broadband increasing due to mobile services being the method of access for Internet across the region; 2G widespread with some 4G LTE service; satellite services has improved with the launch of the Kacific-1 satellite launched in 2019 (2020)"
+      },
+      "domestic": {
+        "text": "radiotelephone service between islands; fixed-line 21 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 690; landing point for the Southern Cross NEXT submarine cable linking Australia, Tokelau, Samoa, Kiribati, Fiji, New Zealand and Los Angeles, CA (USA); radiotelephone service to Samoa; government-regulated telephone service (TeleTok); satellite earth stations - 3 (2020)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "Sky TV access for around 30% of the population; each atoll operates a radio service that provides shipping news and weather reports (2019)"
+    },
+    "Internet country code": {
+      "text": ".tk"
+    },
+    "Internet users": {
+      "total": {
+        "text": "805"
+      },
+      "percent of population": {
+        "text": "60.2% (July 2016 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "Roadways": {
+      "total": {
+        "text": "10 km (2019)"
+      }
+    },
+    "Ports and terminals": {
+      "text": "none; offshore anchorage only"
+    }
+  },
+  "Military and Security": {
+    "Military - note": {
+      "text": "defense is the responsibility of New Zealand"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>Tokelau included American Samoa's Swains Island (Olosega) in its 2006 draft independence constitution</p>"
+    }
+  }
+}

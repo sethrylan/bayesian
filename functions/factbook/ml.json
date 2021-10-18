@@ -1,0 +1,1165 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>Present-day Mali is named after the Mali Empire that ruled the region between the 13th and 16th centuries. At its peak in the 14th century, it was the largest and wealthiest empire in West Africa and controlled an area about twice the size of modern-day France. Primarily a trading empire, Mali derived its wealth from gold and maintained several goldfields and trade routes in the Sahel. The empire also influenced West African culture through the spread of its language, laws, and customs, but by the 16th century it fragmented into mostly small chiefdoms.  The Songhai Empire, previously a Mali dependency centered in Timbuktu, gained prominence in the 15th and 16th centuries. Under Songhai rule, Timbuktu became a large commercial center and well-known for its scholarship and religious teaching. Timbuktu remains a center of culture in West Africa today. In the late 16th century, the Songhai Empire fell to Moroccan invaders and disintegrated into independent sultanates and kingdoms.</p> <p>France, expanding from Senegal, seized control of the area in the 1890s and incorporated it into French West Africa as French Sudan. In 1960, French Sudan gained independence from France and became the Mali Federation. When Senegal withdrew after only a few months, the remaining area was renamed the Republic of Mali. Mali saw 31 years of dictatorship until 1991, when a military coup ousted the government, established a new constitution, and instituted a multi-party democracy. President Alpha Oumar KONARE won Mali's first two democratic presidential elections in 1992 and 1997. In keeping with Mali's two-term constitutional limit, he stepped down in 2002 and was succeeded by Amadou Toumani TOURE, who won a second term in 2007.</p> <p>In 2012, rising ethnic tensions and an influx of fighters - some linked to Al-Qa’ida - from Libya led to a rebellion and military coup. Following the coup, rebels expelled the military from the country’s three northern regions, allowing terrorist organizations to develop strongholds in the area. With French military intervention, the Malian Government managed to retake most of the north. However, the government’s grasp in the region remains weak with local militias, terrorists, and insurgent groups continuously trying to expand control. In 2015, the Malian Government and northern rebels signed an internationally mediated peace accord. Despite a June 2017 target for implementation of the agreement, the signatories have made little progress. Extremist groups were left out of the peace process, and terrorist attacks remain common.  </p> <p>Ibrahim Boubacar KEITA won the Malian presidential elections in 2013 and 2018. Aside from security and logistic shortfalls, international observers deemed these elections credible. Terrorism, banditry, ethnic-based violence, and extra-judicial military killings plagued the country during KEITA’s second term. In August 2020, the military arrested KEITA, his prime minister, and other senior members of the government and established a military junta called the National Committee for the Salvation of the People (CNSP). In September 2020, the junta established a transition government and appointed Bah N’DAW, a retired army officer and former defense minister, as interim president and Colonel Assimi GOITA, the coup leader and chairman of the CNSP, as interim vice president. The transition government’s charter allows it to rule for up to 18 months before calling a general election.  </p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "interior Western Africa, southwest of Algeria, north of Guinea, Cote d'Ivoire, and Burkina Faso, west of Niger"
+    },
+    "Geographic coordinates": {
+      "text": "17 00 N, 4 00 W"
+    },
+    "Map references": {
+      "text": "Africa"
+    },
+    "Area": {
+      "total": {
+        "text": "1,240,192 sq km"
+      },
+      "land": {
+        "text": "1,220,190 sq km"
+      },
+      "water": {
+        "text": "20,002 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly less than twice the size of Texas"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "7,908 km"
+      },
+      "border countries": {
+        "text": "Algeria 1359 km, Burkina Faso 1325 km, Cote d'Ivoire 599 km, Guinea 1062 km, Mauritania 2236 km, Niger 838 km, Senegal 489 km"
+      }
+    },
+    "Coastline": {
+      "text": "0 km (landlocked)"
+    },
+    "Maritime claims": {
+      "text": "none (landlocked)"
+    },
+    "Climate": {
+      "text": "subtropical to arid; hot and dry (February to June); rainy, humid, and mild (June to November); cool and dry (November to February)"
+    },
+    "Terrain": {
+      "text": "mostly flat to rolling northern plains covered by sand; savanna in south, rugged hills in northeast"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Hombori Tondo 1,155 m"
+      },
+      "lowest point": {
+        "text": "Senegal River 23 m"
+      },
+      "mean elevation": {
+        "text": "343 m"
+      }
+    },
+    "Natural resources": {
+      "text": "gold, phosphates, kaolin, salt, limestone, uranium, gypsum, granite, hydropower, note, bauxite, iron ore, manganese, tin, and copper deposits are known but not exploited"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "34.1% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 5.6% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 0.1% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 28.4% (2018 est.)"
+      },
+      "forest": {
+        "text": "10.2% (2018 est.)"
+      },
+      "other": {
+        "text": "55.7% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "3,780 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "the overwhelming majority of the population lives in the southern half of the country, with greater density along the border with Burkina Faso as shown in this population distribution map"
+    },
+    "Natural hazards": {
+      "text": "hot, dust-laden harmattan haze common during dry seasons; recurring droughts; occasional Niger River flooding"
+    },
+    "Geography - note": {
+      "text": "landlocked; divided into three natural zones: the southern, cultivated Sudanese; the central, semiarid Sahelian; and the northern, arid Saharan"
+    },
+    "Major watersheds (area sq km)": {
+      "text": "Atlantic Ocean drainage: Niger (2,261,741 sq km), Senegal (456,397 sq km), Volta (410,991 sq km)"
+    },
+    "Major aquifers": {
+      "text": "Lullemeden-Irhazer Basin, Taodeni-Tanezrouft Basin"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "20,137,527 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Malian(s)"
+      },
+      "adjective": {
+        "text": "Malian"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Bambara 33.3%, Fulani (Peuhl) 13.3%, Sarakole/Soninke/Marka 9.8%, Senufo/Manianka 9.6%, Malinke 8.8%, Dogon 8.7%, Sonrai 5.9%, Bobo 2.1%, Tuareg/Bella 1.7%, other Malian 6%, from members of Economic Community of West Africa 0.4%, other 0.3% (2018 est.)"
+    },
+    "Languages": {
+      "text": "French (official), Bambara 46.3%, Peuhl/Foulfoulbe 9.4%, Dogon 7.2%, Maraka/Soninke 6.4%, Malinke 5.6%, Sonrhai/Djerma 5.6%, Minianka 4.3%, Tamacheq 3.5%, Senoufo 2.6%, Bobo 2.1%, other 6.3%, unspecified 0.7% (2009 est.)",
+      "note": "<strong>note:</strong> Mali has 13 national languages in addition to its official language"
+    },
+    "Religions": {
+      "text": "Muslim 93.9%, Christian 2.8%, animist .7%, none 2.5% (2018 est.)"
+    },
+    "Demographic profile": {
+      "text": "<p>Mali’s total population is expected to double by 2035; its capital Bamako is one of the fastest-growing cities in Africa. A young age structure, a declining mortality rate, and a sustained high total fertility rate of 6 children per woman – the third highest in the world – ensure continued rapid population growth for the foreseeable future. Significant outmigration only marginally tempers this growth. Despite decreases, Mali’s infant, child, and maternal mortality rates remain among the highest in Sub-Saharan Africa because of limited access to and adoption of family planning, early childbearing, short birth intervals, the prevalence of female genital cutting, infrequent use of skilled birth attendants, and a lack of emergency obstetrical and neonatal care.</p><p>Mali’s high total fertility rate has been virtually unchanged for decades, as a result of the ongoing preference for large families, early childbearing, the lack of female education and empowerment, poverty, and extremely low contraceptive use. Slowing Mali’s population growth by lowering its birth rate will be essential for poverty reduction, improving food security, and developing human capital and the economy.</p><p>Mali has a long history of seasonal migration and emigration driven by poverty, conflict, demographic pressure, unemployment, food insecurity, and droughts. Many Malians from rural areas migrate during the dry period to nearby villages and towns to do odd jobs or to adjoining countries to work in agriculture or mining. Pastoralists and nomads move seasonally to southern Mali or nearby coastal states. Others migrate long term to Mali’s urban areas, Cote d’Ivoire, other neighboring countries, and in smaller numbers to France, Mali’s former colonial ruler. Since the early 1990s, Mali’s role has grown as a transit country for regional migration flows and illegal migration to Europe. Human smugglers and traffickers exploit the same regional routes used for moving contraband drugs, arms, and cigarettes.</p><p>Between early 2012 and 2013, renewed fighting in northern Mali between government forces and Tuareg secessionists and their Islamist allies, a French-led international military intervention, as well as chronic food shortages, caused the displacement of hundreds of thousands of Malians. Most of those displaced domestically sought shelter in urban areas of southern Mali, except for pastoralist and nomadic groups, who abandoned their traditional routes, gave away or sold their livestock, and dispersed into the deserts of northern Mali or crossed into neighboring countries. Almost all Malians who took refuge abroad (mostly Tuareg and Maure pastoralists) stayed in the region, largely in Mauritania, Niger, and Burkina Faso.</p>"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "47.69% (male 4,689,121/female 4,636,685)"
+      },
+      "15-24 years": {
+        "text": "19% (male 1,768,772/female 1,945,582)"
+      },
+      "25-54 years": {
+        "text": "26.61% (male 2,395,566/female 2,806,830)"
+      },
+      "55-64 years": {
+        "text": "3.68% (male 367,710/female 352,170)"
+      },
+      "65 years and over": {
+        "text": "3.02% (male 293,560/female 297,401) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "98"
+      },
+      "youth dependency ratio": {
+        "text": "93.1"
+      },
+      "elderly dependency ratio": {
+        "text": "4.9"
+      },
+      "potential support ratio": {
+        "text": "20.4 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "16 years"
+      },
+      "male": {
+        "text": "15.3 years"
+      },
+      "female": {
+        "text": "16.7 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "2.97% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "41.6 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "8.77 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-3.17 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "the overwhelming majority of the population lives in the southern half of the country, with greater density along the border with Burkina Faso as shown in this population distribution map"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "44.7% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "4.57% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "2.713 million BAMAKO (capital) (2021)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.03 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.01 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "0.91 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "0.85 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.04 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.99 male(s)/female"
+      },
+      "total population": {
+        "text": "0.95 male(s)/female (2020 est.)"
+      }
+    },
+    "Mother's mean age at first birth": {
+      "text": "19.2 years (2018 est.)",
+      "note": "<strong>note:</strong> median age at first birth among women 20-49"
+    },
+    "Maternal mortality ratio": {
+      "text": "562 deaths/100,000 live births (2017 est.)"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "62.31 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "67.79 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "56.66 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "62.01 years"
+      },
+      "male": {
+        "text": "59.81 years"
+      },
+      "female": {
+        "text": "64.28 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "5.63 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "17.2% (2018)"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 97.1% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 72.8% of population"
+      },
+      "improved: total": {
+        "text": "total: 82.9% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 2.9% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 27.2% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 17.1% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "3.9% (2018)"
+    },
+    "Physicians density": {
+      "text": "0.13 physicians/1,000 population (2018)"
+    },
+    "Hospital bed density": {
+      "text": "0.1 beds/1,000 population (2010)"
+    },
+    "Sanitation facility access": {
+      "improved: urban": {
+        "text": "urban: 82.5% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 34.1% of population"
+      },
+      "improved: total": {
+        "text": "total: 54.2% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 17.5% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 65.9% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 45.8% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "0.9% (2020 est.)"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "110,000 (2020 est.)"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "4,600 (2020 est.)"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "very high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial and protozoal diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "malaria and dengue fever"
+      },
+      "water contact diseases": {
+        "text": "schistosomiasis"
+      },
+      "animal contact diseases": {
+        "text": "rabies"
+      },
+      "respiratory diseases": {
+        "text": "meningococcal meningitis"
+      }
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "8.6% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "18.1% (2019)"
+    },
+    "Education expenditures": {
+      "text": "3.4% of GDP (2019)"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over can read and write"
+      },
+      "total population": {
+        "text": "35.5%"
+      },
+      "male": {
+        "text": "46.2%"
+      },
+      "female": {
+        "text": "25.7% (2018)"
+      }
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "8 years"
+      },
+      "male": {
+        "text": "8 years"
+      },
+      "female": {
+        "text": "7 years (2017)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "2.4%"
+      },
+      "male": {
+        "text": "2.6%"
+      },
+      "female": {
+        "text": "2.3% (2018 est.)"
+      }
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "deforestation; soil erosion; desertification; loss of pasture land; inadequate supplies of potable water"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Comprehensive Nuclear Test Ban, Desertification, Endangered Species, Hazardous Wastes, Law of the Sea, Ozone Layer Protection, Tropical Timber 2006, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "Nuclear Test Ban"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "31.17 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "3.18 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "19.16 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "107 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "4 million cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "5.075 billion cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "120 billion cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "subtropical to arid; hot and dry (February to June); rainy, humid, and mild (June to November); cool and dry (November to February)"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "34.1% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 5.6% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 0.1% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 28.4% (2018 est.)"
+      },
+      "forest": {
+        "text": "10.2% (2018 est.)"
+      },
+      "other": {
+        "text": "55.7% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "2.02% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "44.7% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "4.57% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "very high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial and protozoal diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "malaria and dengue fever"
+      },
+      "water contact diseases": {
+        "text": "schistosomiasis"
+      },
+      "animal contact diseases": {
+        "text": "rabies"
+      },
+      "respiratory diseases": {
+        "text": "meningococcal meningitis"
+      }
+    },
+    "Food insecurity": {
+      "severe localized food insecurity": {
+        "text": "<p>due to civil insecurity - according to the latest analysis, about 1.37 million people are estimated to be in a food “Crisis”  in the June−August 2021 period as a result of the escalation of the conflict that continues to cause population displacements, combined with the impacts of the pandemic and weather shocks</p> (2021)"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "1,937,354 tons (2012 est.)"
+      }
+    },
+    "Major watersheds (area sq km)": {
+      "text": "Atlantic Ocean drainage: Niger (2,261,741 sq km), Senegal (456,397 sq km), Volta (410,991 sq km)"
+    },
+    "Major aquifers": {
+      "text": "Lullemeden-Irhazer Basin, Taodeni-Tanezrouft Basin"
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Republic of Mali"
+      },
+      "conventional short form": {
+        "text": "Mali"
+      },
+      "local long form": {
+        "text": "Republique de Mali"
+      },
+      "local short form": {
+        "text": "Mali"
+      },
+      "former": {
+        "text": "French Sudan and Sudanese Republic"
+      },
+      "etymology": {
+        "text": "name derives from the West African Mali Empire of the 13th to 16th centuries A.D."
+      }
+    },
+    "Government type": {
+      "text": "semi-presidential republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Bamako"
+      },
+      "geographic coordinates": {
+        "text": "12 39 N, 8 00 W"
+      },
+      "time difference": {
+        "text": "UTC 0 (5 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "the name in the Bambara language can mean either \"crocodile tail\" or \"crocodile river\" and three crocodiles appear on the city seal"
+      }
+    },
+    "Administrative divisions": {
+      "text": "10 regions (regions, singular - region), 1 district*; District de Bamako*, Gao, Kayes, Kidal, Koulikoro, Menaka, Mopti, Segou, Sikasso, Taoudenni, Tombouctou (Timbuktu); note - Menaka and Taoudenni were legislated in 2016, but implementation has not been confirmed by the US Board on Geographic Names"
+    },
+    "Independence": {
+      "text": "22 September 1960 (from France)"
+    },
+    "National holiday": {
+      "text": "Independence Day, 22 September (1960)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "several previous; latest drafted August 1991, approved by referendum 12 January 1992, effective 25 February 1992, suspended briefly in 2012"
+      },
+      "amendments": {
+        "text": "proposed by the president of the republic or by members of the National Assembly; passage requires two-thirds majority vote by the Assembly and approval in a referendum; constitutional sections on the integrity of the state, its republican and secular form of government, and its multiparty system cannot be amended; note - in early 2021, Prime Minister Moctar OUANE called for adopting a new constitution"
+      }
+    },
+    "Legal system": {
+      "text": "civil law system based on the French civil law model and influenced by customary law; judicial review of legislative acts in the Constitutional Court"
+    },
+    "International law organization participation": {
+      "text": "has not submitted an ICJ jurisdiction declaration; accepts ICC jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "at least one parent must be a citizen of Mali"
+      },
+      "dual citizenship recognized": {
+        "text": "yes"
+      },
+      "residency requirement for naturalization": {
+        "text": "5 years"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "Transitional President Assimi GOITA (since 7 June 2021)<br><br>note: an August 2020 coup d'etat deposed President Ibrahim Boubacar KEITA; on 21 September 2020, a group of 17 electors chosen by the Malian military junta, known as the National Committee for the Salvation of the People (CNSP) and led by Colonel Assimi GOITA, selected Bah NDAW as transitional president; GOITA served as vice president of the transitional government which was inaugurated on 25 September 2020; Vice President GOITA seized power on 25 May 2021; NDAW resigned on 26 May 2021"
+      },
+      "head of government": {
+        "text": "Transitional Prime Minister Choguel MAIGA (appointed by Transitional President Assimi GOITA on 7 June 2021)<br><br>note: former Prime Minister Moctar OUANE was arrested and detained by the military on 24 May 2021 and resigned on 26 May 2021"
+      },
+      "cabinet": {
+        "text": "Council of Ministers appointed by the prime minister"
+      },
+      "elections/appointments": {
+        "text": "president directly elected by absolute majority popular vote in 2 rounds if needed for a 5-year term (eligible for a second term); election last held on 29 July 2018 with a runoff on 12 August 2018 (next to be held February 2022); prime minister appointed by the president"
+      },
+      "election results": {
+        "text": "Ibrahim Boubacar KEITA elected president in second round; percent of vote - Ibrahim Boubacar KEITA (RPM) 77.6%, Soumaila CISSE (URD) 22.4%"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral National Assembly or Assemblee Nationale (147 seats; members directly elected in single and multi-seat constituencies by absolute majority vote in 2 rounds if needed; 13 seats reserved for citizens living abroad; members serve 5-year terms)<br><br>note - the National Assembly was dissolved on 18 August 2020 following a military coup and the resignation of President KEITA"
+      },
+      "elections": {
+        "text": "last held on 30 March and 19 April 2020 (prior to the August 2020 coup, the next election was scheduled to be held in 2025)"
+      },
+      "election results": {
+        "text": "percent of vote by party - NA; seats by party - NA composition - NA"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme Court or Cour Supreme (consists of 19 judges organized into judicial, administrative, and accounting sectons); Constitutional Court (consists of 9 judges)"
+      },
+      "judge selection and term of office": {
+        "text": "Supreme Court judges appointed by the Ministry of Justice to serve 5-year terms; Constitutional Court judges selected - 3 each by the president, the National Assembly, and the Supreme Council of the Magistracy; members serve single renewable 7-year terms"
+      },
+      "subordinate courts": {
+        "text": "Court of Appeal; High Court of Justice (jurisdiction limited to cases of high treason or criminal offenses by the president or ministers while in office); administrative courts (first instance and appeal); commercial courts; magistrate courts; labor courts; juvenile courts; special court of state security"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "African Solidarity for Democracy and Independence or SADI [Oumar MARIKO]<br>Alliance for Democracy in Mali-Pan-African Party for Liberty, Solidarity, and Justice or ADEMA-PASJ [Tiemoko SANGARE]<br>Alliance for Democracy and Progress or ADP-Maliba [Amadou THIAM]<br>Alliance for the Solidarity of Mali-Convergence of Patriotic Forces or ASMA-CFP [Soumeylou Boubeye MAIGA]<br>Alternative Forces for Renewal and Emergence or FARE [Modibo SIDIBE]<br>Convergence for the Development of Mali or CODEM [Housseyni Amion GUINDO]<br>Democratic Alliance for Peace or ADP-Maliba [Aliou Boubacar DIALLO]<br>Economic and Social Development Party or PDES [Jamille BITTAR]<br>Front for Democracy and the Republic or FDR (coalition of smaller opposition parties)<br>National Congress for Democratic Initiative or CNID [Mountaga TALL]<br>Party for National Renewal or PARENA [Tiebile DRAME]<br>Patriotic Movement for Renewal or MPR [Choguel Kokalla MAIGA]<br>Rally for Mali or RPM [Boucary TRETA]<br>Union for Republic and Democracy or URD [Younoussi TOURE]"
+    },
+    "International organization participation": {
+      "text": "ACP, AfDB, AU, CD, ECOWAS, EITI (compliant country), FAO, FZ, G-77, IAEA, IBRD, ICAO, ICCt, ICRM, IDA, IDB, IFAD, IFC, IFRCS, ILO, IMF, Interpol, IOC, IOM, IPU, ISO, ITSO, ITU, ITUC (NGOs), MIGA, MONUSCO, NAM, OIC, OIF, OPCW, UN, UNAMID, UNCTAD, UNESCO, UNIDO, UNISFA, UNMISS, UNWTO, UPU, WADB (regional), WAEMU, WCO, WFTU (NGOs), WHO, WIPO, WMO, WTO"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador Mahamadou NIMAGA (since 22 June 2018)"
+      },
+      "chancery": {
+        "text": "2130 R Street NW, Washington, DC 20008"
+      },
+      "telephone": {
+        "text": "[1] (202) 332-2249"
+      },
+      "FAX": {
+        "text": "[1] (202) 332-6603"
+      },
+      "email address and website": {
+        "text": "<br>infos@mali.embassy.us<br><br>https://www.maliembassy.us/"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador Dennis B. HANKINS (since 15 March 2019)"
+      },
+      "embassy": {
+        "text": "ACI 2000, Rue 243, (located off the Roi Bin Fahad Aziz Bridge west of the Bamako central district), Porte 297, Bamako"
+      },
+      "mailing address": {
+        "text": "2050 Bamako Place, Washington DC&nbsp; 20521-2050"
+      },
+      "telephone": {
+        "text": "[223] 20-70-23-00"
+      },
+      "FAX": {
+        "text": "[223] 20-70-24-79"
+      },
+      "email address and website": {
+        "text": "<br>ACSBamako@state.gov<br><br>https://ml.usembassy.gov/"
+      }
+    },
+    "Flag description": {
+      "text": "three equal vertical bands of green (hoist side), yellow, and red",
+      "note": "<strong>note:</strong> uses the popular Pan-African colors of Ethiopia; the colors from left to right are the same as those of neighboring Senegal (which has an additional green central star) and the reverse of those on the flag of neighboring Guinea"
+    },
+    "National symbol(s)": {
+      "text": "Great Mosque of Djenne; national colors: green, yellow, red"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"Le Mali\" (Mali)"
+      },
+      "lyrics/music": {
+        "text": "Seydou Badian KOUYATE/Banzoumana SISSOKO"
+      },
+      "note": "<strong>note:</strong> adopted 1962; also known as \"Pour L'Afrique et pour toi, Mali\" (For Africa and for You, Mali) and \"A ton appel Mali\" (At Your Call, Mali)"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Among the 25 poorest countries in the world, landlocked Mali depends on gold mining and agricultural exports for revenue. The country's fiscal status fluctuates with gold and agricultural commodity prices and the harvest; cotton and gold exports make up around 80% of export earnings. Mali remains dependent on foreign aid.</p><p></p><p>Economic activity is largely confined to the riverine area irrigated by the Niger River; about 65% of Mali’s land area is desert or semidesert. About 10% of the population is nomadic and about 80% of the labor force is engaged in farming and fishing. Industrial activity is concentrated on processing farm commodities. The government subsidizes the production of cereals to decrease the country’s dependence on imported foodstuffs and to reduce its vulnerability to food price shocks.</p><p></p><p>Mali is developing its iron ore extraction industry to diversify foreign exchange earnings away from gold, but the pace will depend on global price trends. Although the political coup in 2012 slowed Mali’s growth, the economy has since bounced back, with GDP growth above 5% in 2014-17, although physical insecurity, high population growth, corruption, weak infrastructure, and low levels of human capital continue to constrain economic development. Higher rainfall helped to boost cotton output in 2017, and the country’s 2017 budget increased spending more than 10%, much of which was devoted to infrastructure and agriculture. Corruption and political turmoil are strong downside risks in 2018 and beyond.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$45.637 billion (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$43.567 billion (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$41.593 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "5.4% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "5.8% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "6.2% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$2,322 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$2,284 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$2,247 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$17.508 billion (2019 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2018": {
+        "text": "1.9% (2018 est.)"
+      },
+      "Inflation rate (consumer prices) 2017": {
+        "text": "1.7% (2017 est.)"
+      }
+    },
+    "Credit ratings": {
+      "Moody's rating": {
+        "text": "Caa1 (2020)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "41.8% (2017 est.)"
+      },
+      "industry": {
+        "text": "18.1% (2017 est.)"
+      },
+      "services": {
+        "text": "40.5% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "82.9% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "17.4% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "19.3% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "-0.7% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "22.1% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-41.1% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "maize, rice, millet, sorghum, mangoes/guavas, cotton, watermelons, green onions/shallots, okra, sugar cane"
+    },
+    "Industries": {
+      "text": "food processing; construction; phosphate and gold mining"
+    },
+    "Industrial production growth rate": {
+      "text": "6.3% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "6.447 million (2017 est.)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "80%"
+      },
+      "industry and services": {
+        "text": "20% (2005 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2017": {
+        "text": "7.9% (2017 est.)"
+      },
+      "Unemployment rate 2016": {
+        "text": "7.8% (2016 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "42.1% (2019 est.)"
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "Gini Index coefficient - distribution of family income 2001": {
+        "text": "40.1 (2001)"
+      },
+      "Gini Index coefficient - distribution of family income 1994": {
+        "text": "50.5 (1994)"
+      }
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "3.5%"
+      },
+      "highest 10%": {
+        "text": "25.8% (2010 est.)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "3.075 billion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "3.513 billion (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-2.9% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "35.4% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "36% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "20% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$886 million (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "-$1.015 billion (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$3.06 billion (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$2.803 billion (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "United Arab Emirates 66%, Switzerland 26% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "gold, cotton, sesame seeds, lumber, vegetable oils/residues (2019)"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$3.644 billion (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$3.403 billion (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "Senegal 23%, Cote d'Ivoire 15%, China 11%, France 9% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "refined petroleum, clothing and apparel, packaged medicines, cement, broadcasting equipment (2019)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$647.8 million (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "text": "$395.7 million (31 December 2016 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 31 December 2017": {
+        "text": "$4.192 billion (31 December 2017 est.)"
+      },
+      "Debt - external 31 December 2016": {
+        "text": "$3.981 billion (31 December 2016 est.)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "Communaute Financiere Africaine francs (XOF) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "605.3 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "593.01 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "593.01 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "591.45 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "494.42 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "50% (2019)"
+      },
+      "electrification - urban areas": {
+        "text": "78% (2019)"
+      },
+      "electrification - rural areas": {
+        "text": "28% (2019)"
+      }
+    },
+    "Electricity - production": {
+      "text": "2.489 billion kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "2.982 billion kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "800 million kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "590,000 kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "68% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "31% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "1% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "22,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "20,610 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "242,241"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "1.28 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "22,925,482"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "120.75 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "<p>Mali’s telecom systems are challenged by recent conflict, geography, areas of low population, poverty, security issues, and high illiteracy; telecom infrastructure is barely adequate in urban areas and not available in most of the country with underinvestment in fixed-line networks; high mobile penetration and potential for mobile broadband service; local plans for IXP; dependent on neighboring countries for international bandwidth and access to submarine cables; Chinese investment in infrastructure stymied by security issues; importer of broadcasting equipment from China (2021)</p> (2020)"
+      },
+      "domestic": {
+        "text": "fixed-line subscribership 1 per 100 persons; mobile-cellular subscribership has increased sharply to over 115 per 100 persons; increasing use of local radio loops to extend network coverage to remote areas (2019)"
+      },
+      "international": {
+        "text": "country code - 223; satellite communications center and fiber-optic links to neighboring countries; satellite earth stations - 2 Intelsat (1 Atlantic Ocean, 1 Indian Ocean)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "national public TV broadcaster; 2 privately owned companies provide subscription services to foreign multi-channel TV packages; national public radio broadcaster supplemented by a large number of privately owned and community broadcast stations; transmissions of multiple international broadcasters are available (2019)"
+    },
+    "Internet country code": {
+      "text": ".ml"
+    },
+    "Internet users": {
+      "total": {
+        "text": "2,395,886"
+      },
+      "percent of population": {
+        "text": "13% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "142,522"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "1 (2018 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "0 (2020)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "TZ, TT"
+    },
+    "Airports": {
+      "total": {
+        "text": "25 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "8"
+      },
+      "over 3,047 m": {
+        "text": "1"
+      },
+      "2,438 to 3,047 m": {
+        "text": "4"
+      },
+      "1,524 to 2,437 m": {
+        "text": "2"
+      },
+      "914 to 1,523 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "17"
+      },
+      "1,524 to 2,437 m": {
+        "text": "3"
+      },
+      "914 to 1,523 m": {
+        "text": "9"
+      },
+      "under 914 m": {
+        "text": "5 (2013)"
+      }
+    },
+    "Heliports": {
+      "text": "2 (2013)"
+    },
+    "Railways": {
+      "total": {
+        "text": "593 km (2014)"
+      },
+      "narrow gauge": {
+        "text": "593 km 1.000-m gauge (2014)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "139,107 km (2018)"
+      }
+    },
+    "Waterways": {
+      "text": "1,800 km (downstream of Koulikoro; low water levels on the River Niger cause problems in dry years; in the months before the rainy season the river is not navigable by commercial vessels) (2011)"
+    },
+    "Ports and terminals": {
+      "river port(s)": {
+        "text": "Koulikoro (Niger)"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Malian Armed Forces (FAMa): Army (Armee de Terre; includes a riverine patrol force), Republic of Mali Air Force (Force Aerienne de la Republique du Mali, FARM); National Gendarmerie; National Guard (Garde National du Mali) (2021)",
+      "note": "note(s): the Gendarmerie and the National Guard are under the authority of the Ministry of Defense and Veterans Affairs (Ministere De La Defense Et Des Anciens Combattants, MDAC), but operational control is shared between the MDAC and the Ministry of Internal Security and Civil Protection<br><br>the Gendarmerie's primary mission is internal security and public order; its duties also include territorial defense, humanitarian operations, intelligence gathering, and protecting private property, mainly in rural areas; as of 2021, the Gendarmerie was comprised of approximately 8 paramilitary companies and a mobile intervention unit<br><br>the National Guard is a military force responsible for providing security to government facilities and institutions, prison service, public order, humanitarian operations, some border security, and intelligence gathering; as of 2021, it had approximately 8 companies of troops, including a camel corps for patrolling the deserts and borders of northern Mali"
+    },
+    "Military expenditures": {
+      "Military Expenditures 2020": {
+        "text": "3.4% of GDP (2020 est.)"
+      },
+      "Military Expenditures 2019": {
+        "text": "2.7% of GDP (2019)"
+      },
+      "Military Expenditures 2018": {
+        "text": "2.9% of GDP (2018)"
+      },
+      "Military Expenditures 2017": {
+        "text": "3% of GDP (2017)"
+      },
+      "Military Expenditures 2016": {
+        "text": "2.6% of GDP (2016)"
+      }
+    },
+    "Military and security service personnel strengths": {
+      "text": "information varies; approximately 18,000 total troops (13,000 Army; 800 Air Force; 2,000 Gendarmerie; 2,000 National Guard) (2020)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the FAMa's inventory consists primarily of Soviet-era equipment, although in recent years it has received limited quantities of mostly second-hand armaments from more than 15 countries (2020)"
+    },
+    "Military service age and obligation": {
+      "text": "18 years of age for selective compulsory and voluntary military service (men and women); 2-year conscript service obligation (2019)"
+    },
+    "Military - note": {
+      "text": "prior to the coups in August 2020 and May 2021, the Malian military had intervened in the political arena at least five times since the country gained independence in 1960; two attempts failed (1976 and 1978), while three succeeded in overturning civilian rule (1968, 1991, and 2012); the military collapsed in 2012 during the fighting against Tuareg rebels and Islamic militants; it has been since rebuilt, but continues to have limited capabilities and is heavily reliant on external assistance <br><br>since 2017, the FAMa, along with other government security and paramilitary forces, has conducted multiple major operations against militants in the eastern, central, and northern parts of the country; up to 4,000 troops reportedly have been deployed; the stated objectives for the most recent operation (Operation Maliko in early 2020) was to end terrorist activity and restore government authority in seven of the country’s 10 regions, including Mopti, Ségou, Gao, Kidal, Ménaka, Taoudénit, and Timbuktu<br><br>Mali is part of a five-nation anti-jihadist task force known as the G5 Sahel Group, set up in 2014 with Burkina Faso, Chad, Mauritania, and Niger; it has committed 1,100 troops and 200 gendarmes to the force; in early 2020, G5 Sahel military chiefs of staff agreed to allow defense forces from each of the states to pursue terrorist fighters up to 100 km into neighboring countries; the G5 force is backed by the UN, US, and France; G5 troops periodically conduct joint operations with French forces deployed to the Sahel under Operation Barkhane  <br><br>the United Nations Multidimensional Integrated Stabilization Mission in Mali (MINUSMA) has operated in the country since 2013; the Mission's responsibilities include providing security, rebuilding Malian security forces, supporting national political dialogue, and assisting in the reestablishment of Malian government authority; as of August 2021, MINUSMA had around 18,000 personnel deployed; in June 2021, MINUSMA's mission was extended until the end of June 2022<br><br>the European Union Training Mission in Mali (EUTM-M) also has operated in the country since 2013; the EUTM-M provides advice and training to the Malian Armed Forces and military assistance to the G5 Sahel Joint Force; as of March 2021, the mission included almost 700 personnel from 25 European countries"
+    }
+  },
+  "Terrorism": {
+    "Terrorist group(s)": {
+      "text": "Ansar al-Dine; Islamic State of Iraq and ash-Sham in the Greater Sahara; Jama'at Nusrat al-Islam wal-Muslimin; al-Mulathamun Battalion (al-Mourabitoun)",
+      "note": "<strong>note:</strong> details about the history, aims, leadership, organization, areas of operation, tactics, targets, weapons, size, and sources of support of the group(s) appear(s) in Appendix-T"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>demarcation is underway with Burkina Faso</p>"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "16,938 (Niger), 15,043 (Mauritania), 12,913 (Burkina Faso) (2021)"
+      },
+      "IDPs": {
+        "text": "287,490 (Tuareg rebellion since 2012) (2021)"
+      }
+    },
+    "Trafficking in persons": {
+      "current situation": {
+        "text": "Mali is a source, transit, and destination country for men, women, and children subjected to forced labor and sex trafficking; women and girls are forced into domestic servitude, agricultural labor, and support roles in gold mines, as well as subjected to sex trafficking; Malian boys are found in conditions of forced labor in agricultural settings, gold mines, and the informal commercial sector, as well as forced begging in Mali and neighboring countries; Malians and other Africans who travel through Mali to Mauritania, Algeria, or Libya in hopes of reaching Europe are particularly at risk of becoming victims of human trafficking; men and boys, primarily of Songhai ethnicity, are subjected to debt bondage in the salt mines of Taoudenni in northern Mali; some members of Mali's Tuareg community are subjected to traditional slavery-related practices, and this involuntary servitude reportedly has extended to their children; reports indicate that non-governmental armed groups operating in northern Mali recruited children as combatants, cooks, porters, guards, spies, and sex slaves; slaveholders use some members of the Tuareg community in hereditary servitude where communities rather than individuals or families exploit the enslaved"
+      },
+      "tier rating": {
+        "text": "Tier 2 Watch List &mdash; Mali does not fully meet the minimum standards for the elimination of trafficking but is making significant efforts to do so; government efforts included prosecuting hereditary slavery cases, increasing convictions, continuing training and awareness raising activities, releasing all children associated with the Malian armed forces (FAMa) to an international organization for care, training law enforcement officials on protection of children in armed conflict, identifying 215 children used by armed groups and referring them to international organizations for care; however, the government did not stop all use of children in the FAMa; the government continued to provide support to and collaborate with the Imghad Tuareg and the Allies Self-Defense Group, which recruited and used child soldiers; authorities did not investigate any suspects for child soldier offenses or make efforts to prevent it; law enforcement lacked resources and training about human trafficking; services for victims remained insufficient; therefore, Mali was downgraded to Tier 2 Watch List (2020)"
+      }
+    }
+  }
+}

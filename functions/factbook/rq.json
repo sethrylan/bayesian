@@ -1,0 +1,923 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "Populated for centuries by aboriginal peoples, the island was claimed by the Spanish Crown in 1493 following Christopher COLUMBUS' second voyage to the Americas. In 1898, after 400 years of colonial rule that saw the indigenous population nearly exterminated and African slave labor introduced, Puerto Rico was ceded to the US as a result of the Spanish-American War. Puerto Ricans were granted US citizenship in 1917. Popularly elected governors have served since 1948. In 1952, a constitution was enacted providing for internal self-government. In plebiscites held in 1967, 1993, and 1998, voters chose not to alter the existing political status with the US, but the results of a 2012 vote left open the possibility of American statehood. Economic recession on the island has led to a net population loss since about 2005, as large numbers of residents moved to the US mainland. The trend has accelerated since 2010; in 2014, Puerto Rico experienced a net population loss to the mainland of 64,000, more than double the net loss of 26,000 in 2010. Hurricane Maria struck the island on 20 September 2017 causing catastrophic damage, including destruction of the electrical grid that had been cripled by Hurricane Irma just two weeks before. It was the worst storm to hit the island in eight decades, and damage is estimated in the tens of billions of dollars. A referendum held in late 2020 showed a narrow preference for American statehood."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Caribbean, island between the Caribbean Sea and the North Atlantic Ocean, east of the Dominican Republic"
+    },
+    "Geographic coordinates": {
+      "text": "18 15 N, 66 30 W"
+    },
+    "Map references": {
+      "text": "Central America and the Caribbean"
+    },
+    "Area": {
+      "total": {
+        "text": "9,104 sq km"
+      },
+      "land": {
+        "text": "8,959 sq km"
+      },
+      "water": {
+        "text": "145 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly less than three times the size of Rhode Island"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Coastline": {
+      "text": "501 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      }
+    },
+    "Climate": {
+      "text": "tropical marine, mild; little seasonal temperature variation"
+    },
+    "Terrain": {
+      "text": "mostly mountains with coastal plain in north; precipitous mountains to the sea on west coast; sandy beaches along most coastal areas"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Cerro de Punta 1,338 m"
+      },
+      "lowest point": {
+        "text": "Caribbean Sea 0 m"
+      },
+      "mean elevation": {
+        "text": "261 m"
+      }
+    },
+    "Natural resources": {
+      "text": "some copper and nickel; potential for onshore and offshore oil"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "22% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 6.6% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 5.6% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "63.2% (2018 est.)"
+      },
+      "other": {
+        "text": "14.8% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "220 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "population clusters tend to be found along the coast, the largest of these is found in and around San Juan; an exception to this is a sizeable population located in the interior of the island immediately south of the capital around Caguas; most of the interior, particularly in the western half of the island, is dominated by the Cordillera Central mountains, where population density is low"
+    },
+    "Natural hazards": {
+      "text": "periodic droughts; hurricanes"
+    },
+    "Geography - note": {
+      "text": "important location along the Mona Passage - a key shipping lane to the Panama Canal; San Juan is one of the biggest and best natural harbors in the Caribbean; many small rivers and high central mountains ensure land is well watered; south coast relatively dry; fertile coastal plain belt in north"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "3,142,779 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Puerto Rican(s) (US citizens)"
+      },
+      "adjective": {
+        "text": "Puerto Rican"
+      }
+    },
+    "Ethnic groups": {
+      "text": "White 75.8%, Black/African American 12.4%, other 8.5% (includes American Indian, Alaskan Native, Native Hawaiian, other Pacific Islander, and others), mixed 3.3% (2010 est.)",
+      "note": "<strong>note:</strong> 99% of the population is Latino"
+    },
+    "Languages": {
+      "Languages": {
+        "text": "Spanish, English"
+      },
+      "major-language sample(s)": {
+        "text": "<br>La Libreta Informativa del Mundo, la fuente indispensable de información básica. (Spanish)<br><br>The World Factbook, the indispensable source for basic information."
+      }
+    },
+    "Religions": {
+      "text": "Roman Catholic 85%, Protestant and other 15%"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "14.22% (male 231,406/female 222,061)"
+      },
+      "15-24 years": {
+        "text": "12.78% (male 207,169/female 200,373)"
+      },
+      "25-54 years": {
+        "text": "37.73% (male 573,114/female 630,276)"
+      },
+      "55-64 years": {
+        "text": "13.5% (male 197,438/female 232,931)"
+      },
+      "65 years and over": {
+        "text": "21.77% (male 297,749/female 396,551) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "57.7"
+      },
+      "youth dependency ratio": {
+        "text": "24.8"
+      },
+      "elderly dependency ratio": {
+        "text": "32.8"
+      },
+      "potential support ratio": {
+        "text": "3 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "43.6 years"
+      },
+      "male": {
+        "text": "41.6 years"
+      },
+      "female": {
+        "text": "45.3 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "-1.46% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "7.9 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "9.53 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-13 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "population clusters tend to be found along the coast, the largest of these is found in and around San Juan; an exception to this is a sizeable population located in the interior of the island immediately south of the capital around Caguas; most of the interior, particularly in the western half of the island, is dominated by the Cordillera Central mountains, where population density is low"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "93.6% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "-0.12% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "2.445 million SAN JUAN (capital) (2021)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.06 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.04 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "0.91 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "0.85 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.75 male(s)/female"
+      },
+      "total population": {
+        "text": "0.9 male(s)/female (2020 est.)"
+      }
+    },
+    "Maternal mortality ratio": {
+      "text": "21 deaths/100,000 live births (2017 est.)"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "6.16 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "6.73 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "5.55 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "81.47 years"
+      },
+      "male": {
+        "text": "78.23 years"
+      },
+      "female": {
+        "text": "84.89 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "1.23 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: total": {
+        "text": "total: 97% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 0% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "NA"
+    },
+    "Physicians density": {
+      "text": "3.06 physicians/1,000 population (2018)"
+    },
+    "Sanitation facility access": {
+      "improved: total": {
+        "text": "total: 97.2% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 2.8% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "6.1% of GDP (2014)"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over can read and write"
+      },
+      "total population": {
+        "text": "92.4%"
+      },
+      "male": {
+        "text": "92.4%"
+      },
+      "female": {
+        "text": "92.4% (2017)"
+      }
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "16 years"
+      },
+      "male": {
+        "text": "15 years"
+      },
+      "female": {
+        "text": "18 years (2018)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "26.6%"
+      },
+      "male": {
+        "text": "28.9%"
+      },
+      "female": {
+        "text": "23.1% (2012 est.)"
+      }
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "soil erosion; occasional droughts cause water shortages; industrial pollution"
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "796 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "2.365 billion cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "113.5 million cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "7.1 billion cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical marine, mild; little seasonal temperature variation"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "22% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 6.6% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 5.6% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 9.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "63.2% (2018 est.)"
+      },
+      "other": {
+        "text": "14.8% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "93.6% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "-0.12% annual rate of change (2020-25 est.)"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "4,170,953 tons (2015 est.)"
+      },
+      "municipal solid waste recycled annually": {
+        "text": "583,933 tons (2013 est.)"
+      },
+      "percent of municipal solid waste recycled": {
+        "text": "14% (2013 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Commonwealth of Puerto Rico"
+      },
+      "conventional short form": {
+        "text": "Puerto Rico"
+      },
+      "abbreviation": {
+        "text": "PR"
+      },
+      "etymology": {
+        "text": "Christopher COLUMBUS named the island San Juan Bautista (Saint John the Baptist) and the capital city and main port Cuidad de Puerto Rico (Rich Port City); over time, however, the names were shortened and transposed and the island came to be called Puerto Rico and its capital San Juan"
+      }
+    },
+    "Government type": {
+      "text": "republican form of government with separate executive, legislative, and judicial branches; unincorporated organized territory of the US with local self-government",
+      "note": "Note: reference Puerto Rican Federal Relations Act, 2 March 1917, as amended by Public Law 600, 3 July 1950"
+    },
+    "Dependency status": {
+      "text": "unincorporated organized territory of the US; policy relations between Puerto Rico and the US conducted under the jurisdiction of the Office of the President"
+    },
+    "Capital": {
+      "name": {
+        "text": "San Juan"
+      },
+      "geographic coordinates": {
+        "text": "18 28 N, 66 07 W"
+      },
+      "time difference": {
+        "text": "UTC-4 (1 hour ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "the name dates to 1521 and the founding of the city under the name \"Ciudad de San Juan Bautista de Puerto Rico\" (City of Saint John the Baptist of Puerto Rico)"
+      }
+    },
+    "Administrative divisions": {
+      "text": "none (territory of the US); there are no first-order administrative divisions as defined by the US Government, but there are 78 municipalities (municipios, singular - municipio) at the second order; Adjuntas, Aguada, Aguadilla, Aguas Buenas, Aibonito, Anasco, Arecibo, Arroyo, Barceloneta, Barranquitas, Bayamon, Cabo Rojo, Caguas, Camuy, Canovanas, Carolina, Catano, Cayey, Ceiba, Ciales, Cidra, Coamo, Comerio, Corozal, Culebra, Dorado, Fajardo, Florida, Guanica, Guayama, Guayanilla, Guaynabo, Gurabo, Hatillo, Hormigueros, Humacao, Isabela, Jayuya, Juana Diaz, Juncos, Lajas, Lares, Las Marias, Las Piedras, Loiza, Luquillo, Manati, Maricao, Maunabo, Mayaguez, Moca, Morovis, Naguabo, Naranjito, Orocovis, Patillas, Penuelas, Ponce, Quebradillas, Rincon, Rio Grande, Sabana Grande, Salinas, San German, San Juan, San Lorenzo, San Sebastian, Santa Isabel, Toa Alta, Toa Baja, Trujillo Alto, Utuado, Vega Alta, Vega Baja, Vieques, Villalba, Yabucoa, Yauco"
+    },
+    "Independence": {
+      "text": "none (territory of the US with commonwealth status)"
+    },
+    "National holiday": {
+      "text": "US Independence Day, 4 July (1776); Puerto Rico Constitution Day, 25 July (1952)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "previous 1900 (Organic Act, or Foraker Act); latest ratified by referendum 3 March 1952, approved 3 July 1952, effective 25 July 1952"
+      },
+      "amendments": {
+        "text": "proposed by a concurrent resolution of at least two-thirds majority by the total Legislative Assembly membership; approval requires at least two-thirds majority vote by the membership of both houses and approval by a majority of voters in a special referendum; if passed by at least three-fourths Assembly vote, the referendum can be held concurrently with the next general election; constitutional articles such as the republican form of government or the bill of rights cannot be amended; amended 1952"
+      }
+    },
+    "Legal system": {
+      "text": "civil law system based on the Spanish civil code and within the framework of the US federal system"
+    },
+    "Citizenship": {
+      "text": "see United States"
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal; note - island residents are US citizens but do not vote in US presidential elections"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Joseph R. BIDEN Jr. (since 20 January 2021); Vice President Kamala D. HARRIS (since 20 January 2021)"
+      },
+      "head of government": {
+        "text": "Governor Pedro PIERLUISI (since 2 January 2021)"
+      },
+      "cabinet": {
+        "text": "Cabinet appointed by governor with the consent of the Legislative Assembly"
+      },
+      "elections/appointments": {
+        "text": "president and vice president indirectly elected on the same ballot by an Electoral College of 'electors' chosen from each state; president and vice president serve a 4-year term (eligible for a second term); under the US Constitution, residents of Puerto Rico do not vote in elections for US president and vice president; however, they may vote in Democratic and Republican party presidential primary elections; governor directly elected by simple majority popular vote for a 4-year term (no term limits); election last held on 3 November 2020 (next to be held on&nbsp; November 2024)"
+      },
+      "election results": {
+        "text": "Pedro PIERLUISI elected governor; percent of vote - Pedro PIERLUISI (PNP) 32.9%, Carlos DELGADO (PPD) 31.6%, Alexandra LUGARO (independent) 14.2%, Juan DALMAU (PIP) 13.7%"
+      },
+      "note": "<strong>note:</strong> on 24 July 2019, Governor Ricardo ROSSELLO announced his resignation effective 2 August 2019; as Secretary of State, Pedro PIERLUISI succeeded Governor Ricardo ROSSELLO; on 7 August 2019 the Supreme Court of Puerto Rico ruled Pedro PIERLUISI accession was unconstitutional and Wanda VAZQUEZ is sworn in as governor"
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "bicameral Legislative Assembly or Asamblea Legislativa consists of:<br>Senate or Senado (30 seats; 16 members directly elected in 8 2-seat constituencies by simple majority vote and 14 at-large members directly elected by simple majority vote to serve 4-year terms)<br> House of Representatives or Camara de Representantes (51 seats; members directly elected in single-seat constituencies by simple majority vote to serve 4-year terms)"
+      },
+      "elections": {
+        "text": "<br> Senate - last held on 8 November 2016 (next to be held on 3 November 2020)<br> House of Representatives - last held on 8 November 2016 (next to be held on 3 November 2020)"
+      },
+      "election results": {
+        "text": "<br> Senate - percent of vote by party - NA; seats by party - PNP 21, PPD 7, PIP 1, Independent 1; composition - men 23, women 7, percent of women 23.3%<br> House of Representatives - percent of vote by party - NA; seats by party - PNP 34, PPD 16, PIP 1; composition - men 11, women 4, percent of women 26.7%; total Legislative Assembly percent of women 16%<br> <strong>note: </strong>Puerto Rico directly elects 1 member by simple majority vote to serve a 4-year term as a commissioner to the US House of Representatives; the commissioner can vote when serving on a committee and when the House meets as the Committee of the Whole House but not when legislation is submitted for a 'full floor' House vote; election of commissioner last held on 6 November 2018 (next to be held in November 2022)"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme Court (consists of the chief justice and 8 associate justices)"
+      },
+      "judge selection and term of office": {
+        "text": "justices appointed by the governor and confirmed by majority Senate vote; judges serve until compulsory retirement at age 70"
+      },
+      "subordinate courts": {
+        "text": "Court of Appeals; First Instance Court comprised of superior and municipal courts"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "National Democratic Party [Charlie RODRIGUEZ]<br>National Republican Party of Puerto Rico [Jenniffer GONZALEZ]<br>New Progressive Party or PNP [Ricardo ROSSELLO] (pro-US statehood)<br>Popular Democratic Party or PPD [Alejandro GARCIA Padillo] (pro-commonwealth)<br>Puerto Rican Independence Party or PIP [Ruben BERRIOS Martinez] (pro-independence)"
+    },
+    "International organization participation": {
+      "text": "AOSIS (observer), Caricom (observer), Interpol (subbureau), IOC, UNWTO (associate), UPU, WFTU (NGOs)"
+    },
+    "Diplomatic representation in the US": {
+      "text": "none (territory of the US)"
+    },
+    "Diplomatic representation from the US": {
+      "embassy": {
+        "text": "none (territory of the US with commonwealth status)"
+      }
+    },
+    "Flag description": {
+      "text": "five equal horizontal bands of red (top, center, and bottom) alternating with white; a blue isosceles triangle based on the hoist side bears a large, white, five-pointed star in the center; the white star symbolizes Puerto Rico; the three sides of the triangle signify the executive, legislative and judicial parts of the government; blue stands for the sky and the coastal waters; red symbolizes the blood shed by warriors, while white represents liberty, victory, and peace",
+      "note": "<strong>note:</strong> design initially influenced by the US flag, but similar to the Cuban flag, with the colors of the bands and triangle reversed"
+    },
+    "National symbol(s)": {
+      "text": "Puerto Rican spindalis (bird), coqui (frog); national colors: red, white, blue"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"La Borinquena\" (The Puerto Rican)"
+      },
+      "lyrics/music": {
+        "text": "Manuel Fernandez JUNCOS/Felix Astol ARTES"
+      },
+      "note": "<strong>note:</strong> music adopted 1952, lyrics adopted 1977; the local anthem's name is a reference to the indigenous name of the island, Borinquen; the music was originally composed as a dance in 1867 and gained popularity in the early 20th century; there is some evidence that the music was written by Francisco RAMIREZ; as a commonwealth of the US, \"The Star-Spangled Banner\" is official (see United States)"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Puerto Rico had one of the most dynamic economies in the Caribbean region until 2006; however, growth has been negative for each of the last 11 years. The downturn coincided with the phaseout of tax preferences that had led US firms to invest heavily in the Commonwealth since the 1950s, and a steep rise in the price of oil, which generates most of the island's electricity.</p><p></p><p>Diminished job opportunities prompted a sharp rise in outmigration, as many Puerto Ricans sought jobs on the US mainland. Unemployment reached 16% in 2011, but declined to 11.5% in December 2017. US minimum wage laws apply in Puerto Rico, hampering job expansion. Per capita income is about two-thirds that of the US mainland.</p><p></p><p>The industrial sector greatly exceeds agriculture as the locus of economic activity and income. Tourism has traditionally been an important source of income with estimated arrivals of more than 3.6 million tourists in 2008. Puerto Rico's merchandise trade surplus is exceptionally strong, with exports nearly 50% greater than imports, and its current account surplus about 10% of GDP.</p><p></p><p>Closing the budget deficit while restoring economic growth and employment remain the central concerns of the government. The gap between revenues and expenditures amounted to 0.6% of GDP in 2016, although analysts believe that not all expenditures have been accounted for in the budget and a better accounting of costs would yield an overall deficit of roughly 5% of GDP. Public debt remained steady at 92.5% of GDP in 2017, about $17,000 per person, or nearly three times the per capita debt of the State of Connecticut, the highest in the US. Much of that debt was issued by state-run schools and public corporations, including water and electric utilities. In June 2015, Governor Alejandro GARCIA Padilla announced that the island could not pay back at least $73 billion in debt and that it would seek a deal with its creditors.</p><p></p><p>Hurricane Maria hit Puerto Rico square on in September 2017, causing electrical power outages to 90% of the territory, as well as extensive loss of housing and infrastructure and contamination of potable water. Despite massive efforts, more than 40% of the territory remained without electricity as of yearend 2017. As a result of the destruction, many Puerto Ricans have emigrated to the US mainland.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$110.238 billion (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$108.944 billion (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$114.269 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "-2.4% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "-1.3% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "-1% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$34,518 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$34,116 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$34,364 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2017 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$104.2 billion (2017 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "1.8% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "-0.3% (2016 est.)"
+      }
+    },
+    "Credit ratings": {
+      "Standard & Poors rating": {
+        "text": "D (2015)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "0.8% (2017 est.)"
+      },
+      "industry": {
+        "text": "50.1% (2017 est.)"
+      },
+      "services": {
+        "text": "49.1% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "87.7% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "12.2% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "11.7% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0.5% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "117.8% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-129.8% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "milk, plantains, bananas, poultry, tomatoes, mangoes/guavas, eggs, oranges, gourds, papayas"
+    },
+    "Industries": {
+      "text": "pharmaceuticals, electronics, apparel, food products, tourism"
+    },
+    "Industrial production growth rate": {
+      "text": "-2.1% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "1.139 million (December 2014 est.)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "2.1%"
+      },
+      "industry": {
+        "text": "19%"
+      },
+      "services": {
+        "text": "79% (2005 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2017": {
+        "text": "10.8% (2017 est.)"
+      },
+      "Unemployment rate 2016": {
+        "text": "11.8% (2016 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "NA"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "NA"
+      },
+      "highest 10%": {
+        "text": "NA"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "9.268 billion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "9.974 billion (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-0.7% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "51.6% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "50.1% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "8.9% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "1 July - 30 June"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "$0 (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "$0 (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$73.17 billion (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$73.2 billion (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "Italy 15%, Netherlands 15%, Belgium 9%, Japan 8%, Germany 8%, Austria 8%, Spain 7%, China 5% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "packaged medicines, medical cultures/vaccines, hormones, orthopedic and medical appliances, sulfur compounds (2019)"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$49.01 billion (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$48.86 billion (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "Ireland 38%, Singapore 9%, Switzerland 8%, South Korea 5% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "nitrogen compounds, sulfur compounds, refined petroleum, medical cultures/vaccines, cars (2019)"
+    },
+    "Debt - external": {
+      "Debt - external 31 December 2010": {
+        "text": "$56.82 billion (31 December 2010 est.)"
+      },
+      "Debt - external 31 December 2009": {
+        "text": "$52.98 billion (31 December 2009 est.)"
+      }
+    },
+    "Exchange rates": {
+      "text": "<p>the US dollar is used</p>"
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "20.95 billion kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "19.48 billion kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "6.294 million kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "94% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "2% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "4% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "98,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "18,420 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "127,100 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "1.303 billion cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "1.303 billion cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "686,901"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "21.19 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "3,371,969"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "104.03 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "<p>small telecom market affected by mismanagement and natural disasters; hurricanes in 2017 and earthquake in 2020 caused destruction of telecom infrastructure, leading to market decline; US provided funds to rebuild after some delay; lags behind US in fixed and broadband penetration due to high unemployment and lack of operator investment; multi-national telcoms enable LTE and launch of 5G; growing number of submarine cables helps to reduce costs and supports streaming of international content and cloud services; operator launched connectivity for school children during pandemic (2021)</p> (2020)"
+      },
+      "domestic": {
+        "text": "digital telephone system; mobile-cellular services; fixed-line 23 per 100 and mobile-cellular 115 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 1-787, 939; landing points for the GTMO-PR, AMX-1, BRUSA, GCN, PCCS, SAm-1, Southern Caribbean Fiber, Americas-II, Antillas, ARCOS, SMPR-1, and Taino-Carib submarine cables providing connectivity to the mainland US, Caribbean, Central and South America; satellite earth station - 1 Intelsat (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "more than 30 TV stations operating; cable TV subscription services are available; roughly 125 radio stations"
+    },
+    "Internet country code": {
+      "text": ".pr"
+    },
+    "Internet users": {
+      "total": {
+        "text": "2,326,006"
+      },
+      "percent of population": {
+        "text": "70.6% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "609,943"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "18.82 (2019 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "Airports": {
+      "total": {
+        "text": "29 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "17"
+      },
+      "over 3,047 m": {
+        "text": "2"
+      },
+      "2,438 to 3,047 m": {
+        "text": "1"
+      },
+      "1,524 to 2,437 m": {
+        "text": "2"
+      },
+      "914 to 1,523 m": {
+        "text": "7"
+      },
+      "under 914 m": {
+        "text": "5 (2017)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "12"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1"
+      },
+      "914 to 1,523 m": {
+        "text": "1"
+      },
+      "under 914 m": {
+        "text": "10 (2013)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "26,862 km (includes 454 km of expressways) (2012)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Ensenada Honda, Mayaguez, Playa de Guayanilla, Playa de Ponce, San Juan"
+      },
+      "container port(s) (TEUs)": {
+        "text": "San Juan (2,142,662) (2019)"
+      },
+      "LNG terminal(s) (import)": {
+        "text": "Guayanilla Bay"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "no regular indigenous military forces; National Guard, State Guard, Police Force"
+    },
+    "Military - note": {
+      "text": "defense is the responsibility of the US"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>increasing numbers of illegal migrants from the Dominican Republic cross the Mona Passage to Puerto Rico each year looking for work</p>"
+    }
+  }
+}

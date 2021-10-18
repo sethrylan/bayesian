@@ -9,6 +9,9 @@ func TestRead(t *testing.T) {
 	if countries == nil || err != nil {
 		t.Fatalf(`file not deserialized %v`, err)
 	}
+	if len(countries) < 189 {
+		t.Fatalf(`only %d countries parsed`, len(countries))
+	}
 }
 
 func TestGetQuestions(t *testing.T) {

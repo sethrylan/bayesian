@@ -1,0 +1,872 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>Inhabited since at least the 15th century B.C., the West Bank has been dominated by many different peoples throughout its history; it was incorporated into the Ottoman Empire in the early 16th century. The West Bank fell to British forces during World War I, becoming part of the British Mandate of Palestine. Following the 1948 Arab-Israeli War, the West Bank was captured by Transjordan (later renamed Jordan), which annexed the West Bank in 1950; it was captured by Israel in the Six-Day War in 1967. Under a series of agreements known as the Oslo accords signed between 1993 and 1999, Israel transferred to the newly created Palestinian Authority (PA) security and civilian responsibility for many Palestinian-populated areas of the West Bank as well as the Gaza Strip. In 2000, a violent intifada or uprising began, and in 2001 negotiations to determine the permanent status of the West Bank and Gaza Strip stalled. Subsequent attempts to re-start direct negotiations have not resulted in progress toward determining final status of the area.<br><br></p> Roughly 60% of the West Bank, remains under Israeli civil and military control. In early 2006, the Islamic Resistance Movement (HAMAS) won a majority in the Palestinian Legislative Council (PLC) election. Attempts to form a unity government between Fatah, the dominant Palestinian political faction in the West Bank, and HAMAS failed, leading to violent clashed between their respective supporters and HAMAS's violent siezure of all military and governmental institutions in the Gaza Strip in June 2007. Since 2007, the PA has administered parts of the West Bank under its control, mainly the major Palestinian population centers and areas immediately surrounding them. Fatah and HAMAS have made several attempts at reconciliation, but the factions have been unable to implement agreements including the latest agreement signed in October 2017. In December 2018, the Palestinian Constitutional Court dissolved the PLC. In 2019, PA President ABBAS renewed his calls for PLC elections."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Middle East, west of Jordan, east of Israel"
+    },
+    "Geographic coordinates": {
+      "text": "32 00 N, 35 15 E"
+    },
+    "Map references": {
+      "text": "Middle East"
+    },
+    "Area": {
+      "total": {
+        "text": "5,860 sq km"
+      },
+      "land": {
+        "text": "5,640 sq km"
+      },
+      "water": {
+        "text": "220 sq km"
+      },
+      "note": "<strong>note:</strong> includes West Bank, Latrun Salient, and the northwest quarter of the Dead Sea, but excludes Mt. Scopus; East Jerusalem and Jerusalem No Man's Land are also included only as a means of depicting the entire area occupied by Israel in 1967"
+    },
+    "Area - comparative": {
+      "text": "slightly smaller than Delaware"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "478 km"
+      },
+      "border countries": {
+        "text": "Israel 330 km, Jordan 148 km"
+      }
+    },
+    "Coastline": {
+      "text": "0 km (landlocked)"
+    },
+    "Maritime claims": {
+      "text": "none (landlocked)"
+    },
+    "Climate": {
+      "text": "temperate; temperature and precipitation vary with altitude, warm to hot summers, cool to mild winters"
+    },
+    "Terrain": {
+      "text": "mostly rugged, dissected upland in west, flat plains descending to Jordan River Valley to the east"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Khallat al Batrakh 1,020 m"
+      },
+      "lowest point": {
+        "text": "Dead Sea -431 m"
+      }
+    },
+    "Natural resources": {
+      "text": "arable land"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "43.3% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 7.4% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 11% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 24.9% (2018 est.)"
+      },
+      "forest": {
+        "text": "1.5% (2018 est.)"
+      },
+      "other": {
+        "text": "55.2% (2018 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Irrigated land": {
+      "text": "240 sq km; note - includes Gaza Strip (2012)"
+    },
+    "Population distribution": {
+      "text": "Palestinian settlements are primarily located in the central to western half of the territory; Jewish settlements are found in pockets throughout, particularly in the northeast, north-central, and around Jerusalem"
+    },
+    "Natural hazards": {
+      "text": "droughts"
+    },
+    "Geography - note": {
+      "text": "landlocked; highlands are main recharge area for Israel's coastal aquifers; there are about 380 Israeli civilian sites, including about 213 settlements and 132 small outpost communities in the West Bank and 35 sites in East Jerusalem (2017)"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "2,949,246 (July 2021 est.)",
+      "note": "<strong>note:</strong> approximately 432,000 Israeli settlers live in the West Bank (2019); approximately 227,100 Israeli settlers live in East Jerusalem (2019)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "NA"
+      },
+      "adjective": {
+        "text": "NA"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Palestinian Arab, Jewish, other"
+    },
+    "Languages": {
+      "Languages": {
+        "text": "Arabic, Hebrew (spoken by Israeli settlers and many Palestinians), English (widely understood)"
+      },
+      "major-language sample(s)": {
+        "text": "<br>كتاب حقائق العالم، المصدر الذي لا يمكن الاستغناء عنه للمعلومات الأساسية (Arabic)<br><br>The World Factbook, the indispensable source for basic information."
+      }
+    },
+    "Religions": {
+      "text": "Muslim 80-85% (predominantly Sunni), Jewish 12-14%, Christian 1-2.5% (mainly Greek Orthodox), other, unaffiliated, unspecified &lt;1% (2012 est.)"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "35.31% (male 525,645/female 498,458)"
+      },
+      "15-24 years": {
+        "text": "20.75% (male 307,420/female 294,469)"
+      },
+      "25-54 years": {
+        "text": "35.19% (male 516,758/female 503,626)"
+      },
+      "55-64 years": {
+        "text": "5.12% (male 76,615/female 72,006)"
+      },
+      "65 years and over": {
+        "text": "3.62% (male 48,387/female 56,650) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "71.2"
+      },
+      "youth dependency ratio": {
+        "text": "65.7"
+      },
+      "elderly dependency ratio": {
+        "text": "5.5"
+      },
+      "potential support ratio": {
+        "text": "18.2 (2020 est.)"
+      },
+      "note": "<strong>note:</strong> data represent Gaza Strip and the West Bank"
+    },
+    "Median age": {
+      "total": {
+        "text": "21.9 years"
+      },
+      "male": {
+        "text": "21.7 years"
+      },
+      "female": {
+        "text": "22.2 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "1.72% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "24.8 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "3.43 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-4.16 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "Palestinian settlements are primarily located in the central to western half of the territory; Jewish settlements are found in pockets throughout, particularly in the northeast, north-central, and around Jerusalem"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "77% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "2.85% annual rate of change (2020-25 est.)"
+      },
+      "note": "<strong>note:</strong> data represent Gaza Strip and the West Bank"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.06 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.04 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.06 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.85 male(s)/female"
+      },
+      "total population": {
+        "text": "1.04 male(s)/female (2020 est.)"
+      }
+    },
+    "Maternal mortality ratio": {
+      "text": "27 deaths/100,000 live births (2017 est.)",
+      "note": "<strong>note:</strong> data represent Gaza Strip and the West Bank"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "15.68 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "18.14 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "13.07 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "76.12 years"
+      },
+      "male": {
+        "text": "74.02 years"
+      },
+      "female": {
+        "text": "78.36 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "3.02 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "57.3% (2019/20)",
+      "note": "<strong>note:</strong> includes Gaza Strip and the West Bank"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 97.1% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 97.1% of population"
+      },
+      "improved: total": {
+        "text": "total: 96.8% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 2.9% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 2.9% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 3.2% of population (2017 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip and the West Bank"
+    },
+    "Current Health Expenditure": {
+      "text": "NA"
+    },
+    "Physicians density": {
+      "text": "1.45 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "1.3 beds/1,000 population (2018)"
+    },
+    "Sanitation facility access": {
+      "improved: urban": {
+        "text": "urban: 100% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 99.3% of population"
+      },
+      "improved: total": {
+        "text": "total: 99.8% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 0% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 0.7% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 0.2% of population (2017 est.)"
+      },
+      "note": "<strong>note:</strong> note includes Gaza Strip and the West Bank"
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "2.1% (2019/20)",
+      "note": "<strong>note:</strong> estimate is for Gaza Strip and the West Bank"
+    },
+    "Education expenditures": {
+      "text": "5.3% of GDP (2018)",
+      "note": "<strong>note:</strong> includes Gaza Strip and the West Bank"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over can read and write"
+      },
+      "total population": {
+        "text": "97.2%"
+      },
+      "male": {
+        "text": "98.7%"
+      },
+      "female": {
+        "text": "95.7% (2018)"
+      },
+      "note": "<strong>note:</strong> estimates are for Gaza and the West Bank"
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "13 years"
+      },
+      "male": {
+        "text": "13 years"
+      },
+      "female": {
+        "text": "14 years (2019)"
+      },
+      "note": "<strong>note:</strong> data represent Gaza Strip and the West Bank"
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "40.2%"
+      },
+      "male": {
+        "text": "34.8%"
+      },
+      "female": {
+        "text": "67.2% (2019 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "adequacy of freshwater supply; sewage treatment"
+    },
+    "Air pollutants": {
+      "carbon dioxide emissions": {
+        "text": "3.23 megatons (2016 est.)"
+      },
+      "note": "<strong>note:</strong> data represent combined total from the Gaza Strip and the West Bank."
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "181.2 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "32 million cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "162 million cubic meters (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data represent combined total from the Gaza Strip and the West Bank."
+    },
+    "Total renewable water resources": {
+      "text": "837 million cubic meters (2017 est.)",
+      "note": "<strong>note:</strong> data represent combined total from the Gaza Strip and the West Bank."
+    },
+    "Climate": {
+      "text": "temperate; temperature and precipitation vary with altitude, warm to hot summers, cool to mild winters"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "43.3% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 7.4% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 11% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 24.9% (2018 est.)"
+      },
+      "forest": {
+        "text": "1.5% (2018 est.)"
+      },
+      "other": {
+        "text": "55.2% (2018 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "77% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "2.85% annual rate of change (2020-25 est.)"
+      },
+      "note": "<strong>note:</strong> data represent Gaza Strip and the West Bank"
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "1.387 million tons (2016 est.)"
+      },
+      "municipal solid waste recycled annually": {
+        "text": "6,935 tons (2013 est.)"
+      },
+      "percent of municipal solid waste recycled": {
+        "text": "0.5% (2013 est.)"
+      },
+      "note": "<strong>note:</strong> data represent combined total from the Gaza Strip and the West Bank."
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "none"
+      },
+      "conventional short form": {
+        "text": "West Bank"
+      },
+      "etymology": {
+        "text": "name refers to the location of the region - occupied and administered by Jordan after 1948 - that fell on the far side (west bank) of the Jordan River in relation to Jordan proper; the designation was retained following the 1967 Six-Day War and the subsequent changes in government"
+      }
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>In 2017, the economic outlook in the West Bank - the larger of the two areas comprising the Palestinian Territories – remained fragile, as security concerns and political friction slowed economic growth. Unemployment in the West Bank remained high at 19.0% in the third quarter of 2017, only slightly better than 19.6% at the same point the previous year, while the labor force participation rate remained flat, year-on-year.</p><p></p><p>Longstanding Israeli restrictions on imports, exports, and movement of goods and people continue to disrupt labor and trade flows and the territory’s industrial capacity, and constrain private sector development. The PA’s budget benefited from an effort to improve tax collection, coupled with lower spending in 2017, but the PA for the foreseeable future will continue to rely heavily on donor aid for its budgetary needs and infrastructure development.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2014": {
+        "text": "$21.22 billion (2014 est.)"
+      },
+      "Real GDP (purchasing power parity) 2013": {
+        "text": "$20.15 billion (2013 est.)"
+      },
+      "Real GDP (purchasing power parity) 2012": {
+        "text": "$19.95 billion (2012 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2014 US dollars; includes Gaza Strip"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2014": {
+        "text": "5.3% (2014 est.)"
+      },
+      "Real GDP growth rate 2013": {
+        "text": "1% (2013 est.)"
+      },
+      "Real GDP growth rate 2012": {
+        "text": "6% (2012 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$6,220 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$6,318 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$6,402 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$9.828 billion (2014 est.)",
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "0.2% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "-0.2% (2016 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "2.9% (2017 est.)"
+      },
+      "industry": {
+        "text": "19.5% (2017 est.)"
+      },
+      "services": {
+        "text": "77.6% (2017 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "91.3% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "26.7% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "23% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "0% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "20% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-61% (2017 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Agricultural products": {
+      "text": "tomatoes, cucumbers, olives, poultry, milk, potatoes, sheep milk, eggplants, gourds"
+    },
+    "Industries": {
+      "text": "small-scale manufacturing, quarrying, textiles, soap, olive-wood carvings, and mother-of-pearl souvenirs"
+    },
+    "Industrial production growth rate": {
+      "text": "2.2% (2017 est.)",
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Labor force": {
+      "text": "1.24 million (2017 est.)",
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "11.5%"
+      },
+      "industry": {
+        "text": "34.4%"
+      },
+      "services": {
+        "text": "54.1% (2013 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2017": {
+        "text": "27.9% (2017 est.)"
+      },
+      "Unemployment rate 2016": {
+        "text": "27% (2016 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Population below poverty line": {
+      "text": "18% (2011 est.)"
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "Gini Index coefficient - distribution of family income 2016": {
+        "text": "33.7 (2016 est.)"
+      },
+      "Gini Index coefficient - distribution of family income 2007": {
+        "text": "38.7 (2007 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "3.2%"
+      },
+      "highest 10%": {
+        "text": "28.2% (2009 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Budget": {
+      "revenues": {
+        "text": "1.314 billion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "1.278 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> includes Palestinian Authority expenditures in the Gaza Strip"
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "0.4% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2014": {
+        "text": "24.4% of GDP (2014 est.)"
+      },
+      "Public debt 2013": {
+        "text": "23.8% of GDP (2013 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "13.4% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$1.444 billion (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "-$1.348 billion (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2017": {
+        "text": "$2.126 billion (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$1.827 billion (2016 est.)"
+      },
+      "note": "<strong>note:</strong> excludes Gaza Strip"
+    },
+    "Exports - commodities": {
+      "text": "stone, olives, fruit, vegetables, limestone"
+    },
+    "Imports": {
+      "Imports 2017": {
+        "text": "$6.565 billion (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$6.207 billion (2016 est.)"
+      },
+      "note": "<strong>note:</strong> data include the Gaza Strip"
+    },
+    "Imports - commodities": {
+      "text": "food, consumer goods, construction materials, petroleum, chemicals"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$0 (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2015": {
+        "text": "$583 million (31 December 2015 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 31 March 2016": {
+        "text": "$1.662 billion (31 March 2016 est.)"
+      },
+      "Debt - external 31 March 2015": {
+        "text": "$1.467 billion (31 March 2015 est.)"
+      },
+      "note": "<strong>note:</strong> data include the Gaza Strip"
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "new Israeli shekels (ILS) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "3.606 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "3.841 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "3.841 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "3.8869 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "3.5779 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      },
+      "note": "<strong>note:</strong> data for West Bank and Gaza Strip combined"
+    },
+    "Electricity - production": {
+      "text": "1.093 billion kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "6.489 billion kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016)"
+    },
+    "Electricity - imports": {
+      "text": "5.473 billion kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "170,000 kW (2016 est.)",
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "78% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "22% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "24,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "19 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "22,740 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "472,293 (includes Gaza Strip) (2017 est.)"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "9 (includes Gaza Strip) (2016 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "4,135,363 (includes Gaza Strip) (2017 est.)"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "76 (includes Gaza Strip) (2017 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "continuing political and economic instability has impeded liberalization of the telecommunications industry (2018)"
+      },
+      "domestic": {
+        "text": "Israeli company BEZEK and the Palestinian company PALTEL are responsible for fixed-line services; two Palestinian cellular providers, JAWWAL and WATANIYA MOBILE, launched 3G mobile networks in the West Bank in January 2018 after Israel lifted its ban; fixed-line 9 per 100 and mobile-cellular 76 per 100 (includes Gaza Strip) (2019)"
+      },
+      "international": {
+        "text": "country code 970 or 972; 1 international switch in Ramallah"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "the Palestinian Authority operates 1 TV and 1 radio station; about 20 private TV and 40 radio stations; both Jordanian TV and satellite TV are accessible"
+    },
+    "Internet country code": {
+      "text": ".psnote - same as Gaza Strip"
+    },
+    "Internet users": {
+      "total": {
+        "text": "2.673 million (includes Gaza Strip)"
+      },
+      "percent of population": {
+        "text": "57.4% (July 2016 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "371,299"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "14 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    }
+  },
+  "Transportation": {
+    "Airports": {
+      "total": {
+        "text": "2 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "2"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1"
+      },
+      "under 914 m": {
+        "text": "1 (2013)"
+      }
+    },
+    "Heliports": {
+      "text": "1 (2013)"
+    },
+    "Roadways": {
+      "total": {
+        "text": "4,686 km (2010)"
+      },
+      "paved": {
+        "text": "4,686 km (2010)"
+      },
+      "note": "<strong>note:</strong> includes Gaza Strip"
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "per the Oslo Accords, the PA is not permitted a conventional military but maintains security and police forces; PA security personnel have operated almost exclusively in the West Bank since HAMAS seized power in the Gaza Strip in 2007; PA forces include National Security Forces, Presidential Guard, Civil Police, Civil Defense, Preventative Security Service, the General Intelligence Organization, and the Military Intelligence Organization (2020)"
+    },
+    "Military and security service personnel strengths": {
+      "text": "the Palestinian Authority Security Forces have approximately 30,000 active personnel (2020)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the Palestinian Authority Security Forces are armed mostly with small arms and light weapons, although since 2007, they have received limited amounts of heavier equipment from Jordan (armored personnel carriers) and Russia (armored personnel carriers and transport helicopters) (2020)"
+    }
+  },
+  "Terrorism": {
+    "Terrorist group(s)": {
+      "text": "Al-Aqsa Martyrs Brigade; HAMAS; Islamic Revolutionary Guard Corps/Qods Force; Kahane Chai; Palestine Islamic Jihad; Palestine Liberation Front; Popular Front for the Liberation of Palestine",
+      "note": "<strong>note:</strong> details about the history, aims, leadership, organization, areas of operation, tactics, targets, weapons, size, and sources of support of the group(s) appear(s) in Appendix-T"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>the current status of the West Bank is subject to the Israeli-Palestinian Interim Agreement - permanent status to be determined through further negotiation; Israel continues construction of a \"seam line\" separation barrier along parts of the Green Line and within the West Bank; Israel withdrew from Gaza and four settlements in the northern West Bank in August 2005; since 1948, about 350 peacekeepers from the UN Truce Supervision Organization (UNTSO), headquartered in Jerusalem, monitor ceasefires, supervise armistice agreements, prevent isolated incidents from escalating, and assist other UN personnel in the region</p>"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "858,758 (Palestinian refugees) (2020)"
+      },
+      "IDPs": {
+        "text": "131,000 (includes persons displaced within the Gaza strip due to the intensification of the Israeli-Palestinian conflict since June 2014 and other Palestinian IDPs in the Gaza Strip and West Bank who fled as long ago as 1967, although confirmed cumulative data do not go back beyond 2006) (2020)"
+      },
+      "note": "data represent Gaza Strip and West Bank"
+    }
+  }
+}

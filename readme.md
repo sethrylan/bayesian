@@ -18,7 +18,7 @@ Development Workflow
 | Description               | Command                                          | CI Task |
 | ------------------------- |--------------------------------------------------|---------|
 | client pages local run    | ```bundle exec jekyll serve [--safe]```  |         |
-| deploy                    | ```gcloud functions deploy Questions --runtime go113 --trigger-http --allow-unauthenticated --max-instances=2```                 |         |
+| deploy                    | ```gcloud functions deploy QuestionsV2 --runtime go113 --trigger-http --allow-unauthenticated --max-instances=2```                 |         |
 
 Hosted locations
 =========

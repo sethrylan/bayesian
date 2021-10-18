@@ -1,0 +1,449 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "Discovered in 1493 by Christopher COLUMBUS who named it for his brother Bartolomeo, Saint Barthelemy was first settled by the French in 1648. In 1784, the French sold the island to Sweden, which renamed the largest town Gustavia, after the Swedish King GUSTAV III, and made it a free port; the island prospered as a trade and supply center during the colonial wars of the 18th century. France repurchased the island in 1877 and took control the following year. It was placed under the administration of Guadeloupe. Saint Barthelemy retained its free port status along with various Swedish appellations such as Swedish street and town names, and the three-crown symbol on the coat of arms. In 2003, the islanders voted to secede from Guadeloupe, and in 2007, the island became a French overseas collectivity. In 2012, it became an overseas territory of the EU, allowing it to exert local control over the permanent and temporary immigration of foreign workers including non-French European citizens."
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Caribbean, island between the Caribbean Sea and the North Atlantic Ocean; located in the Leeward Islands (northern) group; Saint Barthelemy lies east of the US Virgin Islands"
+    },
+    "Geographic coordinates": {
+      "text": "17 90 N, 62 85 W"
+    },
+    "Map references": {
+      "text": "Central America and the Caribbean"
+    },
+    "Area": {
+      "total": {
+        "text": "25 sq km"
+      },
+      "land": {
+        "text": "25 sq km"
+      },
+      "water": {
+        "text": "negligible"
+      }
+    },
+    "Area - comparative": {
+      "text": "less than one-eighth the size of Washington, DC"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "0 km"
+      }
+    },
+    "Climate": {
+      "text": "tropical, with practically no variation in temperature; has two seasons (dry and humid)"
+    },
+    "Terrain": {
+      "text": "hilly, almost completely surrounded by shallow-water reefs, with plentiful beaches"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Morne du Vitet 286 m"
+      },
+      "lowest point": {
+        "text": "Caribbean Ocean 0 m"
+      }
+    },
+    "Natural resources": {
+      "text": "few natural resources; beaches foster tourism"
+    },
+    "Population distribution": {
+      "text": "most of the populace concentrated in and around the capital of Gustavia, but scattered settlements exist around the island periphery"
+    },
+    "Geography - note": {
+      "text": "a 1,200-hectare marine nature reserve, the Reserve Naturelle, is made up of five zones around the island that form a network to protect the island's coral reefs, seagrass, and endangered marine species"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "7,116 (July 2021 est.)"
+    },
+    "Ethnic groups": {
+      "text": "other White, Creole (Mulatto), Black, Guadeloupe Mestizo (French-East Asia)"
+    },
+    "Languages": {
+      "Languages": {
+        "text": "French (primary), English"
+      },
+      "major-language sample(s)": {
+        "text": "<br>The World Factbook, une source indispensable d'informations de base. (French)<br><br>The World Factbook, the indispensable source for basic information."
+      }
+    },
+    "Religions": {
+      "text": "Roman Catholic, Protestant, Jehovah's Witnesses"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "15.16% (male 555/female 525)"
+      },
+      "15-24 years": {
+        "text": "7.34% (male 275/female 248)"
+      },
+      "25-54 years": {
+        "text": "41.86% (male 1,618/female 1,363)"
+      },
+      "55-64 years": {
+        "text": "16.29% (male 630/female 530)"
+      },
+      "65 years and over": {
+        "text": "19.35% (male 690/female 688) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "NA"
+      },
+      "youth dependency ratio": {
+        "text": "NA"
+      },
+      "elderly dependency ratio": {
+        "text": "NA"
+      },
+      "potential support ratio": {
+        "text": "NA"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "45.6 years"
+      },
+      "male": {
+        "text": "45.5 years"
+      },
+      "female": {
+        "text": "45.8 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "-0.2% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "9.27 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "8.85 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-2.39 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "most of the populace concentrated in and around the capital of Gustavia, but scattered settlements exist around the island periphery"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.06 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.06 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.11 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.19 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.19 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "1 male(s)/female"
+      },
+      "total population": {
+        "text": "1.12 male(s)/female (2020 est.)"
+      }
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "6.85 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "8 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "5.65 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "80.36 years"
+      },
+      "male": {
+        "text": "77.24 years"
+      },
+      "female": {
+        "text": "83.6 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "1.64 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "NA"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: NA"
+      },
+      "improved: rural": {
+        "text": "rural: NA"
+      },
+      "improved: total": {
+        "text": "total: NA"
+      },
+      "unimproved: urban": {
+        "text": "urban: NA"
+      },
+      "unimproved: rural": {
+        "text": "rural: NA"
+      },
+      "unimproved: total": {
+        "text": "total: NA"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "NA"
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "NA"
+    },
+    "Education expenditures": {
+      "text": "NA"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "land-based pollution; urbanization; with no natural rivers or streams, fresh water is in short supply, especially in summer, and is provided by the desalination of sea water, the collection of rain water, or imported via water tanker; overfishing"
+    },
+    "Climate": {
+      "text": "tropical, with practically no variation in temperature; has two seasons (dry and humid)"
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Overseas Collectivity of Saint Barthelemy"
+      },
+      "conventional short form": {
+        "text": "Saint Barthelemy"
+      },
+      "local long form": {
+        "text": "Collectivite d'outre mer de Saint-Barthelemy"
+      },
+      "local short form": {
+        "text": "Saint-Barthelemy"
+      },
+      "abbreviation": {
+        "text": "Saint-Barth (French); St. Barts or St. Barths (English)"
+      },
+      "etymology": {
+        "text": "explorer Christopher COLUMBUS named the island in honor of his brother Bartolomeo's namesake saint in 1493"
+      }
+    },
+    "Government type": {
+      "text": "parliamentary democracy (Territorial Council); overseas collectivity of France"
+    },
+    "Dependency status": {
+      "text": "overseas collectivity of France"
+    },
+    "Capital": {
+      "name": {
+        "text": "Gustavia"
+      },
+      "geographic coordinates": {
+        "text": "17 53 N, 62 51 W"
+      },
+      "time difference": {
+        "text": "UTC-4 (1 hour ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "named in honor of King Gustav III (1746-1792) of Sweden during whose reign the island was obtained from France in 1784; the name was retained when in 1878 the island was sold back to France"
+      }
+    },
+    "Independence": {
+      "text": "none (overseas collectivity of France)"
+    },
+    "National holiday": {
+      "text": "Fete de la Federation, 14 July (1790); note - local holiday is St. Barthelemy Day, 24 August (1572)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "4 October 1958 (French Constitution)"
+      },
+      "amendments": {
+        "text": "amendment procedures of France's constitution apply"
+      }
+    },
+    "Legal system": {
+      "text": "French civil law"
+    },
+    "Citizenship": {
+      "text": "see France"
+    },
+    "Suffrage": {
+      "text": "18 years of age, universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President Emmanuel MACRON (since 14 May 2017), represented by Prefect Serge GOUTEYRON (since 16 December 2020)"
+      },
+      "head of government": {
+        "text": "President of Territorial Council Bruno MAGRAS (since 16 July 2007)"
+      },
+      "cabinet": {
+        "text": "Executive Council elected by the Territorial Council; note - there is also an advisory, economic, social, and cultural council"
+      },
+      "elections/appointments": {
+        "text": "French president directly elected by absolute majority popular vote in 2 rounds if needed for a 5-year term (eligible for a second term); prefect appointed by the French president on the advice of French Ministry of Interior; president of Territorial Council indirectly elected by its members for a 5-year term; election last held on 2 April 2017 (next to be held in 2022)"
+      },
+      "election results": {
+        "text": "Bruno MAGRAS (SBA) reelected president; Territorial Council vote - NA"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral Territorial Council (19 seats; members elected by absolute majority vote in the first round vote and proportional representation vote in the second round; members serve 5-year terms); Saint Barthelemy indirectly elects 1 senator to the French Senate by an electoral college for a 6-year term and directly elects 1 deputy (shared with Saint Martin) to the French National Assembly"
+      },
+      "elections": {
+        "text": "Territorial Council - last held on 19 March 2017 (next to be held in September 2022) French Senate - election last held 24 September 2017 (next to be held in September 2020) French National Assembly - election last held on 11 and 18 June 2017 (next to be held by June 2022)"
+      },
+      "election results": {
+        "text": "Territorial Council - percent of vote by party - SBA 53.7%, United for Saint Barth 20.6%, Saint Barth Essential 18.1%, All for Saint Barth 7.7%; seats by party - SBA 14, United for Saint Barth 2, Saint Barth Essential 2, All for Saint Barth 1; composition - men 9, women 10, percent of women 52.6%; French Senate - percent of vote by party NA; seats by party UMP 1 French National Assembly - percent of vote by party NA; seats by party UMP 1"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "All for Saint Barth (Tous pour Saint-Barth) [Bettina COINTRE]<br>Saint Barth Essential (Saint-Barth Autrement) [Marie-Helene BERNIER]<br>Saint Barth First! (Saint-Barth d'Abord!) or SBA [Bruno MAGRAS]<br>Saint Barth United (Unis pour Saint-Barthelemy) [Xavier LEDEE]"
+    },
+    "International organization participation": {
+      "text": "UPU"
+    },
+    "Diplomatic representation in the US": {
+      "text": "none (overseas collectivity of France)"
+    },
+    "Diplomatic representation from the US": {
+      "embassy": {
+        "text": "<p>none (overseas collectivity of France)</p>"
+      }
+    },
+    "Flag description": {
+      "text": "the flag of France is used"
+    },
+    "National symbol(s)": {
+      "text": "pelican"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"L'Hymne a St. Barthelemy\" (Hymn to St. Barthelemy)"
+      },
+      "lyrics/music": {
+        "text": "Isabelle Massart DERAVIN/Michael VALENTI"
+      },
+      "note": "<strong>note:</strong> local anthem in use since 1999; as a collectivity of France, \"La Marseillaise\" is official (see France)"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "The economy of Saint Barthelemy is based upon high-end tourism and duty-free luxury commerce, serving visitors primarily from North America. The luxury hotels and villas host 70,000 visitors each year with another 130,000 arriving by boat. The relative isolation and high cost of living inhibits mass tourism. The construction and public sectors also enjoy significant investment in support of tourism. With limited fresh water resources, all food must be imported, as must all energy resources and most manufactured goods. The tourism sector creates a strong employment demand and attracts labor from Brazil and Portugal. The country’s currency is the euro."
+    },
+    "Exports - partners": {
+      "text": "France 60%, Germany 27% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "beauty products, broadcasting equipment, sunflower seed oil, plastics, cars (2019)"
+    },
+    "Imports - partners": {
+      "text": "France 78%, Switzerland 7%, Italy 7% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "furniture, wine, refined petroleum, jewelry, food preparation materials (2019)"
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "2013 est.)"
+      },
+      "Exchange rates 2017": {
+        "text": "0.885 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "0.903 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "0.9214 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "0.885 (2014 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    }
+  },
+  "Communications": {
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "fully integrated access; 4G and LTE services (2020)"
+      },
+      "domestic": {
+        "text": "direct dial capability with both fixed and wireless systems, 3 FM channels, no broadcasting (2018)"
+      },
+      "international": {
+        "text": "country code - 590; landing points for the SSCS and the Southern Caribbean Fiber submarine&nbsp;cables providing voice and data connectivity to numerous Caribbean Islands (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "no local TV broadcasters; 3 FM radio channels (2019)"
+    },
+    "Internet country code": {
+      "text": ".bl; note - .gp, the Internet country code for Guadeloupe, and .fr, the Internet country code for France, might also be encountered"
+    }
+  },
+  "Transportation": {
+    "Airports": {
+      "total": {
+        "text": "1 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "1"
+      },
+      "under 914 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "40 km"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Gustavia"
+      }
+    },
+    "Transportation - note": {
+      "text": "nearest airport for international flights is Princess Juliana International Airport (SXM) located on Sint Maarten"
+    }
+  },
+  "Military and Security": {
+    "Military - note": {
+      "text": "defense is the responsibility of France"
+    }
+  }
+}

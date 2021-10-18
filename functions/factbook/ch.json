@@ -1,0 +1,1228 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>China's historical civilization dates to at least 1600 B.C., first under the Shang (1600-1046 B.C.) and then the Zhou (1045-221 B.C) dynasties. The imperial era of China began in 220 B.C. under the Qin Dynasty and lasted until the fall of the Qing Dynasty in 1912. During this period, China alternated between periods of unity and disunity under a succession of imperial dynasties. In the 19th century, the Qing Dynasty suffered heavily from imperialism, military defeats, and foreign occupation. It collapsed following the Revolution of 1911, and China became a republic under SUN Yat-sen of the Kuomintang (KMT or Nationalist) Party. However, the republic was beset by division, warlordism, and continued foreign occupation. In the late 1920s, a civil war erupted between the ruling KMT-controlled government led by CHIANG Kai-shek, and the Chinese Communist Party (CCP), led by MAO Zedong. Japan occupied much of northeastern China in the early 1930s, and then launched a full-scale invasion of the country in 1937. The resulting eight years of warfare devastated the country and cost up to 20 million Chinese lives by the time of Japan’s defeat in 1945. The Nationalist-Communist civil war continued with renewed intensity following the end of World War II and culminated with a CCP victory in 1949.<br><br>MAO and the CCP established an autocratic socialist system that, while ensuring China's sovereignty, imposed strict controls over everyday life and launched agricultural, economic, political, and social policies - such as the Great Leap Forward (1958-1962) and the Cultural Revolution (1966-1976) - that cost the lives of millions of people. MAO died in 1976. Subsequent leaders DENG Xiaping, JIANG Zemin, LI Peng, ZHU Rongji, HU Jintao, and WIN Jiabou focused on market-oriented economic development and opening up the country to foreign trade, while maintaining the rule of the Communist Party. Since the change, China has been among the world’s fastest growing economies, with real gross domestic product averaging over 9% growth annually through 2018, lifting an estimated 800 million people out of poverty, and dramatically improving overall living standards. By 2011, China’s economy was the second largest in the world. The growth, however, has created considerable social displacement, adversely affected the country’s environment, and reduced the country’s natural resources. Current leader XI Jinping has continued these policies, but also has maintained tight political controls. Over the past decade, China has also increased its global outreach, including military deployments, participation in international organizations, and initiating a global infrastructure investment project in 2013 called the \"Belt and Road Initiative\" (BRI). While many nations have signed on to BRI agreements, others have balked seeing the terms as a form of neo-imperialism or debt-trap diplomacy.</p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Eastern Asia, bordering the East China Sea, Korea Bay, Yellow Sea, and South China Sea, between North Korea and Vietnam"
+    },
+    "Geographic coordinates": {
+      "text": "35 00 N, 105 00 E"
+    },
+    "Map references": {
+      "text": "Asia"
+    },
+    "Area": {
+      "total": {
+        "text": "9,596,960 sq km"
+      },
+      "land": {
+        "text": "9,326,410 sq km"
+      },
+      "water": {
+        "text": "270,550 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly smaller than the US"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "22,457 km"
+      },
+      "border countries": {
+        "text": "Afghanistan 91 km, Bhutan 477 km, Burma 2129 km, India 2659 km, Kazakhstan 1765 km, North Korea 1352 km, Kyrgyzstan 1063 km, Laos 475 km, Mongolia 4630 km, Nepal 1389 km, Pakistan 438 km, Russia (northeast) 4133 km and Russia (northwest) 46 km, Tajikistan 477 km, Vietnam 1297 km"
+      }
+    },
+    "Coastline": {
+      "text": "14,500 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      },
+      "continental shelf": {
+        "text": "200 nm or to the edge of the continental margin"
+      }
+    },
+    "Climate": {
+      "text": "extremely diverse; tropical in south to subarctic in north"
+    },
+    "Terrain": {
+      "text": "mostly mountains, high plateaus, deserts in west; plains, deltas, and hills in east"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Mount Everest (highest peak in Asia and highest point on earth above sea level) 8,849 m"
+      },
+      "lowest point": {
+        "text": "Turpan Pendi -154 m"
+      },
+      "mean elevation": {
+        "text": "1,840 m"
+      }
+    },
+    "Natural resources": {
+      "text": "coal, iron ore, helium, petroleum, natural gas, arsenic, bismuth, cobalt, cadmium, ferrosilicon, gallium, germanium, hafnium, indium, lithium, mercury, tantalum, tellurium, tin, titanium, tungsten, antimony, manganese, magnesium, molybdenum, selenium, strontium, vanadium, magnetite, aluminum, lead, zinc, rare earth elements, uranium, hydropower potential (world's largest), arable land"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "54.7% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 11.3% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 1.6% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 41.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "22.3% (2018 est.)"
+      },
+      "other": {
+        "text": "23% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "690,070 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "overwhelming majority of the population is found in the eastern half of the country; the west, with its vast mountainous and desert areas, remains sparsely populated; though ranked first in the world in total population, overall density is less than that of many other countries in Asia and Europe; high population density is found along the Yangtze and Yellow River valleys, the Xi Jiang River delta, the Sichuan Basin (around Chengdu), in and around Beijing, and the industrial area around Shenyang"
+    },
+    "Natural hazards": {
+      "text": "<p>frequent typhoons (about five per year along southern and eastern coasts); damaging floods; tsunamis; earthquakes; droughts; land subsidence</p><p><strong>volcanism:</strong> China contains some historically active volcanoes including Changbaishan (also known as Baitoushan, Baegdu, or P'aektu-san), Hainan Dao, and Kunlun although most have been relatively inactive in recent centuries</p>"
+    },
+    "Geography - note": {
+      "text": "<strong>note 1:</strong> world's fourth largest country (after Russia, Canada, and US) and largest country situated entirely in Asia; Mount Everest on the border with Nepal is the world's tallest peak above sea level<br><br><strong>note 2:</strong> the largest cave chamber in the world is the Miao Room, in the Gebihe cave system at China's Ziyun Getu He Chuandong National Park, which encloses some 10.78 million cu m (380.7 million cu ft) of volume<br><br><strong>note 3:</strong> China appears to have been the center of domestication for two of the world's leading cereal crops: millet in the north along the Yellow River and rice in the south along the lower or middle Yangtze River"
+    },
+    "Major watersheds (area sq km)": {
+      "text": "Pacific Ocean drainage: Amur (1,929,955 sq km), Huang He (944,970 sq km), Mekong (805,604 sq km), Yangtze (1,722,193 sq km)<br>Indian Ocean drainage: Brahmaputra (651,335 sq km), Ganges (1,016,124 sq km), Indus (1,081,718 sq km), Irrawaddy (413,710 sq km), Salween (271,914 sq km)<br>Arctic Ocean drainage: Ob (2,972,493 sq km)<br>Aral Sea drainage <em>(endorheic basin)</em>: Amu Darya (534,739 sq km), Syr Darya (782,617 sq km)<br>Lake Balkash drainage <em>(endorheic basin)</em>: Lake Balkash (510,015 sq km)<br>Tarim Basin drainage <em>(endorheic basin)</em>: Tarim Basin (1,152,448 sq km)"
+    },
+    "Major aquifers": {
+      "text": "North China Aquifer System (Huang Huai Hai Plain), Song-Liao Plain, Tarim Basin"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "1,397,897,720 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Chinese (singular and plural)"
+      },
+      "adjective": {
+        "text": "Chinese"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Han Chinese 91.6%, Zhuang 1.3%, other (includes Hui, Manchu, Uighur, Miao, Yi, Tujia, Tibetan, Mongol, Dong, Buyei, Yao, Bai, Korean, Hani, Li, Kazakh, Dai, and other nationalities) 7.1% (2010 est.)",
+      "note": "<strong>note:</strong> the Chinese Government officially recognizes 56 ethnic groups"
+    },
+    "Languages": {
+      "Languages": {
+        "text": "Standard Chinese or Mandarin (official; Putonghua, based on the Beijing dialect), Yue (Cantonese), Wu (Shanghainese), Minbei (Fuzhou), Minnan (Hokkien-Taiwanese), Xiang, Gan, Hakka dialects, minority languages (see Ethnic groups entry); note - Zhuang is official in Guangxi Zhuang, Yue is official in Guangdong, Mongolian is official in Nei Mongol, Uighur is official in Xinjiang Uygur, Kyrgyz is official in Xinjiang Uygur, and Tibetan is official in Xizang (Tibet)"
+      },
+      "major-language sample(s)": {
+        "text": "<br>世界概況  –  不可缺少的基本消息來源 (Mandarin)<br><br>The World Factbook, the indispensable source for basic information."
+      }
+    },
+    "Religions": {
+      "text": "folk religion 21.9%, Buddhist 18.3%, Christian 5.2%, Muslim 2%, Hindu &lt; 0.1%, Jewish &lt; 0.1%, other 0.7% (includes Daoist (Taoist)), unaffiliated 51.8% (2020 est.)",
+      "note": "<strong>note:</strong> officially atheist"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "17.29% (male 129,296,339/female 111,782,427)"
+      },
+      "15-24 years": {
+        "text": "11.48% (male 86,129,841/female 73,876,148)"
+      },
+      "25-54 years": {
+        "text": "46.81% (male 333,789,731/female 318,711,557)"
+      },
+      "55-64 years": {
+        "text": "12.08% (male 84,827,645/female 83,557,507)"
+      },
+      "65 years and over": {
+        "text": "12.34% (male 81,586,490/female 90,458,292) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "42.2"
+      },
+      "youth dependency ratio": {
+        "text": "25.2"
+      },
+      "elderly dependency ratio": {
+        "text": "17"
+      },
+      "potential support ratio": {
+        "text": "5.9 (2020 est.)"
+      },
+      "note": "data do not include Hong Kong, Macau, and Taiwan"
+    },
+    "Median age": {
+      "total": {
+        "text": "38.4 years"
+      },
+      "male": {
+        "text": "37.5 years"
+      },
+      "female": {
+        "text": "39.4 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "0.26% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "11.3 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "8.26 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-0.43 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "overwhelming majority of the population is found in the eastern half of the country; the west, with its vast mountainous and desert areas, remains sparsely populated; though ranked first in the world in total population, overall density is less than that of many other countries in Asia and Europe; high population density is found along the Yangtze and Yellow River valleys, the Xi Jiang River delta, the Sichuan Basin (around Chengdu), in and around Beijing, and the industrial area around Shenyang"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "62.5% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "1.78% annual rate of change (2020-25 est.)"
+      },
+      "note": "<strong>note:</strong> data do not include Hong Kong and Macau"
+    },
+    "Major urban areas - population": {
+      "text": "27.796 million Shanghai, 20.897 million BEIJING (capital), 16.382 million Chongqing, 13.794 million Tianjin, 13.635 million Guangzhou, 12.592 million Shenzhen (2021)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.11 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.16 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1.17 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "1.05 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.02 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.9 male(s)/female"
+      },
+      "total population": {
+        "text": "1.06 male(s)/female (2020 est.)"
+      }
+    },
+    "Maternal mortality ratio": {
+      "text": "29 deaths/100,000 live births (2017 est.)"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "11.15 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "11.6 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "10.64 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "76.31 years"
+      },
+      "male": {
+        "text": "74.23 years"
+      },
+      "female": {
+        "text": "78.62 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "1.6 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "84.5% (2017)"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 97.7% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 87.8% of population"
+      },
+      "improved: total": {
+        "text": "total: 92.8% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 2.3% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 12.2% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 7.2% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "5.4% (2018)"
+    },
+    "Physicians density": {
+      "text": "1.98 physicians/1,000 population (2017)"
+    },
+    "Hospital bed density": {
+      "text": "4.3 beds/1,000 population (2017)"
+    },
+    "Sanitation facility access": {
+      "improved: urban": {
+        "text": "urban: 97.1% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 82% of population"
+      },
+      "improved: total": {
+        "text": "total: 90.7% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 2.4% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 18% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 9.3% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "NA"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "NA"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "NA"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "Crimean-Congo hemorrhagic fever, Japanese encephalitis"
+      },
+      "soil contact diseases": {
+        "text": "hantaviral hemorrhagic fever with renal syndrome (HFRS)"
+      },
+      "note": "<strong>note:</strong> a new coronavirus is causing an outbreak of respiratory illness (COVID-19) in China; illness with this virus has ranged from mild to severe with fatalities reported; the US Department of State has issued a do not travel advisory for China due to COVID-19; the Centers for Disease Control and Prevention has also recommended against travel to China and published additional guidance at https://wwwnc.cdc.gov/travel/notices/warning/novel-coronavirus-china; the US Department of Homeland Security has issued instructions requiring US passengers who have been in China to travel through select airports where the US Government has implemented enhanced screening procedures; as of 6 October 2021, China has reported a total of 124,884 cases of COVID-19 or 8.49 cumulative cases of COVID-19 per 100,000 population with 0.39 cumulative deaths per 100,000 population; as of 18 September 2021, 70.78% of the population has received at least one dose of COVID-19 vaccine"
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "6.2% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "2.4% (2013)"
+    },
+    "Education expenditures": {
+      "text": "3.5% of GDP NA (2018)"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over can read and write"
+      },
+      "total population": {
+        "text": "96.8%"
+      },
+      "male": {
+        "text": "98.5%"
+      },
+      "female": {
+        "text": "95.2% (2018)"
+      }
+    },
+    "School life expectancy (primary to tertiary education)": {
+      "total": {
+        "text": "14 years"
+      },
+      "male": {
+        "text": "14 years"
+      },
+      "female": {
+        "text": "14 years (2015)"
+      }
+    },
+    "People - note": {
+      "text": "in October 2015, the Chinese Government announced that it would change its rules to allow all couples to have two children, loosening a 1979 mandate that restricted many couples to one child; the new policy was implemented on 1 January 2016 to address China&rsquo;s rapidly aging population and future economic needs"
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "air pollution (greenhouse gases, sulfur dioxide particulates) from reliance on coal produces acid rain; China is the world's largest single emitter of carbon dioxide from the burning of fossil fuels; water shortages, particularly in the north; water pollution from untreated wastes; coastal destruction due to land reclamation, industrial development, and aquaculture; deforestation and habitat destruction; poor land management leads to soil erosion, landslides, floods, droughts, dust storms, and desertification; trade in endangered species"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Antarctic-Environmental Protection, Antarctic-Marine Living Resources, Antarctic Treaty, Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Desertification, Endangered Species, Environmental Modification, Hazardous Wastes, Law of the Sea, Marine Dumping-London Convention, Marine Dumping-London Protocol, Ozone Layer Protection, Ship Pollution, Tropical Timber 2006, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "Comprehensive Nuclear Test Ban"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "49.16 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "9,893.04 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "1,490.24 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "79.4 billion cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "133.5 billion cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "385.2 billion cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "2,840,220,000,000 cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "extremely diverse; tropical in south to subarctic in north"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "54.7% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 11.3% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 1.6% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 41.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "22.3% (2018 est.)"
+      },
+      "other": {
+        "text": "23% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "0.08% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0.57% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "62.5% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "1.78% annual rate of change (2020-25 est.)"
+      },
+      "note": "<strong>note:</strong> data do not include Hong Kong and Macau"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "Crimean-Congo hemorrhagic fever, Japanese encephalitis"
+      },
+      "soil contact diseases": {
+        "text": "hantaviral hemorrhagic fever with renal syndrome (HFRS)"
+      },
+      "note": "<strong>note:</strong> a new coronavirus is causing an outbreak of respiratory illness (COVID-19) in China; illness with this virus has ranged from mild to severe with fatalities reported; the US Department of State has issued a do not travel advisory for China due to COVID-19; the Centers for Disease Control and Prevention has also recommended against travel to China and published additional guidance at https://wwwnc.cdc.gov/travel/notices/warning/novel-coronavirus-china; the US Department of Homeland Security has issued instructions requiring US passengers who have been in China to travel through select airports where the US Government has implemented enhanced screening procedures; as of 6 October 2021, China has reported a total of 124,884 cases of COVID-19 or 8.49 cumulative cases of COVID-19 per 100,000 population with 0.39 cumulative deaths per 100,000 population; as of 18 September 2021, 70.78% of the population has received at least one dose of COVID-19 vaccine"
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "210 million tons (2015 est.)"
+      }
+    },
+    "Major watersheds (area sq km)": {
+      "text": "Pacific Ocean drainage: Amur (1,929,955 sq km), Huang He (944,970 sq km), Mekong (805,604 sq km), Yangtze (1,722,193 sq km)<br>Indian Ocean drainage: Brahmaputra (651,335 sq km), Ganges (1,016,124 sq km), Indus (1,081,718 sq km), Irrawaddy (413,710 sq km), Salween (271,914 sq km)<br>Arctic Ocean drainage: Ob (2,972,493 sq km)<br>Aral Sea drainage <em>(endorheic basin)</em>: Amu Darya (534,739 sq km), Syr Darya (782,617 sq km)<br>Lake Balkash drainage <em>(endorheic basin)</em>: Lake Balkash (510,015 sq km)<br>Tarim Basin drainage <em>(endorheic basin)</em>: Tarim Basin (1,152,448 sq km)"
+    },
+    "Major aquifers": {
+      "text": "North China Aquifer System (Huang Huai Hai Plain), Song-Liao Plain, Tarim Basin"
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "People's Republic of China"
+      },
+      "conventional short form": {
+        "text": "China"
+      },
+      "local long form": {
+        "text": "Zhonghua Renmin Gongheguo"
+      },
+      "local short form": {
+        "text": "Zhongguo"
+      },
+      "abbreviation": {
+        "text": "PRC"
+      },
+      "etymology": {
+        "text": "English name derives from the Qin (Chin) rulers of the 3rd century B.C., who comprised the first imperial dynasty of ancient China; the Chinese name Zhongguo translates as \"Central Nation\" or \"Middle Kingdom\""
+      }
+    },
+    "Government type": {
+      "text": "communist party-led state"
+    },
+    "Capital": {
+      "name": {
+        "text": "Beijing"
+      },
+      "geographic coordinates": {
+        "text": "39 55 N, 116 23 E"
+      },
+      "time difference": {
+        "text": "UTC+8 (13 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "time zone note": {
+        "text": "China is the largest country (in terms of area) with just one time zone; before 1949 it was divided into five"
+      },
+      "etymology": {
+        "text": "the Chinese meaning is \"Northern Capital\""
+      }
+    },
+    "Administrative divisions": {
+      "text": "<p>23 provinces (sheng, singular and plural), 5 autonomous regions (zizhiqu, singular and plural), and 4 municipalities (shi, singular and plural)</p> <p><strong>provinces:</strong> Anhui, Fujian, Gansu, Guangdong, Guizhou, Hainan, Hebei, Heilongjiang, Henan, Hubei, Hunan, Jiangsu, Jiangxi, Jilin, Liaoning, Qinghai, Shaanxi, Shandong, Shanxi, Sichuan, Yunnan, Zhejiang; (see note on Taiwan)</p> <p><strong>autonomous regions:</strong> Guangxi, Nei Mongol (Inner Mongolia), Ningxia, Xinjiang Uyghur, Xizang (Tibet)</p> <p><strong>municipalities:</strong> Beijing, Chongqing, Shanghai, Tianjin</p>",
+      "note": "<strong>note:</strong> China considers Taiwan its 23rd province; see separate entries for the special administrative regions of Hong Kong and Macau"
+    },
+    "Independence": {
+      "text": "1 October 1949 (People's Republic of China established); notable earlier dates: 221 B.C. (unification under the Qin Dynasty); 1 January 1912 (Qing Dynasty replaced by the Republic of China)"
+    },
+    "National holiday": {
+      "text": "National Day (anniversary of the founding of the People's Republic of China), 1 October (1949)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "several previous; latest promulgated 4 December 1982"
+      },
+      "amendments": {
+        "text": "proposed by the Standing Committee of the National People&rsquo;s Congress or supported by more than one fifth of the National People&rsquo;s Congress membership; passage requires more than two-thirds majority vote of the Congress membership; amended several times, last in 2018"
+      }
+    },
+    "Legal system": {
+      "text": "civil law influenced by Soviet and continental European civil law systems; legislature retains power to interpret statutes; note - on 28 May 2020, the National People's Congress adopted the PRC Civil Code, which codifies personal relations and property relations"
+    },
+    "International law organization participation": {
+      "text": "has not submitted an ICJ jurisdiction declaration; non-party state to the ICCt"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "least one parent must be a citizen of China"
+      },
+      "dual citizenship recognized": {
+        "text": "no"
+      },
+      "residency requirement for naturalization": {
+        "text": "while naturalization is theoretically possible, in practical terms it is extremely difficult; residency is required but not specified"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President XI Jinping (since 14 March 2013); Vice President WANG Qishan (since 17 March 2018)"
+      },
+      "head of government": {
+        "text": "Premier LI Keqiang (since 16 March 2013); Executive Vice Premiers HAN Zheng (since 19 March 2018), SUN Chunlan (since 19 March 2018), LIU He (since 19 March 2018), HU Chunhua (since 19 March 2018)"
+      },
+      "cabinet": {
+        "text": "State Council appointed by National People's Congress"
+      },
+      "elections/appointments": {
+        "text": "president and vice president indirectly elected by National People's Congress for a 5-year term (no term limits); election last held on 17 March 2018 (next to be held in March 2023); premier nominated by president, confirmed by National People's Congress"
+      },
+      "election results": {
+        "text": "XI Jinping reelected president; National People's Congress vote - 2,970 (unanimously); WANG Qishan elected vice president with 2,969 votes"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "unicameral National People's Congress or Quanguo Renmin Daibiao Dahui (maximum of 3,000 seats; members indirectly elected by municipal, regional, and provincial people's congresses, and the People's Liberation Army; members serve 5-year terms); note - in practice, only members of the Chinese Communist Party (CCP), its 8 allied independent parties, and CCP-approved independent candidates are elected"
+      },
+      "elections": {
+        "text": "last held in December 2017-February 2018 (next to be held in late 2022 to early 2023)"
+      },
+      "election results": {
+        "text": "percent of vote - NA; seats by party - NA; composition - men 2,238, women 742, percent of women 24.9%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme People's Court (consists of over 340 judges, including the chief justice and 13 grand justices organized into a civil committee and tribunals for civil, economic, administrative, complaint and appeal, and communication and transportation cases)"
+      },
+      "judge selection and term of office": {
+        "text": "chief justice appointed by the People's National Congress (NPC); limited to 2 consecutive 5-year-terms; other justices and judges nominated by the chief justice and appointed by the Standing Committee of the NPC; term of other justices and judges determined by the NPC"
+      },
+      "subordinate courts": {
+        "text": "Higher People's Courts; Intermediate People's Courts; District and County People's Courts; Autonomous Region People's Courts; International Commercial Courts; Special People's Courts for military, maritime, transportation, and forestry issues"
+      },
+      "note": "note: in late 2014, China unveiled a multi-year judicial reform program; progress continued in 2018"
+    },
+    "Political parties and leaders": {
+      "text": "Chinese Communist Party or CCP [XI Jinping]",
+      "note": "<strong>note:</strong> China has 8 nominally independent small parties controlled by the CCP"
+    },
+    "International organization participation": {
+      "text": "ADB, AfDB (nonregional member), APEC, Arctic Council (observer), ARF, ASEAN (dialogue partner), BIS, BRICS, CDB, CICA, EAS, FAO, FATF, G-20, G-24 (observer), G-5, G-77, IADB, IAEA, IBRD, ICAO, ICC (national committees), ICRM, IDA, IFAD, IFC, IFRCS, IHO, ILO, IMF, IMO, IMSO, Interpol, IOC, IOM (observer), IPU, ISO, ITSO, ITU, LAIA (observer), MIGA, MINURSO, MINUSMA, MONUSCO, NAM (observer), NSG, OAS (observer), OPCW, Pacific Alliance (observer), PCA, PIF (partner), SAARC (observer), SCO, SICA (observer), UN, UNAMID, UNCTAD, UNESCO, UNFICYP, UNHCR, UNIDO, UNIFIL, UNMIL, UNMISS, UNOCI, UN Security Council (permanent), UNTSO, UNWTO, UPU, WCO, WHO, WIPO, WMO, WTO, ZC"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador QIN Gangas (since 29 July 2021)"
+      },
+      "chancery": {
+        "text": "3505 International Place NW, Washington, DC 20008"
+      },
+      "telephone": {
+        "text": "[1] (202) 495-2266"
+      },
+      "FAX": {
+        "text": "[1] (202) 495-2138"
+      },
+      "email address and website": {
+        "text": "<br>chinaemppress_us@mfa.gov.cn<br><br>http://www.china-embassy.org/eng/"
+      },
+      "consulate(s) general": {
+        "text": "Chicago, Los Angeles, New York, San Francisco; note - the US ordered closure of the Houston consulate in late July 2020"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador (vacant); Charg&eacute; d&rsquo;Affaires David MEALE (since July 2021)"
+      },
+      "embassy": {
+        "text": "55 An Jia Lou Road, Chaoyang District, Beijing 100600"
+      },
+      "mailing address": {
+        "text": "7300 Beijing Place, Washington DC&nbsp; 20521-7300"
+      },
+      "telephone": {
+        "text": "[86] (10) 8531-3000"
+      },
+      "FAX": {
+        "text": "[86] (10) 8531-4200"
+      },
+      "email address and website": {
+        "text": "<br>BeijingACS@state.gov<br><br>https://china.usembassy-china.org.cn/"
+      },
+      "consulate(s) general": {
+        "text": "Guangzhou, Shanghai, Shenyang, Wuhan; note - the Chinese Government ordered closure of the US consulate in Chengdu in late July 2020"
+      }
+    },
+    "Flag description": {
+      "text": "red with a large yellow five-pointed star and four smaller yellow five-pointed stars (arranged in a vertical arc toward the middle of the flag) in the upper hoist-side corner; the color red represents revolution, while the stars symbolize the four social classes - the working class, the peasantry, the urban petty bourgeoisie, and the national bourgeoisie (capitalists) - united under the Communist Party of China"
+    },
+    "National symbol(s)": {
+      "text": "dragon, giant panda; national colors: red, yellow"
+    },
+    "National anthem": {
+      "name": {
+        "text": "\"Yiyongjun Jinxingqu\" (The March of the Volunteers)"
+      },
+      "lyrics/music": {
+        "text": "TIAN Han/NIE Er"
+      },
+      "note": "<strong>note:</strong> adopted 1949; the anthem, though banned during the Cultural Revolution, is more commonly known as \"Zhongguo Guoge\" (Chinese National Song); it was originally the theme song to the 1935 Chinese movie, \"Sons and Daughters in a Time of Storm\""
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Since the late 1970s, China has moved from a closed, centrally planned system to a more market-oriented one that plays a major global role. China has implemented reforms in a gradualist fashion, resulting in efficiency gains that have contributed to a more than tenfold increase in GDP since 1978. Reforms began with the phaseout of collectivized agriculture, and expanded to include the gradual liberalization of prices, fiscal decentralization, increased autonomy for state enterprises, growth of the private sector, development of stock markets and a modern banking system, and opening to foreign trade and investment. China continues to pursue an industrial policy, state support of key sectors, and a restrictive investment regime. From 2013 to 2017, China had one of the fastest growing economies in the world, averaging slightly more than 7% real growth per year. Measured on a purchasing power parity (PPP) basis that adjusts for price differences, China in 2017 stood as the largest economy in the world, surpassing the US in 2014 for the first time in modern history. China became the world's largest exporter in 2010, and the largest trading nation in 2013. Still, China's per capita income is below the world average.</p><p></p><p>In July 2005 moved to an exchange rate system that references a basket of currencies. From mid-2005 to late 2008, the renminbi (RMB) appreciated more than 20% against the US dollar, but the exchange rate remained virtually pegged to the dollar from the onset of the global financial crisis until June 2010, when Beijing announced it would resume a gradual appreciation. From 2013 until early 2015, the renminbi held steady against the dollar, but it depreciated 13% from mid-2015 until end-2016 amid strong capital outflows; in 2017 the RMB resumed appreciating against the dollar – roughly 7% from end-of-2016 to end-of-2017. In 2015, the People’s Bank of China announced it would continue to carefully push for full convertibility of the renminbi, after the currency was accepted as part of the IMF’s special drawing rights basket. However, since late 2015 the Chinese Government has strengthened capital controls and oversight of overseas investments to better manage the exchange rate and maintain financial stability.</p><p></p><p>The Chinese Government faces numerous economic challenges including: (a) reducing its high domestic savings rate and correspondingly low domestic household consumption; (b) managing its high corporate debt burden to maintain financial stability; (c) controlling off-balance sheet local government debt used to finance infrastructure stimulus; (d) facilitating higher-wage job opportunities for the aspiring middle class, including rural migrants and college graduates, while maintaining competitiveness; (e) dampening speculative investment in the real estate sector without sharply slowing the economy; (f) reducing industrial overcapacity; and (g) raising productivity growth rates through the more efficient allocation of capital and state-support for innovation. Economic development has progressed further in coastal provinces than in the interior, and by 2016 more than 169.3 million migrant workers and their dependents had relocated to urban areas to find work. One consequence of China’s population control policy known as the \"one-child policy\" - which was relaxed in 2016 to permit all families to have two children - is that China is now one of the most rapidly aging countries in the world. Deterioration in the environment - notably air pollution, soil erosion, and the steady fall of the water table, especially in the North - is another long-term problem. China continues to lose arable land because of erosion and urbanization. The Chinese Government is seeking to add energy production capacity from sources other than coal and oil, focusing on natural gas, nuclear, and clean energy development. In 2016, China ratified the Paris Agreement, a multilateral agreement to combat climate change, and committed to peak its carbon dioxide emissions between 2025 and 2030.</p><p></p><p>The government's 13th Five-Year Plan, unveiled in March 2016, emphasizes the need to increase innovation and boost domestic consumption to make the economy less dependent on government investment, exports, and heavy industry. However, China has made more progress on subsidizing innovation than rebalancing the economy. Beijing has committed to giving the market a more decisive role in allocating resources, but the Chinese Government’s policies continue to favor state-owned enterprises and emphasize stability. Chinese leaders in 2010 pledged to double China’s GDP by 2020, and the 13th Five Year Plan includes annual economic growth targets of at least 6.5% through 2020 to achieve that goal. In recent years, China has renewed its support for state-owned enterprises in sectors considered important to \"economic security,\" explicitly looking to foster globally competitive industries. Chinese leaders also have undermined some market-oriented reforms by reaffirming the \"dominant\" role of the state in the economy, a stance that threatens to discourage private initiative and make the economy less efficient over time. The slight acceleration in economic growth in 2017—the first such uptick since 2010—gives Beijing more latitude to pursue its economic reforms, focusing on financial sector deleveraging and its Supply-Side Structural Reform agenda, first announced in late 2015.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$22,526,502,000,000 (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$21,229,363,000,000 (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$19,887,033,000,000 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2019": {
+        "text": "6.14% (2019 est.)"
+      },
+      "Real GDP growth rate 2018": {
+        "text": "6.75% (2018 est.)"
+      },
+      "Real GDP growth rate 2017": {
+        "text": "6.92% (2017 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$16,117 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$15,243 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$14,344 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$14,327,359,000,000 (2019 est.)",
+      "note": "<strong>note:</strong> because China's exchange rate is determined by fiat rather than by market forces, the official exchange rate measure of GDP is not an accurate measure of China's output; GDP at the official exchange rate substantially understates the actual level of China's output vis-a-vis the rest of the world; in China's situation, GDP at purchasing power parity provides the best measure for comparing output across countries"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2019": {
+        "text": "2.8% (2019 est.)"
+      },
+      "Inflation rate (consumer prices) 2018": {
+        "text": "2% (2018 est.)"
+      },
+      "Inflation rate (consumer prices) 2017": {
+        "text": "1.5% (2017 est.)"
+      }
+    },
+    "Credit ratings": {
+      "Fitch rating": {
+        "text": "A+ (2007)"
+      },
+      "Moody's rating": {
+        "text": "A1 (2017)"
+      },
+      "Standard & Poors rating": {
+        "text": "A+ (2017)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "7.9% (2017 est.)"
+      },
+      "industry": {
+        "text": "40.5% (2017 est.)"
+      },
+      "services": {
+        "text": "51.6% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "39.1% (2017 est.)"
+      },
+      "government consumption": {
+        "text": "14.5% (2017 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "42.7% (2017 est.)"
+      },
+      "investment in inventories": {
+        "text": "1.7% (2017 est.)"
+      },
+      "exports of goods and services": {
+        "text": "20.4% (2017 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-18.4% (2017 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "maize, rice, vegetables, wheat, sugar cane, potatoes, cucumbers, tomatoes, watermelons, sweet potatoes"
+    },
+    "Industries": {
+      "text": "world leader in gross value of industrial output; mining and ore processing, iron, steel, aluminum, and other metals, coal; machine building; armaments; textiles and apparel; petroleum; cement; chemicals; fertilizer; consumer products (including footwear, toys, and electronics); food processing; transportation equipment, including automobiles, railcars and locomotives, ships, aircraft; telecommunications equipment, commercial space launch vehicles, satellites"
+    },
+    "Industrial production growth rate": {
+      "text": "6.1% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "774.71 million (2019 est.)",
+      "note": "<strong>note:</strong> by the end of 2012, China's working age population (15-64 years) was 1.004 billion"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "27.7%"
+      },
+      "industry": {
+        "text": "28.8%"
+      },
+      "services": {
+        "text": "43.5% (2016 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2019": {
+        "text": "3.64% (2019 est.)"
+      },
+      "Unemployment rate 2018": {
+        "text": "3.84% (2018 est.)"
+      },
+      "note": "<strong>note:</strong> data are for registered urban unemployment, which excludes private enterprises and migrants"
+    },
+    "Population below poverty line": {
+      "text": "0.6% (2019 est.)"
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "Gini Index coefficient - distribution of family income 2016": {
+        "text": "38.5 (2016 est.)"
+      },
+      "Gini Index coefficient - distribution of family income 2015": {
+        "text": "46.2 (2015 est.)"
+      }
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "2.1%"
+      },
+      "highest 10%": {
+        "text": "31.4% (2012)"
+      },
+      "note": "<strong>note:</strong> data are for urban households only"
+    },
+    "Budget": {
+      "revenues": {
+        "text": "2.553 trillion (2017 est.)"
+      },
+      "expenditures": {
+        "text": "3.008 trillion (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-3.8% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "47% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "44.2% of GDP (2016 est.)"
+      },
+      "note": "<strong>note:</strong> official data; data cover both central and local government debt, including debt officially recognized by China's National Audit Office report in 2011; data exclude policy bank bonds, Ministry of Railway debt, and China Asset Management Company debt"
+    },
+    "Taxes and other revenues": {
+      "text": "21.3% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Current account balance": {
+      "Current account balance 2019": {
+        "text": "$141.335 billion (2019 est.)"
+      },
+      "Current account balance 2018": {
+        "text": "$25.499 billion (2018 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2018": {
+        "text": "$2.49 trillion (2018)"
+      },
+      "Exports 2017": {
+        "text": "$2.216 trillion (2017 est.)"
+      },
+      "Exports 2016": {
+        "text": "$1.99 trillion (2016 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "United States 17%, Hong Kong 10%, Japan 6% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "broadcasting equipment, computers, integrated circuits, office machinery and parts, telephones (2019)"
+    },
+    "Imports": {
+      "Imports 2018": {
+        "text": "$2.14 trillion (2018)"
+      },
+      "Imports 2017": {
+        "text": "$1.74 trillion (2017 est.)"
+      },
+      "Imports 2016": {
+        "text": "$1.501 trillion (2016 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "South Korea 9%, Japan 8%, Australia 7%, Germany 7%, US 7%, Taiwan 6% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "crude petroleum, integrated circuits, iron, natural gas, cars, gold (2019)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$3.236 trillion (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "text": "$3.098 trillion (31 December 2016 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 2019": {
+        "text": "$2,027,950,000,000 (2019 est.)"
+      },
+      "Debt - external 2018": {
+        "text": "$1,935,206,000,000 (2018 est.)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "Renminbi yuan (RMB) per US dollar -"
+      },
+      "Exchange rates 2020": {
+        "text": "6.5374 (2020 est.)"
+      },
+      "Exchange rates 2019": {
+        "text": "7.0403 (2019 est.)"
+      },
+      "Exchange rates 2018": {
+        "text": "6.8798 (2018 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "6.1434 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "6.1958 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "100% (2020)"
+      }
+    },
+    "Electricity - production": {
+      "text": "5.883 trillion kWh (2016 est.)"
+    },
+    "Electricity - consumption": {
+      "text": "5.564 trillion kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "18.91 billion kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "6.185 billion kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "1.653 billion kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "62% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "2% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "18% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "18% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "3.773 million bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "57,310 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "6.71 million bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "25.63 billion bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "11.51 million bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "12.47 million bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "848,400 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "1.16 million bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "145.9 billion cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "238.6 billion cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "3.37 billion cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "97.63 billion cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "5.44 trillion cu m (1 January 2018 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "191.033 million"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "13.75 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "1,746,238,000"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "125.66 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "China has the largest Internet market in the world with almost all subscribers accessing Internet through mobile devices; market is driven through government-allied investment; fast-developing data center market; government aims to provide universal and affordable broadband coverage through market competition and private investment in state-controlled enterprises; 3G and LTE subscribers will migrate to 5G aiming for 1M 5G base stations; government strengthens IoT policies to boost economic growth; China is pushing development of smart cities beyond Beijing; Beijing residents carry virtual card integrating identity, social security, health, and education documents; government controls gateways to global Internet through censorship, surveillance, and shut-downs; major exporter of broadcasting equipment world-wide (2021) (2020)"
+      },
+      "domestic": {
+        "text": "13 per 100 fixed line and 120 per 100 mobile-cellular; a domestic satellite system with several earth stations has been in place since 2018 (2019)"
+      },
+      "international": {
+        "text": "country code - 86;&nbsp;landing points for the RJCN, EAC-C2C, TPE, APCN-2, APG, NCP, TEA, SeaMeWe-3, SJC2, Taiwan Strait Express-1, AAE-1, APCN-2, AAG, FEA, FLAG and TSE&nbsp;submarine cables providing connectivity to Asia, the Middle East, Europe, and the US; satellite earth stations - 7 (5 Intelsat - 4 Pacific Ocean and 1 Indian Ocean; 1 Intersputnik - Indian Ocean region; and 1 Inmarsat - Pacific and Indian Ocean regions) (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "all broadcast media are owned by, or affiliated with, the Communist Party of China or a government agency; no privately owned TV or radio stations; state-run Chinese Central TV, provincial, and municipal stations offer more than 2,000 channels; the Central Propaganda Department sends directives to all domestic media outlets to guide its reporting with the government maintaining authority to approve all programming; foreign-made TV programs must be approved prior to broadcast; increasingly, Chinese turn to online and satellite television to access Chinese and international films and television shows (2019)"
+    },
+    "Internet country code": {
+      "text": ".cn"
+    },
+    "Internet users": {
+      "total": {
+        "text": "751,886,119"
+      },
+      "percent of population": {
+        "text": "54.3% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "449.279 million"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "32.33 (2019 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "National air transport system": {
+      "number of registered air carriers": {
+        "text": "56 (2020)"
+      },
+      "inventory of registered aircraft operated by air carriers": {
+        "text": "2,890"
+      },
+      "annual passenger traffic on registered air carriers": {
+        "text": "436,183,969 (2018)"
+      },
+      "annual freight traffic on registered air carriers": {
+        "text": "611,439,830 mt-km (2018)"
+      }
+    },
+    "Civil aircraft registration country code prefix": {
+      "text": "B"
+    },
+    "Airports": {
+      "total": {
+        "text": "507 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "510"
+      },
+      "over 3,047 m": {
+        "text": "87"
+      },
+      "2,438 to 3,047 m": {
+        "text": "187"
+      },
+      "1,524 to 2,437 m": {
+        "text": "109"
+      },
+      "914 to 1,523 m": {
+        "text": "43"
+      },
+      "under 914 m": {
+        "text": "84 (2019)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "23"
+      },
+      "over 3,047 m": {
+        "text": "2"
+      },
+      "2,438 to 3,047 m": {
+        "text": "0"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1"
+      },
+      "914 to 1,523 m": {
+        "text": "7"
+      },
+      "under 914 m": {
+        "text": "13 (2013)"
+      }
+    },
+    "Heliports": {
+      "text": "39 (2019)"
+    },
+    "Pipelines": {
+      "text": "76000 km gas, 30400 km crude oil, 27700 km refined petroleum products, 797000 km water (2018)"
+    },
+    "Railways": {
+      "total": {
+        "text": "131,000 km 1.435-m gauge (80,000 km electrified); 102,000 traditional, 29,000 high-speed (2018)"
+      }
+    },
+    "Roadways": {
+      "total": {
+        "text": "4,960,600 km (2017)"
+      },
+      "paved": {
+        "text": "4,338,600 km (includes 136,500 km of expressways) (2017)"
+      },
+      "unpaved": {
+        "text": "622,000 km (2017)"
+      }
+    },
+    "Waterways": {
+      "text": "110,000 km (navigable waterways) (2011)"
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "6,197"
+      },
+      "by type": {
+        "text": "bulk carrier 1,515, container ship 322, general cargo 862, oil tanker 968, other 2,530 (2020)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Dalian, Ningbo, Qingdao, Qinhuangdao, Shanghai, Shenzhen, Tianjin"
+      },
+      "container port(s) (TEUs)": {
+        "text": "Dalian (8,760,000), Guangzhou (23,236,200), Ningbo (27,530,000), Qingdao (21,010,000), Shanghai (43,303,000), Shenzhen (25,770,000), Tianjin (17,264,000) (2019)"
+      },
+      "LNG terminal(s) (import)": {
+        "text": "Fujian, Guangdong, Jiangsu, Shandong, Shanghai, Tangshan, Zhejiang"
+      },
+      "river port(s)": {
+        "text": "Guangzhou (Pearl)"
+      }
+    },
+    "Transportation - note": {
+      "text": "seven of the world’s ten largest container ports are in China"
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "People's Liberation Army (PLA): Ground Forces, Navy (PLAN, includes marines and naval aviation), Air Force (PLAAF, includes airborne forces), Rocket Force (strategic missile force), and Strategic Support Force (information warfare, cyber, space forces); People's Armed Police (PAP, includes Coast Guard, Border Defense Force, Internal Security Forces); PLA Reserve Force (2021)",
+      "note": "note(s): the PAP is a paramilitary police component of China’s armed forces that is under the command of the Central Military Commission (CMC) and charged with internal security, law enforcement, counterterrorism, and maritime rights protection<br><br>in 2018, the Coast Guard was moved from the State Oceanic Administration to the PAP; in 2013, China merged four of its five major maritime law enforcement agencies – the China Marine Surveillance (CMS), Maritime Police, Fishery Law Enforcement (FLE), and Anti-Smuggling Police – into a unified coast guard"
+    },
+    "Military expenditures": {
+      "Military Expenditures 2020": {
+        "text": "1.7% of GDP (2020 est.)"
+      },
+      "Military Expenditures 2019": {
+        "text": "1.7% of GDP (2019)"
+      },
+      "Military Expenditures 2018": {
+        "text": "1.9% of GDP (2018)"
+      },
+      "Military Expenditures 2017": {
+        "text": "1.9% of GDP (2017)"
+      },
+      "Military Expenditures 2016": {
+        "text": "1.9% of GDP (2016)"
+      }
+    },
+    "Military and security service personnel strengths": {
+      "text": "information varies; approximately 2 million total active duty troops (est. 1.0 - 1.1 million Ground; 250,000 Navy/Marines; 350-400,000 Air Force; 120,000 Rocket Forces; 150-175,000 Strategic Support Forces); est. 600-650,000 People&rsquo;s Armed Police (2020)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the PLA is outfitted primarily with a wide mix of older and modern domestically-produced systems heavily influenced by technology derived from other countries; Russia is the top supplier of foreign military equipment since 2010, followed by France and Ukraine; the Chinese defense-industrial sector is large and capable of producing advanced weapons systems across all military domains; it is the world's second largest arms producer (2020)",
+      "note": "note: the PLA is in the midst of a decades-long modernization effort; in 2017, President XI set three developmental goals for the force - becoming a mechanized force with increased information and strategic capabilities by 2020, a fully modernized force by 2035, and a worldwide first-class military by mid-century"
+    },
+    "Military deployments": {
+      "text": "425 Mali (MINUSMA); 225 Democratic Republic of the Congo (MONUSCO); 320 Sudan (UNAMID); 420 Lebanon (UNIFIL); 1,000 South Sudan (UNMISS); up to 2,000 Djibouti (Jan 2021)"
+    },
+    "Military service age and obligation": {
+      "text": "18-22 years of age for selective compulsory military service, with a 2-year service obligation; no minimum age for voluntary service (all officers are volunteers); 18-19 years of age for women high school graduates who meet requirements for specific military jobs (2019)"
+    },
+    "Military - note": {
+      "text": "<p>established in 1927, the PLA is the military arm of the ruling Chinese Communist Party (CCP), which oversees the PLA through its Central Military Commission; the Central Military Commission is China’s top military decision making body</p>"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>China and India continue their security and foreign policy dialogue started in 2005 related to a number of boundary disputes across the 2,000 mile shared border; India does not recognize Pakistan's 1964 ceding to China of the Aksai Chin, a territory designated as part of the princely state of Kashmir by the British Survey of India in 1865; China claims most of the Indian state Arunachal Pradesh to the base of the Himalayas, but the US recognizes the state of Arunachal Pradesh as Indian territory; Bhutan and China continue negotiations to establish a common boundary alignment to resolve territorial disputes arising from substantial cartographic discrepancies, the most contentious of which lie in Bhutan's west along China's Chumbi salient; Chinese maps show an international boundary symbol (the so-called “nine-dash line”) off the coasts of the littoral states of the South China Sea, where China has interrupted Vietnamese hydrocarbon exploration; China asserts sovereignty over Scarborough Reef along with the Philippines and Taiwan, and over the Spratly Islands together with Malaysia, the Philippines, Taiwan, Vietnam, and Brunei; the 2002 Declaration on the Conduct of Parties in the South China Sea eased tensions in the Spratlys, and in 2017 China and ASEAN began confidential negotiations for an updated Code of Conduct for the South China Sea designed not to settle territorial disputes but establish rules and norms in the region; this still is not the legally binding code of conduct sought by some parties; Vietnam and China continue to expand construction of facilities in the Spratlys and in early 2018 China began deploying advanced military systems to disputed Spratly outposts; China occupies some of the Paracel Islands also claimed by Vietnam and Taiwan; the Japanese-administered Senkaku Islands are also claimed by China and Taiwan; certain islands in the Yalu and Tumen Rivers are in dispute with North Korea; North Korea and China seek to stem illegal migration to China by North Koreans, fleeing privation and oppression; China and Russia have demarcated the once disputed islands at the Amur and Ussuri confluence and in the Argun River in accordance with their 2004 Agreement; China and Tajikistan have begun demarcating the revised boundary agreed to in the delimitation of 2002; the decade-long demarcation of the China-Vietnam land boundary was completed in 2009; citing environmental, cultural, and social concerns, China has reconsidered construction of 13 dams on the Salween River, but energy-starved Burma, with backing from Thailand, continues to consider building five hydro-electric dams downstream despite regional and international protests</p>"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "303,095 (Vietnam), undetermined (North Korea) (2019)"
+      },
+      "IDPs": {
+        "text": "undetermined (2021)"
+      }
+    },
+    "Trafficking in persons": {
+      "current situation": {
+        "text": "human traffickers exploit domestic and foreign victims in China and Chinese people abroad; Chinese men, women, and children are victims of forced labor and sex trafficking in at least 60 countries; traffickers also use China as a transit point to subject foreign individuals to trafficking in other countries throughout Asia and in international maritime industries; state-sponsored forced labor is intensifying under the government&rsquo;s mass detention and political indoctrination campaign against Muslim minorities in the Xinjiang Uyghur Autonomous Region; well-organized criminal syndicates and local gangs subject Chinese women and girls to sex trafficking within China; women and girls from South Asia, Southeast Asia, and several countries in Africa experience forced labor in domestic service, forced concubinism leading to forced childbearing, and sex trafficking via forced and fraudulent marriage to Chinese men; African and Asian men reportedly experience conditions indicative of forced labor aboard Chinese-flagged fishing vessels; many North Korean refugees and asylum-seekers living in China illegally are particularly vulnerable to trafficking"
+      },
+      "tier rating": {
+        "text": "Tier 3 &mdash; China does not fully meet the minimum standards for elimination of trafficking and is not making significant efforts to do so; the government prosecuted and convicted some traffickers and continued to cooperate with international authorities to address forced and fraudulent marriages in China; however, there was a government policy or pattern of widespread forced labor, including the continued mass arbitrary detention of more than one million Uyghurs, ethnic Kazakhs, ethnic Kyrgyz, and other Muslims in the Xinjiang Uyghur Autonomous Region; the government did not report any investigations, prosecutions, or convictions of law enforcement officials allegedly complicit despite continued reports of officials benefiting from, permitting, or directly facilitating sex trafficking; authorities did not report identifying any trafficking victims or referring them to protective services; it is likely that law enforcement arrested and detained unidentified trafficking victims for crimes traffickers compelled them to commit; for the third consecutive year, the government did not report the extent to which it funded anti-trafficking activities in furtherance of the 2013-2020 National Action Plan on Combating Human Trafficking (2020)"
+      }
+    },
+    "Illicit drugs": {
+      "text": "major transshipment point for heroin produced in the Golden Triangle region of Southeast Asia; growing domestic consumption of synthetic drugs, and heroin from Southeast and Southwest Asia; source country for methamphetamine and heroin chemical precursors, despite new regulations on its large chemical industry; more people believed to be convicted and executed for drug offences than anywhere else in the world, according to NGOs"
+    }
+  }
+}

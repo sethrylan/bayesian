@@ -1,0 +1,1133 @@
+{
+  "Introduction": {
+    "Background": {
+      "text": "<p>With 28 ethnic groups and languages, Liberia is one of the most ethnically diverse countries in the world. For hundreds of years, the Mali and Songhai Empires claimed most of Liberia. Beginning in the 15th century, European traders began establishing outposts along the Liberian coast. Unlike its neighbors, however, Liberia did not fall under European colonial rule. In the early 19th century, the United States began sending freed enslaved people and other people of color to Liberia to establish settlements. In 1847, these settlers declared independence from the United States, writing their own constitution and establishing Africa’s first republic.</p> <p>Early in Liberia’s history, tensions arose between the Americo-Liberian settlers and the indigenous population. In 1980, Samuel DOE, who was from the indigenous population, led a military coup and ushered in a decade of authoritarian rule. In December 1989, Charles TAYLOR launched a rebellion against DOE's regime that led to a prolonged civil war in which DOE was killed. A period of relative peace in 1997 permitted an election that brought TAYLOR to power. In 2000, fighting resumed. An August 2003 peace agreement ended the war and prompted President TAYLOR’s resignation. TAYLOR was later convicted by the UN-backed Special Court for Sierra Leone in The Hague for his involvement in Sierra Leone's civil war. In late 2005, President Ellen JOHNSON SIRLEAF became president after two years of transitional governments; she was the first female head of state in Africa. In 2011, JOHNSON SIRLEAF won reelection but struggled to rebuild Liberia's economy, particularly following the 2014-15 Ebola epidemic, and to reconcile a nation still recovering from 14 years of fighting. In 2017, former soccer star George WEAH won the presidential runoff election.</p> <p> </p>"
+    }
+  },
+  "Geography": {
+    "Location": {
+      "text": "Western Africa, bordering the North Atlantic Ocean, between Cote d'Ivoire and Sierra Leone"
+    },
+    "Geographic coordinates": {
+      "text": "6 30 N, 9 30 W"
+    },
+    "Map references": {
+      "text": "Africa"
+    },
+    "Area": {
+      "total": {
+        "text": "111,369 sq km"
+      },
+      "land": {
+        "text": "96,320 sq km"
+      },
+      "water": {
+        "text": "15,049 sq km"
+      }
+    },
+    "Area - comparative": {
+      "text": "slightly larger than Virginia"
+    },
+    "Land boundaries": {
+      "total": {
+        "text": "1,667 km"
+      },
+      "border countries": {
+        "text": "Guinea 590 km, Cote d'Ivoire 778 km, Sierra Leone 299 km"
+      }
+    },
+    "Coastline": {
+      "text": "579 km"
+    },
+    "Maritime claims": {
+      "territorial sea": {
+        "text": "12 nm"
+      },
+      "contiguous zone": {
+        "text": "24 nm"
+      },
+      "exclusive economic zone": {
+        "text": "200 nm"
+      },
+      "continental shelf": {
+        "text": "200 nm"
+      }
+    },
+    "Climate": {
+      "text": "tropical; hot, humid; dry winters with hot days and cool to cold nights; wet, cloudy summers with frequent heavy showers"
+    },
+    "Terrain": {
+      "text": "mostly flat to rolling coastal plains rising to rolling plateau and low mountains in northeast"
+    },
+    "Elevation": {
+      "highest point": {
+        "text": "Mount Wuteve 1,447 m"
+      },
+      "lowest point": {
+        "text": "Atlantic Ocean 0 m"
+      },
+      "mean elevation": {
+        "text": "243 m"
+      }
+    },
+    "Natural resources": {
+      "text": "iron ore, timber, diamonds, gold, hydropower"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "28.1% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 5.2% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 2.1% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 20.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "44.6% (2018 est.)"
+      },
+      "other": {
+        "text": "27.3% (2018 est.)"
+      }
+    },
+    "Irrigated land": {
+      "text": "30 sq km (2012)"
+    },
+    "Population distribution": {
+      "text": "more than half of the population lives in urban areas, with approximately one-third living within an 80-km radius of Monrovia as shown in this population distribution map"
+    },
+    "Natural hazards": {
+      "text": "dust-laden harmattan winds blow from the Sahara (December to March)"
+    },
+    "Geography - note": {
+      "text": "facing the Atlantic Ocean, the coastline is characterized by lagoons, mangrove swamps, and river-deposited sandbars; the inland grassy plateau supports limited agriculture"
+    }
+  },
+  "People and Society": {
+    "Population": {
+      "text": "5,214,030 (July 2021 est.)"
+    },
+    "Nationality": {
+      "noun": {
+        "text": "Liberian(s)"
+      },
+      "adjective": {
+        "text": "Liberian"
+      }
+    },
+    "Ethnic groups": {
+      "text": "Kpelle 20.3%, Bassa 13.4%, Grebo 10%, Gio 8%, Mano 7.9%, Kru 6%, Lorma 5.1%, Kissi 4.8%, Gola 4.4%, Krahn 4%, Vai 4%, Mandingo 3.2%, Gbandi 3%, Mende 1.3%, Sapo 1.3%, other Liberian 1.7%, other African 1.4%, non-African .1% (2008 est.)"
+    },
+    "Languages": {
+      "text": "English 20% (official), some 20 ethnic group languages few of which can be written or used in correspondence"
+    },
+    "Religions": {
+      "text": "Christian 85.6%, Muslim 12.2%, Traditional 0.6%, other 0.2%, none 1.5% (2008 est.)"
+    },
+    "Demographic profile": {
+      "text": "<p>Liberia’s high fertility rate of nearly 5 children per woman and large youth cohort – more than 60% of the population is under the age of 25 – will sustain a high dependency ratio for many years to come. Significant progress has been made in preventing child deaths, despite a lack of health care workers and infrastructure. Infant and child mortality have dropped nearly 70% since 1990; the annual reduction rate of about 5.4% is the highest in Africa.</p><p>Nevertheless, Liberia’s high maternal mortality rate remains among the world’s worst; it reflects a high unmet need for family planning services, frequency of early childbearing, lack of quality obstetric care, high adolescent fertility, and a low proportion of births attended by a medical professional. Female mortality is also increased by the prevalence of female genital cutting (FGC), which is practiced by 10 of Liberia’s 16 tribes and affects more than two-thirds of women and girls. FGC is an initiation ritual performed in rural bush schools, which teach traditional beliefs on marriage and motherhood and are an obstacle to formal classroom education for Liberian girls.</p><p>Liberia has been both a source and a destination for refugees. During Liberia’s 14-year civil war (1989-2003), more than 250,000 people became refugees and another half million were internally displaced. Between 2004 and the cessation of refugee status for Liberians in June 2012, the UNHCR helped more than 155,000 Liberians to voluntarily repatriate, while others returned home on their own. Some Liberian refugees spent more than two decades living in other West African countries. Liberia hosted more than 125,000 Ivoirian refugees escaping post-election violence in 2010-11; as of mid-2017, about 12,000 Ivoirian refugees were still living in Liberia as of October 2017 because of instability.</p>"
+    },
+    "Age structure": {
+      "0-14 years": {
+        "text": "43.35% (male 1,111,479/female 1,087,871)"
+      },
+      "15-24 years": {
+        "text": "20.35% (male 516,136/female 516,137)"
+      },
+      "25-54 years": {
+        "text": "30.01% (male 747,983/female 774,615)"
+      },
+      "55-64 years": {
+        "text": "3.46% (male 89,150/female 86,231)"
+      },
+      "65 years and over": {
+        "text": "2.83% (male 70,252/female 73,442) (2020 est.)"
+      }
+    },
+    "Dependency ratios": {
+      "total dependency ratio": {
+        "text": "77.6"
+      },
+      "youth dependency ratio": {
+        "text": "71.7"
+      },
+      "elderly dependency ratio": {
+        "text": "5.9"
+      },
+      "potential support ratio": {
+        "text": "17 (2020 est.)"
+      }
+    },
+    "Median age": {
+      "total": {
+        "text": "18 years"
+      },
+      "male": {
+        "text": "17.7 years"
+      },
+      "female": {
+        "text": "18.2 years (2020 est.)"
+      }
+    },
+    "Population growth rate": {
+      "text": "2.74% (2021 est.)"
+    },
+    "Birth rate": {
+      "text": "36.96 births/1,000 population (2021 est.)"
+    },
+    "Death rate": {
+      "text": "6.78 deaths/1,000 population (2021 est.)"
+    },
+    "Net migration rate": {
+      "text": "-2.82 migrant(s)/1,000 population (2021 est.)"
+    },
+    "Population distribution": {
+      "text": "more than half of the population lives in urban areas, with approximately one-third living within an 80-km radius of Monrovia as shown in this population distribution map"
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "52.6% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "3.41% annual rate of change (2015-20 est.)"
+      }
+    },
+    "Major urban areas - population": {
+      "text": "1.569 million MONROVIA (capital) (2021)"
+    },
+    "Sex ratio": {
+      "at birth": {
+        "text": "1.03 male(s)/female"
+      },
+      "0-14 years": {
+        "text": "1.02 male(s)/female"
+      },
+      "15-24 years": {
+        "text": "1 male(s)/female"
+      },
+      "25-54 years": {
+        "text": "0.97 male(s)/female"
+      },
+      "55-64 years": {
+        "text": "1.03 male(s)/female"
+      },
+      "65 years and over": {
+        "text": "0.96 male(s)/female"
+      },
+      "total population": {
+        "text": "1 male(s)/female (2020 est.)"
+      }
+    },
+    "Mother's mean age at first birth": {
+      "text": "19.1 years (2019/20 est.)",
+      "note": "<strong>note:</strong> median age at first birth among women 25-49"
+    },
+    "Maternal mortality ratio": {
+      "text": "661 deaths/100,000 live births (2017 est.)"
+    },
+    "Infant mortality rate": {
+      "total": {
+        "text": "45.98 deaths/1,000 live births"
+      },
+      "male": {
+        "text": "50.16 deaths/1,000 live births"
+      },
+      "female": {
+        "text": "41.68 deaths/1,000 live births (2021 est.)"
+      }
+    },
+    "Life expectancy at birth": {
+      "total population": {
+        "text": "65.1 years"
+      },
+      "male": {
+        "text": "62.86 years"
+      },
+      "female": {
+        "text": "67.4 years (2021 est.)"
+      }
+    },
+    "Total fertility rate": {
+      "text": "4.84 children born/woman (2021 est.)"
+    },
+    "Contraceptive prevalence rate": {
+      "text": "24.9% (2019/20)"
+    },
+    "Drinking water source": {
+      "improved: urban": {
+        "text": "urban: 93.8% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 67.9% of population"
+      },
+      "improved: total": {
+        "text": "total: 81% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 6.2% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 32.1% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 19% of population (2017 est.)"
+      }
+    },
+    "Current Health Expenditure": {
+      "text": "6.7% (2018)"
+    },
+    "Physicians density": {
+      "text": "0.04 physicians/1,000 population (2015)"
+    },
+    "Hospital bed density": {
+      "text": "0.8 beds/1,000 population (2010)"
+    },
+    "Sanitation facility access": {
+      "improved: urban": {
+        "text": "urban: 64.1% of population"
+      },
+      "improved: rural": {
+        "text": "rural: 23.5% of population"
+      },
+      "improved: total": {
+        "text": "total: 44.1% of population"
+      },
+      "unimproved: urban": {
+        "text": "urban: 35.9% of population"
+      },
+      "unimproved: rural": {
+        "text": "rural: 76.5% of population"
+      },
+      "unimproved: total": {
+        "text": "total: 55.9% of population (2017 est.)"
+      }
+    },
+    "HIV/AIDS - adult prevalence rate": {
+      "text": "1.1% (2020 est.)"
+    },
+    "HIV/AIDS - people living with HIV/AIDS": {
+      "text": "35,000 (2020 est.)"
+    },
+    "HIV/AIDS - deaths": {
+      "text": "1,300 (2020 est.)"
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "very high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial and protozoal diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "malaria, dengue fever, and yellow fever"
+      },
+      "water contact diseases": {
+        "text": "schistosomiasis"
+      },
+      "animal contact diseases": {
+        "text": "rabies"
+      },
+      "aerosolized dust or soil contact diseases": {
+        "text": "Lassa fever"
+      }
+    },
+    "Obesity - adult prevalence rate": {
+      "text": "9.9% (2016)"
+    },
+    "Children under the age of 5 years underweight": {
+      "text": "10.9% (2019/20)"
+    },
+    "Education expenditures": {
+      "text": "2.3% of GDP (2020)"
+    },
+    "Literacy": {
+      "definition": {
+        "text": "age 15 and over can read and write"
+      },
+      "total population": {
+        "text": "48.3%"
+      },
+      "male": {
+        "text": "62.7%"
+      },
+      "female": {
+        "text": "34.1% (2017)"
+      }
+    },
+    "Unemployment, youth ages 15-24": {
+      "total": {
+        "text": "2.3%"
+      },
+      "male": {
+        "text": "2.4%"
+      },
+      "female": {
+        "text": "2.2% (2016 est.)"
+      }
+    }
+  },
+  "Environment": {
+    "Environment - current issues": {
+      "text": "tropical rain forest deforestation; soil erosion; loss of biodiversity; hunting of endangered species for bushmeat; pollution of coastal waters from oil residue and raw sewage; pollution of rivers from industrial run-off; burning and dumping of household waste"
+    },
+    "Environment - international agreements": {
+      "party to": {
+        "text": "Biodiversity, Climate Change, Climate Change-Kyoto Protocol, Climate Change-Paris Agreement, Comprehensive Nuclear Test Ban, Desertification, Endangered Species, Hazardous Wastes, Law of the Sea, Nuclear Test Ban, Ozone Layer Protection, Ship Pollution, Tropical Timber 2006, Wetlands, Whaling"
+      },
+      "signed, but not ratified": {
+        "text": "Environmental Modification, Marine Life Conservation"
+      }
+    },
+    "Air pollutants": {
+      "particulate matter emissions": {
+        "text": "17.19 micrograms per cubic meter (2016 est.)"
+      },
+      "carbon dioxide emissions": {
+        "text": "1.39 megatons (2016 est.)"
+      },
+      "methane emissions": {
+        "text": "6.56 megatons (2020 est.)"
+      }
+    },
+    "Total water withdrawal": {
+      "municipal": {
+        "text": "80.2 million cubic meters (2017 est.)"
+      },
+      "industrial": {
+        "text": "53.4 million cubic meters (2017 est.)"
+      },
+      "agricultural": {
+        "text": "12.3 million cubic meters (2017 est.)"
+      }
+    },
+    "Total renewable water resources": {
+      "text": "232 billion cubic meters (2017 est.)"
+    },
+    "Climate": {
+      "text": "tropical; hot, humid; dry winters with hot days and cool to cold nights; wet, cloudy summers with frequent heavy showers"
+    },
+    "Land use": {
+      "agricultural land": {
+        "text": "28.1% (2018 est.)"
+      },
+      "agricultural land: arable land": {
+        "text": "arable land: 5.2% (2018 est.)"
+      },
+      "agricultural land: permanent crops": {
+        "text": "permanent crops: 2.1% (2018 est.)"
+      },
+      "agricultural land: permanent pasture": {
+        "text": "permanent pasture: 20.8% (2018 est.)"
+      },
+      "forest": {
+        "text": "44.6% (2018 est.)"
+      },
+      "other": {
+        "text": "27.3% (2018 est.)"
+      }
+    },
+    "Revenue from forest resources": {
+      "forest revenues": {
+        "text": "13.27% of GDP (2018 est.)"
+      }
+    },
+    "Revenue from coal": {
+      "coal revenues": {
+        "text": "0% of GDP (2018 est.)"
+      }
+    },
+    "Urbanization": {
+      "urban population": {
+        "text": "52.6% of total population (2021)"
+      },
+      "rate of urbanization": {
+        "text": "3.41% annual rate of change (2015-20 est.)"
+      }
+    },
+    "Major infectious diseases": {
+      "degree of risk": {
+        "text": "very high (2020)"
+      },
+      "food or waterborne diseases": {
+        "text": "bacterial and protozoal diarrhea, hepatitis A, and typhoid fever"
+      },
+      "vectorborne diseases": {
+        "text": "malaria, dengue fever, and yellow fever"
+      },
+      "water contact diseases": {
+        "text": "schistosomiasis"
+      },
+      "animal contact diseases": {
+        "text": "rabies"
+      },
+      "aerosolized dust or soil contact diseases": {
+        "text": "Lassa fever"
+      }
+    },
+    "Waste and recycling": {
+      "municipal solid waste generated annually": {
+        "text": "564,467 tons (2007 est.)"
+      }
+    }
+  },
+  "Government": {
+    "Country name": {
+      "conventional long form": {
+        "text": "Republic of Liberia"
+      },
+      "conventional short form": {
+        "text": "Liberia"
+      },
+      "etymology": {
+        "text": "name derives from the Latin word \"liber\" meaning \"free\"; so named because the nation was created as a homeland for liberated African-American slaves"
+      }
+    },
+    "Government type": {
+      "text": "presidential republic"
+    },
+    "Capital": {
+      "name": {
+        "text": "Monrovia"
+      },
+      "geographic coordinates": {
+        "text": "6 18 N, 10 48 W"
+      },
+      "time difference": {
+        "text": "UTC 0 (5 hours ahead of Washington, DC, during Standard Time)"
+      },
+      "etymology": {
+        "text": "named after James Monroe (1758-1831), the fifth president of the United States and supporter of the colonization of Liberia by freed slaves; one of two national capitals named for a US president, the other is Washington, D.C."
+      }
+    },
+    "Administrative divisions": {
+      "text": "15 counties; Bomi, Bong, Gbarpolu, Grand Bassa, Grand Cape Mount, Grand Gedeh, Grand Kru, Lofa, Margibi, Maryland, Montserrado, Nimba, River Cess, River Gee, Sinoe"
+    },
+    "Independence": {
+      "text": "26 July 1847"
+    },
+    "National holiday": {
+      "text": "Independence Day, 26 July (1847)"
+    },
+    "Constitution": {
+      "history": {
+        "text": "previous 1847 (at independence); latest drafted 19 October 1983, revision adopted by referendum 3 July 1984, effective 6 January 1986"
+      },
+      "amendments": {
+        "text": "proposed by agreement of at least two thirds of both National Assembly houses or by petition of at least 10,000 citizens; passage requires at least two-thirds majority approval of both houses and approval in a referendum by at least two-thirds majority of registered voters; amended 2011, 2020"
+      }
+    },
+    "Legal system": {
+      "text": "mixed legal system of common law, based on Anglo-American law, and customary law"
+    },
+    "International law organization participation": {
+      "text": "accepts compulsory ICJ jurisdiction with reservations; accepts ICCt jurisdiction"
+    },
+    "Citizenship": {
+      "citizenship by birth": {
+        "text": "no"
+      },
+      "citizenship by descent only": {
+        "text": "at least one parent must be a citizen of Liberia"
+      },
+      "dual citizenship recognized": {
+        "text": "no"
+      },
+      "residency requirement for naturalization": {
+        "text": "2 years"
+      }
+    },
+    "Suffrage": {
+      "text": "18 years of age; universal"
+    },
+    "Executive branch": {
+      "chief of state": {
+        "text": "President George WEAH (since 22 January 2018); Vice President Jewel HOWARD-TAYLOR (since 22 January 2018); note - the president is both chief of state and head of government"
+      },
+      "head of government": {
+        "text": "President George WEAH (since 22 January 2018); Vice President Jewel HOWARD-TAYLOR (since 22 January 2018)"
+      },
+      "cabinet": {
+        "text": "Cabinet appointed by the president, confirmed by the Senate"
+      },
+      "elections/appointments": {
+        "text": "president directly elected by absolute majority popular vote in 2 rounds if needed for a 6-year term (eligible for a second term); election last held on 10 October 2017 with a run-off on 26 December 2017) (next to be held on 10 October 2023); the runoff originally scheduled for 7 November 2017 was delayed due to allegations of fraud in the first round, which the Supreme Court dismissed"
+      },
+      "election results": {
+        "text": "George WEAH elected president in second round; percent of vote in first round - George WEAH (Coalition for Democratic Change) 38.4%, Joseph BOAKAI (UP) 28.8%, Charles BRUMSKINE (LP) 9.6%, Prince JOHNSON (MDR) 8.2%, Alexander B. CUMMINGS (ANC) 7.2%, other 7.8%; percentage of vote in second round - George WEAH 61.5%, Joseph BOAKAI 38.5%"
+      }
+    },
+    "Legislative branch": {
+      "description": {
+        "text": "bicameral National Assembly consists of:<br>The Liberian Senate (30 seats; members directly elected in 15 2-seat districts by simple majority vote to serve 9-year staggered terms; each district elects 1 senator and elects the second senator 3 years later, followed by a 6-year hiatus, after which the first Senate seat is up for election)<br>House of Representatives (73 seats; members directly elected in single-seat districts by simple majority vote to serve 6-year terms; eligible for a second term)"
+      },
+      "elections": {
+        "text": "Senate - general election held on 8 December 2020 with half the seats up for election (next election 2023)<br>House of Representatives - last held on 10 October 2017 (next to be held in October 2023)"
+      },
+      "election results": {
+        "text": "Senate - percent of vote by party - Collaborating Political Parties 40.27%, Congress for Democratic Change 28.02%, People's Unification Party 6.40, Movement for Democracy and Reconstructions 4.30%, All Liberia Coalition 1.09%,Rainbow Alliance 1.09%, Liberia Restoration Party 0,82%, Liberia National Union 0.77%, Movement for Progressive Change 0.74%, United People's Party 0.66%, Liberia Transformation Party 0.16%, National Democratic Coalition 0.07%, Movement for One Liberia 0.01; seats by coalition/party- CPP 13, CDC 5, PUP 2, MDR 1, NDC 1   <br> <br>House of Representatives - percent of vote by party/coalition - Coalition for Democratic Change 15.6%, UP 14%, LP 8.7%, ANC 6.1%, PUP 5.9%, ALP 5.1%, MDR 3.4%, other 41.2%; seats by coalition/party - Coalition for Democratic Change 21, UP 20, PUP 5, LP 3, ALP 3, MDR 2, independent 13, other 6; composition - men 64, women 9, percent of women 12.3%; total Parliament percent of women 11.7%"
+      }
+    },
+    "Judicial branch": {
+      "highest courts": {
+        "text": "Supreme Court (consists of a chief justice and 4 associate justices); note - the Supreme Court has jurisdiction for all constitutional cases"
+      },
+      "judge selection and term of office": {
+        "text": "chief justice and associate justices appointed by the president of Liberia with consent of the Senate; judges can serve until age 70"
+      },
+      "subordinate courts": {
+        "text": "judicial circuit courts; special courts, including criminal, civil, labor, traffic; magistrate and traditional or customary courts"
+      }
+    },
+    "Political parties and leaders": {
+      "text": "Alliance for Peace and Democracy or APD [Marcus S. G. DAHN]<br>All Liberian Party or ALP [Benoi UREY]<br>Alternative National Congress or ANC [Orishil GOULD]<br>Coalition for Democratic Change [George WEAH] (includes CDC, NPP, and LPDP)Congress for Democratic Change or CDC [George WEAH]<br>Liberia Destiny Party or LDP [Nathaniel BARNES]<br>Liberia National Union or LINU [Nathaniel BLAMA]<br>Liberia Transformation Party or LTP [Julius SUKU]<br>Liberian People Democratic Party or LPDP [Alex J. TYLER]<br>Liberian People's Party or LPP<br>Liberty Party or LP [J. Fonati KOFFA]<br>Movement for Democracy and Reconstruction or MDR [Prince Y. JOHNSON]<br>Movement for Economic Empowerment [J. Mill JONES, Dr.]<br>Movement for Progressive Change or MPC [Simeon FREEMAN]<br>National Democratic Coalition or NDC [Dew MAYSON]<br>National Democratic Party of Liberia or NDPL [D. Nyandeh SIEH]<br>National Patriotic Party or NPP [Jewel HOWARD TAYLOR]<br>National Reformist Party or NRP [Maximillian T. W. DIABE]<br>National Union for Democratic Progress or NUDP [Victor BARNEY]<br>People's Unification Party or PUP [Isobe GBORKORKOLLIE]<br>Unity Party or UP [Varney SHERMAN]<br>United People's Party [MacDonald WENTO]<br>Victory for Change Party [Marcus R. JONES]"
+    },
+    "International organization participation": {
+      "text": "ACP, AfDB, AU, ECOWAS, EITI (compliant country), FAO, G-77, IAEA, IBRD, ICAO, ICC (NGOs), ICCt, ICRM, IDA, IFAD, IFC, IFRCS, ILO, IMF, IMO, IMSO, Interpol, IOC, IOM, ISO (correspondent), ITU, ITUC (NGOs), MIGA, MINUSMA, NAM, OPCW, UN, UNCTAD, UNESCO, UNIDO, UNWTO, UPU, WCO, WFTU (NGOs), WHO, WIPO, WMO, WTO (observer)"
+    },
+    "Diplomatic representation in the US": {
+      "chief of mission": {
+        "text": "Ambassador George S.W. PATTEN, Sr. (since 11 January 2019)"
+      },
+      "chancery": {
+        "text": "5201 16th Street NW, Washington, DC 20011"
+      },
+      "telephone": {
+        "text": "[1] (202) 723-0437"
+      },
+      "FAX": {
+        "text": "[1] (202) 723-0436"
+      },
+      "email address and website": {
+        "text": "<br>info@liberiaemb.org<br><br>http://www.liberianembassyus.org/"
+      },
+      "consulate(s) general": {
+        "text": "New York"
+      }
+    },
+    "Diplomatic representation from the US": {
+      "chief of mission": {
+        "text": "Ambassador Michael A. MCCARTHY (since 22 January 2021)"
+      },
+      "embassy": {
+        "text": "502 Benson Street, Monrovia"
+      },
+      "mailing address": {
+        "text": "8800 Monrovia Place, Washington DC&nbsp; 20521-8800"
+      },
+      "telephone": {
+        "text": "[231] 77-677-7000"
+      },
+      "FAX": {
+        "text": "[231] 77-677-7370"
+      },
+      "email address and website": {
+        "text": "<br>ACSMonrovia@state.gov<br><br>https://lr.usembassy.gov/"
+      }
+    },
+    "Flag description": {
+      "text": "11 equal horizontal stripes of red (top and bottom) alternating with white; a white five-pointed star appears on a blue square in the upper hoist-side corner; the stripes symbolize the signatories of the Liberian Declaration of Independence; the blue square represents the African mainland, and the star represents the freedom granted to the ex-slaves; according to the constitution, the blue color signifies liberty, justice, and fidelity, the white color purity, cleanliness, and guilelessness, and the red color steadfastness, valor, and fervor",
+      "note": "<strong>note:</strong> the design is based on the US flag"
+    },
+    "National symbol(s)": {
+      "text": "white star; national colors: red, white, blue"
+    },
+    "National anthem": {
+      "name": {
+        "text": "All Hail, Liberia Hail!"
+      },
+      "lyrics/music": {
+        "text": "Daniel Bashiel WARNER/Olmstead LUCA"
+      },
+      "note": "<strong>note:</strong> lyrics adopted 1847, music adopted 1860; the anthem's author later became the third president of Liberia"
+    }
+  },
+  "Economy": {
+    "Economic overview": {
+      "text": "<p>Liberia is a low-income country that relies heavily on foreign assistance and remittances from the diaspora. It is richly endowed with water, mineral resources, forests, and a climate favorable to agriculture. Its principal exports are iron ore, rubber, diamonds, and gold. Palm oil and cocoa are emerging as new export products. The government has attempted to revive raw timber extraction and is encouraging oil exploration.</p><p></p><p>In the 1990s and early 2000s, civil war and government mismanagement destroyed much of Liberia's economy, especially infrastructure in and around the capital. Much of the conflict was fueled by control over Liberia’s natural resources. With the conclusion of fighting and the installation of a democratically elected government in 2006, businesses that had fled the country began to return. The country achieved high growth during the period 2010-13 due to favorable world prices for its commodities. However, during the 2014-2015 Ebola crisis, the economy declined and many foreign-owned businesses departed with their capital and expertise. The epidemic forced the government to divert scarce resources to combat the spread of the virus, reducing funds available for needed public investment. The cost of addressing the Ebola epidemic coincided with decreased economic activity reducing government revenue, although higher donor support significantly offset this loss. During the same period, global commodities prices for key exports fell and have yet to recover to pre-Ebola levels.</p><p></p><p>In 2017, gold was a key driver of growth, as a new mining project began its first full year of production; iron ore exports are also increased as Arcelor Mittal opened new mines at Mount Gangra. The completion of the rehabilitation of the Mount Coffee Hydroelectric Dam increased electricity production to support ongoing and future economic activity, although electricity tariffs remain high relative to other countries in the region and transmission infrastructure is limited. Presidential and legislative elections in October 2017 generated election-related spending pressures.</p><p></p><p>Revitalizing the economy in the future will depend on economic diversification, increasing investment and trade, higher global commodity prices, sustained foreign aid and remittances, development of infrastructure and institutions, combating corruption, and maintaining political stability and security.</p>"
+    },
+    "Real GDP (purchasing power parity)": {
+      "Real GDP (purchasing power parity) 2019": {
+        "text": "$7.049 billion (2019 est.)"
+      },
+      "Real GDP (purchasing power parity) 2018": {
+        "text": "$7.214 billion (2018 est.)"
+      },
+      "Real GDP (purchasing power parity) 2017": {
+        "text": "$7.126 billion (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "Real GDP growth rate": {
+      "Real GDP growth rate 2017": {
+        "text": "2.5% (2017 est.)"
+      },
+      "Real GDP growth rate 2016": {
+        "text": "-1.6% (2016 est.)"
+      },
+      "Real GDP growth rate 2015": {
+        "text": "0% (2015 est.)"
+      }
+    },
+    "Real GDP per capita": {
+      "Real GDP per capita 2019": {
+        "text": "$1,428 (2019 est.)"
+      },
+      "Real GDP per capita 2018": {
+        "text": "$1,497 (2018 est.)"
+      },
+      "Real GDP per capita 2017": {
+        "text": "$1,516 (2017 est.)"
+      },
+      "note": "<strong>note:</strong> data are in 2010 dollars"
+    },
+    "GDP (official exchange rate)": {
+      "text": "$3.071 billion (2019 est.)"
+    },
+    "Inflation rate (consumer prices)": {
+      "Inflation rate (consumer prices) 2017": {
+        "text": "12.4% (2017 est.)"
+      },
+      "Inflation rate (consumer prices) 2016": {
+        "text": "8.8% (2016 est.)"
+      }
+    },
+    "GDP - composition, by sector of origin": {
+      "agriculture": {
+        "text": "34% (2017 est.)"
+      },
+      "industry": {
+        "text": "13.8% (2017 est.)"
+      },
+      "services": {
+        "text": "52.2% (2017 est.)"
+      }
+    },
+    "GDP - composition, by end use": {
+      "household consumption": {
+        "text": "128.8% (2016 est.)"
+      },
+      "government consumption": {
+        "text": "16.7% (2016 est.)"
+      },
+      "investment in fixed capital": {
+        "text": "19.5% (2016 est.)"
+      },
+      "investment in inventories": {
+        "text": "6.7% (2016 est.)"
+      },
+      "exports of goods and services": {
+        "text": "17.5% (2016 est.)"
+      },
+      "imports of goods and services": {
+        "text": "-89.2% (2016 est.)"
+      }
+    },
+    "Agricultural products": {
+      "text": "cassava, sugar cane, oil palm fruit, rice, bananas, vegetables, plantains, rubber, taro, maize"
+    },
+    "Industries": {
+      "text": "mining (iron ore and gold), rubber processing, palm oil processing, diamonds"
+    },
+    "Industrial production growth rate": {
+      "text": "9% (2017 est.)"
+    },
+    "Labor force": {
+      "text": "1.677 million (2017 est.)"
+    },
+    "Labor force - by occupation": {
+      "agriculture": {
+        "text": "70%"
+      },
+      "industry": {
+        "text": "8%"
+      },
+      "services": {
+        "text": "22% (2000 est.)"
+      }
+    },
+    "Unemployment rate": {
+      "Unemployment rate 2014": {
+        "text": "2.8% (2014 est.)"
+      }
+    },
+    "Population below poverty line": {
+      "text": "50.9% (2016 est.)"
+    },
+    "Gini Index coefficient - distribution of family income": {
+      "Gini Index coefficient - distribution of family income 2016": {
+        "text": "35.3 (2016 est.)"
+      },
+      "Gini Index coefficient - distribution of family income 2007": {
+        "text": "38.2 (2007)"
+      }
+    },
+    "Household income or consumption by percentage share": {
+      "lowest 10%": {
+        "text": "2.4%"
+      },
+      "highest 10%": {
+        "text": "30.1% (2007)"
+      }
+    },
+    "Budget": {
+      "revenues": {
+        "text": "553.6 million (2017 est.)"
+      },
+      "expenditures": {
+        "text": "693.8 million (2017 est.)"
+      }
+    },
+    "Budget surplus (+) or deficit (-)": {
+      "text": "-4.3% (of GDP) (2017 est.)"
+    },
+    "Public debt": {
+      "Public debt 2017": {
+        "text": "34.4% of GDP (2017 est.)"
+      },
+      "Public debt 2016": {
+        "text": "28.3% of GDP (2016 est.)"
+      }
+    },
+    "Taxes and other revenues": {
+      "text": "16.9% (of GDP) (2017 est.)"
+    },
+    "Fiscal year": {
+      "text": "calendar year"
+    },
+    "Current account balance": {
+      "Current account balance 2017": {
+        "text": "-$627 million (2017 est.)"
+      },
+      "Current account balance 2016": {
+        "text": "-$464 million (2016 est.)"
+      }
+    },
+    "Exports": {
+      "Exports 2019": {
+        "text": "$330 million (2019 est.)"
+      },
+      "Exports 2018": {
+        "text": "$362 million (2018 est.)"
+      },
+      "Exports 2017": {
+        "text": "$359 million (2017 est.)"
+      }
+    },
+    "Exports - partners": {
+      "text": "Guyana 32%, Poland 10%, Switzerland 8%, Japan 7%, China 5% (2019)"
+    },
+    "Exports - commodities": {
+      "text": "ships, iron, gold, rubber, crude petroleum (2019)"
+    },
+    "Imports": {
+      "Imports 2019": {
+        "text": "$1.82 billion (2019 est.)"
+      },
+      "Imports 2018": {
+        "text": "$1.956 billion (2018 est.)"
+      },
+      "Imports 2017": {
+        "text": "$2.118 billion (2017 est.)"
+      }
+    },
+    "Imports - partners": {
+      "text": "China 41%, Japan 21%, South Korea 18% (2019)"
+    },
+    "Imports - commodities": {
+      "text": "ships, refined petroleum, iron structures, boat propellers, centrifuges (2019)"
+    },
+    "Reserves of foreign exchange and gold": {
+      "Reserves of foreign exchange and gold 31 December 2017": {
+        "text": "$459.8 million (31 December 2017 est.)"
+      },
+      "Reserves of foreign exchange and gold 31 December 2016": {
+        "text": "$528.7 million (31 December 2016 est.)"
+      }
+    },
+    "Debt - external": {
+      "Debt - external 2019": {
+        "text": "$826 million (2019 est.)"
+      },
+      "Debt - external 2018": {
+        "text": "$679 million (2018 est.)"
+      }
+    },
+    "Exchange rates": {
+      "currency": {
+        "text": "Liberian dollars (LRD) per US dollar -"
+      },
+      "Exchange rates 2017": {
+        "text": "109.4 (2017 est.)"
+      },
+      "Exchange rates 2016": {
+        "text": "93.4 (2016 est.)"
+      },
+      "Exchange rates 2015": {
+        "text": "93.4 (2015 est.)"
+      },
+      "Exchange rates 2014": {
+        "text": "85.3 (2014 est.)"
+      },
+      "Exchange rates 2013": {
+        "text": "83.893 (2013 est.)"
+      }
+    }
+  },
+  "Energy": {
+    "Electricity access": {
+      "electrification - total population": {
+        "text": "12% (2019)"
+      },
+      "electrification - urban areas": {
+        "text": "18% (2019)"
+      },
+      "electrification - rural areas": {
+        "text": "6% (2019)"
+      }
+    },
+    "Electricity - production": {
+      "text": "300 million kWh (2016 est.)",
+      "note": "<strong>note:</strong> according to a 2014 household survey, only 4.5% of Liberians use Liberia Electricity Corporation (LEC) power, 4.9% use a community generator, 4.4% have their own generator, 3.9% use vehicle batteries, and 0.8% use other sources of electricity, and 81.3% have no access to electricity; LEC accounts for roughly 70 million kWh of ouput."
+    },
+    "Electricity - consumption": {
+      "text": "279 million kWh (2016 est.)"
+    },
+    "Electricity - exports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - imports": {
+      "text": "0 kWh (2016 est.)"
+    },
+    "Electricity - installed generating capacity": {
+      "text": "151,000 kW (2016 est.)"
+    },
+    "Electricity - from fossil fuels": {
+      "text": "57% of total installed capacity (2016 est.)"
+    },
+    "Electricity - from nuclear fuels": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from hydroelectric plants": {
+      "text": "43% of total installed capacity (2017 est.)"
+    },
+    "Electricity - from other renewable sources": {
+      "text": "0% of total installed capacity (2017 est.)"
+    },
+    "Crude oil - production": {
+      "text": "0 bbl/day (2018 est.)"
+    },
+    "Crude oil - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - imports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Crude oil - proved reserves": {
+      "text": "0 bbl (1 January 2018 est.)"
+    },
+    "Refined petroleum products - production": {
+      "text": "0 bbl/day (2017 est.)"
+    },
+    "Refined petroleum products - consumption": {
+      "text": "8,000 bbl/day (2016 est.)"
+    },
+    "Refined petroleum products - exports": {
+      "text": "0 bbl/day (2015 est.)"
+    },
+    "Refined petroleum products - imports": {
+      "text": "8,181 bbl/day (2015 est.)"
+    },
+    "Natural gas - production": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - consumption": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - exports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - imports": {
+      "text": "0 cu m (2017 est.)"
+    },
+    "Natural gas - proved reserves": {
+      "text": "0 cu m (1 January 2014 est.)"
+    }
+  },
+  "Communications": {
+    "Telephones - fixed lines": {
+      "total subscriptions": {
+        "text": "8,394"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "less than 1 (2019 est.)"
+      }
+    },
+    "Telephones - mobile cellular": {
+      "total subscriptions": {
+        "text": "2,793,316"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "56.57 (2019 est.)"
+      }
+    },
+    "Telecommunication systems": {
+      "general assessment": {
+        "text": "<p>due to history of civil war and ruin of infrastructure, almost entirely wireless telecom market; good competition for mobile services; high cost and limited bandwidth means Internet access is low; additional investment needed for increased submarine cable access; progress in creating an attractive business-friendly environment is hampered by a weak regulatory environment, corruption, lack of transparency, poor infrastructure, and low private sector capacity; rural areas have little access; fixed-line service is stagnant and extremely limited; operators introducing e-commerce; importer of broadcast equipment from China (2021)</p> (2020)"
+      },
+      "domestic": {
+        "text": "fixed-line less than 1 per 100; mobile-cellular subscription base growing and teledensity approached 57 per 100 persons (2019)"
+      },
+      "international": {
+        "text": "country code - 231; landing point for the ACE submarine cable&nbsp;linking 20 West&nbsp;African countries and Europe;&nbsp;satellite earth station - 1 Intelsat (Atlantic Ocean) (2019)"
+      },
+      "note": "<strong>note:</strong> the COVID-19 pandemic continues to have a significant impact on production and supply chains globally; since 2020, some aspects of the telecom sector have experienced downturn, particularly in mobile device production; many network operators delayed upgrades to infrastructure; progress towards 5G implementation was postponed or slowed in some countries; consumer spending on telecom services and devices was affected by large-scale job losses and the consequent restriction on disposable incomes; the crucial nature of telecom services as a tool for work and school from home became evident, and received some support from governments"
+    },
+    "Broadcast media": {
+      "text": "8 private and 1 government-owned TV station; satellite TV service available; 1 state-owned radio station; approximately&nbsp;20 independent radio stations broadcasting in Monrovia, with approximately&nbsp;80 more local stations operating in other areas; transmissions of 4 international (including the British Broadcasting Corporation and Radio France Internationale) broadcasters are available (2019)"
+    },
+    "Internet country code": {
+      "text": ".lr"
+    },
+    "Internet users": {
+      "total": {
+        "text": "383,819"
+      },
+      "percent of population": {
+        "text": "7.98% (July 2018 est.)"
+      }
+    },
+    "Broadband - fixed subscriptions": {
+      "total": {
+        "text": "8,000"
+      },
+      "subscriptions per 100 inhabitants": {
+        "text": "less than 1 (2017 est.)"
+      }
+    }
+  },
+  "Transportation": {
+    "Civil aircraft registration country code prefix": {
+      "text": "A8"
+    },
+    "Airports": {
+      "total": {
+        "text": "29 (2013)"
+      }
+    },
+    "Airports - with paved runways": {
+      "total": {
+        "text": "2"
+      },
+      "over 3,047 m": {
+        "text": "1"
+      },
+      "1,524 to 2,437 m": {
+        "text": "1 (2019)"
+      }
+    },
+    "Airports - with unpaved runways": {
+      "total": {
+        "text": "27"
+      },
+      "1,524 to 2,437 m": {
+        "text": "5"
+      },
+      "914 to 1,523 m": {
+        "text": "8"
+      },
+      "under 914 m": {
+        "text": "14 (2013)"
+      }
+    },
+    "Pipelines": {
+      "text": "4 km oil (2013)"
+    },
+    "Railways": {
+      "total": {
+        "text": "429 km (2008)"
+      },
+      "standard gauge": {
+        "text": "345 km 1.435-m gauge (2008)"
+      },
+      "narrow gauge": {
+        "text": "84 km 1.067-m gauge (2008)"
+      },
+      "note": "<strong>note:</strong> most sections of the railways inoperable due to damage sustained during the civil wars from 1980 to 2003, but many are being rebuilt"
+    },
+    "Roadways": {
+      "total": {
+        "text": "10,600 km (2018)"
+      },
+      "paved": {
+        "text": "657 km (2018)"
+      },
+      "unpaved": {
+        "text": "9,943 km (2018)"
+      }
+    },
+    "Merchant marine": {
+      "total": {
+        "text": "3,716"
+      },
+      "by type": {
+        "text": "bulk carrier 1,325, container ship 858, general cargo 141, oil tanker 820, other 572 (2020)"
+      }
+    },
+    "Ports and terminals": {
+      "major seaport(s)": {
+        "text": "Buchanan, Monrovia"
+      }
+    }
+  },
+  "Military and Security": {
+    "Military and security forces": {
+      "text": "Armed Forces of Liberia (AFL): Army, Liberian Coast Guard (2021)",
+      "note": "note - an AFL Air Wing is under development; it was previously disbanded in 2005, but two Liberian pilots completed training by the Nigerian Air Force in 2018"
+    },
+    "Military expenditures": {
+      "Military Expenditures 2020": {
+        "text": "0.4% of GDP (2020 est.)"
+      },
+      "Military Expenditures 2019": {
+        "text": "0.5% of GDP (2019 est.)"
+      },
+      "Military Expenditures 2018": {
+        "text": "0.4% of GDP (2018 est.)"
+      },
+      "Military Expenditures 2017": {
+        "text": "0.4% of GDP (2017 est.)"
+      },
+      "Military Expenditures 2016": {
+        "text": "0.4% of GDP (2016 est.)"
+      }
+    },
+    "Military and security service personnel strengths": {
+      "text": "the Armed Forces of Liberia (AFL) have approximately 2,000 personnel (2020)"
+    },
+    "Military equipment inventories and acquisitions": {
+      "text": "the AFL has almost no significant combat hardware as nearly all aircraft, equipment, materiel, and facilities were damaged or destroyed during the country's civil war; it has received little new equipment outside of ammunition, small arms, and trucks from China in 2008, and boats and vehicles donated by the US in the 2010s (2020)"
+    },
+    "Military deployments": {
+      "text": "150 Mali (MINUSMA) (Jan 2021)"
+    },
+    "Military service age and obligation": {
+      "text": "18 years of age for voluntary military service; no conscription (2019)"
+    }
+  },
+  "Transnational Issues": {
+    "Disputes - international": {
+      "text": "<p>as the UN Mission in Liberia (UNMIL) continues to drawdown prior to the 1 March 2018 closure date, the peacekeeping force is being reduced to 434 soldiers and two police units; some Liberian refugees still remain in Guinea, Cote d'Ivoire, Sierra Leone, and Ghana; Liberia shelters 8,804 Ivoirian refugees, as of 2019</p>"
+    },
+    "Refugees and internally displaced persons": {
+      "refugees (country of origin)": {
+        "text": "8,309 (Cote d'Ivoire) (2021)"
+      }
+    },
+    "Illicit drugs": {
+      "text": "transshipment point for Southeast and Southwest Asian heroin and South American cocaine for the European and US markets; corruption, criminal activity, arms-dealing, and diamond trade provide significant potential for money laundering, but the lack of well-developed financial system limits the country's utility as a major money-laundering center"
+    }
+  }
+}
