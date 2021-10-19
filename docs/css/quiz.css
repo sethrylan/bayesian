@@ -18,6 +18,7 @@ div.ui-tooltip {
 
 .question {
     margin: 10px;
+    text-align: center;
 }
 .questionContainer {
     width: 800px;

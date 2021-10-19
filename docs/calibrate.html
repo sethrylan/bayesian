@@ -49,7 +49,7 @@ layout: null
 
         <script type="text/javascript">
 
-        var questionsUrl = "https://us-central1-bayesian-calibration.cloudfunctions.net/Questions";
+        var questionsUrl = "https://us-central1-bayesian-calibration.cloudfunctions.net/QuestionsV2";
         var defaultNumQuestions = 40;
         </script>
         <script src="js/utils.js"></script>
@@ -61,19 +61,24 @@ layout: null
             <div class="questionContainer radius hide">
                 <div class="question">
                     <%= htmlEncode(question.get('text')) %>
+                    <% [k1, k2] = Object.keys(question.get('options'))  %>
+                    <% o1 = question.get('options')[k1] %>
+                    <% o2 = question.get('options')[k2] %>
                     <a href="#" class="hint" title="<%= htmlEncode(question.get('hint')) %>">[ hint ]</a>
                 </div>
                 <div class="options">
-                    <a href="#" data-confidence="95" data-option="true">95% true</a>
-                    <a href="#" data-confidence="85" data-option="true">85%</a>
-                    <a href="#" data-confidence="75" data-option="true">75%</a>
-                    <a href="#" data-confidence="65" data-option="true">65%</a>
-                    <a href="#" data-confidence="55" data-option="true">55%</a>
-                    <a href="#" data-confidence="55" data-option="false">55%</a>
-                    <a href="#" data-confidence="65" data-option="false">65%</a>
-                    <a href="#" data-confidence="75" data-option="false">75%</a>
-                    <a href="#" data-confidence="85" data-option="false">85%</a>
-                    <a href="#" data-confidence="95" data-option="false">95% false</a>
+                    <%= htmlEncode(o1['name']) %>
+                    <a href="#" data-confidence="95" data-option="<%= k1 %>">95%</a>
+                    <a href="#" data-confidence="85" data-option="<%= k1 %>">85%</a>
+                    <a href="#" data-confidence="75" data-option="<%= k1 %>">75%</a>
+                    <a href="#" data-confidence="65" data-option="<%= k1 %>">65%</a>
+                    <a href="#" data-confidence="55" data-option="<%= k1 %>">55%</a>
+                    <a href="#" data-confidence="55" data-option="<%= k2 %>">55%</a>
+                    <a href="#" data-confidence="65" data-option="<%= k2 %>">65%</a>
+                    <a href="#" data-confidence="75" data-option="<%= k2 %>">75%</a>
+                    <a href="#" data-confidence="85" data-option="<%= k2 %>">85%</a>
+                    <a href="#" data-confidence="95" data-option="<%= k2 %>">95%</a>
+                    <%= htmlEncode(o2['name']) %>
                 </div>
             </div>
             <% }); %>

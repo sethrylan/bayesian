@@ -126,9 +126,8 @@
         },
         showFeedback: function(questionIndex) {
             $('#feedbackContainer').show();
-            var feedback = questions.at(questionIndex).get('feedback');
             var isCorrect = this.responses[questionIndex].correct;
-            drawFeedbackChart(feedback, isCorrect);
+            drawFeedbackChart(questions.at(questionIndex), isCorrect);
         },
         getConfidenceSeriesData: function() {
             data = [];

@@ -171,7 +171,8 @@ function drawConfidenceChart(confidenceSeriesData) {
     confidenceChart.series[3].setData(confidenceSeriesData);
 }
 
-function drawFeedbackChart(feedback, isCorrect) {
+function drawFeedbackChart(question, isCorrect) {
+  var [k1, k2] = Object.keys(question.attributes.options)
   new Highcharts.Chart({
       chart: {
           type: 'column',
@@ -182,7 +183,7 @@ function drawFeedbackChart(feedback, isCorrect) {
         enabled: false
       },
       title: {
-          text: 'Last Question : ' + feedback.category,
+          text: 'Last Question : ' + question.attributes.category,
           style: {'fontSize': '12px' }
       },
       subtitle: {
@@ -215,12 +216,12 @@ function drawFeedbackChart(feedback, isCorrect) {
           enabled: false
       },
       tooltip: {
-          pointFormat: getPointFormat(feedback.category)
+          pointFormat: getPointFormat(question.attributes.category)
       },
       series: [{
           data: [
-              [feedback.values[0].name, feedback.values[0].value],
-              [feedback.values[1].name, feedback.values[1].value]
+              [question.attributes.options[k1].name, question.attributes.options[k1].value],
+              [question.attributes.options[k2].name, question.attributes.options[k2].value]
           ]
       }]
   });
