@@ -6,23 +6,18 @@ import (
 	"strings"
 )
 
-type NamedValue struct {
+type Option struct {
 	Name  string  `json:"name"`
 	Value float64 `json:"value"`
-}
-
-type Feedback struct {
-	Category string       `json:"category"`
-	Values   []NamedValue `json:"values"`
+	Text  string  `json:"text"`
 }
 
 type Question struct {
-	Category string   `json:"category"`
-	Text     string   `json:"text"`
-	Hint     string   `json:"hint"`
-	Fact     string   `json:"fact"`
-	Options  []string `json:"options"`
-	Feedback Feedback `json:"feedback"`
+	Category string            `json:"category"`
+	Text     string            `json:"text"`
+	Hint     string            `json:"hint"`
+	Fact     string            `json:"fact"`
+	Options  map[string]Option `json:"options"`
 }
 
 type Value struct {

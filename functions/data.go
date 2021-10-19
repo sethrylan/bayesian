@@ -111,7 +111,7 @@ func Read() (map[string]Country, error) {
 	var countries map[string]Country = make(map[string]Country)
 
 	for _, file := range files {
-		fmt.Println(file)
+		// fmt.Println(file)
 		byteValue, err := ioutil.ReadFile(folder + file.Name())
 
 		if err != nil {
@@ -283,39 +283,45 @@ func GetQuestions(countries map[string]Country, n int) []Question {
 	for i < n {
 		c1, c2 := getTwoCountries(countries)
 		var q Question
-		var v1, v2 float64
+		var v1, v2 Value
 		q.Category = getRandomCategory()
 		switch q.Category {
 		case "area":
-			v1, v2 = c1.Area.Value, c2.Area.Value
-			q.Text = fmt.Sprintf("%s is bigger than %s.", c1.Name, c2.Name)
+			v1, v2 = c1.Area, c2.Area
+			q.Text = "___ is larger in area."
 			q.Hint = fmt.Sprintf("%s: %s<br>%s: %s", c1.Name, c1.AreaComparison, c2.Name, c2.AreaComparison)
 		case "population":
-			v1, v2 = c1.Population.Value, c2.Population.Value
-			q.Text = fmt.Sprintf("%s has more people than %s.", c1.Name, c2.Name)
-			q.Hint = fmt.Sprintf("%s: population growth rate of %.2f<br>%s: population growth rate of %.2f", c1.Name, c1.PopulationGrowthRate.Value, c2.PopulationGrowthRate.Text, v2)
+			v1, v2 = c1.Population, c2.Population
+			q.Text = "___ has more people."
+			q.Hint = fmt.Sprintf("%s: population growth rate of %.2f<br>%s: population growth rate of %.2f", c1.Name, c1.PopulationGrowthRate.Value, c2.Name, c2.PopulationGrowthRate.Value)
 		case "gdpPerCapita":
-			v1, v2 = c1.GDPCapita.Value, c2.GDPCapita.Value
-			q.Text = fmt.Sprintf("%s has higher GDP per capita than %s.", c1.Name, c2.Name)
+			v1, v2 = c1.GDPCapita, c2.GDPCapita
+			q.Text = "___ has higher GDP per capita."
 			q.Hint = fmt.Sprintf("%s: total GDP is %s; %s total GDP is %s", c1.Name, c1.GDP.Text, c2.Name, c2.GDP.Text)
 		case "healthExpenditure":
-			v1, v2 = c1.HealthExpenditure.Value, c2.HealthExpenditure.Value
-			q.Text = fmt.Sprintf("%s has higher health expenditure (%%GDP) than %s.", c1.Name, c2.Name)
+			v1, v2 = c1.HealthExpenditure, c2.HealthExpenditure
+			q.Text = "___ has higher health expenditure (%GDP)"
 			q.Hint = fmt.Sprintf("%s: death rate of %.2f<br>%s: death rate of %.2f", c1.Name, c1.DeathRate.Value, c2.Name, c2.DeathRate.Value)
 		case "gini":
-			v1, v2 = c1.Gini.Value, c2.Gini.Value
-			q.Text = fmt.Sprintf("%s has a higher Gini index than %s.", c1.Name, c2.Name)
+			v1, v2 = c1.Gini, c2.Gini
+			q.Text = "___ has a higher Gini index."
 			q.Hint = "The Gini index is a measure of income<br>inequality. Higher values mean higher<br>inequality."
 		case "lifeExpectancy":
-			v1, v2 = c1.LifeExpectancy.Value, c2.LifeExpectancy.Value
-			q.Text = fmt.Sprintf("%s has a higher life expectancy at birth than %s.", c1.Name, c2.Name)
+			v1, v2 = c1.LifeExpectancy, c2.LifeExpectancy
+			q.Text = "___ has a higher life expectancy at birth."
 			q.Hint = fmt.Sprintf("%s: fertility rate of %.2f<br>%s: fertility rate of %.2f", c1.Name, c1.TotalFertilityRate.Value, c2.Name, c2.TotalFertilityRate.Value)
 		}
 
-		if v1 != 0 && v2 != 0 {
-			q.Feedback = Feedback{Category: q.Category, Values: []NamedValue{{c1.Name, v1}, {c2.Name, v2}}}
-			q.Fact = strconv.FormatBool(v1 > v2)
-			q.Options = []string{"true", "false"}
+		if v1.Value != 0 && v2.Value != 0 {
+			q.Options = map[string]Option{
+				c1.Id: {c1.Name, v1.Value, v1.Text},
+				c2.Id: {c2.Name, v2.Value, v2.Text},
+			}
+			if v1.Value > v2.Value {
+				q.Fact = c1.Id
+			} else {
+				q.Fact = c2.Id
+			}
 			questions = append(questions, q)
 			i++
 		}
