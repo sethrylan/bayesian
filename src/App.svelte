@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 import Calibrate from './Calibrate.svelte';
 import About from './About.svelte';
     

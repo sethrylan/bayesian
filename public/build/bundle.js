@@ -5321,11 +5321,11 @@ var app = (function () {
     			create_component(router.$$.fragment);
     			document.title = "A tool for calibrated probability estimation";
     			attr_dev(html, "lang", "en");
-    			add_location(html, file, 14, 2, 280);
+    			add_location(html, file, 11, 2, 289);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css");
-    			add_location(link, file, 15, 2, 301);
-    			add_location(body, file, 18, 0, 420);
+    			add_location(link, file, 12, 2, 310);
+    			add_location(body, file, 15, 0, 429);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -5397,7 +5397,7 @@ var app = (function () {
     }
 
     var app = new App({
-      target: document.body
+        target: document.body
     });
 
     return app;
