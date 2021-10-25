@@ -2,8 +2,6 @@
 /.git/
 /.gradle/
 /.idea/
-/build/
-*/build/
 */_site/*
 /out/
 /assets
