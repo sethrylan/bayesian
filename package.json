@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "start": "sirv docs --no-clear",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check"
   },
   "devDependencies": {
     "@beyonk/svelte-google-analytics": "2.2.0",
@@ -21,11 +21,7 @@
     "svelte-spa-router": "latest",
     "highcharts": "latest",
     "svelte-check": "^2.0.0",
-    "svelte-preprocess": "^4.0.0",
-    "@rollup/plugin-typescript": "^8.0.0",
-    "typescript": "^4.0.0",
-    "tslib": "^2.0.0",
-    "@tsconfig/svelte": "^2.0.0"
+    "svelte-preprocess": "^4.0.0"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"
