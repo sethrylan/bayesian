@@ -1,8 +1,8 @@
 <script>
-import NavBar from './NavBar.svelte';
-import Cite from './Cite.svelte';
-import { tooltip } from './tooltip';
-import { citations } from './store';
+  import NavBar from './NavBar.svelte';
+  import Cite from './Cite.svelte';
+  import { tooltip } from './tooltip';
+  import { citations } from './store';
 </script>
 
 <NavBar/>
