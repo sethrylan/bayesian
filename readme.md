@@ -17,8 +17,9 @@ Development Workflow
 
 | Description               | Command                                          | CI Task |
 | ------------------------- |--------------------------------------------------|---------|
-| client pages local run    | ```bundle exec jekyll serve [--safe]```  |         |
+| client pages local run    | ```npm install && npm run dev```                 |         |
 | deploy                    | ```gcloud functions deploy QuestionsV2 --runtime go113 --trigger-http --allow-unauthenticated --max-instances=2```                 |         |
+| client pages deploy       | ```npm run build```                              |        |
 
 Hosted locations
 =========
@@ -29,4 +30,3 @@ Hosted locations
 Data Sources
 =========
 [CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
-
