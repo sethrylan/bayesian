@@ -38,9 +38,10 @@
       chart: {
         type: 'areasplinerange',
         zoomType: 'x',
-        renderTo: 'confidenceChartContainer',
-        spacing: [15, 15, 15, 15],
         alignTicks: false,
+        sytle: {
+          display: "block; overflow-y: hidden;"
+        }
       },
       plotOptions: {
         series: {
