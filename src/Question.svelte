@@ -1,18 +1,18 @@
 <script>
-import { createEventDispatcher } from 'svelte';
+  import { createEventDispatcher } from 'svelte';
 
-export let question;
+  export let question;
 
-const dispatch = createEventDispatcher();
+  const dispatch = createEventDispatcher();
 
-const handleClick = (fact, answer, confidence, hinted) => {
-  dispatch('answer', {
-    fact,
-    answer,
-    confidence,
-    hinted
-  });
-};
+  const handleClick = (fact, answer, confidence, hinted) => {
+    dispatch('answer', {
+      fact,
+      answer,
+      confidence,
+      hinted
+    });
+  };
 </script>
 
 <div class="card">
