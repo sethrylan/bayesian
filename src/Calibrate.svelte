@@ -84,7 +84,7 @@ function handleAnswer(event) {
   {/each}
 
   <div class="d-flex justify-content-center">
-    <div id="container" class="w-50"/>
+    <div id="container" style="width:50%"/>
   </div>
 
   {#if $current > 0}

@@ -2288,12 +2288,7 @@ var app = (function () {
     			zoomType: 'x',
     			renderTo: 'confidenceChartContainer',
     			spacing: [15, 15, 15, 15],
-    			alignTicks: false,
-    			style: {
-    				"fontFamily": "\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif",
-    				"fontSize": "12px",
-    				"display": "block; overflow-y: hidden;"
-    			}
+    			alignTicks: false
     		},
     		plotOptions: {
     			series: { states: { hover: { enabled: false } } }
@@ -2569,7 +2564,7 @@ var app = (function () {
     			div = element("div");
     			create_component(feedback.$$.fragment);
     			attr_dev(div, "class", "col d-flex justify-content-center");
-    			add_location(div, file$4, 90, 4, 2227);
+    			add_location(div, file$4, 90, 4, 2232);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -2648,7 +2643,7 @@ var app = (function () {
     			t2 = space();
     			if (if_block) if_block.c();
     			attr_dev(div0, "id", "container");
-    			attr_dev(div0, "class", "w-50");
+    			set_style(div0, "width", "50%");
     			add_location(div0, file$4, 86, 4, 2157);
     			attr_dev(div1, "class", "d-flex justify-content-center");
     			add_location(div1, file$4, 85, 2, 2109);

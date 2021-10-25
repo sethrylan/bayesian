@@ -41,11 +41,6 @@ export function createChart() {
       renderTo: 'confidenceChartContainer',
       spacing: [15, 15, 15, 15],
       alignTicks: false,
-      style: {
-        "fontFamily": "\"Lucida Grande\", \"Lucida Sans Unicode\", Verdana, Arial, Helvetica, sans-serif",
-        "fontSize": "12px",
-        "display": "block; overflow-y: hidden;"
-      },
     },
     plotOptions: {
       series: {
