@@ -296,8 +296,8 @@ func GetQuestions(countries map[string]Country, n int) []Question {
 			q.Hint = fmt.Sprintf("%s: population growth rate of %.2f<br>%s: population growth rate of %.2f", c1.Name, c1.PopulationGrowthRate.Value, c2.Name, c2.PopulationGrowthRate.Value)
 		case "gdpPerCapita":
 			v1, v2 = c1.GDPCapita, c2.GDPCapita
-			q.Text = "___ has higher GDP per capita."
-			q.Hint = fmt.Sprintf("%s: total GDP is %s; %s total GDP is %s", c1.Name, c1.GDP.Text, c2.Name, c2.GDP.Text)
+			q.Text = "___ has higher GDP per capita (PPP)."
+			q.Hint = fmt.Sprintf("%s: total GDP (PPP) is %s; %s total GDP (PPP) is %s", c1.Name, c1.GDP.Text, c2.Name, c2.GDP.Text)
 		case "healthExpenditure":
 			v1, v2 = c1.HealthExpenditure, c2.HealthExpenditure
 			q.Text = "___ has higher health expenditure (%GDP)"
