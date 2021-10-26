@@ -84,7 +84,7 @@
   {/each}
 
   <div class="d-flex justify-content-center">
-      <div id="container" style="width:70%"/>
+      <div id="container" style="width: 50vw; height: 50vw;"/>
   </div>
 
   {#if $current > 0}
