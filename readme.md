@@ -1,8 +1,6 @@
 Bayesian
 ========
 
-[![Build Status](https://travis-ci.org/sethrylan/bayesian.svg?branch=master)](https://travis-ci.org/sethrylan/bayesian)
-
 A test for calibrated probability assessment. See [sethrylan.org/bayesian](http://sethrylan.org/bayesian) for further info.
 
 Directory Structure
