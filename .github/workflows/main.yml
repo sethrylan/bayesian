@@ -18,6 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - id: deploy
       uses: google-github-actions/deploy-cloud-functions@main
+      working-directory: functions
       with:
         name: QuestionsV2
         runtime: go113
