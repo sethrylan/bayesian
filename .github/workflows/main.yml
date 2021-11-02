@@ -18,8 +18,8 @@ jobs:
     - uses: actions/checkout@v2
     - id: deploy
       uses: google-github-actions/deploy-cloud-functions@main
-      working-directory: functions
       with:
+        source_dir: functions
         name: QuestionsV2
         runtime: go113
         credentials: ${{ secrets.gcp_cloud_function_creds }}
