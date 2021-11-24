@@ -24,7 +24,7 @@ jobs:
         service_account: 'github-cloud-functions-deploy@bayesian-calibration.iam.gserviceaccount.com'
         access_token_lifetime: '300s' # optional, default: '3600s' (1 hour)
     - id: deploy
-      uses: google-github-actions/deploy-cloud-functions@0.6.0
+      uses: google-github-actions/deploy-cloud-functions@v0.6.0
       with:
         source_dir: functions
         name: QuestionsV2
