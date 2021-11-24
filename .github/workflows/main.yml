@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - id: 'auth'
+    - id: auth
       name: 'Authenticate to Google Cloud'
       uses: 'google-github-actions/auth@v0.4.0'
       with:
@@ -24,7 +24,7 @@ jobs:
         service_account: 'github-cloud-functions-deploy@bayesian-calibration.iam.gserviceaccount.com'
         access_token_lifetime: '300s' # optional, default: '3600s' (1 hour)
     - id: deploy
-      uses: google-github-actions/deploy-cloud-functions@main
+      uses: google-github-actions/deploy-cloud-functions@0.6.0
       with:
         source_dir: functions
         name: QuestionsV2
