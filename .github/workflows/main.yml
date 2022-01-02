@@ -32,3 +32,18 @@ jobs:
         max_instances: 2
     - id: test
       run: curl "${{ steps.deploy.outputs.url }}"
+  build_svelte:
+    permissions:
+      contents: 'read'
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - id: build
+      run: |
+        npm install
+        npm run build
+    - id: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: gh-pages
+          folder: docs
