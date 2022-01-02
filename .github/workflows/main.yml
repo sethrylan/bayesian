@@ -34,7 +34,7 @@ jobs:
       run: curl "${{ steps.deploy.outputs.url }}"
   build_svelte:
     permissions:
-      contents: 'read'
+      contents: 'write'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
