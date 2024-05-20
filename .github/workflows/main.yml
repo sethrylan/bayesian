@@ -1,49 +1,16 @@
-name: Deploy
-# Controls when the workflow will run
+name: build
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
-  build_function:
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - id: auth
-      name: 'Authenticate to Google Cloud'
-      uses: google-github-actions/auth@main
-      with:
-        workload_identity_provider: 'projects/259817799976/locations/global/workloadIdentityPools/actions-pool/providers/actions-provider'
-        service_account: 'github-cloud-functions-deploy@bayesian-calibration.iam.gserviceaccount.com'
-        access_token_lifetime: '300s' # optional, default: '3600s' (1 hour)
-    - id: deploy
-      uses: google-github-actions/deploy-cloud-functions@main
-      with:
-        source_dir: functions
-        name: QuestionsV2
-        runtime: go113
-        max_instances: 2
-    - id: test
-      run: curl "${{ steps.deploy.outputs.url }}"
   build_svelte:
-    permissions:
-      contents: 'write'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - id: build
       run: |
         npm install
         npm run build
-    - id: deploy
-      uses: JamesIves/github-pages-deploy-action@4.1.5
-      with:
-        branch: gh-pages
-        folder: docs

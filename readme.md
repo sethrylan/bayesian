@@ -23,6 +23,3 @@ Hosted locations
 | -----------------------------------------------------------|
 | http://sethrylan.org/bayesian                              |
 
-Data Sources
-=========
-[CIA Factbook in XML](http://jmatchparser.sourceforge.net/factbook/)
