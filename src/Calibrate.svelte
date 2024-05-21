@@ -18,7 +18,7 @@
   });
     
   onMount(async () => {
-    fetch("https://us-central1-bayesian-calibration.cloudfunctions.net/QuestionsV2")
+    fetch("questions.json")
       .then(response => response.json())
       .then(data => {
         questions.set(
