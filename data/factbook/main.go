@@ -20,15 +20,15 @@ var categoryProbabilities = map[string]float64{
 	"gini":              1.0,
 }
 
-var numQuestions = 1000
+const NumQuestions = 1000
 
 func main() {
-	countries, err := Read()
+	countries, err := readFactbook()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	questions := GetQuestions(countries, numQuestions)
+	questions := questions(countries, NumQuestions)
 	json, err := json.Marshal(questions)
 	if err != nil {
 		log.Fatal(err)
@@ -36,11 +36,15 @@ func main() {
 
 	// write to file
 	file, err := os.Create("questions.json")
+	if err != nil {
+		log.Fatal(err)
+	}
 	defer file.Close()
+
 	file.Write(json)
 }
 
-func Read() (map[string]Country, error) {
+func readFactbook() (map[string]Country, error) {
 	folder := "factbook.json"
 	files, err := os.ReadDir(folder)
 	if err != nil {
@@ -218,11 +222,11 @@ func Read() (map[string]Country, error) {
 	return countries, nil
 }
 
-func GetQuestions(countries map[string]Country, n int) []Question {
+func questions(countries map[string]Country, n int) []Question {
 	var questions []Question
 	i := 0
 	for i < n {
-		c1, c2 := getTwoCountries(countries)
+		c1, c2 := getPair(countries)
 		var q Question
 		var v1, v2 Value
 		q.Category = getRandomCategory()
@@ -301,14 +305,14 @@ func GetKeys(m map[string]float64) []string {
 	return keys
 }
 
-func getTwoCountries(countries map[string]Country) (Country, Country) {
+func getPair(countries map[string]Country) (Country, Country) {
 	keys := GetKeysCountry(countries)
 
 	countryOne := countries[GetRandom(keys)]
 	countryTwo := countries[GetRandom(keys)]
 
 	if countryOne == countryTwo {
-		return getTwoCountries(countries)
+		return getPair(countries)
 	}
 	return countryOne, countryTwo
 }

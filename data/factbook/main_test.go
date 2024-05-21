@@ -4,8 +4,8 @@ import (
 	"testing"
 )
 
-func TestRead(t *testing.T) {
-	countries, err := Read()
+func TestReadFactbook(t *testing.T) {
+	countries, err := readFactbook()
 	if countries == nil || err != nil {
 		t.Fatalf(`file not deserialized %v`, err)
 	}
@@ -14,9 +14,9 @@ func TestRead(t *testing.T) {
 	}
 }
 
-func TestGetQuestions(t *testing.T) {
-	countries, _ := Read()
-	questions := GetQuestions(countries, 10)
+func TestQuestions(t *testing.T) {
+	countries, _ := readFactbook()
+	questions := questions(countries, 10)
 	if len(questions) != 10 {
 		t.Fatal("wrong size")
 	}
