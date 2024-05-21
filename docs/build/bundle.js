@@ -63,6 +63,12 @@ var app = (function () {
     function action_destroyer(action_result) {
         return action_result && is_function(action_result.destroy) ? action_result.destroy : noop;
     }
+
+    const globals = (typeof window !== 'undefined'
+        ? window
+        : typeof globalThis !== 'undefined'
+            ? globalThis
+            : global);
     function append(target, node) {
         target.appendChild(node);
     }
@@ -70,7 +76,9 @@ var app = (function () {
         target.insertBefore(node, anchor || null);
     }
     function detach(node) {
-        node.parentNode.removeChild(node);
+        if (node.parentNode) {
+            node.parentNode.removeChild(node);
+        }
     }
     function destroy_each(iterations, detaching) {
         for (let i = 0; i < iterations.length; i += 1) {
@@ -104,11 +112,16 @@ var app = (function () {
         return Array.from(element.childNodes);
     }
     function set_style(node, key, value, important) {
-        node.style.setProperty(key, value, important ? 'important' : '');
+        if (value == null) {
+            node.style.removeProperty(key);
+        }
+        else {
+            node.style.setProperty(key, value, important ? 'important' : '');
+        }
     }
-    function custom_event(type, detail, bubbles = false) {
+    function custom_event(type, detail, { bubbles = false, cancelable = false } = {}) {
         const e = document.createEvent('CustomEvent');
-        e.initCustomEvent(type, bubbles, false, detail);
+        e.initCustomEvent(type, bubbles, cancelable, detail);
         return e;
     }
 
@@ -121,27 +134,63 @@ var app = (function () {
             throw new Error('Function called outside component initialization');
         return current_component;
     }
+    /**
+     * The `onMount` function schedules a callback to run as soon as the component has been mounted to the DOM.
+     * It must be called during the component's initialisation (but doesn't need to live *inside* the component;
+     * it can be called from an external module).
+     *
+     * `onMount` does not run inside a [server-side component](/docs#run-time-server-side-component-api).
+     *
+     * https://svelte.dev/docs#run-time-svelte-onmount
+     */
     function onMount(fn) {
         get_current_component().$$.on_mount.push(fn);
     }
+    /**
+     * Schedules a callback to run immediately after the component has been updated.
+     *
+     * The first time the callback runs will be after the initial `onMount`
+     */
     function afterUpdate(fn) {
         get_current_component().$$.after_update.push(fn);
     }
+    /**
+     * Schedules a callback to run immediately before the component is unmounted.
+     *
+     * Out of `onMount`, `beforeUpdate`, `afterUpdate` and `onDestroy`, this is the
+     * only one that runs inside a server-side component.
+     *
+     * https://svelte.dev/docs#run-time-svelte-ondestroy
+     */
     function onDestroy(fn) {
         get_current_component().$$.on_destroy.push(fn);
     }
+    /**
+     * Creates an event dispatcher that can be used to dispatch [component events](/docs#template-syntax-component-directives-on-eventname).
+     * Event dispatchers are functions that can take two arguments: `name` and `detail`.
+     *
+     * Component events created with `createEventDispatcher` create a
+     * [CustomEvent](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent).
+     * These events do not [bubble](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture).
+     * The `detail` argument corresponds to the [CustomEvent.detail](https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/detail)
+     * property and can contain any type of data.
+     *
+     * https://svelte.dev/docs#run-time-svelte-createeventdispatcher
+     */
     function createEventDispatcher() {
         const component = get_current_component();
-        return (type, detail) => {
+        return (type, detail, { cancelable = false } = {}) => {
             const callbacks = component.$$.callbacks[type];
             if (callbacks) {
                 // TODO are there situations where events could be dispatched
                 // in a server (non-DOM) environment?
-                const event = custom_event(type, detail);
+                const event = custom_event(type, detail, { cancelable });
                 callbacks.slice().forEach(fn => {
                     fn.call(component, event);
                 });
+                return !event.defaultPrevented;
             }
+            return true;
         };
     }
     // TODO figure out if we still want to support
@@ -157,9 +206,9 @@ var app = (function () {
 
     const dirty_components = [];
     const binding_callbacks = [];
-    const render_callbacks = [];
+    let render_callbacks = [];
     const flush_callbacks = [];
-    const resolved_promise = Promise.resolve();
+    const resolved_promise = /* @__PURE__ */ Promise.resolve();
     let update_scheduled = false;
     function schedule_update() {
         if (!update_scheduled) {
@@ -174,22 +223,54 @@ var app = (function () {
     function add_render_callback(fn) {
         render_callbacks.push(fn);
     }
-    let flushing = false;
+    // flush() calls callbacks in this order:
+    // 1. All beforeUpdate callbacks, in order: parents before children
+    // 2. All bind:this callbacks, in reverse order: children before parents.
+    // 3. All afterUpdate callbacks, in order: parents before children. EXCEPT
+    //    for afterUpdates called during the initial onMount, which are called in
+    //    reverse order: children before parents.
+    // Since callbacks might update component values, which could trigger another
+    // call to flush(), the following steps guard against this:
+    // 1. During beforeUpdate, any updated components will be added to the
+    //    dirty_components array and will cause a reentrant call to flush(). Because
+    //    the flush index is kept outside the function, the reentrant call will pick
+    //    up where the earlier call left off and go through all dirty components. The
+    //    current_component value is saved and restored so that the reentrant call will
+    //    not interfere with the "parent" flush() call.
+    // 2. bind:this callbacks cannot trigger new flush() calls.
+    // 3. During afterUpdate, any updated components will NOT have their afterUpdate
+    //    callback called a second time; the seen_callbacks set, outside the flush()
+    //    function, guarantees this behavior.
     const seen_callbacks = new Set();
+    let flushidx = 0; // Do *not* move this inside the flush() function
     function flush() {
-        if (flushing)
+        // Do not reenter flush while dirty components are updated, as this can
+        // result in an infinite loop. Instead, let the inner flush handle it.
+        // Reentrancy is ok afterwards for bindings etc.
+        if (flushidx !== 0) {
             return;
-        flushing = true;
+        }
+        const saved_component = current_component;
         do {
             // first, call beforeUpdate functions
             // and update components
-            for (let i = 0; i < dirty_components.length; i += 1) {
-                const component = dirty_components[i];
-                set_current_component(component);
-                update(component.$$);
+            try {
+                while (flushidx < dirty_components.length) {
+                    const component = dirty_components[flushidx];
+                    flushidx++;
+                    set_current_component(component);
+                    update(component.$$);
+                }
+            }
+            catch (e) {
+                // reset dirty state to not end up in a deadlocked state and then rethrow
+                dirty_components.length = 0;
+                flushidx = 0;
+                throw e;
             }
             set_current_component(null);
             dirty_components.length = 0;
+            flushidx = 0;
             while (binding_callbacks.length)
                 binding_callbacks.pop()();
             // then, once components are updated, call
@@ -209,8 +290,8 @@ var app = (function () {
             flush_callbacks.pop()();
         }
         update_scheduled = false;
-        flushing = false;
         seen_callbacks.clear();
+        set_current_component(saved_component);
     }
     function update($$) {
         if ($$.fragment !== null) {
@@ -221,6 +302,16 @@ var app = (function () {
             $$.fragment && $$.fragment.p($$.ctx, dirty);
             $$.after_update.forEach(add_render_callback);
         }
+    }
+    /**
+     * Useful for example to execute remaining `afterUpdate` callbacks before executing `destroy`.
+     */
+    function flush_render_callbacks(fns) {
+        const filtered = [];
+        const targets = [];
+        render_callbacks.forEach((c) => fns.indexOf(c) === -1 ? filtered.push(c) : targets.push(c));
+        targets.forEach((c) => c());
+        render_callbacks = filtered;
     }
     const outroing = new Set();
     let outros;
@@ -258,13 +349,10 @@ var app = (function () {
             });
             block.o(local);
         }
+        else if (callback) {
+            callback();
+        }
     }
-
-    const globals = (typeof window !== 'undefined'
-        ? window
-        : typeof globalThis !== 'undefined'
-            ? globalThis
-            : global);
 
     function get_spread_update(levels, updates) {
         const update = {};
@@ -306,14 +394,17 @@ var app = (function () {
         block && block.c();
     }
     function mount_component(component, target, anchor, customElement) {
-        const { fragment, on_mount, on_destroy, after_update } = component.$$;
+        const { fragment, after_update } = component.$$;
         fragment && fragment.m(target, anchor);
         if (!customElement) {
             // onMount happens before the initial afterUpdate
             add_render_callback(() => {
-                const new_on_destroy = on_mount.map(run).filter(is_function);
-                if (on_destroy) {
-                    on_destroy.push(...new_on_destroy);
+                const new_on_destroy = component.$$.on_mount.map(run).filter(is_function);
+                // if the component was destroyed immediately
+                // it will update the `$$.on_destroy` reference to `null`.
+                // the destructured on_destroy may still reference to the old array
+                if (component.$$.on_destroy) {
+                    component.$$.on_destroy.push(...new_on_destroy);
                 }
                 else {
                     // Edge case - component was destroyed immediately,
@@ -328,6 +419,7 @@ var app = (function () {
     function destroy_component(component, detaching) {
         const $$ = component.$$;
         if ($$.fragment !== null) {
+            flush_render_callbacks($$.after_update);
             run_all($$.on_destroy);
             $$.fragment && $$.fragment.d(detaching);
             // TODO null out other refs, including component.$$ (but need to
@@ -349,7 +441,7 @@ var app = (function () {
         set_current_component(component);
         const $$ = component.$$ = {
             fragment: null,
-            ctx: null,
+            ctx: [],
             // state
             props,
             update: noop,
@@ -414,6 +506,9 @@ var app = (function () {
             this.$destroy = noop;
         }
         $on(type, callback) {
+            if (!is_function(callback)) {
+                return noop;
+            }
             const callbacks = (this.$$.callbacks[type] || (this.$$.callbacks[type] = []));
             callbacks.push(callback);
             return () => {
@@ -432,7 +527,7 @@ var app = (function () {
     }
 
     function dispatch_dev(type, detail) {
-        document.dispatchEvent(custom_event(type, Object.assign({ version: '3.44.0' }, detail), true));
+        document.dispatchEvent(custom_event(type, Object.assign({ version: '3.59.2' }, detail), { bubbles: true }));
     }
     function append_dev(target, node) {
         dispatch_dev('SvelteDOMInsert', { target, node });
@@ -446,12 +541,14 @@ var app = (function () {
         dispatch_dev('SvelteDOMRemove', { node });
         detach(node);
     }
-    function listen_dev(node, event, handler, options, has_prevent_default, has_stop_propagation) {
+    function listen_dev(node, event, handler, options, has_prevent_default, has_stop_propagation, has_stop_immediate_propagation) {
         const modifiers = options === true ? ['capture'] : options ? Array.from(Object.keys(options)) : [];
         if (has_prevent_default)
             modifiers.push('preventDefault');
         if (has_stop_propagation)
             modifiers.push('stopPropagation');
+        if (has_stop_immediate_propagation)
+            modifiers.push('stopImmediatePropagation');
         dispatch_dev('SvelteDOMAddEventListener', { node, event, handler, modifiers });
         const dispose = listen(node, event, handler, options);
         return () => {
@@ -468,7 +565,7 @@ var app = (function () {
     }
     function set_data_dev(text, data) {
         data = '' + data;
-        if (text.wholeText === data)
+        if (text.data === data)
             return;
         dispatch_dev('SvelteDOMSetData', { node: text, data });
         text.data = data;
@@ -486,6 +583,25 @@ var app = (function () {
         for (const slot_key of Object.keys(slot)) {
             if (!~keys.indexOf(slot_key)) {
                 console.warn(`<${name}> received an unexpected slot "${slot_key}".`);
+            }
+        }
+    }
+    function construct_svelte_component_dev(component, props) {
+        const error_message = 'this={...} of <svelte:component> should specify a Svelte component.';
+        try {
+            const instance = new component(props);
+            if (!instance.$$ || !instance.$set || !instance.$on || !instance.$destroy) {
+                throw new Error(error_message);
+            }
+            return instance;
+        }
+        catch (err) {
+            const { message } = err;
+            if (typeof message === 'string' && message.indexOf('is not a constructor') !== -1) {
+                throw new Error(error_message);
+            }
+            else {
+                throw err;
             }
         }
     }
@@ -513,7 +629,7 @@ var app = (function () {
     /**
      * Creates a `Readable` store that allows reading by subscription.
      * @param value initial value
-     * @param {StartStopNotifier}start start and stop notifications for subscriptions
+     * @param {StartStopNotifier} [start]
      */
     function readable(value, start) {
         return {
@@ -523,7 +639,7 @@ var app = (function () {
     /**
      * Create a `Writable` store that allows both updating and reading by subscription.
      * @param {*=}value initial value
-     * @param {StartStopNotifier=}start start and stop notifications for subscriptions
+     * @param {StartStopNotifier=} start
      */
     function writable(value, start = noop) {
         let stop;
@@ -558,7 +674,7 @@ var app = (function () {
             run(value);
             return () => {
                 subscribers.delete(subscriber);
-                if (subscribers.size === 0) {
+                if (subscribers.size === 0 && stop) {
                     stop();
                     stop = null;
                 }
@@ -573,7 +689,7 @@ var app = (function () {
             : stores;
         const auto = fn.length < 2;
         return readable(initial_value, (set) => {
-            let inited = false;
+            let started = false;
             const values = [];
             let pending = 0;
             let cleanup = noop;
@@ -593,17 +709,21 @@ var app = (function () {
             const unsubscribers = stores_array.map((store, i) => subscribe(store, (value) => {
                 values[i] = value;
                 pending &= ~(1 << i);
-                if (inited) {
+                if (started) {
                     sync();
                 }
             }, () => {
                 pending |= (1 << i);
             }));
-            inited = true;
+            started = true;
             sync();
             return function stop() {
                 run_all(unsubscribers);
                 cleanup();
+                // We need to set this to false because callbacks can still happen despite having unsubscribed:
+                // Callbacks might already be placed in the queue which doesn't know it should no longer
+                // invoke this derived store.
+                started = false;
             };
         });
     }
@@ -688,7 +808,7 @@ var app = (function () {
       ]
     );
 
-    /* src/Question.svelte generated by Svelte v3.44.0 */
+    /* src/Question.svelte generated by Svelte v3.59.2 */
     const file$7 = "src/Question.svelte";
 
     function create_fragment$9(ctx) {
@@ -848,6 +968,7 @@ var app = (function () {
     						},
     						{ once: true },
     						false,
+    						false,
     						false
     					),
     					listen_dev(
@@ -857,6 +978,7 @@ var app = (function () {
     							if (is_function(/*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k1, 85, false))) /*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k1, 85, false).apply(this, arguments);
     						},
     						{ once: true },
+    						false,
     						false,
     						false
     					),
@@ -868,6 +990,7 @@ var app = (function () {
     						},
     						{ once: true },
     						false,
+    						false,
     						false
     					),
     					listen_dev(
@@ -877,6 +1000,7 @@ var app = (function () {
     							if (is_function(/*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k1, 65, false))) /*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k1, 65, false).apply(this, arguments);
     						},
     						{ once: true },
+    						false,
     						false,
     						false
     					),
@@ -888,6 +1012,7 @@ var app = (function () {
     						},
     						{ once: true },
     						false,
+    						false,
     						false
     					),
     					listen_dev(
@@ -897,6 +1022,7 @@ var app = (function () {
     							if (is_function(/*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 55, false))) /*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 55, false).apply(this, arguments);
     						},
     						{ once: true },
+    						false,
     						false,
     						false
     					),
@@ -908,6 +1034,7 @@ var app = (function () {
     						},
     						{ once: true },
     						false,
+    						false,
     						false
     					),
     					listen_dev(
@@ -917,6 +1044,7 @@ var app = (function () {
     							if (is_function(/*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 75, false))) /*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 75, false).apply(this, arguments);
     						},
     						{ once: true },
+    						false,
     						false,
     						false
     					),
@@ -928,6 +1056,7 @@ var app = (function () {
     						},
     						{ once: true },
     						false,
+    						false,
     						false
     					),
     					listen_dev(
@@ -937,6 +1066,7 @@ var app = (function () {
     							if (is_function(/*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 95, false))) /*handleClick*/ ctx[1](/*question*/ ctx[0].fact, /*question*/ ctx[0].k2, 95, false).apply(this, arguments);
     						},
     						{ once: true },
+    						false,
     						false,
     						false
     					)
@@ -981,6 +1111,12 @@ var app = (function () {
     		dispatch('answer', { fact, answer, confidence, hinted });
     	};
 
+    	$$self.$$.on_mount.push(function () {
+    		if (question === undefined && !('question' in $$props || $$self.$$.bound[$$self.$$.props['question']])) {
+    			console.warn("<Question> was created without expected prop 'question'");
+    		}
+    	});
+
     	const writable_props = ['question'];
 
     	Object.keys($$props).forEach(key => {
@@ -1020,13 +1156,6 @@ var app = (function () {
     			options,
     			id: create_fragment$9.name
     		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*question*/ ctx[0] === undefined && !('question' in props)) {
-    			console.warn("<Question> was created without expected prop 'question'");
-    		}
     	}
 
     	get question() {
@@ -1038,7 +1167,7 @@ var app = (function () {
     	}
     }
 
-    /* src/Feedback.svelte generated by Svelte v3.44.0 */
+    /* src/Feedback.svelte generated by Svelte v3.59.2 */
 
     const { Object: Object_1$2 } = globals;
     const file$6 = "src/Feedback.svelte";
@@ -1221,6 +1350,17 @@ var app = (function () {
     	validate_slots('Feedback', slots, []);
     	let { question } = $$props;
     	let { response } = $$props;
+
+    	$$self.$$.on_mount.push(function () {
+    		if (question === undefined && !('question' in $$props || $$self.$$.bound[$$self.$$.props['question']])) {
+    			console.warn("<Feedback> was created without expected prop 'question'");
+    		}
+
+    		if (response === undefined && !('response' in $$props || $$self.$$.bound[$$self.$$.props['response']])) {
+    			console.warn("<Feedback> was created without expected prop 'response'");
+    		}
+    	});
+
     	const writable_props = ['question', 'response'];
 
     	Object_1$2.keys($$props).forEach(key => {
@@ -1257,17 +1397,6 @@ var app = (function () {
     			options,
     			id: create_fragment$8.name
     		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*question*/ ctx[0] === undefined && !('question' in props)) {
-    			console.warn("<Feedback> was created without expected prop 'question'");
-    		}
-
-    		if (/*response*/ ctx[1] === undefined && !('response' in props)) {
-    			console.warn("<Feedback> was created without expected prop 'response'");
-    		}
     	}
 
     	get question() {
@@ -1287,7 +1416,7 @@ var app = (function () {
     	}
     }
 
-    /* src/NavBar.svelte generated by Svelte v3.44.0 */
+    /* src/NavBar.svelte generated by Svelte v3.59.2 */
 
     const file$5 = "src/NavBar.svelte";
 
@@ -2234,7 +2363,7 @@ var app = (function () {
 
     });
 
-    /* src/Chart.svelte generated by Svelte v3.44.0 */
+    /* src/Chart.svelte generated by Svelte v3.59.2 */
 
     function create_fragment$6(ctx) {
     	const block = {
@@ -2410,7 +2539,7 @@ var app = (function () {
     	}
     }
 
-    /* src/Calibrate.svelte generated by Svelte v3.44.0 */
+    /* src/Calibrate.svelte generated by Svelte v3.59.2 */
 
     const { Object: Object_1$1, console: console_1$1 } = globals;
     const file$4 = "src/Calibrate.svelte";
@@ -2657,7 +2786,9 @@ var app = (function () {
     			insert_dev(target, main, anchor);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(main, null);
+    				if (each_blocks[i]) {
+    					each_blocks[i].m(main, null);
+    				}
     			}
 
     			append_dev(main, t1);
@@ -2891,7 +3022,7 @@ var app = (function () {
     	}
     }
 
-    /* src/Tooltip.svelte generated by Svelte v3.44.0 */
+    /* src/Tooltip.svelte generated by Svelte v3.59.2 */
 
     const file$3 = "src/Tooltip.svelte";
 
@@ -2950,6 +3081,21 @@ var app = (function () {
     	let { title } = $$props;
     	let { x } = $$props;
     	let { y } = $$props;
+
+    	$$self.$$.on_mount.push(function () {
+    		if (title === undefined && !('title' in $$props || $$self.$$.bound[$$self.$$.props['title']])) {
+    			console.warn("<Tooltip> was created without expected prop 'title'");
+    		}
+
+    		if (x === undefined && !('x' in $$props || $$self.$$.bound[$$self.$$.props['x']])) {
+    			console.warn("<Tooltip> was created without expected prop 'x'");
+    		}
+
+    		if (y === undefined && !('y' in $$props || $$self.$$.bound[$$self.$$.props['y']])) {
+    			console.warn("<Tooltip> was created without expected prop 'y'");
+    		}
+    	});
+
     	const writable_props = ['title', 'x', 'y'];
 
     	Object.keys($$props).forEach(key => {
@@ -2988,21 +3134,6 @@ var app = (function () {
     			options,
     			id: create_fragment$4.name
     		});
-
-    		const { ctx } = this.$$;
-    		const props = options.props || {};
-
-    		if (/*title*/ ctx[0] === undefined && !('title' in props)) {
-    			console.warn("<Tooltip> was created without expected prop 'title'");
-    		}
-
-    		if (/*x*/ ctx[1] === undefined && !('x' in props)) {
-    			console.warn("<Tooltip> was created without expected prop 'x'");
-    		}
-
-    		if (/*y*/ ctx[2] === undefined && !('y' in props)) {
-    			console.warn("<Tooltip> was created without expected prop 'y'");
-    		}
     	}
 
     	get title() {
@@ -3073,7 +3204,7 @@ var app = (function () {
       }
     }
 
-    /* src/Cite.svelte generated by Svelte v3.44.0 */
+    /* src/Cite.svelte generated by Svelte v3.59.2 */
     const file$2 = "src/Cite.svelte";
 
     function create_fragment$3(ctx) {
@@ -3183,7 +3314,7 @@ var app = (function () {
     	}
     }
 
-    /* src/About.svelte generated by Svelte v3.44.0 */
+    /* src/About.svelte generated by Svelte v3.59.2 */
     const file$1 = "src/About.svelte";
 
     function get_each_context(ctx, list, i) {
@@ -4063,7 +4194,9 @@ var app = (function () {
     			append_dev(div, t118);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				if (each_blocks[i]) {
+    					each_blocks[i].m(div, null);
+    				}
     			}
 
     			current = true;
@@ -4365,7 +4498,7 @@ var app = (function () {
     	};
     }
 
-    /* node_modules/svelte-spa-router/Router.svelte generated by Svelte v3.44.0 */
+    /* node_modules/svelte-spa-router/Router.svelte generated by Svelte v3.59.2 */
 
     const { Error: Error_1, Object: Object_1, console: console_1 } = globals;
 
@@ -4391,7 +4524,7 @@ var app = (function () {
     	}
 
     	if (switch_value) {
-    		switch_instance = new switch_value(switch_props());
+    		switch_instance = construct_svelte_component_dev(switch_value, switch_props());
     		switch_instance.$on("routeEvent", /*routeEvent_handler_1*/ ctx[7]);
     	}
 
@@ -4401,10 +4534,7 @@ var app = (function () {
     			switch_instance_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			if (switch_instance) {
-    				mount_component(switch_instance, target, anchor);
-    			}
-
+    			if (switch_instance) mount_component(switch_instance, target, anchor);
     			insert_dev(target, switch_instance_anchor, anchor);
     			current = true;
     		},
@@ -4413,7 +4543,7 @@ var app = (function () {
     			? get_spread_update(switch_instance_spread_levels, [get_spread_object(/*props*/ ctx[2])])
     			: {};
 
-    			if (switch_value !== (switch_value = /*component*/ ctx[0])) {
+    			if (dirty & /*component*/ 1 && switch_value !== (switch_value = /*component*/ ctx[0])) {
     				if (switch_instance) {
     					group_outros();
     					const old_component = switch_instance;
@@ -4426,7 +4556,7 @@ var app = (function () {
     				}
 
     				if (switch_value) {
-    					switch_instance = new switch_value(switch_props());
+    					switch_instance = construct_svelte_component_dev(switch_value, switch_props());
     					switch_instance.$on("routeEvent", /*routeEvent_handler_1*/ ctx[7]);
     					create_component(switch_instance.$$.fragment);
     					transition_in(switch_instance.$$.fragment, 1);
@@ -4486,7 +4616,7 @@ var app = (function () {
     	}
 
     	if (switch_value) {
-    		switch_instance = new switch_value(switch_props());
+    		switch_instance = construct_svelte_component_dev(switch_value, switch_props());
     		switch_instance.$on("routeEvent", /*routeEvent_handler*/ ctx[6]);
     	}
 
@@ -4496,10 +4626,7 @@ var app = (function () {
     			switch_instance_anchor = empty();
     		},
     		m: function mount(target, anchor) {
-    			if (switch_instance) {
-    				mount_component(switch_instance, target, anchor);
-    			}
-
+    			if (switch_instance) mount_component(switch_instance, target, anchor);
     			insert_dev(target, switch_instance_anchor, anchor);
     			current = true;
     		},
@@ -4511,7 +4638,7 @@ var app = (function () {
     				])
     			: {};
 
-    			if (switch_value !== (switch_value = /*component*/ ctx[0])) {
+    			if (dirty & /*component*/ 1 && switch_value !== (switch_value = /*component*/ ctx[0])) {
     				if (switch_instance) {
     					group_outros();
     					const old_component = switch_instance;
@@ -4524,7 +4651,7 @@ var app = (function () {
     				}
 
     				if (switch_value) {
-    					switch_instance = new switch_value(switch_props());
+    					switch_instance = construct_svelte_component_dev(switch_value, switch_props());
     					switch_instance.$on("routeEvent", /*routeEvent_handler*/ ctx[6]);
     					create_component(switch_instance.$$.fragment);
     					transition_in(switch_instance.$$.fragment, 1);
@@ -5287,7 +5414,7 @@ var app = (function () {
     	}
     }
 
-    /* src/App.svelte generated by Svelte v3.44.0 */
+    /* src/App.svelte generated by Svelte v3.59.2 */
     const file = "src/App.svelte";
 
     function create_fragment(ctx) {
