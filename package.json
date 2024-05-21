@@ -20,7 +20,7 @@
     "svelte": "^3.0.0",
     "svelte-spa-router": "latest",
     "highcharts": "latest",
-    "svelte-check": "^2.0.0",
+    "svelte-check": "^3.7.1",
     "svelte-preprocess": "^4.0.0"
   },
   "dependencies": {
