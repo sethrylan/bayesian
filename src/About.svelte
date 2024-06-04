@@ -69,18 +69,20 @@
     </ul>
 
     <p>
-      Most importantly, feedback and iterative practice allow us to improve our estimation techniques<Cite id="LichtensteinEtAl1982"/>, which is the purpose of this project. Select the number of questions and the quiz will give instant feedback on your progress. When choosing your confidence level, 95% confidence indicates almost certainty of the correct answer. 55% is almost a toss-up. The line on the chart shows perfect confidence calibration. Anything above the line is underconfidence (e.g., we thought we'd be correct 75% of the time, but actually we were correct more often). Anything below the line is overconfidence.
+      Most importantly, feedback and iterative practice allow us to improve our estimation techniques<Cite id="LichtensteinEtAl1982"/>. That's where this project comes in. The page will give instant feedback on your progress. When choosing your confidence level, 95% confidence indicates almost certainty of the correct answer. 55% is almost a toss-up. The line on the chart shows perfect confidence calibration. Anything above the line is underconfidence (e.g., we thought we'd be correct 75% of the time, but actually we were correct more often). Anything below the line is overconfidence.
     </p>
 
     <p class="text-center">
       <img alt="probability distribution" src="images/distribution_highcharts.png">
     </p>
 
+    <a href="https://www.sethrylan.org/bayesian/#/">Start Guessing</a>
+
     <p>
       The more questions have been answered, the more reliable the results will be.
     </p>
 
-    <h4 class="pt-4">Other examples</h4>
+    <h4 class="pt-4">Prior (mostly defunct) Examples</h4>
 
     <ul>
       <li>A <a href="http://lesswrong.com/lw/1f8/test_your_calibration/">list</a> of them.</li>
