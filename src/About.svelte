@@ -37,8 +37,8 @@
     <ul>
       <li><a href="http://en.wikipedia.org/wiki/Anchoring">Anchoring</a>: the wording and structure of the questions can decrease epistemic accuracy by up to 53 percentage points<Cite id="LichtensteinEtAl1982"/>.</li>
       <li>Pattern-seeking habits of humans create the illusion of signal where there is only noisy data<Cite id="Silver2012"/>.</li>
-      <li><a href="https://scholar.princeton.edu/sites/default/files/kahneman/files/prospect_theory.pdf">Prospect theory</a>: small probabilities are overweighed, especially when attached to high-consequence events<Cite id="Plous1993"/>.</li>
-      <li>Our educational training emphasizes algebra and calculus as the end goals, <a href="http://www.ted.com/talks/arthur_benjamin_s_formula_for_changing_math_education.html">not probability and statistics</a>.</li>
+      <li><a href="https://en.wikipedia.org/wiki/Prospect_theory">Prospect theory</a>: small probabilities are overweighed, especially when attached to high-consequence events<Cite id="Plous1993"/>.</li>
+      <li>Our educational training emphasizes algebra and calculus as the end goals, <a href="https://www.ted.com/talks/arthur_benjamin_teach_statistics_before_calculus">not probability and statistics</a>.</li>
       <li>We <a href="http://en.wikipedia.org/wiki/Base_rate_neglect">ignore</a> prior probabilities.</li>
       <li>Many social and professional systems reward overconfidence<Cite id="RadzevickMoore2009"/>.</li>
       <li>In situations determined primarily by chance, we often build narratives<sup class="note" use:tooltip title="The term 'Narrative Fallacy' originates from Taleb:
