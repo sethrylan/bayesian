@@ -1,11 +1,13 @@
 <script context="module">
   import Highcharts from "highcharts";
   import data from "highcharts/modules/data";
-  import more from 'highcharts/highcharts-more';
+  import more from "highcharts/highcharts-more";
+  import accessibility from "highcharts/modules/accessibility";
 
   data(Highcharts);
   more(Highcharts);
-        
+  accessibility(Highcharts);
+
   var getOverconfidenceSeries = function() {
     return {
       name: 'overconfident',
@@ -61,15 +63,16 @@
       xAxis: {
         type: 'linear',
         tickPositions: [55, 65, 75, 85, 95],
-        title: {
-          text: 'reported confidence'
-        }
+        // title: {
+        //   text: 'reported confidence'
+        // }
       },
       yAxis: [
         { // primary axis
           min: 55,
           max: 95,
           title: {
+            enabled: false,
             text: '% correct'
           }
         },
@@ -110,7 +113,7 @@
         }
       },
       legend: {
-        enabled: true,
+        enabled: false,
         itemStyle: {'fontSize': '10px', 'fontWeight':'normal'}
       },
       series: [

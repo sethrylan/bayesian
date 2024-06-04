@@ -100,6 +100,7 @@
 </main>
 
 <style>
+  /* for indenting the 2nd line of citations */
   .csl-entry {
   padding-left: 22px;
   text-indent: -22px;
@@ -107,4 +108,5 @@
       
   ul { margin: 0; padding: 5px 0px 7px 20px; }
   li { margin-bottom: 2px; }
+
 </style>
