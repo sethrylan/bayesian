@@ -1,38 +1,11 @@
 <script context="module">
-  import Highcharts from "highcharts";
+  import Highcharts, { color } from "highcharts";
   import more from "highcharts/highcharts-more";
   import accessibility from "highcharts/modules/accessibility";
 
   more(Highcharts);
   accessibility(Highcharts);
 
-  var getOverconfidenceSeries = function() {
-    return {
-      name: 'overconfident',
-      fillOpacity: 0.2,
-      color: '#FF9900',
-      data: [ [55, 0, 55],
-              [65, 0, 65],
-              [75, 0, 75],
-              [85, 0, 85],
-              [95, 0, 95]
-          ]
-    };
-  };
-
-  var getUnderconfidenceSeries = function () {
-    return {
-      name: 'underconfident',
-      fillOpacity: 0.2,
-      color: '#ADD8E6',
-      data: [ [55, 55, 100],
-              [65, 65, 100],
-              [75, 75, 100],
-              [85, 85, 100],
-              [95, 95, 100]]
-    };
-  };
-      
   export function createChart() { 
     return Highcharts.chart("container", {
       chart: {
@@ -101,6 +74,9 @@
       tooltip: {
         crosshairs: true,
         shared: true,
+        style: {
+          color: "#"
+        },
         formatter: function() {
           var point;
           this.points.forEach( function(element) {
@@ -138,8 +114,27 @@
                   [85, 85, 85],
                   [95, 95, 95]]
         },
-        getUnderconfidenceSeries(),
-        getOverconfidenceSeries(),
+        {
+          name: 'underconfident',
+          fillOpacity: 0.2,
+          color: '#ADD8E6',
+          data: [ [55, 55, 100],
+                  [65, 65, 100],
+                  [75, 75, 100],
+                  [85, 85, 100],
+                  [95, 95, 100]]
+        },
+        {
+          name: 'overconfident',
+          fillOpacity: 0.2,
+          color: '#FF9900',
+          data: [ [55, 0, 55],
+                  [65, 0, 65],
+                  [75, 0, 75],
+                  [85, 0, 85],
+                  [95, 0, 95]
+              ]
+        },
         {
           name: '#answers',
           type: 'spline',
