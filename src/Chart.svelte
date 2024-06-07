@@ -1,10 +1,8 @@
 <script context="module">
   import Highcharts from "highcharts";
-  import data from "highcharts/modules/data";
   import more from "highcharts/highcharts-more";
   import accessibility from "highcharts/modules/accessibility";
 
-  data(Highcharts);
   more(Highcharts);
   accessibility(Highcharts);
 
@@ -38,6 +36,7 @@
   export function createChart() { 
     return Highcharts.chart("container", {
       chart: {
+        // styledMode: true,
         type: 'areasplinerange',
         zoomType: 'x',
         alignTicks: false,
@@ -63,16 +62,25 @@
       xAxis: {
         type: 'linear',
         tickPositions: [55, 65, 75, 85, 95],
-        // title: {
-        //   text: 'reported confidence'
-        // }
+        labels: {
+          style: {
+            color: '#',
+          },
+        },
+        title: {
+          text: 'reported confidence'
+        }
       },
       yAxis: [
         { // primary axis
           min: 55,
           max: 95,
+          labels: {
+            style: {
+              color: '#',
+            },
+          },
           title: {
-            enabled: false,
             text: '% correct'
           }
         },
@@ -120,7 +128,7 @@
         {
           name: 'confidence',
           fillOpacity: 0.1,
-          color: 'grey',
+          // color: 'grey',
           showInLegend: false,
           data: [ [55, 55, 55],
                   [65, 65, 65],
@@ -142,7 +150,7 @@
             enabled: false
           },
           dashStyle: 'shortdot',
-          color: 'grey'
+          // color: 'grey'
         }
       ]
     });

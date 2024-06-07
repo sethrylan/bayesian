@@ -74,6 +74,7 @@
 
 <NavBar/>
 
+
 <main>
   {#each $questions as question, i}
     {#if $current === i}
@@ -84,7 +85,7 @@
   {/each}
 
   <figure class="highcharts-figure d-flex justify-content-center">
-    <div id="container" style="width:70%" class="highcharts-dark"/>
+    <div id="container" class="highcharts-light"/>
   </figure>
 
   {#if $current > 0}
@@ -93,8 +94,3 @@
     </div>
   {/if}
 </main>
-
-
-<style>
- 
-</style>
