@@ -4,7 +4,7 @@
   import Question from './Question.svelte';
   import Feedback from './Feedback.svelte';
   import NavBar from './NavBar.svelte';
-  import Chart, {createChart} from './Chart.svelte';	
+  import {createChart} from './Chart.svelte';	
 
   let confidenceChart = {};
 
@@ -74,6 +74,7 @@
 
 <NavBar/>
 
+
 <main>
   {#each $questions as question, i}
     {#if $current === i}
@@ -83,9 +84,9 @@
     {/if}
   {/each}
 
-  <div class="d-flex justify-content-center">
-    <div id="container" style="width:70%"/>
-  </div>
+  <figure class="highcharts-figure d-flex justify-content-center">
+    <div id="container" class="highcharts-light"/>
+  </figure>
 
   {#if $current > 0}
     <div class="col d-flex justify-content-center">

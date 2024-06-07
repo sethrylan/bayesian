@@ -1,11 +1,11 @@
 <script context="module">
   import Highcharts from "highcharts";
-  import data from "highcharts/modules/data";
-  import more from 'highcharts/highcharts-more';
+  import more from "highcharts/highcharts-more";
+  import accessibility from "highcharts/modules/accessibility";
 
-  data(Highcharts);
   more(Highcharts);
-        
+  accessibility(Highcharts);
+
   var getOverconfidenceSeries = function() {
     return {
       name: 'overconfident',
@@ -36,6 +36,7 @@
   export function createChart() { 
     return Highcharts.chart("container", {
       chart: {
+        // styledMode: true,
         type: 'areasplinerange',
         zoomType: 'x',
         alignTicks: false,
@@ -61,6 +62,11 @@
       xAxis: {
         type: 'linear',
         tickPositions: [55, 65, 75, 85, 95],
+        labels: {
+          style: {
+            color: '#',
+          },
+        },
         title: {
           text: 'reported confidence'
         }
@@ -69,6 +75,11 @@
         { // primary axis
           min: 55,
           max: 95,
+          labels: {
+            style: {
+              color: '#',
+            },
+          },
           title: {
             text: '% correct'
           }
@@ -104,20 +115,22 @@
             } else if (difference === 0) {
               return 'perfectly confident!';
             } else {
-              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points<br>';
+              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.round(Math.abs(point.high - point.low)) + ' % points<br>';
             }
           }
         }
       },
       legend: {
-        enabled: true,
+        enabled: false,
         itemStyle: {'fontSize': '10px', 'fontWeight':'normal'}
       },
       series: [
         {
+          marker: {
+            enabled: false
+          },
           name: 'confidence',
           fillOpacity: 0.1,
-          color: 'grey',
           showInLegend: false,
           data: [ [55, 55, 55],
                   [65, 65, 65],
@@ -139,7 +152,6 @@
             enabled: false
           },
           dashStyle: 'shortdot',
-          color: 'grey'
         }
       ]
     });
