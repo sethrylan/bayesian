@@ -115,7 +115,7 @@
             } else if (difference === 0) {
               return 'perfectly confident!';
             } else {
-              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.abs(point.high - point.low) + ' % points<br>';
+              return (difference > 0 ? 'over' : 'under') + 'confident by ' + Math.round(Math.abs(point.high - point.low)) + ' % points<br>';
             }
           }
         }
@@ -126,6 +126,9 @@
       },
       series: [
         {
+          marker: {
+            enabled: false
+          },
           name: 'confidence',
           fillOpacity: 0.1,
           // color: 'grey',
