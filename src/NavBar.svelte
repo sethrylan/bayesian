@@ -1,6 +1,6 @@
 
 <script>
-	import ThemeToggle from './ThemeToggle.svelte'
+  import ThemeToggle from './ThemeToggle.svelte'
 </script>
 
 <nav class="navbar navbar-expand">	

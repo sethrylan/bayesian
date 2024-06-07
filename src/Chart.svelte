@@ -131,7 +131,6 @@
           },
           name: 'confidence',
           fillOpacity: 0.1,
-          // color: 'grey',
           showInLegend: false,
           data: [ [55, 55, 55],
                   [65, 65, 65],
@@ -153,7 +152,6 @@
             enabled: false
           },
           dashStyle: 'shortdot',
-          // color: 'grey'
         }
       ]
     });
