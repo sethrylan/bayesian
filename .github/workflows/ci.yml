@@ -13,3 +13,5 @@ jobs:
     - run: |
         npm install
         npm run build
+        # fail if there are uncommitted changes
+        exit `git diff --exit-code`
