@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "importsNotUsedAsValues": "remove",
+    "preserveValueImports": false
+  }
+}
