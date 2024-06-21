@@ -63,6 +63,6 @@ rm -rf factbook.clone
 ## Generate
 
 ```shell
-go run main.go
+go run ./...
 ```
 
