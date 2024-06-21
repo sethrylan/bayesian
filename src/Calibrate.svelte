@@ -30,7 +30,10 @@
             question['o2'] = question.options[k2];
             return question;
           })
-        );
+          .map(value => ({ value, sort: Math.random() })) // shuffle
+          .sort((a, b) => a.sort - b.sort)
+          .map(({ value }) => value)
+        )
       }).catch(error => {
         console.log(error);
         return [];
