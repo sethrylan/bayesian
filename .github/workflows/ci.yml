@@ -26,5 +26,7 @@ jobs:
         git commit -m "Rebuild"
         git push
 
+        git diff
+
         # fail if there are uncommitted changes
         exit `git diff --exit-code`
