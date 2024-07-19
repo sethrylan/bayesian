@@ -5,6 +5,10 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+
+permissions:
+  contents: write # to write built files
+
 jobs:
   build_npm:
     runs-on: ubuntu-latest
@@ -16,7 +20,10 @@ jobs:
         npm run build
 
         # commit built files
-        git commit docs/build/* -m "Automated report"
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add docs/build
+        git commit -m "Rebuild"
         git push
 
         # fail if there are uncommitted changes
