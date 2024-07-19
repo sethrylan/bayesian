@@ -98,7 +98,7 @@
       },
       legend: {
         enabled: false,
-        itemStyle: {'fontSize': '10px', 'fontWeight':'normal'}
+        itemStyle: {'fontSize': '12px', 'fontWeight':'normal'}
       },
       series: [
         {
