@@ -18,14 +18,19 @@ jobs:
       run: |
         npm install
         npm run build
+    - name: commit
+      if: github.event_name == 'pull_request'
+      run: |
         git add docs/build
 
         # commit built files
         if ! git diff-index --quiet HEAD docs/build; then
+          git fetch origin ${{ github.head_ref}}
+          git checkout ${{ github.head_ref}}
           git config user.name github-actions
           git config user.email github-actions@github.com
           git commit -m "Rebuild"
-          git push
+          git push -u origin ${{ github.head_ref}}
         fi
         
         # fail if there are uncommitted changes
