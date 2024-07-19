@@ -23,10 +23,10 @@ jobs:
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add docs/build
-        git commit -m "Rebuild"
-        git push
-
-        git diff
-
+        if ! git diff-index --quiet HEAD; then
+          git commit -m "Rebuild"
+          git push
+        fi
+        
         # fail if there are uncommitted changes
         exit `git diff --exit-code`
