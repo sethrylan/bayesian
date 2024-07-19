@@ -16,7 +16,7 @@ jobs:
         npm run build
 
         # commit built files
-        git commit docs/build/* -am "Automated report"
+        git commit docs/build/* -m "Automated report"
         git push
 
         # fail if there are uncommitted changes
