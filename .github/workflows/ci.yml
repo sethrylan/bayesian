@@ -27,6 +27,7 @@ jobs:
 
         # commit built files
         if ! git diff-index --quiet HEAD docs/build; then
+          git fetch ${{ github.head_ref}}
           git checkout ${{ github.head_ref}}
           git config user.name github-actions
           git config user.email github-actions@github.com
