@@ -18,12 +18,12 @@ jobs:
       run: |
         npm install
         npm run build
+        git add docs/build
 
         # commit built files
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add docs/build
-        if ! git diff-index --quiet HEAD; then
+        if ! git diff-index --quiet HEAD docs/build; then
+          git config user.name github-actions
+          git config user.email github-actions@github.com
           git commit -m "Rebuild"
           git push
         fi
