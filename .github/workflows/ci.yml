@@ -7,31 +7,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write # to write built files
+  contents: read
 
 jobs:
-  build_npm:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - name: build
-      run: |
-        npm install
-        npm run build
-    - name: commit
-      if: github.event_name == 'pull_request'
-      run: |
-        git add docs/build
-
-        # commit built files
-        if ! git diff-index --quiet HEAD docs/build; then
-          git fetch origin ${{ github.head_ref}}
-          git checkout ${{ github.head_ref}}
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git commit -m "Rebuild"
-          git push -u origin ${{ github.head_ref}}
-        fi
-        
-        # fail if there are uncommitted changes
-        exit `git diff --exit-code`
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: package.json
+      - run: npm ci
+      - run: npm run build
