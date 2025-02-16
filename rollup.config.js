@@ -5,6 +5,7 @@ import livereload from 'rollup-plugin-livereload';
 import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import css from 'rollup-plugin-css-only';
+import copy from 'rollup-plugin-copy';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -35,7 +36,7 @@ export default {
 		sourcemap: !production,
 		format: 'iife',
 		name: 'app',
-		file: 'dist/bundle.js'
+		file: 'docs/build/bundle.js'
 	},
 	plugins: [
 		svelte({
@@ -70,7 +71,13 @@ export default {
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
-		production && terser()
+		production && terser(),
+    copy({
+      targets: [
+        // also copy into dist, for deploy workflow (see deploy.yml)
+        { src: 'docs/*', dest: 'dist/' },
+      ]
+    })
 	],
 	watch: {
 		clearScreen: false

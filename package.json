@@ -15,6 +15,7 @@
     "esm-env": "^1.0.0",
     "highcharts": "^11.4.6",
     "rollup": "^2.79.2",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-css-only": "^4.5.2",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-svelte": "^7.2.0",
