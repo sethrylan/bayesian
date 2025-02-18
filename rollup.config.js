@@ -36,7 +36,7 @@ export default {
 		sourcemap: !production,
 		format: 'iife',
 		name: 'app',
-		file: 'docs/build/bundle.js'
+		file: 'dist/bundle.js'
 	},
 	plugins: [
 		svelte({
@@ -65,9 +65,9 @@ export default {
 		// the bundle has been generated
 		!production && serve(),
 
-		// Watch the `docs` directory and refresh the
+		// Watch the `dist` directory and refresh the
 		// browser on changes when not in production
-		!production && livereload('docs'),
+		!production && livereload('dist'),
 
 		// If we're building for production (npm run build
 		// instead of npm run dev), minify
@@ -75,7 +75,7 @@ export default {
     copy({
       targets: [
         // also copy into dist, for deploy workflow (see deploy.yml)
-        { src: 'docs/*', dest: 'dist/' },
+        { src: 'static/*', dest: 'dist/' },
       ]
     })
 	],
