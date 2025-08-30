@@ -13,10 +13,7 @@ updates:
     commit-message:
       prefix: "chore: "
 
-  # Enable version updates for GitHub Actions
   - package-ecosystem: "github-actions"
-    # Workflow files stored in the default location of `.github/workflows`
-    # You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.
     directory: "/"
     schedule:
       interval: "weekly"
@@ -24,16 +21,14 @@ updates:
       prefix: "chore: "
     # Group updates for the same action across different workflows
     groups:
-      actions-group:
+      actions-minor:
         patterns:
-          - "actions/*"
+          - "*"
         update-types:
-          - "minor"
-          - "patch"
-      checkout-group:
+          - minor
+          - patch
+      actions-major:
         patterns:
-          - "actions/checkout"
+          - "*"
         update-types:
-          - "major"
-          - "minor"
-          - "patch"
+          - major
