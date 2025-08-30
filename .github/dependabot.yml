@@ -22,3 +22,18 @@ updates:
       interval: "weekly"
     commit-message:
       prefix: "chore: "
+    # Group updates for the same action across different workflows
+    groups:
+      actions-group:
+        patterns:
+          - "actions/*"
+        update-types:
+          - "minor"
+          - "patch"
+      checkout-group:
+        patterns:
+          - "actions/checkout"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
