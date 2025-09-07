@@ -1,10 +1,7 @@
 <script context="module">
   import Highcharts, { color } from "highcharts";
-  import more from "highcharts/highcharts-more";
-  import accessibility from "highcharts/modules/accessibility";
-
-  more(Highcharts);
-  accessibility(Highcharts);
+  import "highcharts/highcharts-more";
+  import "highcharts/modules/accessibility";
 
   export function createChart() { 
     return Highcharts.chart("container", {
