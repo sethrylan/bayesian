@@ -1,7 +1,6 @@
 import App from './App.svelte';
+import { mount } from 'svelte';
 
-var app = new App({
-  target: document.body
-});
+const app = mount(App, { target: document.getElementById("app") });
 
 export default app;
