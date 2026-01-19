@@ -9,5 +9,7 @@ checks:
       reference: "sethrylan/sethrylan/.repolint/workflows/npm-ci.yml"
     - name: ".github/workflows/conventional-commits.yml"
       reference: "sethrylan/sethrylan/.repolint/workflows/conventional-commits.yml"
+    - name: ".github/workflows/dependabot-auto.yml"
+      reference: "sethrylan/sethrylan/.repolint/workflows/dependabot-auto.yml"
     - name: "LICENSE"
       reference: "sethrylan/sethrylan/.repolint/LICENSE"
