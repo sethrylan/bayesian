@@ -1,34 +1,33 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    # Look for `package.json` and `lock` files in the `root` directory
+  - package-ecosystem: gomod
     directory: "/"
     schedule:
-      interval: "weekly"
-    groups:
-      production-dependencies:
-        dependency-type: "production"
-      development-dependencies:
-        dependency-type: "development"
+      interval: weekly
     commit-message:
-      prefix: "chore: "
-
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    commit-message:
-      prefix: "chore: "
-    # Group updates for the same action across different workflows
+      prefix: "chore(deps): "
+    cooldown:
+      default-days: 7
     groups:
-      actions-minor:
+      actions-deps:
         patterns:
           - "*"
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      npm-development:
+        dependency-type: development
         update-types:
           - minor
           - patch
-      actions-major:
-        patterns:
-          - "*"
+      npm-production:
+        dependency-type: production
         update-types:
-          - major
+          - patch
+    commit-message:
+      prefix: "chore(deps): "
