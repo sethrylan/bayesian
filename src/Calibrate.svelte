@@ -88,7 +88,7 @@
   {/each}
 
   <figure class="highcharts-figure d-flex justify-content-center">
-    <div id="container" class="highcharts-light"/>
+    <div id="container" class="highcharts-light"></div>
   </figure>
 
   {#if $current > 0}

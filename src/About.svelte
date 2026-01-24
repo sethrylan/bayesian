@@ -15,6 +15,7 @@
 
     <p>
       'Guessing' here refers to a properly calibrated probability estimate. If we were to guess the gross domestic earnings of <em>The Goonies</em>, the answer would probably be wrong, not through personal faults, but because the question tests exact domain knowledge. Rephrasing the question:
+    </p>
     <blockquote>
       <p class="m-4">
       &ldquo;What are your high and low estimates for the gross domestic earnings of the <em>The Goonies</em>? What interval estimate of <a href="https://en.wikipedia.org/wiki/Confidence_interval">confidence</a> would you give this range?&rdquo;
@@ -34,6 +35,7 @@
 
     <p>
       Researchers have explored the limits and prejudices of probability estimates, and have a few theories on potential causes<Cite id="Wilson1994"/>.
+    </p>
     <ul>
       <li><a href="http://en.wikipedia.org/wiki/Anchoring">Anchoring</a>: the wording and structure of the questions can decrease epistemic accuracy by up to 53 percentage points<Cite id="LichtensteinEtAl1982"/>.</li>
       <li>Pattern-seeking habits of humans create the illusion of signal where there is only noisy data<Cite id="Silver2012"/>.</li>
