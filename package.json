@@ -24,7 +24,7 @@
     "svelte": "^5.54.0",
     "svelte-check": "^4.4.5",
     "svelte-preprocess": "^6.0.3",
-    "svelte-spa-router": "^4.0.2",
+    "svelte-spa-router": "^5.0.0",
     "@rollup/plugin-terser": "^0.4.4",
     "sirv-cli": "^3.0.0",
     "svelte-persisted-store": "^0.12.0",
