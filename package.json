@@ -15,7 +15,7 @@
     "@typescript-eslint/types": "^8.70.0",
     "@rollup/plugin-node-resolve": "^16.0.3",
     "esm-env": "^1.0.0",
-    "highcharts": "^12.6.0",
+    "highcharts": "^12.6.2",
     "rollup": "^4.63.3",
     "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-css-only": "^4.5.5",
